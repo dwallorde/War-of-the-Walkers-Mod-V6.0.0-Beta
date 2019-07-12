@@ -1,0 +1,7 @@
+<configs>
+
+<!--	// SMX // Player Dropped Backpack -->
+
+		<set xpath="/lootcontainers/lootcontainer[@id='2']/@size">11,10</set>
+
+</configs>

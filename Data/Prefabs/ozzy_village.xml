@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prefab>
+    <property name="CopyAirBlocks" value="True" />
+    <property name="AllowTopSoilDecorations" value="True" />
+    <property name="TraderArea" value="False" />
+    <property name="ExcludeDistantPOIMesh" value="False" />
+    <property name="ExcludePOICulling" value="False" />
+    <property name="DifficultyTier" value="5" />
+    <property name="Zoning" value="Industrial,ResidentialOld" />
+    <property name="RotationToFaceNorth" value="2" />
+    <property name="YOffset" value="-10" />
+    <property name="DistantPOIYOffset" value="0" />
+    <property name="AllowedTownships" value="city,rural,town,wilderness" />
+    <property name="SleeperVolumeStart" value="17, 0, 17#0, 10, 0#4, 10, 16#11, 10, 6#36, 10, 4" />
+    <property name="SleeperVolumeSize" value="17, 9, 8#53, 3, 47#9, 3, 23#11, 3, 11#12, 3, 12" />
+    <property name="SleeperVolumeGroup" value="S_-_Group_Zom_Badass,2,3,S_-Group_Generic_Zombie,4,5,S_-Group_Generic_Zombie,2,3,S_-Group_Generic_Zombie,1,2,S_-_Group_Zom_Badass,2,3" />
+    <property name="SleeperVolumeGameStageAdjust" value="hard,,medium,medium,easy" />
+    <property name="SleeperIsLootVolume" value="True,False,True,True,True" />
+    <property name="SleeperIsBossVolume" value="True,False,True,False,True" />
+</prefab>

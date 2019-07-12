@@ -1,0 +1,48 @@
+<configs>
+
+<!-- 	// SMX // In-game Menu -->
+
+		<!-- <remove xpath="/windows/window[@name='ingameMenu']" />
+
+		<append xpath="/windows">
+			<window name="ingameMenu" style="SMX.menu.window" controller="InGameMenuWindow" cursor_area="true">
+
+				<texture name="SMXingameMenuBG" depth="2" style="SMX.menu.texture" />
+				<texture name="SMXingameMenuLogo" depth="3" style="SMX.menu.logo" />
+
+				<grid name="SMXingameMenuGrid" depth="3" style="SMX.menu.grid" repeat_content="false" arrangement="vertical">
+					<SMX_menu_button_N_1 name="btnExportPrefab" width="230" height="50" caption_key="xuiMenuExportPrefab" pivot="center" />
+					<SMX_menu_button_N_2 name="btnInvite" width="230" height="50" caption_key="xuiMenuInvite" pivot="center" />
+					<SMX_menu_button_N_1 name="btnOptions" width="230" height="50" caption_key="xuiMenuOptions" pivot="center" />
+					<SMX_menu_button_N_2 name="btnHelp" width="230" height="50" caption_key="xuiMenuHelp" pivot="center" />
+					<SMX_menu_button_N_1 name="btnSave" width="230" height="50" caption_key="xuiMenuSave" pivot="center" />
+					<rect><texture name="SMXhredSep" depth="1" style="SMX.menu.redsep" /></rect>
+					<SMX_menu_button_N_3 name="btnExit" width="230" height="50" caption_key="xuiMenuExit" pivot="center" />
+				</grid>
+
+				<label name="SMXeditionInfo" depth="99" style="SMX.edition.info" font_face="AgencyB" crispness="Never" />
+				<label name="SMXversionInfo" depth="99" style="SMX.version.info" font_face="AgencyB" crispness="Never" /> -->
+
+				<!--texture name="SMXchangeLogHeader" depth="2" style="SMX.changelog.texture" pivot="center" />
+				<label name="SMXchangeLogHeader" depth="3" style="SMX.changelog.label" pivot="center" />
+				
+				<grid name="SMXchangeLogGrid" depth="2" style="SMX.changelog.grid" arrangement="vertical">
+					<label name="SMXchanges" depth="5" font_size="24" color="[white]" effect="outline" justify="left" upper_case="false" text_key="" />
+				</grid-->
+
+				<!--texture name="SMXchangeLog" depth="3" pos="800,60" size="700,500" texture="@modfolder:Textures/menu/smx_menu_info.png" pivot="center" /-->
+
+				<!--texture name="SMXserverInfoHeader" depth="2" pos="800,-320" size="750,200" texture="@modfolder:Textures/menu/smx_menu_info.png" pivot="center" />
+				<label name="SMXserverInfoHeader" depth="3" pos="800,-260" size="500,50" text="SERVER INFORMATION" font_size="40" color="[white]" effect="outline" justify="center" pivot="center" />
+				<texture name="SMXserverInfo" depth="3" pos="800,-400" size="700,180" texture="@modfolder:Textures/menu/smx_server_info.png" pivot="center" />
+			</window>
+		</append> -->
+
+
+<!-- 	// SMX // Clean Background -->
+
+		<append xpath="/windows">
+			<window name="SMXcleanBG" style="nonpaging.window" controller="WindowNonPagingHeader" />
+		</append>
+
+</configs>

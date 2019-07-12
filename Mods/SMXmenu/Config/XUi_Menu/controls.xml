@@ -1,0 +1,119 @@
+<configs>
+
+<!--	// SMX // Continue Game Save List -->
+
+		<set xpath="/controls/savegames_list_entry/rect/sprite[@name='backgroundMain']/@width">${width-83|250}</set>
+		<set xpath="/controls/savegames_list_entry/rect/sprite[@name='background']/@width">${width-83|250}</set>
+		<set xpath="/controls/savegames_list_entry/rect/label[@name='Version']/@pos">${width-90},-2</set>
+		<set xpath="/controls/savegames_list_entry/rect/label[@name='LastPlayed']/@pos">${width-90},${-height+2}</set>
+
+
+<!--	// SMX // Main Menu Buttons - Small -->
+
+		<append xpath="/controls">
+			<SMX_menu_button_S_1>
+				<rect name="${name}" depth="${depth|3}" pos="${pos|0,0}" width="${width|180}" height="${height|60}" font_size_default="${height-16|16}" font_size_hover="${height-8|24}" enabled_font_color="${enabled_font_color|[labelColor]}" disabled_font_color="${disabled_font_color|[disabledLabelColor]}" controller="SimpleButton" visible="${visible|true}">
+					<texture name="SMXmmButton3" depth="1" pos="0,-22" size="140,45" texture="@modfolder:Textures/menu/smx_menu_btn2.png" pivot="${pivot|center}" />
+					<button name="clickable" pos="0,${Round(-height/2,0)|-16}" sprite="" type="sliced" hoverscale="1.0" tooltip_key="${tooltip_key|}" pivot="${pivot|center}" sound="[paging_click]" />
+					<label name="btnLabel" depth="2" pos="0,-23" width="140" text="${caption|}" text_key="${caption_key|}" font_size="${height-16|16}" effect="outline" justify="center" pivot="${pivot|center}" font_face="AgencyB" crispness="Never" />
+				</rect>
+			</SMX_menu_button_S_1>
+		</append>
+
+
+<!--	// SMX // Main Menu Buttons - Normal -->
+
+		<append xpath="/controls">
+			<SMX_menu_button_N_1>
+				<rect name="${name}" depth="${depth|3}" pos="${pos|0,0}" width="${width|200}" height="${height|85}" font_size_default="${height-16|16}" font_size_hover="${height-8|24}" enabled_font_color="${enabled_font_color|[labelColor]}" disabled_font_color="${disabled_font_color|[disabledLabelColor]}" controller="SimpleButton" visible="${visible|true}">
+					<texture name="SMXmmButton1" depth="1" pos="10,${Round(-height/2,0)|-16}" size="253,75" texture="@modfolder:Textures/menu/smx_menu_btn1.png" pivot="${pivot|center}" />
+					<button name="clickable" pos="0,${Round(-height/2,0)|-16}" sprite="" type="sliced" hoverscale="1.0" tooltip_key="${tooltip_key|}" pivot="${pivot|center}" sound="[paging_click]" />
+					<label name="btnLabel" depth="2" pos="10,${Round(-height/2,0)|-16}" width="${width-20|196}" text="${caption|}" text_key="${caption_key|}" font_size="${height-16|16}" effect="outline" justify="center" pivot="${pivot|center}" font_face="AgencyB" crispness="Never" />
+				</rect>
+			</SMX_menu_button_N_1>
+
+			<SMX_menu_button_N_2>
+				<rect name="${name}" depth="${depth|3}" pos="${pos|0,0}" width="${width|200}" height="${height|85}" font_size_default="${height-16|16}" font_size_hover="${height-8|24}" enabled_font_color="${enabled_font_color|[labelColor]}" disabled_font_color="${disabled_font_color|[disabledLabelColor]}" controller="SimpleButton" visible="${visible|true}">
+					<texture name="SMXmmButton2" depth="1" pos="10,${Round(-height/2,0)|-16}" size="253,75" texture="@modfolder:Textures/menu/smx_menu_btn2.png" pivot="${pivot|center}" />
+					<button name="clickable" pos="0,${Round(-height/2,0)|-16}" sprite="" type="sliced" hoverscale="1.0" tooltip_key="${tooltip_key|}" pivot="${pivot|center}" sound="[paging_click]" />
+					<label name="btnLabel" depth="2" pos="10,${Round(-height/2,0)|-16}" width="${width-20|196}" text="${caption|}" text_key="${caption_key|}" font_size="${height-16|16}" effect="outline" justify="center" pivot="${pivot|center}" font_face="AgencyB" crispness="Never" />
+				</rect>
+			</SMX_menu_button_N_2>
+
+			<SMX_menu_button_N_3>
+				<rect name="${name}" depth="${depth|3}" pos="${pos|0,0}" width="${width|200}" height="${height|85}" font_size_default="${height-16|16}" font_size_hover="${height-8|24}" enabled_font_color="${enabled_font_color|[labelColor]}" disabled_font_color="${disabled_font_color|[disabledLabelColor]}" controller="SimpleButton" visible="${visible|true}">
+					<texture name="SMXmmButton3" depth="1" pos="10,${Round(-height/2,0)|-16}" size="183,75" texture="@modfolder:Textures/menu/smx_menu_btn2.png" pivot="${pivot|center}" />
+					<button name="clickable" pos="0,${Round(-height/2,0)|-16}" sprite="" type="sliced" hoverscale="1.0" tooltip_key="${tooltip_key|}" pivot="${pivot|center}" sound="[paging_click]" />
+					<label name="btnLabel" depth="2" pos="10,${Round(-height/2,0)|-16}" width="${width-20|196}" text="${caption|}" text_key="${caption_key|}" font_size="${height-16|16}" effect="outline" justify="center" pivot="${pivot|center}" font_face="AgencyB" crispness="Never" />
+				</rect>
+			</SMX_menu_button_N_3>
+		</append>
+
+
+<!--	// SMX // Main Menu Buttons - Large -->
+
+		<append xpath="/controls">
+			<SMX_menu_button_L_1>
+				<rect name="${name}" depth="${depth|3}" pos="${pos|0,0}" width="${width|200}" height="${height|85}" font_size_default="${height-16|16}" font_size_hover="${height-8|24}" enabled_font_color="${enabled_font_color|[labelColor]}" disabled_font_color="${disabled_font_color|[disabledLabelColor]}" controller="SimpleButton" visible="${visible|true}">
+					<texture name="SMXmmButton1L" depth="1" pos="10,${Round(-height/2,0)|-16}" size="373,75" texture="@modfolder:Textures/menu/smx_menu_btn1.png" material="Materials\Transparent Colored" pivot="${pivot|center}" />
+					<button name="clickable" pos="0,${Round(-height/2,0)|-16}" sprite="" type="sliced" hoverscale="1.0" tooltip_key="${tooltip_key|}" pivot="${pivot|center}" sound="[paging_click]" />
+					<label name="btnLabel" depth="2" pos="10,${Round(-height/2,0)|-16}" width="${width-20|196}" text="${caption|}" text_key="${caption_key|}" font_size="${height-16|16}" effect="outline" justify="center" pivot="${pivot|center}" font_face="AgencyB" crispness="Never" />
+				</rect>
+			</SMX_menu_button_L_1>
+
+			<SMX_menu_button_L_2>
+				<rect name="${name}" depth="${depth|3}" pos="${pos|0,0}" width="${width|200}" height="${height|85}" font_size_default="${height-16|16}" font_size_hover="${height-8|24}" enabled_font_color="${enabled_font_color|[labelColor]}" disabled_font_color="${disabled_font_color|[disabledLabelColor]}" controller="SimpleButton" visible="${visible|true}">
+					<texture name="SMXmmButton2L" depth="1" pos="10,${Round(-height/2,0)|-16}" size="373,75" texture="@modfolder:Textures/menu/smx_menu_btn2.png" material="Materials\Transparent Colored" pivot="${pivot|center}" />
+					<button name="clickable" pos="0,${Round(-height/2,0)|-16}" sprite="" type="sliced" hoverscale="1.0" tooltip_key="${tooltip_key|}" pivot="${pivot|center}" sound="[paging_click]" />
+					<label name="btnLabel" depth="2" pos="10,${Round(-height/2,0)|-16}" width="${width-20|196}" text="${caption|}" text_key="${caption_key|}" font_size="${height-16|16}" effect="outline" justify="center" pivot="${pivot|center}" font_face="AgencyB" crispness="Never" />
+				</rect>
+			</SMX_menu_button_L_2>
+		</append>
+
+
+<!--	// SMX // Main Menu Buttons - Logo -->
+
+		<append xpath="/controls">
+			<SMX_tfp_logo>
+				<rect name="${name}" depth="${depth|3}" pos="${pos|0,0}" width="${width|200}" height="${height|32}" font_size_default="${height-16|16}" font_size_hover="${height-8|24}" enabled_font_color="${enabled_font_color|[labelColor]}" disabled_font_color="${disabled_font_color|[disabledLabelColor]}" controller="SimpleButton" visible="${visible|true}">
+					<texture name="SMXmmButton4" depth="1" pos="0,-30" size="160,56" texture="@modfolder:Textures/menu/smx_tfp_logo.png" pivot="${pivot|center}" />
+					<button name="clickable" pos="0,${Round(-height/2,0)|-16}" sprite="" type="sliced" hoverscale="1.0" tooltip_key="${tooltip_key|CREDITS}" flip="horizontally" defaultcolor="255,255,255,80" hovercolor="[white]" pivot="${pivot|left}" sound="[paging_click]" />
+					<label name="btnLabel" depth="2" pos="10,${Round(-height/2,0)|-16}" width="${width-20|196}" text="${caption|}" text_key="" effect="outline" font_size="${height-16|16}" justify="left" pivot="${pivot|left}" font_face="AgencyB" crispness="Never" />
+				</rect>
+			</SMX_tfp_logo>
+		</append>
+
+
+<!--	// SMX // Work in Progress -->
+
+		<append xpath="/controls">
+			<SMX_audiooption>
+				<rect pos="${pos|0,0}" width="560" height="32">
+					<label depth="4" pos="0,0" width="250" height="30" style="hover" text_key="xuiOptionsAudio${name}" font_size="28" color="[white]" effect="outline" justify="right" pivot="topleft" font_face="AgencyB" crispness="Never" />
+					<combobox name="${name}" type="${type}" value_min="${value_min|@DEF}" value_max="${value_max|@DEF}" value_wrap="${value_wrap|@DEF}" value_increment="${value_increment|@DEF}" values="${values|@DEF}" reverse_list="${reverse_list|@DEF}" localization_prefix="${localization_prefix|}" format_string="${format_string|}" pos="255,0" width="300" height="32" />
+				</rect>
+			</SMX_audiooption>
+
+			<SMX_savegames_list_entry>
+				<rect height="${height}" style="press, doubleclick, hover, scroll" disabled_font_color="[disabledLabelColor]" enabled_font_color="[labelColor]" sound="[recipe_click]" controller="ListEntry&lt;XUiC_SavegamesList.ListEntry&gt;">
+					<sprite depth="3" name="backgroundMain" sprite="menu_empty2px" height="${1+height|31}" pos="2,0" width="${width-4|220}" color="[black]" type="sliced" fillcenter="false" />
+					<sprite depth="2" name="background" color="[darkGrey]" pos="2,0" width="${width-4|220}" type="sliced" />
+					<texture name="SMXselectBG" depth="3" pos="2,0" size="550,61" texture="@modfolder:Textures/menu/smxselectbg.png" material="Materials/Transparent Colored" type="sliced" />
+					<label depth="4" name="Name" pos="8,-2" width="${width-100}" height="32" text="{savename}" font_size="26" justify="left" pivot="topleft" font_face="AgencyB" crispness="Never" />
+					<label depth="4" name="Version" pos="${width-10},-2" style="press, doubleclick, hover, scroll" color="{versioncolor}" width="80" height="32" text="{version}" tooltip="{versiontooltip}" font_size="26" justify="right" pivot="topright" font_face="AgencyB" crispness="Never" />
+					<label depth="4" name="World" pos="8,${-height+2}" style="press, doubleclick, hover, scroll" color="{worldcolor}" width="${width-200}" height="32" text="{worldname} - {mode}" tooltip="{worldtooltip}" font_size="26" justify="left" pivot="bottomleft" visible="{hasentry}" font_face="AgencyB" crispness="Never" />
+					<label depth="4" name="LastPlayed" pos="${width-10},${-height+2}" color="255,255,255,128" width="180" height="32" text="{lastplayed}" font_size="26" justify="right" pivot="bottomright" font_face="AgencyB" crispness="Never" />
+				</rect>
+			</SMX_savegames_list_entry>
+
+			<SMX_profiles_list_entry>
+				<rect height="${height|30}" width="${width}" style="press, scroll" on_doubleclick="true" font_size_default="${height-16|16}" font_size_hover="${height-8|24}" disabled_font_color="[disabledLabelColor]" enabled_font_color="[labelColor]" sound="[recipe_click]" controller="ListEntry`1[XUiC_ProfilesList+ListEntry]">
+					<sprite depth="3" name="backgroundMain" sprite="menu_empty2px" height="${1+height|100}" pos="9990,9990" width="${width|250}" color="[black]" type="sliced" fillcenter="false" visible="false" />
+					<sprite depth="2" name="background" color="[darkGrey]" pos="9990,9990" width="${width|250}" type="sliced" visible="false" />
+					<texture name="SMXselectBG" depth="3" pos="2,0" size="200,65" texture="@modfolder:Textures/menu/smxselectbg.png" material="Materials/Transparent Colored" type="sliced" />
+					<label depth="4" name="Name" pos="8,${Round(-height/2,0)|-25}" width="${width-8|242}" height="${height-4|26}" text="{name}" font_size="${height-4|26}" effect="outline" justify="left" font_face="AgencyB" crispness="Never" />
+				</rect>
+			</SMX_profiles_list_entry>
+		</append>
+
+</configs>

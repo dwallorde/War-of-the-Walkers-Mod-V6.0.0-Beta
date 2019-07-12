@@ -1,0 +1,104 @@
+<configs>
+
+<!--	// SMX // SMX Edition/Version Update -->
+
+		<!-- <append xpath="/styles">
+			<style name="SMX.edition.info" type="label">
+				<style_entry name="pos" value="60,-470" />
+				<style_entry name="size" value="250,33" />
+				<style_entry name="text" value="Current Stable Version" />
+				<style_entry name="font_size" value="16" />
+				<style_entry name="color" value="[white]" />
+				<style_entry name="effect" value="outline" />
+				<style_entry name="upper_case" value="true" />
+				<style_entry name="justify" value="center" />
+				<style_entry name="pivot" value="center" />
+			</style>
+
+			<style name="SMX.version.info" type="label">
+				<style_entry name="pos" value="60,-490" />
+				<style_entry name="size" value="250,33" />
+				<style_entry name="text" value="SMX-A17.4B4r1" />
+				<style_entry name="font_size" value="16" />
+				<style_entry name="color" value="[white]" />
+				<style_entry name="effect" value="outline" />
+				<style_entry name="upper_case" value="false" />
+				<style_entry name="justify" value="center" />
+				<style_entry name="pivot" value="center" />
+			</style>
+		</append> -->
+
+
+<!--	// SMX // In-game Menu -->
+
+		<append xpath="/styles">
+			<style name="SMX.menu.window" type="window">
+				<style_entry name="pos" value="360,0" />
+				<style_entry name="size" value="408,1080" />
+			</style>
+
+			<style name="SMX.menu.texture" type="texture">
+				<style_entry name="pos" value="60,0" />
+				<style_entry name="size" value="408,1080" />
+				<style_entry name="texture" value="@modfolder:Textures/menu/smx_menu_bg.png" />
+				<style_entry name="pivot" value="center" />
+			</style>
+
+			<style name="SMX.menu.logo" type="texture">
+				<style_entry name="pos" value="60,140" />
+				<style_entry name="size" value="588,588" />
+				<style_entry name="texture" value="@modfolder:Textures/menu/smx_ingamemenu_logo.png" />
+				<style_entry name="pivot" value="center" />
+			</style>
+
+			<style name="SMX.menu.grid">
+				<style_entry name="pos" value="50,-120" />
+				<style_entry name="cols" value="1" />
+				<style_entry name="cell_width" value="230" />
+				<style_entry name="cell_height" value="70" />
+			</style>
+
+			<style name="SMX.menu.button"> <!-- USING THIS DOESN'T WORK ... WHY? TALKED TO ALLOC, COULD BE A BUG, REPO CASE SENT -->
+				<style_entry name="width" value="230" />
+				<style_entry name="height" value="50" />
+				<style_entry name="pivot" value="center" />
+			</style>
+
+			<style name="SMX.menu.redsep" type="texture">
+				<style_entry name="pos" value="-140,-24" />
+				<style_entry name="size" value="301,4" />
+				<style_entry name="texture" value="@modfolder:Textures/menu/smx_hsep_red.png" />
+			</style>
+		</append>
+
+
+<!--	// SMX // ChangeLog Window -->
+
+		<append xpath="/styles">
+			<style name="SMX.changelog.texture" type="texture">
+				<style_entry name="pos" value="800,300" />
+				<style_entry name="size" value="750,200" />
+				<style_entry name="texture" value="@modfolder:Textures/menu/smx_menu_info.png" />
+			</style>
+
+			<style name="SMX.changelog.label" type="label">
+				<style_entry name="pos" value="800,360" />
+				<style_entry name="size" value="500,50" />
+				<style_entry name="text" value="CHANGELOG" />
+				<style_entry name="font_size" value="40" />
+				<style_entry name="color" value="[white]" />
+				<style_entry name="effect" value="outline" />
+				<style_entry name="justify" value="center" />
+			</style>
+
+			<style name="SMX.changelog.grid">
+				<style_entry name="pos" value="500,320" />
+				<style_entry name="size" value="500,50" />
+				<style_entry name="cols" value="1" />
+				<style_entry name="rows" value="20" />
+				<style_entry name="cell_width" value="600" />
+				<style_entry name="cell_height" value="32" />
+			</style>
+		</append>
+
+</configs>

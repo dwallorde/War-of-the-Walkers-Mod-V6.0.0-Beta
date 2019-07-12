@@ -1,0 +1,31 @@
+<configs>
+
+<!--	// SMX // Main Menu Buttons - Normal -->
+
+		<append xpath="/controls">
+			<SMX_menu_button_N_1>
+				<rect name="${name}" depth="${depth|3}" pos="${pos|0,0}" width="${width|200}" height="${height|85}" font_size_default="${height-16|16}" font_size_hover="${height-8|24}" enabled_font_color="${enabled_font_color|[labelColor]}" disabled_font_color="${disabled_font_color|[disabledLabelColor]}" controller="SimpleButton" visible="${visible|true}">
+					<texture name="SMXmmButton1" depth="1" pos="10,${Round(-height/2,0)|-16}" size="253,75" texture="@modfolder:Textures/menu/smx_menu_btn1.png" pivot="${pivot|center}" />
+					<button name="clickable" pos="0,${Round(-height/2,0)|-16}" sprite="" type="sliced" hoverscale="1.0" tooltip_key="${tooltip_key|}" pivot="${pivot|center}" />
+					<label name="btnLabel" depth="2" pos="10,${Round(-height/2,0)|-16}" width="${width-20|196}" text="${caption|}" text_key="${caption_key|}" font_size="${height-16|16}" effect="outline" justify="center" pivot="${pivot|center}" font_face="AgencyB" crispness="Never" />
+				</rect>
+			</SMX_menu_button_N_1>
+
+			<SMX_menu_button_N_2>
+				<rect name="${name}" depth="${depth|3}" pos="${pos|0,0}" width="${width|200}" height="${height|85}" font_size_default="${height-16|16}" font_size_hover="${height-8|24}" enabled_font_color="${enabled_font_color|[labelColor]}" disabled_font_color="${disabled_font_color|[disabledLabelColor]}" controller="SimpleButton" visible="${visible|true}">
+					<texture name="SMXmmButton2" depth="1" pos="10,${Round(-height/2,0)|-16}" size="253,75" texture="@modfolder:Textures/menu/smx_menu_btn2.png" pivot="${pivot|center}" />
+					<button name="clickable" pos="0,${Round(-height/2,0)|-16}" sprite="" type="sliced" hoverscale="1.0" tooltip_key="${tooltip_key|}" pivot="${pivot|center}" />
+					<label name="btnLabel" depth="2" pos="10,${Round(-height/2,0)|-16}" width="${width-20|196}" text="${caption|}" text_key="${caption_key|}" font_size="${height-16|16}" effect="outline" justify="center" pivot="${pivot|center}" font_face="AgencyB" crispness="Never" />
+				</rect>
+			</SMX_menu_button_N_2>
+
+			<SMX_menu_button_N_3>
+				<rect name="${name}" depth="${depth|3}" pos="${pos|0,0}" width="${width|200}" height="${height|85}" font_size_default="${height-16|16}" font_size_hover="${height-8|24}" enabled_font_color="${enabled_font_color|[labelColor]}" disabled_font_color="${disabled_font_color|[disabledLabelColor]}" controller="SimpleButton" visible="${visible|true}">
+					<texture name="SMXmmButton3" depth="1" pos="10,${Round(-height/2,0)|-16}" size="183,75" texture="@modfolder:Textures/menu/smx_menu_btn2.png" material="Materials\Transparent Colored" pivot="${pivot|center}" />
+					<button name="clickable" pos="0,${Round(-height/2,0)|-16}" sprite="" type="sliced" hoverscale="1.0" tooltip_key="${tooltip_key|}" pivot="${pivot|center}" />
+					<label name="btnLabel" depth="2" pos="10,${Round(-height/2,0)|-16}" width="${width-20|196}" text="${caption|}" text_key="${caption_key|}" font_size="${height-16|16}" effect="outline" justify="center" pivot="${pivot|center}" font_face="AgencyB" crispness="Never" />
+				</rect>
+			</SMX_menu_button_N_3>
+		</append>
+
+</configs>

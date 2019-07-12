@@ -1,0 +1,51 @@
+<configs>
+
+<!--	// SMX // ItemStack Controls -->
+
+		<set xpath="/controls/backpack_item_stack/rect[@controller='ItemStack']/sprite[@name='backgroundMain']/@width">53</set>
+		<set xpath="/controls/backpack_item_stack/rect[@controller='ItemStack']/sprite[@name='backgroundMain']/@height">53</set>
+
+		<set xpath="/controls/backpack_item_stack/rect[@controller='ItemStack']/sprite[@name='background']/@width">48</set>
+		<set xpath="/controls/backpack_item_stack/rect[@controller='ItemStack']/sprite[@name='background']/@height">48</set>
+
+		<set xpath="/controls/backpack_item_stack/rect[@controller='ItemStack']/sprite[@name='highlightOverlay']/@width">47</set>
+		<set xpath="/controls/backpack_item_stack/rect[@controller='ItemStack']/sprite[@name='highlightOverlay']/@height">47</set>
+
+		<set xpath="/controls/backpack_item_stack/rect[@controller='ItemStack']/texture[@name='backgroundTexture']/@size">48,48</set>
+
+		<set xpath="/controls/backpack_item_stack/rect[@controller='ItemStack']/sprite[@name='itemIcon']/@width">45</set>
+		<set xpath="/controls/backpack_item_stack/rect[@controller='ItemStack']/sprite[@name='itemIcon']/@height">35</set>
+		<set xpath="/controls/backpack_item_stack/rect[@controller='ItemStack']/sprite[@name='itemIcon']/@pos">23,-18</set>
+
+		<set xpath="/controls/backpack_item_stack/rect[@controller='ItemStack']/sprite[@name='lockTypeIcon']/@width">14</set>
+		<set xpath="/controls/backpack_item_stack/rect[@controller='ItemStack']/sprite[@name='lockTypeIcon']/@height">14</set>
+
+		<set xpath="/controls/backpack_item_stack/rect[@controller='ItemStack']/sprite[@name='durabilityBackground']/@width">46</set>
+		<set xpath="/controls/backpack_item_stack/rect[@controller='ItemStack']/sprite[@name='durabilityBackground']/@height">3</set>
+		<set xpath="/controls/backpack_item_stack/rect[@controller='ItemStack']/sprite[@name='durabilityBackground']/@pos">1,-42</set>
+
+		<set xpath="/controls/backpack_item_stack/rect[@controller='ItemStack']/filledsprite[@name='durability']/@width">46</set>
+		<set xpath="/controls/backpack_item_stack/rect[@controller='ItemStack']/filledsprite[@name='durability']/@height">3</set>
+		<set xpath="/controls/backpack_item_stack/rect[@controller='ItemStack']/filledsprite[@name='durability']/@pos">1,-42</set>
+
+		<set xpath="/controls/backpack_item_stack/rect[@controller='ItemStack']/sprite[@name='disabledOverlay']/@width">47</set>
+		<set xpath="/controls/backpack_item_stack/rect[@controller='ItemStack']/sprite[@name='disabledOverlay']/@height">47</set>
+
+		<set xpath="/controls/backpack_item_stack/rect[@controller='ItemStack']/label[@name='stackValue']/@width">48</set>
+		<set xpath="/controls/backpack_item_stack/rect[@controller='ItemStack']/label[@name='stackValue']/@height">28</set>
+		<set xpath="/controls/backpack_item_stack/rect[@controller='ItemStack']/label[@name='stackValue']/@pos">-1,-32</set>
+		<set xpath="/controls/backpack_item_stack/rect[@controller='ItemStack']/label[@name='stackValue']/@font_size">14</set>
+
+		<set xpath="/controls/backpack_item_stack/rect[@controller='ItemStack']/label[@name='timer']/@width">45</set>
+		<set xpath="/controls/backpack_item_stack/rect[@controller='ItemStack']/label[@name='timer']/@height">24</set>
+		<set xpath="/controls/backpack_item_stack/rect[@controller='ItemStack']/label[@name='timer']/@pos">35,-38</set>
+
+		<set xpath="/controls/backpack_item_stack/rect[@controller='ItemStack']/sprite[@name='cancel']/@width">45</set>
+		<set xpath="/controls/backpack_item_stack/rect[@controller='ItemStack']/sprite[@name='cancel']/@height">45</set>
+
+		<set xpath="/controls/backpack_item_stack/rect[@controller='ItemStack']/label[@name='itemName']/@pos">36,0</set>
+		<set xpath="/controls/backpack_item_stack/rect[@controller='ItemStack']/label[@name='itemName']/@font_size">14</set>
+
+		<set xpath="/controls/backpack_item_stack/rect[@controller='ItemStack']/sprite[@name='assembleIcon']/@size">18,18</set>
+
+</configs>

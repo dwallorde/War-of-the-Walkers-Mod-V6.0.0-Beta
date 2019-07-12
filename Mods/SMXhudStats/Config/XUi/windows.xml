@@ -1,0 +1,71 @@
+<configs>
+
+<!--	// MODLET:			SMXhudStats
+
+		// EAC:				Friendly
+
+		// VERSION:			A172b27r1
+
+		// BUILD:			A172b27
+
+		// DISCLAIMER:		Please be advised that this modlet is intended for use with the build mentioned above. That said it may very well be that
+							it can be used with other builds with little to no risk of failure. It all depends on the standard files being updated or not.
+
+		// MOD DESCRIPTION:	The purpose of this modlet is to add UNIT FRAME STAT LABELS to the different STAT BARS for SMXhud.
+
+		// DEPENDENCIES:	SMXhud.
+
+		// TERMS OF USE:	You are allowed to use this modlet as is for your own personal use and/or distribute said modlet bundled with something of your
+							own creation as long as all the files of this modlet remain unaltered and you do not claim credit for creating the modlet itself
+							or any of the files provided with it.
+
+							You are welcome, but not required, to inform the developer of this modlet should you wish to bundle and re-distribute said modlet
+							as described above.
+
+							You are not allowed to use any of the assets bundled with this modlet in other projects where said modlet is not included
+							and credited. This restriction applies to all files that this modlet consist of.
+
+							You are required to inform and ask permission from the developer of this modlet should you wish to make changes to any files
+							provided with the intention to bundle and/or distribute.
+
+							Should permission be granted you are required to make the changes as a new modlet that injects into the modlet in question and
+							keeping load order in mind. The original modlet shall be distributed as is with no change to its files whatsoever.
+
+		// CREDITS:			Sirillion (author)
+-->
+
+<!--	// SMX // Stealth Bar -->
+
+		<append xpath="/windows/window[@name='HUDLeftStatBars']/rect[@name='SMXstatBars']/rect[@name='SMXstealthBar']">
+			<label name="TextContent" depth="6" pos="0,-5" text="{statcurrent}" font_size="14" color="[white]" font_face="AgencyB" crispness="Never" effect="outline" justify="center" pivot="topleft" />
+		</append>
+
+
+<!--	// SMX // Health Bar -->
+
+		<append xpath="/windows/window[@name='HUDLeftStatBars']/rect[@name='SMXstatBars']/rect[@name='SMXhealthBar']">
+			<label name="TextContent" depth="7" pos="0,-14" text="{statcurrentwithmax}" font_size="28" color="[white]" font_face="AgencyB" crispness="Never" effect="outline" justify="center" pivot="topleft" />
+		</append>
+
+
+<!--	// SMX // Stamina Bar -->
+
+		<append xpath="/windows/window[@name='HUDLeftStatBars']/rect[@name='SMXstatBars']/rect[@name='SMXstaminaBar']">
+			<label name="TextContent" depth="7" pos="0,-16" text="{statcurrentwithmax}" font_size="28" color="[white]" font_face="AgencyB" crispness="Never" effect="outline" justify="center" pivot="topleft" />
+		</append>
+
+
+<!--	// SMX // Hunger Bar -->
+
+		<append xpath="/windows/window[@name='HUDLeftStatBars']/rect[@name='SMXwellnessBars']/rect[@name='SMXhungerBar']">
+			<label name="TextContent" depth="6" pos="0,-63" text="{playerfood}" font_size="22" color="[white]" font_face="AgencyB" crispness="Never" effect="outline" justify="center" pivot="topleft" controller="PlayerStatsWindow" />
+		</append>
+
+
+<!--	// SMX // Thirst Bar -->
+
+		<append xpath="/windows/window[@name='HUDLeftStatBars']/rect[@name='SMXwellnessBars']/rect[@name='SMXthirstBar']">
+			<label name="TextContent" depth="6" pos="0,-63" text="{playerwater}" font_size="22" color="[white]" font_face="AgencyB" crispness="Never" effect="outline" justify="center" pivot="topleft" controller="PlayerStatsWindow" />
+		</append>
+
+</configs>

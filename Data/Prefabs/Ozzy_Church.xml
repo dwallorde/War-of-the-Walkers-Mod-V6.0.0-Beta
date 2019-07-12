@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prefab>
+    <property name="CopyAirBlocks" value="True" />
+    <property name="AllowTopSoilDecorations" value="True" />
+    <property name="TraderArea" value="False" />
+    <property name="ExcludeDistantPOIMesh" value="False" />
+    <property name="Zoning" value="ResidentialOld" />
+    <property name="YOffset" value="-5" />
+    <property name="DistantPOIYOffset" value="0" />
+    <property name="AllowedTownships" value="city,rural,town" />
+    <property name="SleeperVolumeStart" value="0, 6, 0#1, 0, 2" />
+    <property name="SleeperVolumeSize" value="10, 3, 15#8, 6, 10" />
+    <property name="SleeperVolumeGroup" value="S_-Group_Generic_Zombie,2,3,S_-_Group_Zom_Badass,2,3" />
+    <property name="SleeperVolumeGameStageAdjust" value=",easy" />
+    <property name="SleeperIsLootVolume" value="False,True" />
+    <property name="ExcludePOICulling" value="False" />
+    <property name="DifficultyTier" value="1" />
+    <property name="SleeperIsBossVolume" value="False,True" />
+</prefab>

@@ -1,0 +1,71 @@
+<configs>
+
+<!--	// MODLET:			SMXhudIcons
+
+		// EAC:				Friendly
+
+		// VERSION:			A172b27r1
+
+		// BUILD:			A172b27
+
+		// DISCLAIMER:		Please be advised that this modlet is intended for use with the build mentioned above. That said it may very well be that
+							it can be used with other builds with little to no risk of failure. It all depends on the standard files being updated or not.
+
+		// MOD DESCRIPTION:	The purpose of this modlet is to add unit frame icons to the different stat bars for SMXhud.
+
+		// DEPENDENCIES:	SMXhud.
+
+		// TERMS OF USE:	You are allowed to use this modlet as is for your own personal use and/or distribute said modlet bundled with something of your
+							own creation as long as all the files of this modlet remain unaltered and you do not claim credit for creating the modlet itself
+							or any of the files provided with it.
+
+							You are welcome, but not required, to inform the developer of this modlet should you wish to bundle and re-distribute said modlet
+							as described above.
+
+							You are not allowed to use any of the assets bundled with this modlet in other projects where said modlet is not included
+							and credited. This restriction applies to all files that this modlet consist of.
+
+							You are required to inform and ask permission from the developer of this modlet should you wish to make changes to any files
+							provided with the intention to bundle and/or distribute.
+
+							Should permission be granted you are required to make the changes as a new modlet that injects into the modlet in question and
+							keeping load order in mind. The original modlet shall be distributed as is with no change to its files whatsoever.
+
+		// CREDITS:			Sirillion (author)
+-->
+
+<!--	// SMX // Stealth Bar -->
+
+		<append xpath="/windows/window[@name='HUDLeftStatBars']/rect[@name='SMXstatBars']/rect[@name='SMXstealthBar']">
+			<sprite name="Icon" depth="5" pos="240,5" size="28,28" atlas="{staticonatlas|once}" sprite="{staticon|once}" foregroundlayer="true" effect="outline" />
+		</append>
+
+
+<!--	// SMX // Health Bar -->
+
+		<append xpath="/windows/window[@name='HUDLeftStatBars']/rect[@name='SMXstatBars']/rect[@name='SMXhealthBar']">
+			<sprite name="Icon" depth="6" pos="240,-8" size="28,28" atlas="{staticonatlas|once}" sprite="{staticon|once}" foregroundlayer="true" effect="outline" />
+		</append>
+
+
+<!--	// SMX // Stamina Bar -->
+
+		<append xpath="/windows/window[@name='HUDLeftStatBars']/rect[@name='SMXstatBars']/rect[@name='SMXstaminaBar']">
+			<sprite name="Icon" depth="6" pos="240,-10" size="28,28" atlas="{staticonatlas|once}" sprite="ui_game_symbol_agility" foregroundlayer="true" effect="outline" />
+		</append>
+
+
+<!--	// SMX // Hunger Bar -->
+
+		<append xpath="/windows/window[@name='HUDLeftStatBars']/rect[@name='SMXwellnessBars']/rect[@name='SMXhungerBar']">
+			<sprite name="Icon" depth="6" pos="0,-65" size="18,18" atlas="{staticonatlas|once}" sprite="ui_game_symbol_fork" foregroundlayer="true" effect="outline" />
+		</append>
+
+
+<!--	// SMX // Thirst Bar -->
+
+		<append xpath="/windows/window[@name='HUDLeftStatBars']/rect[@name='SMXwellnessBars']/rect[@name='SMXthirstBar']">
+			<sprite name="Icon" depth="6" pos="0,-65" size="18,18" atlas="{staticonatlas|once}" sprite="ui_game_symbol_water" foregroundlayer="true" effect="outline" />
+		</append>
+
+</configs>
