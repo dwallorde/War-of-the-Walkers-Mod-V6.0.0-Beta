@@ -640,6 +640,10 @@
 				<passive_effect name="BlockDamage" operation="perc_add" value=".1,.5" level="1,5"/>
 				<!-- wrench (or other relevant tools) do a base_add=1 to hop on the salvage train -->
 				<passive_effect name="HarvestCount" operation="perc_add" value=".2,1" level="1,5" tags="salvageHarvest"/>
+				<passive_effect name="HarvestCount" operation="perc_add" value=".2,1" level="1,5" tags="IronHarvest"/>
+				<passive_effect name="HarvestCount" operation="perc_add" value=".2,1" level="1,5" tags="SteelHarvest"/>
+				<passive_effect name="HarvestCount" operation="perc_add" value=".2,1" level="1,5" tags="TungstenHarvest"/>
+				<passive_effect name="HarvestCount" operation="perc_add" value=".2,1" level="1,5" tags="HDDisassemble"/>
 		</effect_group>
 
 		<effect_group>

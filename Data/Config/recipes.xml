@@ -822,6 +822,7 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 <recipe name="batterybank" count="1" craft_area="workbench" tags="learnable">
 	<ingredient name="resourceForgedIron" count="10"/>
 	<ingredient name="resourceElectricParts" count="11"/>
+	<ingredient name="resourceElectronicParts" count="5"/>
 	<ingredient name="resourceScrapPolymers" count="6"/>
 </recipe>
 
@@ -849,6 +850,7 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="resourceForgedSteel" count="10"/>
 	<ingredient name="resourceMechanicalParts" count="8"/>
 	<ingredient name="resourceElectricParts" count="6"/>
+	<ingredient name="resourceElectronicParts" count="3"/>
 </recipe>
 
 <recipe name="brickArch" count="1" craft_area="forge" material_based="true">
@@ -1036,6 +1038,7 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 <recipe name="ceilingLight01_player" count="1" craft_area="workbench" tags="learnable">
 	<ingredient name="resourceForgedIron" count="2"/>
 	<ingredient name="resourceElectricParts" count="4"/>
+	<ingredient name="resourceElectronicParts" count="2"/>
 </recipe>
 
 <recipe name="cementMixer" count="1" craft_area="workbench" tags="learnable">
@@ -1057,6 +1060,7 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="resourceForgedIron" count="4"/>
 	<ingredient name="resourceMetalPipe" count="3"/>
 	<ingredient name="resourceElectricParts" count="6"/>
+	<ingredient name="resourceElectronicParts" count="2"/>
 </recipe>
 
 <recipe name="cntCabinetBottom" count="1">
@@ -1178,6 +1182,7 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="resourceMetalPipe" count="4"/>
 	<ingredient name="resourceMechanicalParts" count="2"/>
 	<ingredient name="resourceElectricParts" count="1"/>
+	<ingredient name="resourceElectronicParts" count="1"/>
 </recipe>
 
 <recipe name="cntWashingMachine" count="1" craft_area="fabricationStation">
@@ -1185,6 +1190,7 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="resourceMetalPipe" count="4"/>
 	<ingredient name="resourceMechanicalParts" count="2"/>
 	<ingredient name="resourceElectricParts" count="1"/>
+	<ingredient name="resourceElectronicParts" count="1"/>
 </recipe>
 
 <recipe name="cntTrashCompactor" count="1" craft_area="fabricationStation">
@@ -4931,11 +4937,13 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 <recipe name="speaker" count="1" craft_area="workbench" tags="learnable">
 	<ingredient name="resourceForgedIron" count="4"/>
 	<ingredient name="resourceElectricParts" count="3"/>
+	<ingredient name="resourceElectronicParts" count="1"/>
 </recipe>
 
 <recipe name="spotlightPlayer" count="1" craft_area="workbench" tags="learnable">
 	<ingredient name="resourceHeadlight" count="1"/>
 	<ingredient name="resourceElectricParts" count="8"/>
+	<ingredient name="resourceElectronicParts" count="2"/>
 	<ingredient name="resourceDuctTape" count="2"/>
 	<ingredient name="resourceScrapIron" count="50"/>
 </recipe>
@@ -4948,6 +4956,7 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="resourceForgedIron" count="2"/>
 	<ingredient name="resourceMechanicalParts" count="1"/>
 	<ingredient name="resourceElectricParts" count="1"/>
+	<ingredient name="resourceElectronicParts" count="1"/>
 </recipe>
 
 <!-- WOTW Mod Electricity Start -->
@@ -4973,12 +4982,14 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="ForgedTungsten" count="40"/>
 	<ingredient name="resourceMechanicalParts" count="20"/>
 	<ingredient name="resourceElectricParts" count="15"/>
+	<ingredient name="resourceElectronicParts" count="5"/>
 </recipe>
 
 <recipe name="hdDartTrap" count="1" craft_area="workbench" tags="learnable">
 	<ingredient name="ForgedTungsten" count="25"/>
 	<ingredient name="resourceMechanicalParts" count="12"/>
 	<ingredient name="resourceElectricParts" count="8"/>
+	<ingredient name="resourceElectronicParts" count="4"/>
 </recipe>
 
 <recipe name="ecoGeneratorbank" count="1" craft_area="workbench" tags="learnable">
@@ -5033,16 +5044,19 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 <recipe name="porchLight04_player" count="1" craft_area="workbench" tags="learnable">
 	<ingredient name="resourceForgedIron" count="3"/>
 	<ingredient name="resourceElectricParts" count="4"/>
+	<ingredient name="resourceElectronicParts" count="2"/>
 </recipe>
 
 <recipe name="ceilingLight04_player" count="1" craft_area="workbench" tags="learnable">
 	<ingredient name="resourceForgedIron" count="4"/>
 	<ingredient name="resourceElectricParts" count="3"/>
+	<ingredient name="resourceElectronicParts" count="2"/>
 </recipe>
 
 <recipe name="ceilingLight05_player" count="1" craft_area="workbench" tags="learnable">
 	<ingredient name="resourceForgedIron" count="4"/>
 	<ingredient name="resourceElectricParts" count="4"/>
+	<ingredient name="resourceElectronicParts" count="2"/>
 </recipe>
 
 <recipe name="signShopOpen_player" count="1" craft_area="workbench" tags="learnable">
@@ -5069,6 +5083,7 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="resourceForgedIron" count="25"/>
 	<ingredient name="resourceMechanicalParts" count="20"/>
 	<ingredient name="resourceElectricParts" count="10"/>
+	<ingredient name="resourceElectronicParts" count="4"/>
 	<ingredient name="resourceSpring" count="4"/>
 </recipe>
 
@@ -5266,22 +5281,26 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 <recipe name="tripwirepost" count="1" craft_area="workbench" tags="learnable">
 	<ingredient name="resourceWood" count="5"/>
 	<ingredient name="resourceElectricParts" count="1"/>
+	<ingredient name="resourceElectronicParts" count="1"/>
 </recipe>
 
 <recipe name="tv" count="1" craft_area="fabricationStation">
 	<ingredient name="resourceElectricParts" count="12"/>
+	<ingredient name="resourceElectronicParts" count="4"/>
 	<ingredient name="glassBusinessSheet" count="1"/>
 	<ingredient name="resourceScrapPolymers" count="8"/>
 </recipe>
 
 <recipe name="tv_large_1" count="1" craft_area="fabricationStation">
 	<ingredient name="resourceElectricParts" count="12"/>
+	<ingredient name="resourceElectronicParts" count="4"/>
 	<ingredient name="glassBusinessSheet" count="1"/>
 	<ingredient name="resourceScrapPolymers" count="8"/>
 </recipe>
 
 <recipe name="tv_large_2" count="1" craft_area="fabricationStation">
 	<ingredient name="resourceElectricParts" count="12"/>
+	<ingredient name="resourceElectronicParts" count="4"/>
 	<ingredient name="glassBusinessSheet" count="1"/>
 	<ingredient name="resourceScrapPolymers" count="8"/>
 </recipe>
@@ -5298,6 +5317,7 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 
 <recipe name="vehicle4x4TruckAccessories" count="1" craft_area="workbench" tags="learnable">
 	<ingredient name="resourceElectricParts" count="40"/>
+	<ingredient name="resourceElectronicParts" count="20"/>
 	<ingredient name="resourceHeadlight" count="8"/>
 	<ingredient name="resourceMetalPipe" count="60"/>
 </recipe>
@@ -5341,6 +5361,7 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 
 <recipe name="vehicleGyroCopterAccessories" count="1" craft_area="workbench" tags="learnable">
 	<ingredient name="resourceElectricParts" count="40"/>
+	<ingredient name="resourceElectronicParts" count="20"/>
 	<ingredient name="resourceHeadlight" count="8"/>
 	<ingredient name="resourceMetalPipe" count="60"/>
 </recipe>
