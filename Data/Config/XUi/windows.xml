@@ -799,7 +799,7 @@
 	</window>
 	
 	<!--#$-IGS BEGIN: Adding cursor area. -$#-->
-	<window name="windowTungstenForgeInput" width="228" height="204" panel="Right"
+	<window name="windowTungstenForgeInput" width="228" height="233" panel="Right"
 		controller="WorkstationMaterialInputWindow" materials_accepted="iron,brass,lead,glass,stone,clay,tungsten" valid_materials_color="[green]" invalid_materials_color="[red]" cursor_area="true" >
 	<!--#$-IGS END.-$#-->
 		<panel style="header.panel">
@@ -807,19 +807,19 @@
 			<label style="header.name" text="INPUT" text_key="xuiSmelting" />
 		</panel>
 
-		<sprite depth="2" name="backgroundMain" sprite="menu_empty3px" pos="0,-46" height="180" color="[black]" type="sliced" fillcenter="false" on_press="true" />
+		<sprite depth="2" name="backgroundMain" sprite="menu_empty3px" pos="0,-46" height="184" color="[black]" type="sliced" fillcenter="false" on_press="true" /> <!-- SIRILLION: dwallorde, I increased the height here to make the background fill the entire window | Original Value = "180" -->
 		<rect name="content" depth="1" pos="0,-46" height="168">
 
-			<grid depth="7" rows="2" cols="1" pos="3,-3" cell_width="75" cell_height="75" controller="WorkstationMaterialInputGrid" repeat_content="true">
-				<item_stack name="0"/>
+			<grid depth="7" rows="3" cols="1" pos="3,-3" cell_width="60" cell_height="60" controller="WorkstationMaterialInputGrid" repeat_content="true">
+				<SMX_60_item_stack name="0" />
 			</grid>
 
 		</rect>
 
-		<rect name="content2" depth="0" pos="78, -49" width="150" height="175">
-			<sprite depth="1" color="[mediumGrey]" type="sliced" on_press="true"/>
+		<rect name="content2" depth="0" pos="63, -49" width="165" height="179"> <!-- SIRILLION: dwallorde, I increased the height here to make the background fill the entire window | Original Value = "175" -->
+			<sprite depth="1" color="[mediumGrey]" type="sliced" on_press="true" />
 			<grid rows="7" cols="1" pos="3,-3" cell_width="150" cell_height="25"  repeat_content="true">
-				<forge_material name="0"/>
+				<forge_material name="0" />
 			</grid>
 		</rect>
 	</window>

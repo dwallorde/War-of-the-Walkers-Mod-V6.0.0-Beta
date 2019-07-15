@@ -330,6 +330,7 @@ tbnsew:
 
 <block name="terrSnow">
 	<property name="Material" value="Msnow"/>
+	<property name="CustomIcon" value="snowBall"/>
 	<property name="Shape" value="Terrain"/>
 	<property name="Mesh" value="terrain"/>
 	<property name="Texture" value="6,569,569,569,569,569"/>
@@ -29926,7 +29927,7 @@ ore block visualisation end -->
 	<property name="CustomIcon" value="cntStorageGeneric" />
 	<property name="Shape" value="New"/>
 	<property name="Model" value="cube"/>
-	<property name="DescriptionKey" value="GenericStorageLargeDesc"/>
+	<property name="DescriptionKey" value="GenericStorageXLargeDesc"/>
   	<property name="Class" value="SecureLoot" />
     <property name="LootList" value="173" />
     <property name="Material" value="playerwood" />
@@ -30726,7 +30727,7 @@ ore block visualisation end -->
 	<property name="HeatMapTime" value="1200"/>
 	<property name="HeatMapFrequency" value="25"/>
 	<property class="Workstation">
-		<property name="CraftingAreaRecipes" value="playerOven,campfire"/>
+		<property name="CraftingAreaRecipes" value="playerOven"/>
 		<property name="Modules" value="tools,output,fuel,input"/>
 		<property name="Collide" value="melee,bullet,arrow,rocket" />
 	</property>
@@ -32730,7 +32731,7 @@ ore block visualisation end -->
 	<property name="IsTerrainDecoration" value="true"/>
 	<property name="CanDecorateOnSlopes" value="true"/>
 	<property name="PlantGrowing.Next" value="treeBirdnestLoot"/>
-	<property name="PlantGrowing.GrowthRate" value="63"/>
+	<property name="PlantGrowing.GrowthRate" value="2"/>
 	<property name="PlantGrowing.IsRandom" value="false"/>
 	<!-- <property name="PlantGrowing.GrowOnTop" value="treeBirdnestLoot"/>
 	<property name="PlantGrowing.GrowIfAnythinOnTop" value="true"/>

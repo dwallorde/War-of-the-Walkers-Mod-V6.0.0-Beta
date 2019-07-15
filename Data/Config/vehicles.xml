@@ -53,7 +53,7 @@ Forces:
 		<property name="waterDrag_y_velScale_velMaxScale" value="1.5, .9, 1"/>
 		<property name="waterLift_y_depth_force" value="1, .5, .1"/>
 
-		<property name="hornSound" value="vehicle/minibike/minibike_horn"/>
+		<property name="hornSound" value="gyro_horn"/>
 
 		<property class="engine">
 			<property name="class" value="Engine"/>
@@ -878,7 +878,7 @@ Forces:
 		<property name="waterDrag_y_velScale_velMaxScale" value="1.8, .9, .1"/>
 		<property name="wheelPtlScale" value="1"/>
 
-		<property name="hornSound" value="vehicle/minibike/minibike_horn"/>
+		<property name="hornSound" value="suv_horn"/>
 
 		<property class="battery">
 			<property name="class" value="Battery"/>

@@ -166,7 +166,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="unit_tungsten" count="5"/>
 </recipe>
 
-<recipe name="resourceScrapIron" count="1" craft_area="tungstenForge" material_based="true" craft_time="1" craft_exp_gain="0" always_unlocked="true">
+<!-- <recipe name="resourceScrapIron" count="1" craft_area="tungstenForge" material_based="true" craft_time="1" craft_exp_gain="0" always_unlocked="true">
 	<ingredient name="unit_iron" count="1"/>
 </recipe>
 
@@ -188,7 +188,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 
 <recipe name="resourceBrokenGlass" count="1" craft_area="tungstenForge" material_based="true" craft_time="1" craft_exp_gain="0" always_unlocked="true">
 	<ingredient name="unit_glass" count="5"/>
-</recipe>
+</recipe> -->
 
 
 <!-- * * * * * * * * * * * * main recipes * * * * * * * * * * * * -->
@@ -1363,7 +1363,16 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="drinkCanRiverWater" count="1"/>
 </recipe>
 
+<recipe name="drinkCanBoiledWater" count="1" craft_area="playerOven">
+	<ingredient name="drinkCanRiverWater" count="1"/>
+</recipe>
+
 <recipe name="drinkCanBoiledWater" count="1" craft_area="campfire">
+	<ingredient name="resourceSnowBall" count="1"/>
+	<ingredient name="drinkCanEmpty" count="1"/>
+</recipe>
+
+<recipe name="drinkCanBoiledWater" count="1" craft_area="playerOven">
 	<ingredient name="resourceSnowBall" count="1"/>
 	<ingredient name="drinkCanEmpty" count="1"/>
 </recipe>
@@ -1377,12 +1386,26 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="drinkJarRiverWater" count="1"/>
 </recipe>
 
+<recipe name="drinkJarBoiledWater" count="1" craft_area="playerOven" craft_tool="toolCookingPot">
+	<ingredient name="drinkJarRiverWater" count="1"/>
+</recipe>
+
 <recipe name="drinkJarBoiledWater" count="1" craft_area="campfire" craft_tool="toolCookingPot">
 	<ingredient name="resourceSnowBall" count="1"/>
 	<ingredient name="drinkJarEmpty" count="1"/>
 </recipe>
 
+<recipe name="drinkJarBoiledWater" count="1" craft_area="playerOven" craft_tool="toolCookingPot">
+	<ingredient name="resourceSnowBall" count="1"/>
+	<ingredient name="drinkJarEmpty" count="1"/>
+</recipe>
+
 <recipe name="drinkJarCoffee" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="learnable">
+	<ingredient name="resourceCropCoffeeBeans" count="1"/>
+	<ingredient name="drinkJarBoiledWater" count="1"/>
+</recipe>
+
+<recipe name="drinkJarCoffee" count="1" craft_area="playerOven" craft_tool="toolCookingPot" tags="learnable">
 	<ingredient name="resourceCropCoffeeBeans" count="1"/>
 	<ingredient name="drinkJarBoiledWater" count="1"/>
 </recipe>
@@ -1397,7 +1420,17 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="drinkJarBoiledWater" count="1"/>
 </recipe>
 
+<recipe name="drinkJarGoldenRodTea" count="1" craft_area="playerOven" craft_tool="toolCookingPot" tags="learnable">
+	<ingredient name="resourceCropGoldenrodPlant" count="1"/>
+	<ingredient name="drinkJarBoiledWater" count="1"/>
+</recipe>
+
 <recipe name="drinkJarGrainAlcohol" count="1" craft_area="campfire" craft_tool="toolBeaker" tags="learnable">
+	<ingredient name="foodCornMeal" count="3"/>
+	<ingredient name="drinkJarBoiledWater" count="1"/>
+</recipe>
+
+<recipe name="drinkJarGrainAlcohol" count="1" craft_area="playerOven" craft_tool="toolBeaker" tags="learnable">
 	<ingredient name="foodCornMeal" count="3"/>
 	<ingredient name="drinkJarBoiledWater" count="1"/>
 </recipe>
@@ -1414,7 +1447,21 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="ammoGasCan" count="1"/>
 </recipe>
 
+<recipe name="drinkJarGrandpasAwesomeSauce" count="1" craft_area="playerOven" craft_tool="toolCookingPot" tags="learnable">
+	<ingredient name="casinoCoin" count="50"/>
+	<ingredient name="foodHoney" count="5"/>
+	<ingredient name="foodCropMushrooms" count="5"/>
+	<ingredient name="ammoGasCan" count="1"/>
+</recipe>
+
 <recipe name="drinkJarGrandpasLearningElixir" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="learnable">
+	<ingredient name="foodCanDogfood" count="5"/>
+	<ingredient name="drinkJarRedTea" count="5"/>
+	<ingredient name="resourceAcid" count="1"/>
+	<ingredient name="drinkJarBeer" count="1"/>
+</recipe>
+
+<recipe name="drinkJarGrandpasLearningElixir" count="1" craft_area="playerOven" craft_tool="toolCookingPot" tags="learnable">
 	<ingredient name="foodCanDogfood" count="5"/>
 	<ingredient name="drinkJarRedTea" count="5"/>
 	<ingredient name="resourceAcid" count="1"/>
@@ -1428,7 +1475,19 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="resourceAcid" count="1"/>
 </recipe>
 
+<recipe name="drinkJarGrandpasMoonshine" count="1" craft_area="playerOven" craft_tool="toolCookingPot" tags="learnable">
+	<ingredient name="foodCornMeal" count="5"/>
+	<ingredient name="drinkJarGrainAlcohol" count="1"/>
+	<ingredient name="foodCropBlueberries" count="5"/>
+	<ingredient name="resourceAcid" count="1"/>
+</recipe>
+
 <recipe name="drinkJarRedTea" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="learnable">
+	<ingredient name="resourceCropChrysanthemumPlant" count="1"/>
+	<ingredient name="drinkJarBoiledWater" count="1"/>
+</recipe>
+
+<recipe name="drinkJarRedTea" count="1" craft_area="playerOven" craft_tool="toolCookingPot" tags="learnable">
 	<ingredient name="resourceCropChrysanthemumPlant" count="1"/>
 	<ingredient name="drinkJarBoiledWater" count="1"/>
 </recipe>
@@ -1438,7 +1497,18 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="drinkJarEmpty" count="1"/>
 </recipe>
 
+<recipe name="drinkJarRiverWater" count="1" craft_area="playerOven">
+	<ingredient name="resourceSnowBall" count="1"/>
+	<ingredient name="drinkJarEmpty" count="1"/>
+</recipe>
+
 <recipe name="drinkJarSnowberryJuice" count="1" craft_area="campfire" craft_tool="toolCookingPot">
+	<ingredient name="medicalSnowberryExtract" count="2"/>
+	<ingredient name="foodCropBlueberries" count="2"/>
+	<ingredient name="drinkJarBoiledWater" count="1"/>
+</recipe>
+
+<recipe name="drinkJarSnowberryJuice" count="1" craft_area="playerOven" craft_tool="toolCookingPot">
 	<ingredient name="medicalSnowberryExtract" count="2"/>
 	<ingredient name="foodCropBlueberries" count="2"/>
 	<ingredient name="drinkJarBoiledWater" count="1"/>
@@ -1464,7 +1534,17 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="drinkJarBoiledWater" count="1"/>
 </recipe>
 
+<recipe name="AppleJuice" count="1" craft_area="playerOven" craft_tool="toolCookingPot" tags="learnable">
+	<ingredient name="Apple" count="5"/>
+	<ingredient name="drinkJarBoiledWater" count="1"/>
+</recipe>
+
 <recipe name="blackberryJuice" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="learnable">
+	<ingredient name="blackberries" count="10"/>
+	<ingredient name="drinkJarBoiledWater" count="1"/>
+</recipe>
+
+<recipe name="blackberryJuice" count="1" craft_area="playerOven" craft_tool="toolCookingPot" tags="learnable">
 	<ingredient name="blackberries" count="10"/>
 	<ingredient name="drinkJarBoiledWater" count="1"/>
 </recipe>
@@ -1474,6 +1554,11 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 </recipe>
 
 <recipe name="GreenTea" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="learnable">
+	<ingredient name="GreenTeaExtract" count="4"/>
+	<ingredient name="drinkJarBoiledWater" count="1"/>
+</recipe>
+
+<recipe name="GreenTea" count="1" craft_area="playerOven" craft_tool="toolCookingPot" tags="learnable">
 	<ingredient name="GreenTeaExtract" count="4"/>
 	<ingredient name="drinkJarBoiledWater" count="1"/>
 </recipe>
@@ -1490,6 +1575,11 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 </recipe>
 
 <recipe name="hotChocolate" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="learnable">
+	<ingredient name="cocoaBeans" count="15"/>
+	<ingredient name="drinkJarBoiledWater" count="1"/>
+</recipe>
+
+<recipe name="hotChocolate" count="1" craft_area="playerOven" craft_tool="toolCookingPot" tags="learnable">
 	<ingredient name="cocoaBeans" count="15"/>
 	<ingredient name="drinkJarBoiledWater" count="1"/>
 </recipe>
@@ -1657,6 +1747,12 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 </recipe>
 
 <recipe name="drugAntibiotics" count="1" craft_area="campfire" craft_tool="toolBeaker">
+	<ingredient name="foodMoldyBread" count="4"/>
+	<ingredient name="resourcePotassiumNitratePowder" count="3"/>
+	<ingredient name="drinkJarBoiledWater" count="1"/>
+</recipe>
+
+<recipe name="drugAntibiotics" count="1" craft_area="playerOven" craft_tool="toolBeaker">
 	<ingredient name="foodMoldyBread" count="4"/>
 	<ingredient name="resourcePotassiumNitratePowder" count="3"/>
 	<ingredient name="drinkJarBoiledWater" count="1"/>
@@ -1944,7 +2040,19 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="foodCropPotato" count="1"/>
 </recipe>
 
+<recipe name="foodBakedPotato" count="1" craft_area="playerOven" tags="learnable">
+	<ingredient name="foodCropPotato" count="1"/>
+</recipe>
+
 <recipe name="foodBlueberryPie" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="learnable">
+	<ingredient name="foodCropBlueberries" count="5"/>
+	<ingredient name="foodEgg" count="1"/>
+	<ingredient name="Dough" count="2"/>
+	<ingredient name="resourceAnimalFat" count="1"/>
+	<ingredient name="drinkJarBoiledWater" count="1"/>
+</recipe>
+
+<recipe name="foodBlueberryPie" count="1" craft_area="playerOven" craft_tool="toolCookingPot" tags="learnable">
 	<ingredient name="foodCropBlueberries" count="5"/>
 	<ingredient name="foodEgg" count="1"/>
 	<ingredient name="Dough" count="2"/>
@@ -1960,13 +2068,32 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="resourcePaint" count="1"/>
 </recipe>
 
+<recipe name="foodCanHam" count="1" craft_area="playerOven" craft_tool="toolCookingPot" tags="learnable">
+	<ingredient name="drinkCanEmpty" count="1"/>
+	<ingredient name="foodRottingFlesh" count="1"/>
+	<ingredient name="resourceFemur" count="1"/>
+	<ingredient name="resourceAnimalFat" count="1"/>
+	<ingredient name="resourcePaint" count="1"/>
+</recipe>
+
 <recipe name="foodChiliDog" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="learnable">
 	<ingredient name="foodCanChili" count="1"/>
 	<ingredient name="foodCornBread" count="1"/>
 	<ingredient name="rawRedMeat" count="5"/>
 </recipe>
 
+<recipe name="foodChiliDog" count="1" craft_area="playerOven" craft_tool="toolCookingPot" tags="learnable">
+	<ingredient name="foodCanChili" count="1"/>
+	<ingredient name="foodCornBread" count="1"/>
+	<ingredient name="rawRedMeat" count="5"/>
+</recipe>
+
 <recipe name="foodCornBread" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="learnable">
+	<ingredient name="foodCornMeal" count="1"/>
+	<ingredient name="drinkJarBoiledWater" count="1"/>
+</recipe>
+
+<recipe name="foodCornBread" count="1" craft_area="playerOven" craft_tool="toolCookingPot" tags="learnable">
 	<ingredient name="foodCornMeal" count="1"/>
 	<ingredient name="drinkJarBoiledWater" count="1"/>
 </recipe>
@@ -1980,7 +2107,17 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="drinkJarBoiledWater" count="1"/>
 </recipe>
 
+<recipe name="foodCornOnTheCob" count="1" craft_area="playerOven" craft_tool="toolCookingPot" tags="learnable">
+	<ingredient name="foodCropCorn" count="1"/>
+	<ingredient name="drinkJarBoiledWater" count="1"/>
+</recipe>
+
 <recipe name="foodEggBoiled" count="1" craft_area="campfire" craft_tool="toolCookingPot" >
+	<ingredient name="foodEgg" count="1"/>
+	<ingredient name="drinkJarBoiledWater" count="1"/>
+</recipe>
+
+<recipe name="foodEggBoiled" count="1" craft_area="playerOven" craft_tool="toolCookingPot" >
 	<ingredient name="foodEgg" count="1"/>
 	<ingredient name="drinkJarBoiledWater" count="1"/>
 </recipe>
@@ -1990,7 +2127,20 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="foodCornMeal" count="2"/>
 </recipe>
 
+<recipe name="foodFishTacos" count="1" craft_area="playerOven" craft_tool="toolCookingGrill" tags="learnable">
+	<ingredient name="foodCanSalmon" count="1"/>
+	<ingredient name="foodCornMeal" count="2"/>
+</recipe>
+
 <recipe name="foodHoboStew" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="learnable">
+	<ingredient name="foodRottingFlesh" count="10"/>
+	<ingredient name="foodCropPotato" count="2"/>
+	<ingredient name="foodCropCorn" count="2"/>
+	<ingredient name="drinkJarBoiledWater" count="1"/>
+	<ingredient name="resourceAnimalFat" count="1"/>
+</recipe>
+
+<recipe name="foodHoboStew" count="1" craft_area="playerOven" craft_tool="toolCookingPot" tags="learnable">
 	<ingredient name="foodRottingFlesh" count="10"/>
 	<ingredient name="foodCropPotato" count="2"/>
 	<ingredient name="foodCropCorn" count="2"/>
@@ -2017,7 +2167,21 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="drinkJarBoiledWater" count="1"/>
 </recipe>
 
+<recipe name="foodShamChowder" count="1" craft_area="playerOven" craft_tool="toolCookingPot" tags="learnable">
+	<ingredient name="foodShamSandwich" count="1"/>
+	<ingredient name="foodCropPotato" count="2"/>
+	<ingredient name="foodCropCorn" count="2"/>
+	<ingredient name="drinkJarBoiledWater" count="1"/>
+</recipe>
+
 <recipe name="foodSteakAndPotato" count="1" craft_area="campfire" craft_tool="toolCookingGrill" tags="learnable">
+	<ingredient name="rawRedMeat" count="10"/>
+	<ingredient name="foodCropPotato" count="2"/>
+	<ingredient name="foodCropMushrooms" count="2"/>
+	<ingredient name="resourceAnimalFat" count="1"/>
+</recipe>
+
+<recipe name="foodSteakAndPotato" count="1" craft_area="playerOven" craft_tool="toolCookingGrill" tags="learnable">
 	<ingredient name="rawRedMeat" count="10"/>
 	<ingredient name="foodCropPotato" count="2"/>
 	<ingredient name="foodCropMushrooms" count="2"/>
@@ -2031,9 +2195,21 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="drinkJarBoiledWater" count="1"/>
 </recipe>
 
+<recipe name="foodVegetableStew" count="1" craft_area="playerOven" craft_tool="toolCookingPot" tags="learnable">
+	<ingredient name="foodCropPotato" count="2"/>
+	<ingredient name="foodCropCorn" count="2"/>
+	<ingredient name="foodCropMushrooms" count="2"/>
+	<ingredient name="drinkJarBoiledWater" count="1"/>
+</recipe>
+
 <!-- WOTW Mod Food Recipes -->
 
 <recipe name="meatWhiteFried" count="1" craft_area="campfire">
+	<ingredient name="rawWhiteMeat" count="1"/>
+	<ingredient name="resourceAnimalFat" count="1"/>
+</recipe>
+
+<recipe name="meatWhiteFried" count="1" craft_area="playerOven">
 	<ingredient name="rawWhiteMeat" count="1"/>
 	<ingredient name="resourceAnimalFat" count="1"/>
 </recipe>
@@ -2046,6 +2222,10 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 </recipe>
 
 <recipe name="whiteMeatGrilled" count="1" craft_area="campfire" craft_tool="toolCookingGrill">
+	<ingredient name="rawWhiteMeat" count="1"/>
+</recipe>
+
+<recipe name="whiteMeatGrilled" count="1" craft_area="playerOven" craft_tool="toolCookingGrill">
 	<ingredient name="rawWhiteMeat" count="1"/>
 </recipe>
 
@@ -2065,6 +2245,11 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 </recipe>
 
 <recipe name="RabbitonaStick" count="1" craft_area="campfire">
+	<ingredient name="rawRedMeat" count="1"/>
+	<ingredient name="resourceWood" count="1"/>
+</recipe>
+
+<recipe name="RabbitonaStick" count="1" craft_area="playerOven">
 	<ingredient name="rawRedMeat" count="1"/>
 	<ingredient name="resourceWood" count="1"/>
 </recipe>
@@ -2094,7 +2279,7 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 </recipe>
 
 <recipe name="whiteMeatPie" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="learnable">
-    <ingredient name="rawRedMeat" count="10"/>
+    <ingredient name="rawWhiteMeat" count="10"/>
     <ingredient name="Dough" count="2"/>
     <ingredient name="foodCropPotato" count="4"/>
     <ingredient name="foodCropCorn" count="4"/>
@@ -2112,11 +2297,24 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="resourceAnimalFat" count="1"/>
 </recipe>
 
+<recipe name="redMeatFried" count="1" craft_area="playerOven">
+	<ingredient name="rawRedMeat" count="1"/>
+	<ingredient name="resourceAnimalFat" count="1"/>
+</recipe>
+
 <recipe name="redmeatGrilled" count="1" craft_area="campfire" craft_tool="toolCookingGrill">
 	<ingredient name="rawRedMeat" count="2"/>
 </recipe>
 
+<recipe name="redmeatGrilled" count="1" craft_area="playerOven" craft_tool="toolCookingGrill">
+	<ingredient name="rawRedMeat" count="2"/>
+</recipe>
+
 <recipe name="FishGrilled" count="1" craft_area="campfire" craft_tool="toolCookingGrill">
+	<ingredient name="Fish" count="1"/>
+</recipe>
+
+<recipe name="FishGrilled" count="1" craft_area="playerOven" craft_tool="toolCookingGrill">
 	<ingredient name="Fish" count="1"/>
 </recipe>
 
@@ -2814,7 +3012,7 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="resourceFemur" count="1"/>
 </recipe>
 
-<recipe name="meleeClubIron" count="1">
+<recipe name="meleeClubIron" count="1" tags="learnable">
 	<ingredient name="resourceScrapIron" count="100"/>
 	<ingredient name="resourceWood" count="10"/>
 </recipe>
@@ -4419,7 +4617,7 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="resourceCropCottonPlant" count="2"/>
 </recipe>
 
-<recipe name="resourceCobblestones" count="1">
+<recipe name="resourceCobblestones" count="1" tags="learnable">
 	<ingredient name="resourceClayLump" count="1"/>
 	<ingredient name="resourceRockSmall" count="1"/>
 </recipe>
@@ -4456,6 +4654,11 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 </recipe>
 
 <recipe name="resourceGlue" count="1" craft_area="campfire" craft_tool="toolCookingPot">
+	<ingredient name="resourceFemur" count="1"/>
+	<ingredient name="drinkJarRiverWater" count="1"/>
+</recipe>
+
+<recipe name="resourceGlue" count="1" craft_area="playerOven" craft_tool="toolCookingPot">
 	<ingredient name="resourceFemur" count="1"/>
 	<ingredient name="drinkJarRiverWater" count="1"/>
 </recipe>
@@ -4552,6 +4755,10 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 </recipe>
 
 <recipe name="resourceTallow" count="1" craft_area="campfire" craft_tool="toolCookingPot">
+	<ingredient name="resourceAnimalFat" count="1"/>
+</recipe>
+
+<recipe name="resourceTallow" count="1" craft_area="playerOven" craft_tool="toolCookingPot">
 	<ingredient name="resourceAnimalFat" count="1"/>
 </recipe>
 
@@ -4672,6 +4879,11 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 </recipe>
 
 <recipe name="resourceScrapBrass" count="4" craft_time="2" craft_area="campfire" craft_tool="toolBeaker">
+	<ingredient name="ZincFragment" count="4"/>
+	<ingredient name="CopperFragment" count="4"/>
+</recipe>
+
+<recipe name="resourceScrapBrass" count="4" craft_time="2" craft_area="playerOven" craft_tool="toolBeaker">
 	<ingredient name="ZincFragment" count="4"/>
 	<ingredient name="CopperFragment" count="4"/>
 </recipe>
@@ -5330,7 +5542,7 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="resourceElectricParts" count="20"/>
 </recipe>
 
-<recipe name="vehicle4x4TruckPlaceable" count="1" craft_time="210" craft_area="workbench">
+<recipe name="vehicle4x4TruckPlaceable" count="1" craft_time="210" craft_area="workbench" tags="learnable">
 	<ingredient name="vehicleWheels" count="4"/>
 	<ingredient name="vehicle4x4TruckChassis" count="1"/>
 	<ingredient name="vehicle4x4TruckAccessories" count="1"/>

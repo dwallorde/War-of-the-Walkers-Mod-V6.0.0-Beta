@@ -5456,13 +5456,13 @@
 	<property name="difficulty" value="easy" />
 	<property name="shareable" value="false" />
 		
-		<objective type="FetchKeep" id="resourceCropCottonPlant" value="25" />
-		<objective type="FetchKeep" id="resourceCropGoldenrodPlant" value="25" />
-		<objective type="FetchKeep" id="resourceCropChrysanthemumPlant" value="25" />
-		<objective type="FetchKeep" id="foodCropCorn" value="25" />
-		<objective type="FetchKeep" id="foodCropPotato" value="25" />
-		<objective type="FetchKeep" id="foodCropBlueberries" value="25" />
-		<objective type="FetchKeep" id="resourceCropCoffeeBeans" value="25" />
+		<objective type="FetchKeep" id="resourceCropCottonPlant" value="60" />
+		<objective type="FetchKeep" id="resourceCropGoldenrodPlant" value="60" />
+		<objective type="FetchKeep" id="resourceCropChrysanthemumPlant" value="60" />
+		<objective type="FetchKeep" id="foodCropCorn" value="60" />
+		<objective type="FetchKeep" id="foodCropPotato" value="60" />
+		<objective type="FetchKeep" id="foodCropBlueberries" value="60" />
+		<objective type="FetchKeep" id="resourceCropCoffeeBeans" value="60" />
 		
 		<reward type="Exp" value="10000" />
 		<reward type="Quest" id="classtrainingscholar3" />
@@ -5481,13 +5481,13 @@
 	<property name="difficulty" value="easy" />
 	<property name="shareable" value="false" />
 		
-		<objective type="Craft" id="plantedCotton1" value="25" />
-		<objective type="Craft" id="plantedGoldenrod1" value="25" />
-		<objective type="Craft" id="plantedChrysanthemum1" value="25" />
-		<objective type="Craft" id="plantedCorn1" value="25" />
-		<objective type="Craft" id="plantedPotato1" value="25" />
-		<objective type="Craft" id="plantedBlueberry1" value="25" />
-		<objective type="Craft" id="plantedCoffee1" value="25" />
+		<objective type="Craft" id="plantedCotton1" value="15" />
+		<objective type="Craft" id="plantedGoldenrod1" value="15" />
+		<objective type="Craft" id="plantedChrysanthemum1" value="15" />
+		<objective type="Craft" id="plantedCorn1" value="15" />
+		<objective type="Craft" id="plantedPotato1" value="15" />
+		<objective type="Craft" id="plantedBlueberry1" value="15" />
+		<objective type="Craft" id="plantedCoffee1" value="15" />
 		
 		<reward type="Exp" value="10000" />
 		<reward type="Quest" id="classtrainingscholar4" />
@@ -5506,13 +5506,13 @@
 	<property name="difficulty" value="easy" />
 	<property name="shareable" value="false" />
 		
-		<objective type="BlockPlace" id="plantedCotton1" value="25" />
-		<objective type="BlockPlace" id="plantedGoldenrod1" value="25" />
-		<objective type="BlockPlace" id="plantedChrysanthemum1" value="25" />
-		<objective type="BlockPlace" id="plantedCorn1" value="25" />
-		<objective type="BlockPlace" id="plantedPotato1" value="25" />
-		<objective type="BlockPlace" id="plantedBlueberry1" value="25" />
-		<objective type="BlockPlace" id="plantedCoffee1" value="25" />
+		<objective type="BlockPlace" id="plantedCotton1" value="15" />
+		<objective type="BlockPlace" id="plantedGoldenrod1" value="15" />
+		<objective type="BlockPlace" id="plantedChrysanthemum1" value="15" />
+		<objective type="BlockPlace" id="plantedCorn1" value="15" />
+		<objective type="BlockPlace" id="plantedPotato1" value="15" />
+		<objective type="BlockPlace" id="plantedBlueberry1" value="15" />
+		<objective type="BlockPlace" id="plantedCoffee1" value="15" />
 		
 		<reward type="Exp" value="10000" />
 		<reward type="Recipe" id="ClassPaperScholar" />

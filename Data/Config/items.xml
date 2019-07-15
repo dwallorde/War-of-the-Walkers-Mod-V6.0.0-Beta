@@ -338,7 +338,7 @@ We _want_ players to specialise so we also have to make it feasible.
 		<property name="Repair_amount" value="200"/>
 		<property name="Upgrade_hit_offset" value="-2"/>
 		<property name="Sound_start" value="repair_block"/>
-		<property name="Allowed_upgrade_items" value="resourceWood,resourceClayLump,resourceSnowBall,resourceScrapIron,resourceForgedIron,resourceForgedSteel,resourceConcreteMix,resourceCobblestones,resourceYuccaFibers,resourceCloth,resourceScrapPolymers,resourceNail"/>
+		<property name="Allowed_upgrade_items" value="resourceWood,resourceClayLump,resourceSnowBall,resourceScrapIron,resourceForgedIron,resourceForgedSteel,resourceConcreteMix,resourceCobblestones,resourceYuccaFibers,resourceCloth,resourceScrapPolymers,resourceNail,scrapIronAndRivets,woodAndNails"/>
 		<property name="UsePowerAttackAnimation" value="false"/>
 	</property>
 	<effect_group name="Base Effects">
@@ -965,6 +965,7 @@ We _want_ players to specialise so we also have to make it feasible.
 <item name="meleeToolShovelIron">
 	<property name="Tags" value="csIronTools,melee,medium,tool,shovel,perkDeepCuts,perkMotherLode"/>
 	<property name="Extends" value="meleeToolShovelStone"/>
+	<property name="CustomIcon" value="meleeToolShovelIron"/>
 	<property name="Meshfile" value="Items/Tools/shovel_ironPrefab"/>
 	<property name="Material" value="Mmetal"/>
 	<property name="RepairTools" value="resourceForgedIron"/>
@@ -8781,7 +8782,7 @@ So no clothing dyes until that can be resolved. -->
 	<property name="Meshfile" value="Items/Food/bottled_waterPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="Mglass"/>
-	<property name="Stacknumber" value="15"/> <!-- STK drink -->
+	<property name="Stacknumber" value="25"/> <!-- STK drink -->
 	<property name="Weight" value="10"/>
 	<property name="EconomicValue" value="40"/>
 	<property name="CraftingIngredientTime" value="15"/>
@@ -8843,7 +8844,7 @@ So no clothing dyes until that can be resolved. -->
 	<property name="Meshfile" value="Items/Food/bottled_waterPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="Morganic"/>
-	<property name="Stacknumber" value="15"/> <!-- STK drink -->
+	<property name="Stacknumber" value="25"/> <!-- STK drink -->
 	<property name="EconomicValue" value="68"/>
 	<property name="CraftingSkillGroup" value="craftSkillCooking"/>
 	<property class="Action0">
@@ -8877,7 +8878,7 @@ So no clothing dyes until that can be resolved. -->
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="Mglass"/>
 	<property name="Weight" value="10"/>
-	<property name="Stacknumber" value="15"/> <!-- STK drink -->
+	<property name="Stacknumber" value="25"/> <!-- STK drink -->
 	<property name="EconomicValue" value="48"/>
 	<property name="CraftingSkillGroup" value="craftSkillCooking"/>
 	<property class="Action0">
@@ -8921,7 +8922,7 @@ So no clothing dyes until that can be resolved. -->
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="Mglass"/>
 	<property name="Weight" value="10"/>
-	<property name="Stacknumber" value="15"/> <!-- STK drink -->
+	<property name="Stacknumber" value="25"/> <!-- STK drink -->
 	<property name="EconomicValue" value="48"/>
 	<property name="CraftingSkillGroup" value="craftSkillCooking"/>
 	<property class="Action0">
@@ -8959,7 +8960,7 @@ So no clothing dyes until that can be resolved. -->
 	<property name="Meshfile" value="Items/Food/bottled_waterPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="Morganic"/>
-	<property name="Stacknumber" value="15"/> <!-- STK drink -->
+	<property name="Stacknumber" value="25"/> <!-- STK drink -->
 	<property name="EconomicValue" value="156"/>
 	<property name="CraftingSkillGroup" value="craftSkillCooking"/>
 	<property class="Action0">
@@ -9020,7 +9021,7 @@ So no clothing dyes until that can be resolved. -->
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="Morganic"/>
 	<property name="Weight" value="10"/>
-	<property name="Stacknumber" value="15"/> <!-- STK drink -->
+	<property name="Stacknumber" value="25"/> <!-- STK drink -->
 	<property name="EconomicValue" value="96"/>
 	<property name="CraftingSkillGroup" value="craftSkillCooking"/>
 	<property class="Action0">
@@ -9052,7 +9053,7 @@ So no clothing dyes until that can be resolved. -->
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="Mglass"/>
 	<property name="Weight" value="10"/>
-	<property name="Stacknumber" value="15"/> <!-- STK drink -->
+	<property name="Stacknumber" value="25"/> <!-- STK drink -->
 	<property name="EconomicValue" value="100"/>
 	<property name="CraftingSkillGroup" value="craftSkillCooking"/>
 	<property class="Action0">
@@ -9081,7 +9082,7 @@ So no clothing dyes until that can be resolved. -->
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="Mglass"/>
 	<property name="Weight" value="10"/>
-	<property name="Stacknumber" value="15"/> <!-- STK resource -->
+	<property name="Stacknumber" value="25"/> <!-- STK resource -->
 	<property name="EconomicValue" value="48"/>
 	<property name="CraftingSkillGroup" value="craftSkillCooking"/>
 		<!--
@@ -9115,7 +9116,7 @@ So no clothing dyes until that can be resolved. -->
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="Mglass"/>
 	<property name="Weight" value="10"/>
-	<property name="Stacknumber" value="15"/> <!-- STK resource -->
+	<property name="Stacknumber" value="25"/> <!-- STK resource -->
 	<property name="EconomicValue" value="500"/>
 	<property name="CraftingSkillGroup" value="craftSkillCooking"/>
 	<property class="Action0">
@@ -9139,7 +9140,7 @@ So no clothing dyes until that can be resolved. -->
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="Mglass"/>
 	<property name="Weight" value="10"/>
-	<property name="Stacknumber" value="15"/> <!-- STK resource -->
+	<property name="Stacknumber" value="25"/> <!-- STK resource -->
 	<property name="EconomicValue" value="500"/>
 	<property name="CraftingSkillGroup" value="craftSkillCooking"/>
 	<property class="Action0">
@@ -10939,7 +10940,7 @@ So no clothing dyes until that can be resolved. -->
 	<property name="Material" value="MresourceYuccaFibers"/>
 	<property name="RepairTime" value="1"/>
 	<property name="RepairAmount" value="30"/>
-	<property name="Stacknumber" value="6000"/> <!-- STK resource -->
+	<property name="Stacknumber" value="10000"/> <!-- STK resource -->
 	<property name="FuelValue" value="1"/>
 	<property name="EconomicValue" value="5"/>
 	<property name="EconomicBundleSize" value="50"/>
@@ -10958,7 +10959,7 @@ So no clothing dyes until that can be resolved. -->
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="MresourceWood"/>
 	<property name="Weight" value="5"/>
-	<property name="Stacknumber" value="6000"/> <!-- STK resource -->
+	<property name="Stacknumber" value="10000"/> <!-- STK resource -->
 	<property name="FuelValue" value="50"/>
 	<property name="EconomicValue" value="25"/>
 	<property name="EconomicBundleSize" value="50"/>
@@ -10974,7 +10975,7 @@ So no clothing dyes until that can be resolved. -->
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="MresourceCrushedSand"/>
 	<property name="Weight" value="5"/>
-	<property name="Stacknumber" value="6000"/> <!-- STK resource -->
+	<property name="Stacknumber" value="10000"/> <!-- STK resource -->
 	<property name="EconomicValue" value="50"/>
 	<property name="EconomicBundleSize" value="50"/>
 	<property name="Group" value="Resources"/>
@@ -10986,7 +10987,7 @@ So no clothing dyes until that can be resolved. -->
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="MresourceIronFragment"/>
 	<property name="Weight" value="5"/>
-	<property name="Stacknumber" value="1200"/> <!-- STK resource -->
+	<property name="Stacknumber" value="10000"/> <!-- STK resource -->
 	<property name="SellableToTrader" value="false"/>
 	<property name="EconomicValue" value="25"/>
 	<property name="EconomicBundleSize" value="5"/>
@@ -11000,7 +11001,7 @@ So no clothing dyes until that can be resolved. -->
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="MresourceScrapIron"/>
 	<property name="Weight" value="1"/>
-	<property name="Stacknumber" value="6000"/> <!-- STK resource -->
+	<property name="Stacknumber" value="10000"/> <!-- STK resource -->
 	<property name="EconomicValue" value="10"/>
 	<property name="EconomicBundleSize" value="10"/>
 	<property name="Group" value="Resources"/>
@@ -11067,7 +11068,7 @@ So no clothing dyes until that can be resolved. -->
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="MresourceOilShale"/>
-	<property name="Stacknumber" value="6000"/> <!-- STK resource -->
+	<property name="Stacknumber" value="10000"/> <!-- STK resource -->
 	<property name="FuelValue" value="5"/>
 	<property name="EconomicValue" value="5"/>
 	<property name="EconomicBundleSize" value="50"/>
@@ -11257,7 +11258,7 @@ So no clothing dyes until that can be resolved. -->
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="MresourceScrapBrassSmall"/>
-	<property name="Stacknumber" value="6000"/> <!-- STK resource -->
+	<property name="Stacknumber" value="10000"/> <!-- STK resource -->
 	<property name="Weight" value="1"/>
 	<property name="EconomicValue" value="20"/>
 	<property name="EconomicBundleSize" value="10"/>
@@ -11269,7 +11270,7 @@ So no clothing dyes until that can be resolved. -->
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="MresourceScrapLeadSmall"/>
-	<property name="Stacknumber" value="6000"/> <!-- STK resource -->
+	<property name="Stacknumber" value="10000"/> <!-- STK resource -->
 	<property name="Weight" value="1"/>
 	<property name="EconomicValue" value="20"/>
 	<property name="EconomicBundleSize" value="10"/>
@@ -11282,7 +11283,7 @@ So no clothing dyes until that can be resolved. -->
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="MresourceClayLump"/>
 	<property name="Weight" value="5"/>
-	<property name="Stacknumber" value="6000"/> <!-- STK resource -->
+	<property name="Stacknumber" value="10000"/> <!-- STK resource -->
 	<property name="EconomicValue" value="6"/>
 	<property name="EconomicBundleSize" value="150"/>
 	<property name="Group" value="Resources"/>
@@ -11307,7 +11308,7 @@ So no clothing dyes until that can be resolved. -->
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="MresourceCobblestones"/>
-	<property name="Stacknumber" value="1000"/> <!-- STK resource -->
+	<property name="Stacknumber" value="2000"/> <!-- STK resource -->
 	<property name="EconomicValue" value="10"/>
 	<property name="EconomicBundleSize" value="100"/>
 	<property name="Group" value="Resources"/>
@@ -11318,7 +11319,7 @@ So no clothing dyes until that can be resolved. -->
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="MresourceCement"/>
-	<property name="Stacknumber" value="1000"/> <!-- STK resource -->
+	<property name="Stacknumber" value="2000"/> <!-- STK resource -->
 	<property name="EconomicValue" value="75"/>
 	<property name="EconomicBundleSize" value="50"/>
 	<property name="Group" value="Building,Resources"/>
@@ -11330,7 +11331,7 @@ So no clothing dyes until that can be resolved. -->
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="MresourceConcreteMix"/>
 	<property name="Weight" value="20"/>
-	<property name="Stacknumber" value="1000"/> <!-- STK resource -->
+	<property name="Stacknumber" value="2000"/> <!-- STK resource -->
 	<property name="EconomicValue" value="125"/>
 	<property name="EconomicBundleSize" value="50"/>
 	<property name="Group" value="Resources"/>
@@ -11894,7 +11895,7 @@ So no clothing dyes until that can be resolved. -->
 	<property name="RepairTools" value="resourceRepairKit"/>
 	<property name="Stacknumber" value="1"/>
 	<property name="Weight" value="160"/>
-	<property name="EconomicValue" value="500"/>
+	<property name="EconomicValue" value="750"/>
 	<property name="Group" value="Resources"/>
 	<property name="DegradationBreaksAfter" value="false"/>
 	<property class="Attributes">
@@ -12493,6 +12494,7 @@ So no clothing dyes until that can be resolved. -->
 
 <item name="Apple">
 	<property name="Tags" value="csCooking"/>
+	<property name="DisplayType" value="food"/>
 	<property name="CustomIcon" value="Apple" />
 	<property name="DisplayType" value="food"/>
 	<property name="Meshfile" value="#PlantedApple.unity3d?Apple" />
@@ -12522,9 +12524,10 @@ So no clothing dyes until that can be resolved. -->
 
 <item name="blackberries">
 	<property name="Tags" value="csCooking"/>
+	<property name="DisplayType" value="food"/>
 	<property name="CustomIcon" value="blackberries"/>
 	<property name="Meshfile" value="Items/Food/blueberriesPrefab"/>
-	<property name="Material" value="Mplants"/>
+	<property name="Material" value="MresourceCrop"/>
 	<property name="HoldType" value="23"/>
 	<property name="Stacknumber" value="500"/> <!-- STK resource -->
 	<property name="EconomicValue" value="30"/>
@@ -12549,9 +12552,10 @@ So no clothing dyes until that can be resolved. -->
 
 <item name="cocoaBeans">
 	<property name="Tags" value="csCooking"/>
+	<property name="DisplayType" value="food"/>
 	<property name="CustomIcon" value="cocoaBeans"/>
 	<property name="Meshfile" value="Items/Food/seed_blueberryPrefab"/>
-	<property name="Material" value="Mplants"/>
+	<property name="Material" value="MresourceCrop"/>
 	<property name="HoldType" value="21"/>
 	<property name="Stacknumber" value="500"/> <!-- STK resource -->
 	<property name="EconomicValue" value="12"/>
@@ -12575,9 +12579,10 @@ So no clothing dyes until that can be resolved. -->
 
 <item name="carrot">
 	<property name="Tags" value="csCooking"/>
+	<property name="DisplayType" value="food"/>
 	<property name="CustomIcon" value="carrot"/>
 	<property name="Meshfile" value="#PlantedCarrot.unity3d?Carrot"/>
-	<property name="Material" value="Mplants"/>
+	<property name="Material" value="MresourceCrop"/>
 	<property name="HoldType" value="3"/>
 	<property name="Stacknumber" value="500"/> <!-- STK resource -->
 	<property name="EconomicValue" value="20"/>
@@ -12602,9 +12607,10 @@ So no clothing dyes until that can be resolved. -->
 
 <item name="cucumber">
 	<property name="Tags" value="csCooking"/>
+	<property name="DisplayType" value="food"/>
 	<property name="CustomIcon" value="cucumber"/>
 	<property name="Meshfile" value="#PlantedCucumber.unity3d?Cucumber"/>
-	<property name="Material" value="Mplants"/>
+	<property name="Material" value="MresourceCrop"/>
 	<property name="HoldType" value="3"/>
 	<property name="Stacknumber" value="500"/> <!-- STK resource -->
 	<property name="EconomicValue" value="20"/>
@@ -12629,9 +12635,10 @@ So no clothing dyes until that can be resolved. -->
 
 <item name="leek">
 	<property name="Tags" value="csCooking"/>
+	<property name="DisplayType" value="food"/>
 	<property name="CustomIcon" value="leek"/>
 	<property name="Meshfile" value="#PlantedLeek.unity3d?Leek"/>
-	<property name="Material" value="Mplants"/>
+	<property name="Material" value="MresourceCrop"/>
 	<property name="HoldType" value="3"/>
 	<property name="Stacknumber" value="500"/> <!-- STK resource -->
 	<property name="EconomicValue" value="20"/>
@@ -12656,9 +12663,10 @@ So no clothing dyes until that can be resolved. -->
 
 <item name="lettuce">
 	<property name="Tags" value="csCooking"/>
+	<property name="DisplayType" value="food"/>
 	<property name="CustomIcon" value="lettuce"/>
 	<property name="Meshfile" value="#PlantedLettuce.unity3d?Lettuce"/>
-	<property name="Material" value="Mplants"/>
+	<property name="Material" value="MresourceCrop"/>
 	<property name="HoldType" value="3"/>
 	<property name="Stacknumber" value="500"/> <!-- STK resource -->
 	<property name="EconomicValue" value="20"/>
@@ -12683,9 +12691,10 @@ So no clothing dyes until that can be resolved. -->
 
 <item name="melon">
 	<property name="Tags" value="csCooking"/>
+	<property name="DisplayType" value="food"/>
 	<property name="CustomIcon" value="melon"/>
 	<property name="Meshfile" value="#PlantedMelon.unity3d?Melon"/>
-	<property name="Material" value="Mplants"/>
+	<property name="Material" value="MresourceCrop"/>
 	<property name="HoldType" value="3"/>
 	<property name="Stacknumber" value="500"/> <!-- STK resource -->
 	<property name="EconomicValue" value="20"/>
@@ -12710,9 +12719,10 @@ So no clothing dyes until that can be resolved. -->
 
 <item name="onion">
 	<property name="Tags" value="csCooking"/>
+	<property name="DisplayType" value="food"/>
 	<property name="CustomIcon" value="onion"/>
 	<property name="Meshfile" value="#PlantedOnion.unity3d?Onion"/>
-	<property name="Material" value="Mplants"/>
+	<property name="Material" value="MresourceCrop"/>
 	<property name="HoldType" value="3"/>
 	<property name="Stacknumber" value="500"/> <!-- STK resource -->
 	<property name="EconomicValue" value="20"/>
@@ -12737,9 +12747,10 @@ So no clothing dyes until that can be resolved. -->
 
 <item name="pumpkin">
 	<property name="Tags" value="csCooking"/>
+	<property name="DisplayType" value="food"/>
 	<property name="CustomIcon" value="pumpkin"/>
 	<property name="Meshfile" value="#PlantedPumpkin?Pumpkin"/>
-	<property name="Material" value="Mplants"/>
+	<property name="Material" value="MresourceCrop"/>
 	<property name="HoldType" value="3"/>
 	<property name="Stacknumber" value="500"/> <!-- STK resource -->
 	<property name="EconomicValue" value="20"/>
@@ -12763,9 +12774,10 @@ So no clothing dyes until that can be resolved. -->
 
 <item name="strawberries">
 	<property name="Tags" value="csCooking"/>
+	<property name="DisplayType" value="food"/>
 	<property name="CustomIcon" value="strawberries"/>
 	<property name="Meshfile" value="#PlantedStrawberry.unity3d?Strawberry"/>
-	<property name="Material" value="Mplants"/>
+	<property name="Material" value="MresourceCrop"/>
 	<property name="HoldType" value="23"/>
 	<property name="Stacknumber" value="500"/> 
 	<property name="EconomicValue" value="30"/>
@@ -12790,10 +12802,11 @@ So no clothing dyes until that can be resolved. -->
 
 <item name="tomato">
 	<property name="Tags" value="csCooking"/>
+	<property name="DisplayType" value="food"/>
 	<property name="CustomIcon" value="tomato"/>
 	<property name="Meshfile" value="#TomatoFood.unity3d?TomatoFoodPrefab"/>
 	<property name="DropMeshfile" value="#TomatoFood.unity3d?TomatoFoodPrefab"/>
-	<property name="Material" value="Morganic"/>
+	<property name="Material" value="MresourceCrop"/>
 	<property name="HoldType" value="23"/>
 	<property name="Stacknumber" value="500"/>
 	<property name="EconomicValue" value="20"/>
@@ -12819,7 +12832,7 @@ So no clothing dyes until that can be resolved. -->
 	<property name="Tags" value="csCooking"/>
 	<property name="CustomIcon" value="Wheat" />
 	<property name="Meshfile" value="Items/Food/cornmeal" />
-	<property name="Material" value="Morganic" />
+	<property name="Material" value="MresourceCrop" />
 	<property name="RepairTime" value="1" />
 	<property name="RepairAmount" value="10" />
 	<property name="HoldType" value="16" />
@@ -12872,6 +12885,7 @@ So no clothing dyes until that can be resolved. -->
 
 <item name="ApplePie">
 	<property name="Tags" value="csCooking"/>
+	<property name="DisplayType" value="food"/>
 	<property name="CustomIcon" value="ApplePie" />
 	<property name="Meshfile" value="Items/Food/blueberry_pie" />
 	<property name="Material" value="Morganic" />
@@ -12897,6 +12911,7 @@ So no clothing dyes until that can be resolved. -->
 
 <item name="BaconMushroomSandwich">
 	<property name="Tags" value="csCooking"/>
+	<property name="DisplayType" value="food"/>
 	<property name="CustomIcon" value="BaconMushroomSandwich" />
 	<property name="Meshfile" value="Items/Food/cornbread" />
 	<property name="Material" value="Morganic" />
@@ -12922,6 +12937,7 @@ So no clothing dyes until that can be resolved. -->
 <item name="redMeatBoiled">
 	<property name="Extends" value="foodGrilledMeat" />
 	<property name="Tags" value="csCooking"/>
+	<property name="DisplayType" value="food"/>
 	<property name="CustomIcon" value="redMeatBoiled" />
 	<property name="EconomicValue" value="75" />
 	<property class="Action0">
@@ -12942,6 +12958,7 @@ So no clothing dyes until that can be resolved. -->
 
 <item name="Bread">
 	<property name="Tags" value="csCooking"/>
+	<property name="DisplayType" value="food"/>
 	<property name="CustomIcon" value="Bread" />
 	<property name="Meshfile" value="Items/Food/cornbread" />
 	<property name="Material" value="Morganic" />
@@ -12971,6 +12988,7 @@ So no clothing dyes until that can be resolved. -->
 <item name="meatWhiteFried">
 	<property name="Extends" value="foodCharredMeat" />
 	<property name="Tags" value="csCooking"/>
+	<property name="DisplayType" value="food"/>
 	<property name="CustomIcon" value="meatWhiteFried" />
 	<property name="EconomicValue" value="20" />
 	<property class="Action0">
@@ -12992,6 +13010,7 @@ So no clothing dyes until that can be resolved. -->
 <item name="ChickenPotPie">
 	<property name="Extends" value="foodMeatStew" />
 	<property name="Tags" value="csCooking"/>
+	<property name="DisplayType" value="food"/>
 	<property name="CustomIcon" value="ChickenPotPie" />
 	<property name="EconomicValue" value="50" />
 	<property class="Action0">
@@ -13012,6 +13031,7 @@ So no clothing dyes until that can be resolved. -->
 
 <item name="chocolate">
 	<property name="Tags" value="csCooking"/>
+	<property name="DisplayType" value="food"/>
 	<property name="CustomIcon" value="chocolate"/>
 	<property name="Meshfile" value="Items/Food/venison_stewPrefab"/>
 	<property name="Material" value="Morganic"/>
@@ -13036,6 +13056,7 @@ So no clothing dyes until that can be resolved. -->
 
 <item name="CucumberSalad">
 	<property name="Tags" value="csCooking"/>
+	<property name="DisplayType" value="food"/>
 	<property name="CustomIcon" value="CucumberSalad"/>
 	<property name="Meshfile" value="Items/Food/blueberry_piePrefab"/>
 	<property name="Material" value="Morganic"/>
@@ -13061,6 +13082,7 @@ So no clothing dyes until that can be resolved. -->
 
 <item name="GreenTeaExtract">
 	<property name="Tags" value="csCooking"/>
+	<property name="DisplayType" value="food"/>
 	<property name="CustomIcon" value="GreenTeaExtract" />
 	<property name="Meshfile" value="Items/Misc/sackPrefab" />
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
@@ -13086,6 +13108,7 @@ So no clothing dyes until that can be resolved. -->
 
 <item name="HamSandwich">
 	<property name="Tags" value="csCooking"/>
+	<property name="DisplayType" value="food"/>
 	<property name="CustomIcon" value="HamSandwich" />
 	<property name="Meshfile" value="Items/Misc/parcel" />
 	<property name="Material" value="Morganic" />
@@ -13110,6 +13133,7 @@ So no clothing dyes until that can be resolved. -->
 
 <item name="redMeatPie">
 	<property name="Tags" value="csCooking"/>
+	<property name="DisplayType" value="food"/>
 	<property name="CustomIcon" value="redMeatPie" />
 	<property name="Meshfile" value="Items/Food/blueberry_pie" />
 	<property name="Material" value="Morganic" />
@@ -13136,6 +13160,7 @@ So no clothing dyes until that can be resolved. -->
 
 <item name="MushroomStew">
 	<property name="Tags" value="csCooking"/>
+	<property name="DisplayType" value="food"/>
 	<property name="CustomIcon" value="MushroomStew" />
 	<property name="Meshfile" value="Items/Food/venison_stew" />
 	<property name="Material" value="Morganic" />
@@ -13160,6 +13185,7 @@ So no clothing dyes until that can be resolved. -->
 
 <item name="whiteMeatGrilled">
 	<property name="Extends" value="foodGrilledMeat" />
+	<property name="DisplayType" value="food"/>
 	<property name="Tags" value="csCooking"/>
 	<property name="CustomIcon" value="whiteMeatGrilled" />
 	<property name="EconomicValue" value="20" />
@@ -13181,6 +13207,7 @@ So no clothing dyes until that can be resolved. -->
 
 <item name="RabbitonaStick">
 	<property name="Extends" value="foodCharredMeat" />
+	<property name="DisplayType" value="food"/>
 	<property name="Tags" value="csCooking"/>
 	<property name="CustomIcon" value="RabbitonaStick" />
 	<property name="EconomicValue" value="15" />
@@ -13202,6 +13229,7 @@ So no clothing dyes until that can be resolved. -->
 
 <item name="rawRedMeat">
 	<property name="Tags" value="csCooking"/>
+	<property name="DisplayType" value="food"/>
 	<property name="CustomIcon" value="rawRedMeat"/>
 	<property name="Meshfile" value="Items/Misc/raw_meatPrefab"/>
 	<property name="Material" value="Morganic"/>
@@ -13232,6 +13260,7 @@ So no clothing dyes until that can be resolved. -->
 
 <item name="rawWhiteMeat">
 	<property name="Extends" value="rawRedMeat" />
+	<property name="DisplayType" value="food"/>
 	<property name="Tags" value="csCooking"/>
 	<property name="CustomIcon" value="rawWhiteMeat"/>
 	<property name="Meshfile" value="Items/Misc/raw_meatPrefab"/>
@@ -13242,6 +13271,7 @@ So no clothing dyes until that can be resolved. -->
 
 <item name="whiteMeatPie">
 	<property name="Tags" value="csCooking"/>
+	<property name="DisplayType" value="food"/>
 	<property name="CustomIcon" value="whiteMeatPie" />
 	<property name="Meshfile" value="Items/Food/venison_stew" />
 	<property name="Material" value="Morganic" />
@@ -13267,6 +13297,7 @@ So no clothing dyes until that can be resolved. -->
 
 <item name="sausageAndEggs">
 	<property name="Tags" value="csCooking"/>
+	<property name="DisplayType" value="food"/>
 	<property name="CustomIcon" value="sausageAndEggs"/>
 	<property name="Meshfile" value="Items/Misc/parcelPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
@@ -13292,6 +13323,7 @@ So no clothing dyes until that can be resolved. -->
 
 <item name="strawberryJam">
 	<property name="Tags" value="csCooking"/>
+	<property name="DisplayType" value="food"/>
 	<property name="CustomIcon" value="strawberryJam"/>
 	<property name="Meshfile" value="Items/Food/bottled_waterPrefab"/>
 	<property name="Material" value="Mglass"/>
@@ -13319,6 +13351,7 @@ So no clothing dyes until that can be resolved. -->
 
 <item name="strawberryJamSandwich">
 	<property name="Tags" value="csCooking"/>
+	<property name="DisplayType" value="food"/>
 	<property name="CustomIcon" value="strawberryJamSandwich"/>
 	<property name="Meshfile" value="Items/Misc/parcelPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
@@ -13346,6 +13379,7 @@ So no clothing dyes until that can be resolved. -->
 
 <item name="summersalad">
 	<property name="Tags" value="csCooking"/>
+	<property name="DisplayType" value="food"/>
 	<property name="CustomIcon" value="summersalad"/>
 	<property name="Meshfile" value="Items/Food/blueberry_piePrefab"/>
 	<property name="Material" value="Morganic"/>
@@ -13371,6 +13405,7 @@ So no clothing dyes until that can be resolved. -->
 
 <item name="TunaSandwich">
 	<property name="Tags" value="csCooking"/>
+	<property name="DisplayType" value="food"/>
 	<property name="CustomIcon" value="TunaSandwich" />
 	<property name="Meshfile" value="Items/Misc/parcel" />
 	<property name="Material" value="Morganic" />
@@ -13396,6 +13431,7 @@ So no clothing dyes until that can be resolved. -->
 <item name="redMeatFried">
 	<property name="Extends" value="foodCharredMeat" />
 	<property name="Tags" value="csCooking"/>
+	<property name="DisplayType" value="food"/>
 	<property name="CustomIcon" value="foodCharredMeat" />
 	<property name="EconomicValue" value="30" />
 	<property class="Action0">
@@ -13417,6 +13453,7 @@ So no clothing dyes until that can be resolved. -->
 <item name="redmeatGrilled">
 	<property name="Extends" value="foodGrilledMeat" />
 	<property name="Tags" value="csCooking"/>
+	<property name="DisplayType" value="food"/>
 	<property name="CustomIcon" value="foodGrilledMeat" />
 	<property name="EconomicValue" value="35" />
 	<property class="Action0">
@@ -13438,6 +13475,7 @@ So no clothing dyes until that can be resolved. -->
 <item name="redMeatStew">
 	<property name="Extends" value="foodMeatStew" />
 	<property name="Tags" value="csCooking"/>
+	<property name="DisplayType" value="food"/>
 	<property name="CustomIcon" value="foodMeatStew" />
 	<property name="EconomicValue" value="60" />
 	<property class="Action0">
@@ -13460,6 +13498,7 @@ So no clothing dyes until that can be resolved. -->
 
 <item name="AppleJuice">
 	<property name="Tags" value="csCooking"/>
+	<property name="DisplayType" value="food"/>
 	<property name="CustomIcon" value="AppleJuice" />
 	<property name="Meshfile" value="Items/Food/yucca_juicePrefab" />
 	<property name="Material" value="Morganic" />
@@ -13493,6 +13532,7 @@ So no clothing dyes until that can be resolved. -->
 
 <item name="blackberryJuice">
 	<property name="Tags" value="csCooking"/>
+	<property name="DisplayType" value="food"/>
 	<property name="CustomIcon" value="blackberryJuice"/>
 	<property name="Meshfile" value="Items/Food/bottled_waterPrefab"/>
 	<property name="Material" value="Mglass"/>
@@ -13526,6 +13566,7 @@ So no clothing dyes until that can be resolved. -->
 
 <item name="beerNolsonCanuck">
 	<property name="Tags" value="csCooking"/>
+	<property name="DisplayType" value="food"/>
 	<property name="CustomIcon" value="beerNolsonCanuck"/>
 	<property name="Meshfile" value="Items/Food/bottledBeerPrefab"/>
 	<property name="Material" value="Mglass"/>
@@ -13555,6 +13596,7 @@ So no clothing dyes until that can be resolved. -->
 
 <item name="GreenTea">
 	<property name="Tags" value="csCooking"/>
+	<property name="DisplayType" value="food"/>
 	<property name="CustomIcon" value="GreenTea" />
 	<property name="Meshfile" value="Items/Food/goldenrod_teaPrefab" />
 	<property name="Material" value="Mglass" />
@@ -13586,6 +13628,7 @@ So no clothing dyes until that can be resolved. -->
 
 <item name="hotChocolate">
 	<property name="Tags" value="csCooking"/>
+	<property name="DisplayType" value="food"/>
 	<property name="CustomIcon" value="hotChocolate"/>
 	<property name="Meshfile" value="Items/Food/coffeePrefab"/>
 	<property name="Material" value="Morganic"/>
@@ -13618,6 +13661,7 @@ So no clothing dyes until that can be resolved. -->
 
 <item name="MossyBrew">
 	<property name="Tags" value="csCooking"/>
+	<property name="DisplayType" value="food"/>
 	<property name="CustomIcon" value="MossyBrew" />
 	<property name="Meshfile" value="Items/Food/coffeePrefab" />
 	<property name="Material" value="Morganic" />
@@ -13653,6 +13697,7 @@ So no clothing dyes until that can be resolved. -->
 
 <item name="chickenstock">
 	<property name="Tags" value="csCooking"/>
+	<property name="DisplayType" value="food"/>
 	<property name="CustomIcon" value="chickenstock"/>
 	<property name="Meshfile" value="Items/Food/goldenrod_teaPrefab"/>
 	<property name="Material" value="Mglass"/>
@@ -13679,6 +13724,7 @@ So no clothing dyes until that can be resolved. -->
 
 <item name="beefstock">
 	<property name="Tags" value="csCooking"/>
+	<property name="DisplayType" value="food"/>
 	<property name="CustomIcon" value="beefstock" />
 	<property name="Meshfile" value="Items/Food/goldenrod_teaPrefab"/>
 	<property name="Material" value="Mglass"/>
@@ -13705,6 +13751,7 @@ So no clothing dyes until that can be resolved. -->
 
 <item name="potatosoup">
 	<property name="Tags" value="csCooking"/>
+	<property name="DisplayType" value="food"/>
 	<property name="CustomIcon" value="potatosoup" />
 	<property name="Meshfile" value="Items/Food/venison_stew" />
 	<property name="Material" value="Morganic" />
@@ -13731,6 +13778,7 @@ So no clothing dyes until that can be resolved. -->
 <item name="Leeksoup">
 	<property name="Extends" value="potatosoup" />
 	<property name="Tags" value="csCooking"/>
+	<property name="DisplayType" value="food"/>
 	<property name="CustomIcon" value="Leeksoup" />
 	<property name="Meshfile" value="Items/Food/venison_stew" />
 	<property name="Group" value="Food/Cooking" />
@@ -13743,6 +13791,7 @@ So no clothing dyes until that can be resolved. -->
 <item name="onionsoup">
 	<property name="Extends" value="potatosoup" />
 	<property name="Tags" value="csCooking"/>
+	<property name="DisplayType" value="food"/>
 	<property name="CustomIcon" value="onionsoup" />
 	<property name="Meshfile" value="Items/Food/venison_stew" />
 	<property name="Group" value="Food/Cooking" />
@@ -13755,6 +13804,7 @@ So no clothing dyes until that can be resolved. -->
 <item name="cucumbersoup">
 	<property name="Extends" value="potatosoup" />
 	<property name="Tags" value="csCooking"/>
+	<property name="DisplayType" value="food"/>
 	<property name="CustomIcon" value="cucumbersoup" />
 	<property name="Meshfile" value="Items/Food/venison_stew" />
 	<property name="Group" value="Food/Cooking" />
@@ -13766,6 +13816,7 @@ So no clothing dyes until that can be resolved. -->
 <item name="chickensoup">
 	<property name="Extends" value="potatosoup" />
 	<property name="Tags" value="csCooking"/>
+	<property name="DisplayType" value="food"/>
 	<property name="CustomIcon" value="chickensoup" />
 	<property name="Meshfile" value="Items/Food/venison_stew" />
 	<property name="Group" value="Food/Cooking" />
@@ -13778,6 +13829,7 @@ So no clothing dyes until that can be resolved. -->
 <item name="bearsoup">
 	<property name="Tags" value="csCooking"/>
 	<property name="CustomIcon" value="bearsoup" />
+	<property name="DisplayType" value="food"/>
 	<property name="Meshfile" value="Items/Food/venison_stew" />
 	<property name="Material" value="Morganic" />
 	<property name="HoldType" value="23" />
@@ -13802,6 +13854,7 @@ So no clothing dyes until that can be resolved. -->
 
 <item name="eggdropsoup">
 	<property name="Tags" value="csCooking"/>
+	<property name="DisplayType" value="food"/>
 	<property name="CustomIcon" value="eggdropsoup" />
 	<property name="Meshfile" value="Items/Food/venison_stew" />
 	<property name="Material" value="Morganic" />
@@ -13857,6 +13910,7 @@ So no clothing dyes until that can be resolved. -->
 
 <item name="pepper">
 	<property name="Tags" value="csCooking"/>
+	<property name="DisplayType" value="food"/>
 	<property name="CustomIcon" value="pepper"/>
 	<property name="Meshfile" value="Items/Food/vegetable_potatoPrefab"/>
 	<property name="Material" value="Mplants"/>
@@ -13914,6 +13968,7 @@ So no clothing dyes until that can be resolved. -->
 
 <item name="PumpkinPie"> <!-- Class Only -->
 	<property name="Tags" value="csCooking"/>
+	<property name="DisplayType" value="food"/>
 	<property name="CustomIcon" value="PumpkinPie"/>
 	<property name="Meshfile" value="Items/Food/blueberry_piePrefab"/>
 	<property name="Material" value="Morganic"/>
@@ -13938,6 +13993,7 @@ So no clothing dyes until that can be resolved. -->
 
 <item name="FruitPie"> <!-- Class Only -->
 	<property name="Tags" value="csCooking"/>
+	<property name="DisplayType" value="food"/>
 	<property name="CustomIcon" value="FruitPie"/>
 	<property name="Meshfile" value="Items/Food/blueberry_piePrefab"/>
 	<property name="Material" value="Morganic"/>
@@ -13962,6 +14018,7 @@ So no clothing dyes until that can be resolved. -->
 
 <item name="StrawberryPie"> <!-- Class Only -->
 	<property name="Tags" value="csCooking"/>
+	<property name="DisplayType" value="food"/>
 	<property name="CustomIcon" value="StrawberryPie"/>
 	<property name="Meshfile" value="Items/Food/blueberry_pie" />
 	<property name="Material" value="Morganic" />
@@ -13987,6 +14044,7 @@ So no clothing dyes until that can be resolved. -->
 
 <item name="blackberryPie"> <!-- Class Only -->
 	<property name="Tags" value="csCooking"/>
+	<property name="DisplayType" value="food"/>
 	<property name="CustomIcon" value="blackberryPie"/>
 	<property name="Meshfile" value="Items/Food/blueberry_pie" />
 	<property name="Material" value="Morganic" />
@@ -14012,6 +14070,7 @@ So no clothing dyes until that can be resolved. -->
 
 <item name="ChocolatePumpkinPie"> <!-- Class Only -->
 	<property name="Tags" value="csCooking"/>
+	<property name="DisplayType" value="food"/>
 	<property name="CustomIcon" value="ChocolatePumpkinPie"/>
 	<property name="Meshfile" value="Items/Food/blueberry_piePrefab"/>
 	<property name="Material" value="Morganic"/>
@@ -14036,6 +14095,7 @@ So no clothing dyes until that can be resolved. -->
 
 <item name="ChocolatePie"> <!-- Class Only -->
 	<property name="Tags" value="csCooking"/>
+	<property name="DisplayType" value="food"/>
 	<property name="CustomIcon" value="ChocolatePie"/>
 	<property name="Meshfile" value="Items/Food/blueberry_piePrefab"/>
 	<property name="Material" value="Morganic"/>
@@ -14060,6 +14120,7 @@ So no clothing dyes until that can be resolved. -->
 
 <item name="bakedPumpkin"> <!-- Class Only -->
 	<property name="Tags" value="csCooking"/>
+	<property name="DisplayType" value="food"/>
 	<property name="CustomIcon" value="bakedPumpkin"/>
 	<property name="Meshfile" value="Items/Food/vegetable_potato_bakedPrefab"/>
 	<property name="Material" value="Morganic"/>
@@ -14085,6 +14146,7 @@ So no clothing dyes until that can be resolved. -->
 
 <item name="BlackberryJam"> <!-- Class Only -->
 	<property name="Tags" value="csCooking"/>
+	<property name="DisplayType" value="food"/>
 	<property name="CustomIcon" value="BlackberryJam"/>
 	<property name="Meshfile" value="Items/Food/bottled_waterPrefab"/>
 	<property name="Material" value="Mglass"/>
@@ -14112,6 +14174,7 @@ So no clothing dyes until that can be resolved. -->
 
 <item name="BlueberryJam"> <!-- Class Only -->
 	<property name="Tags" value="csCooking"/>
+	<property name="DisplayType" value="food"/>
 	<property name="CustomIcon" value="BlueberryJam"/>
 	<property name="Meshfile" value="Items/Food/bottled_waterPrefab"/>
 	<property name="Material" value="Mglass"/>
@@ -14139,6 +14202,7 @@ So no clothing dyes until that can be resolved. -->
 
 <item name="BlackberryJamSandwich"> <!-- Class Only -->
 	<property name="Tags" value="csCooking"/>
+	<property name="DisplayType" value="food"/>
 	<property name="CustomIcon" value="BlackberryJamSandwich"/>
 	<property name="Meshfile" value="Items/Misc/parcelPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
@@ -14166,6 +14230,7 @@ So no clothing dyes until that can be resolved. -->
 
 <item name="BlueberryJamSandwich"> <!-- Class Only -->
 	<property name="Tags" value="csCooking"/>
+	<property name="DisplayType" value="food"/>
 	<property name="CustomIcon" value="BlueberryJamSandwich"/>
 	<property name="Meshfile" value="Items/Misc/parcelPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
@@ -14193,6 +14258,7 @@ So no clothing dyes until that can be resolved. -->
 
 <item name="Smallmeatpie"> <!-- Class Only -->
 	<property name="Tags" value="csCooking"/>
+	<property name="DisplayType" value="food"/>
 	<property name="CustomIcon" value="Smallmeatpie"/>
 	<property name="Meshfile" value="Items/Food/blueberry_piePrefab"/>
 	<property name="Material" value="Morganic"/>
@@ -14217,6 +14283,7 @@ So no clothing dyes until that can be resolved. -->
 
 <item name="Turkeydinner"> <!-- Class Only -->
 	<property name="Tags" value="csCooking"/>
+	<property name="DisplayType" value="food"/>
 	<property name="CustomIcon" value="Turkeydinner"/>
 	<property name="Meshfile" value="Items/Food/blueberry_piePrefab"/>
 	<property name="Material" value="Morganic"/>
@@ -14241,6 +14308,7 @@ So no clothing dyes until that can be resolved. -->
 
 <item name="Roastbeef"> <!-- Class Only -->
 	<property name="Tags" value="csCooking"/>
+	<property name="DisplayType" value="food"/>
 	<property name="CustomIcon" value="Roastbeef"/>
 	<property name="Meshfile" value="Items/Food/blueberry_piePrefab"/>
 	<property name="Material" value="Morganic"/>
@@ -14265,6 +14333,7 @@ So no clothing dyes until that can be resolved. -->
 
 <item name="wedgesalad"> <!-- Class Only -->
 	<property name="Tags" value="csCooking"/>
+	<property name="DisplayType" value="food"/>
 	<property name="CustomIcon" value="wedgesalad"/>
 	<property name="Meshfile" value="Items/Food/blueberry_piePrefab"/>
 	<property name="Material" value="Morganic"/>
@@ -14289,6 +14358,7 @@ So no clothing dyes until that can be resolved. -->
 
 <item name="largesalad"> <!-- Class Only -->
 	<property name="Tags" value="csCooking"/>
+	<property name="DisplayType" value="food"/>
 	<property name="CustomIcon" value="largesalad"/>
 	<property name="Meshfile" value="Items/Food/blueberry_piePrefab"/>
 	<property name="Material" value="Morganic"/>
@@ -14313,6 +14383,7 @@ So no clothing dyes until that can be resolved. -->
 
 <item name="clubsalad"> <!-- Class Only -->
 	<property name="Tags" value="csCooking"/>
+	<property name="DisplayType" value="food"/>
 	<property name="CustomIcon" value="clubsalad"/>
 	<property name="Meshfile" value="Items/Food/blueberry_piePrefab"/>
 	<property name="Material" value="Morganic"/>
@@ -14337,6 +14408,7 @@ So no clothing dyes until that can be resolved. -->
 
 <item name="Chocolatecoveredstrawberries"> <!-- Class Only -->
 	<property name="Tags" value="csCooking"/>
+	<property name="DisplayType" value="food"/>
 	<property name="CustomIcon" value="Chocolatecoveredstrawberries"/>
 	<property name="Meshfile" value="Items/Food/blueberriesPrefab"/>
 	<property name="Material" value="Mplants"/>
@@ -14364,6 +14436,7 @@ So no clothing dyes until that can be resolved. -->
 
 <item name="Chocolatecoveredblueberries"> <!-- Class Only -->
 	<property name="Tags" value="csCooking"/>
+	<property name="DisplayType" value="food"/>
 	<property name="CustomIcon" value="Chocolatecoveredblueberries"/>
 	<property name="Meshfile" value="Items/Food/blueberriesPrefab"/>
 	<property name="Material" value="Mplants"/>
@@ -14391,6 +14464,7 @@ So no clothing dyes until that can be resolved. -->
 
 <item name="Chocolatecoveredblackberries"> <!-- Class Only -->
 	<property name="Tags" value="csCooking"/>
+	<property name="DisplayType" value="food"/>
 	<property name="CustomIcon" value="Chocolatecoveredblackberries"/>
 	<property name="Meshfile" value="Items/Food/blueberriesPrefab"/>
 	<property name="Material" value="Mplants"/>
@@ -14418,6 +14492,7 @@ So no clothing dyes until that can be resolved. -->
 
 <item name="Chocolatecoveredcoffeebeans"> <!-- Class Only -->
 	<property name="Tags" value="csCooking"/>
+	<property name="DisplayType" value="food"/>
 	<property name="CustomIcon" value="Chocolatecoveredcoffeebeans"/>
 	<property name="Meshfile" value="Items/Food/blueberriesPrefab"/>
 	<property name="Material" value="Mplants"/>
@@ -14445,6 +14520,7 @@ So no clothing dyes until that can be resolved. -->
 
 <item name="chocolatecookies"> <!-- Class Only -->
 	<property name="Tags" value="csCooking"/>
+	<property name="DisplayType" value="food"/>
 	<property name="CustomIcon" value="chocolatecookies"/>
 	<property name="Meshfile" value="Items/Food/blueberriesPrefab"/>
 	<property name="Material" value="Mplants"/>
@@ -14472,6 +14548,7 @@ So no clothing dyes until that can be resolved. -->
 
 <item name="chocolatecake"> <!-- Class Only -->
 	<property name="Tags" value="csCooking"/>
+	<property name="DisplayType" value="food"/>
 	<property name="CustomIcon" value="chocolatecake"/>
 	<property name="Meshfile" value="Items/Food/blueberriesPrefab"/>
 	<property name="Material" value="Mplants"/>
@@ -14499,6 +14576,7 @@ So no clothing dyes until that can be resolved. -->
 
 <item name="mochacoffee"> <!-- Class Only -->
 	<property name="Tags" value="csCooking"/>
+	<property name="DisplayType" value="food"/>
 	<property name="CustomIcon" value="mochacoffee" />
 	<property name="Meshfile" value="Items/Food/goldenrod_teaPrefab" />
 	<property name="Material" value="Mglass" />
@@ -14529,6 +14607,7 @@ So no clothing dyes until that can be resolved. -->
 
 <item name="pumpkinspicecoffee"> <!-- Class Only -->
 	<property name="Tags" value="csCooking"/>
+	<property name="DisplayType" value="food"/>
 	<property name="CustomIcon" value="pumpkinspicecoffee" />
 	<property name="Meshfile" value="Items/Food/goldenrod_teaPrefab" />
 	<property name="Material" value="Mglass" />
@@ -14560,6 +14639,7 @@ So no clothing dyes until that can be resolved. -->
 
 <item name="blackberrytea"> <!-- Class Only -->
 	<property name="Tags" value="csCooking"/>
+	<property name="DisplayType" value="food"/>
 	<property name="CustomIcon" value="blackberrytea" />
 	<property name="Meshfile" value="Items/Food/goldenrod_teaPrefab" />
 	<property name="Material" value="Mglass" />
@@ -14591,6 +14671,7 @@ So no clothing dyes until that can be resolved. -->
 
 <item name="fruittea"> <!-- Class Only -->
 	<property name="Tags" value="csCooking"/>
+	<property name="DisplayType" value="food"/>
 	<property name="CustomIcon" value="fruittea" />
 	<property name="Meshfile" value="Items/Food/goldenrod_teaPrefab" />
 	<property name="Material" value="Mglass" />
@@ -14622,6 +14703,7 @@ So no clothing dyes until that can be resolved. -->
 
 <item name="icetea"> <!-- Class Only -->
 	<property name="Tags" value="csCooking"/>
+	<property name="DisplayType" value="food"/>
 	<property name="CustomIcon" value="icetea"/>
 	<property name="Meshfile" value="Items/Food/yucca_juicePrefab"/>
 	<property name="Material" value="Morganic"/>
@@ -14653,6 +14735,7 @@ So no clothing dyes until that can be resolved. -->
 
 <item name="icedcoffee"> <!-- Class Only -->
 	<property name="Tags" value="csCooking"/>
+	<property name="DisplayType" value="food"/>
 	<property name="CustomIcon" value="icedcoffee"/>
 	<property name="Meshfile" value="Items/Food/yucca_juicePrefab"/>
 	<property name="Material" value="Morganic"/>
@@ -14684,6 +14767,7 @@ So no clothing dyes until that can be resolved. -->
 
 <item name="icedmochacoffee"> <!-- Class Only -->
 	<property name="Tags" value="csCooking"/>
+	<property name="DisplayType" value="food"/>
 	<property name="CustomIcon" value="icedmochacoffee"/>
 	<property name="Meshfile" value="Items/Food/yucca_juicePrefab"/>
 	<property name="Material" value="Morganic"/>
@@ -14715,6 +14799,7 @@ So no clothing dyes until that can be resolved. -->
 
 <item name="icedpumpkinspicecoffee"> <!-- Class Only -->
 	<property name="Tags" value="csCooking"/>
+	<property name="DisplayType" value="food"/>
 	<property name="CustomIcon" value="icedpumpkinspicecoffee"/>
 	<property name="Meshfile" value="Items/Food/yucca_juicePrefab"/>
 	<property name="Material" value="Morganic"/>
@@ -14746,6 +14831,7 @@ So no clothing dyes until that can be resolved. -->
 
 <item name="icedblackberrytea"> <!-- Class Only -->	
 	<property name="Tags" value="csCooking"/>
+	<property name="DisplayType" value="food"/>
 	<property name="CustomIcon" value="icedblackberrytea"/>
 	<property name="Meshfile" value="Items/Food/yucca_juicePrefab"/>
 	<property name="Material" value="Morganic"/>
@@ -14777,6 +14863,7 @@ So no clothing dyes until that can be resolved. -->
 
 <item name="icedfruittea"> <!-- Class Only -->
 	<property name="Tags" value="csCooking"/>
+	<property name="DisplayType" value="food"/>
 	<property name="CustomIcon" value="icedfruittea"/>
 	<property name="Meshfile" value="Items/Food/yucca_juicePrefab"/>
 	<property name="Material" value="Morganic"/>
@@ -15277,6 +15364,7 @@ So no clothing dyes until that can be resolved. -->
 
 <item name="Worms">
 	<property name="CustomIcon" value="Worms" />
+	<property name="DisplayType" value="food"/>
 	<property name="Meshfile" value="Items/Food/meat_rabbit" />
 	<property name="Material" value="Morganic" />
 	<property name="HoldType" value="21" />
@@ -15298,6 +15386,7 @@ So no clothing dyes until that can be resolved. -->
 
 <item name="Fish">
 	<property name="CustomIcon" value="Fish" />
+	<property name="DisplayType" value="food"/>
 	<property name="Meshfile" value="Items/Food/meat_pork" />
 	<property name="Material" value="Morganic" />
 	<property name="HoldType" value="21" />
@@ -15323,6 +15412,7 @@ So no clothing dyes until that can be resolved. -->
 
 <item name="FishGrilled">
 	<property name="CustomIcon" value="FishGrilled" />
+	<property name="DisplayType" value="food"/>
 	<property name="Meshfile" value="Items/Misc/parcel" />
 	<property name="Material" value="Morganic" />
 	<property name="HoldType" value="31" />
@@ -15346,6 +15436,7 @@ So no clothing dyes until that can be resolved. -->
 
 <item name="FishStew">
 	<property name="CustomIcon" value="FishStew" />
+	<property name="DisplayType" value="food"/>
 	<property name="Meshfile" value="Items/Food/venison_stew" />
 	<property name="Material" value="Morganic" />
 	<property name="HoldType" value="23" />
@@ -21669,7 +21760,7 @@ So no clothing dyes until that can be resolved. -->
 		<property name="Repair_amount" value="100"/>
 		<property name="Upgrade_hit_offset" value="0"/>
 		<property name="Sound_start" value="repair_block"/>
-		<property name="Allowed_upgrade_items" value="resourceWood,resourceClayLump,resourceSnowBall,resourceScrapIron,resourceForgedIron,resourceForgedSteel,resourceConcreteMix,resourceCobblestones,resourceYuccaFibers,foodCropCorn,fireLog,woodAndNails"/>
+		<property name="Allowed_upgrade_items" value="resourceWood,resourceClayLump,resourceSnowBall,resourceScrapIron,resourceForgedIron,resourceForgedSteel,resourceConcreteMix,resourceCobblestones,resourceYuccaFibers,foodCropCorn,fireLog,scrapIronAndRivets,woodAndNails"/>
 		<property name="UsePowerAttackAnimation" value="false"/>
 	</property>
 	<effect_group name="Base Effects">

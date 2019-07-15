@@ -4355,7 +4355,7 @@ if the loot entry for mods is empty then it will use the lootgroup mods and mod_
 </lootcontainer>
 
 <!-- cntBuriedStashChest -->
-<lootcontainer id="102" count="1" size="8,9" sound_open="UseActions/open_fridge" sound_close="UseActions/close_fridge" loot_quality_template="treasureTemplate">
+<lootcontainer id="102" count="1" size="8,9" sound_open="UseActions/open_fridge" sound_close="UseActions/close_fridge" loot_quality_template="treasureTemplate" destroy_on_close="true">
 	<item group="BuriedStashChest"/>
 </lootcontainer>
 

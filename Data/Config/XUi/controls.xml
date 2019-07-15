@@ -267,12 +267,12 @@
 			<rect depth="2" width="64" height="21" pos="307,0">
 				<sprite depth="2" name="backgroundMain" sprite="menu_empty3px" pos="-3,3" width="69" height="24" color="[black]" type="sliced" fillcenter="false" />	
 				<sprite color="[darkGrey]" type="sliced" />
-				<label depth="3" text="NEED" text_key="lblneed" pos="32,-10" width="64" height="19" font_size="16" justify="center" pivot="center"/>
+				<label depth="3" text="HAVE" text_key="lblhave" pos="32,-10" width="64" height="19" font_size="16" justify="center" pivot="center"/>
 			</rect>
 			<rect depth="2" width="75" height="21" pos="373,0">
 				<sprite depth="2" name="backgroundMain" sprite="menu_empty3px" pos="-3,3" width="80" height="24" color="[black]" type="sliced" fillcenter="false" />	
 				<sprite color="[darkGrey]" type="sliced" />
-				<label depth="3" text="HAVE" text_key="lblhave" pos="35,-10" width="69" height="19" font_size="16" justify="center" pivot="center"/>
+				<label depth="3" text="NEED" text_key="lblneed" pos="35,-10" width="69" height="19" font_size="16" justify="center" pivot="center"/>
 			</rect>
 		</rect>
 	</ingredient_header>
@@ -351,7 +351,7 @@
 	
 	<!-- SIRILLION: dwallorde, I added this section to handle the increased size for the icons in the smelting queue -->
  
-	<!-- <SMX_60_item_stack>
+	<SMX_60_item_stack>
 		<rect controller="ItemStack" style="SMXForgeItemStack, hover" collider_scale="1.1">
 			<sprite depth="2" name="backgroundMain" sprite="menu_empty3px" pos="-3,3" width="63" height="63" color="[black]" type="sliced" fillcenter="false" />	
 			<sprite depth="3" name="background" sprite="menu_empty3px" width="58" height="58" color="[darkGrey]" type="sliced" globalopacity="true" fillcenter="false"/>
@@ -375,7 +375,7 @@
 
 			<sprite depth="13" name="assembleIcon" size="18,18" sprite="ui_game_symbol_lock" visible="{isassemblelocked}" pos="14,-14" foregroundlayer="true" />
 		</rect>
-	</SMX_60_item_stack> -->
+	</SMX_60_item_stack>
 	
 	<backpack_item_stack>
 		<rect controller="ItemStack" style="itemStack, hover" collider_scale="1.1" >

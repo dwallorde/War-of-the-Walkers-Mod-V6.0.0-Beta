@@ -4138,6 +4138,10 @@
 	<AudioClip ClipName="Sounds/Vehicles/Suv/suv_max_speed_lp" Loop="true"/>
 	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="0.01"/> </SoundDataNode>
 
+<SoundDataNode name="suv_horn"> <AudioSource name="Sounds/AudioSource_SmallHorn"/>
+	<Noise ID="4" range="25" volume="20" time="3" heat_map_strength="0.2" heat_map_time="90"/>
+	<AudioClip ClipName="#HornTruck1.unity3d?General_Lee"/>
+	<LocalCrouchVolumeScale name="1.0"/> <CrouchNoiseScale name="1"/> <NoiseScale name="1"/> <MaxVoices name="3"/> <MaxEntities name="6"/> <MaxRepeatRate name="0.01"/> </SoundDataNode>
 
   <!-- Gyrocopter     -->
 
@@ -4191,6 +4195,11 @@
 	<AudioClip ClipName="Sounds/Vehicles/Motorbike/motorbike_empty_1"/>
 	<AudioClip ClipName="Sounds/Vehicles/Motorbike/motorbike_empty_2"/>
 	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="0.01"/> </SoundDataNode>
+
+<SoundDataNode name="gyro_horn"> <AudioSource name="Sounds/AudioSource_SmallHorn"/>
+	<Noise ID="4" range="25" volume="20" time="7" heat_map_strength="0.2" heat_map_time="90"/>
+	<AudioClip ClipName="#HornGyro.unity3d?Valkyries"/>
+	<LocalCrouchVolumeScale name="1.0"/> <CrouchNoiseScale name="1"/> <NoiseScale name="1"/> <MaxVoices name="3"/> <MaxEntities name="6"/> <MaxRepeatRate name="0.01"/> </SoundDataNode>
 
 	<!-- Enemies Shared -->
 
