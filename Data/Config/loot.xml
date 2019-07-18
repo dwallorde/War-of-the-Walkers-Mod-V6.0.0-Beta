@@ -929,8 +929,8 @@ A single player on default diff can have a GS of up to 480 without perks.
 </lootgroup>
 
 <lootgroup name="weaponsMilitaryGuns+ammo">
-	<item group="deserteagle+ammo" prob="0.8"/>
-	<item group="Barettashotgun+ammo" prob="0.7"/>
+	<item group="deserteagle+ammo" prob="0.6"/>
+	<item group="Barettashotgun+ammo" prob="0.6"/>
 	<item group="Remington8+ammo" prob="0.6"/>
 	<item group="weaponsMP5+ammo" prob="0.6"/>
 	<item group="weaponsAK47+ammo" prob="0.4"/>
@@ -976,7 +976,7 @@ A single player on default diff can have a GS of up to 480 without perks.
 
 <lootgroup name="WallDeskSafeWeapons" count="1">
 	<item group="weaponsPistol+ammo"/>
-	<item group="deserteagle+ammo" prob="0.8"/>
+	<item group="deserteagle+ammo" prob="0.6"/>
 	<item group="weaponsMP5+ammo" prob="0.6"/>
 	<item group="weaponsMagnum+ammo" prob="0.4"/>
 </lootgroup>
@@ -3357,7 +3357,7 @@ if the loot entry for mods is empty then it will use the lootgroup mods and mod_
 	<item group="medicine" />
 	<item group="ammo" />
 	<item group="weaponsPistol+ammo" prob="0.2" />
-	<item group="deserteagle+ammo" count="1" prob="0.1" /> 
+	<item group="deserteagle+ammo" count="1" prob="0.05" /> 
 	<item name="meleeToolFlashlight02" />
 	<item name="cigar" prob="0.3" />
 	<item name="oldCash" count="1,20" prob="0.6" />
@@ -3689,7 +3689,7 @@ if the loot entry for mods is empty then it will use the lootgroup mods and mod_
 </lootcontainer> -->
 
 <!-- military munitions ammo box -->
-<lootcontainer id="40" count="1" size="8,4" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" open_time="10" loot_quality_template="baseTemplate">
+<lootcontainer id="40" count="2,4" size="8,4" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" open_time="10" loot_quality_template="baseTemplate">
 	<item group="weaponsMilitaryGuns+ammo" loot_prob_template="probTemplate1.0" />
 	<item group="militaryAmmo" prob="1.7" />
 	<item group="militaryArmor" prob="0.2" />
@@ -4694,7 +4694,7 @@ treasureTemplate
 	<item group="books" count="1" prob="0.4" />
 	<item group="ammo" prob="0.1" />
 	<item group="weaponsPistol+ammo" prob="0.05" />
-	<item group="deserteagle+ammo" count="1" prob="0.075" /> 
+	<item group="deserteagle+ammo" count="1" prob="0.05" /> 
 	<item name="meleeToolFlashlight02" prob="0.075" />
 	<item group="cosmeticsElectriconicParts" count="1" prob="0.05" />
 	<item group="questChallenge" count="1" prob="0.05" />

@@ -3490,7 +3490,7 @@
 	</perk> -->
 	
 	<perk name="perkRecipeSickleSteel" parent="skillRecipeWeapons" max_level="1" name_key="perkRecipeSickleSteelName" desc_key="perkRecipeSickleSteelDesc" icon="ui_game_symbol_sickle">
-		<level_requirements level="1"><requirement name="PlayerLevel" target="self" operation="GTE" value="40" desc_key="reqPlayer40"/></level_requirements>
+		<level_requirements level="1"><requirement name="PlayerLevel" target="self" operation="GTE" value="60" desc_key="reqPlayer60"/></level_requirements>
 		
 		<effect_group>
 			<!-- Tier 1 Steel Sickle -->
@@ -3502,8 +3502,8 @@
 	
 	<perk name="perkRecipeHuntingKnives" parent="skillRecipeWeapons" max_level="3" name_key="perkRecipeHuntingKnivesName" desc_key="perkRecipeHuntingKnivesDesc" icon="ui_game_symbol_knife">
 		<level_requirements level="1"><requirement name="PlayerLevel" target="self" operation="GTE" value="15" desc_key="reqPlayer15"/></level_requirements>
-		<level_requirements level="2"><requirement name="PlayerLevel" target="self" operation="GTE" value="40" desc_key="reqPlayer40"/></level_requirements>
-		<level_requirements level="3"><requirement name="PlayerLevel" target="self" operation="GTE" value="100" desc_key="reqPlayer100"/></level_requirements>
+		<level_requirements level="2"><requirement name="PlayerLevel" target="self" operation="GTE" value="60" desc_key="reqPlayer60"/></level_requirements>
+		<level_requirements level="3"><requirement name="PlayerLevel" target="self" operation="GTE" value="110" desc_key="reqPlayer110"/></level_requirements>
 		
 		<effect_group>
 			<!-- Tier 1 Iron Hunting Knife -->

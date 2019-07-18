@@ -5267,7 +5267,6 @@
 	</quest>
 	
 	<!-- Builder Class Training Part 5 Of 5 -->
-	<!-- To Do Builder Class Skill Hookup -->
 	<quest id="classtrainingbuilder5">
 	<property name="name_key" value="classtrainingbuilder5" />
 	<property name="subtitle_key" value="classtrainingbuilder5_subtitle" />
@@ -5391,7 +5390,6 @@
 	</quest>
 	
 	<!-- Survivalist Class Training Part 5 Of 5 -->
-	<!-- To Do Survivalist Class Perk Hookup -->
 	<quest id="classtrainingsurvivalist5">
 	<property name="name_key" value="classtrainingsurvivalist5" />
 	<property name="subtitle_key" value="classtrainingsurvivalist5_subtitle" />
@@ -5520,7 +5518,6 @@
 	</quest>
 	
 	<!-- Scholar Class Training Part 5 Of 5 -->
-	<!-- To Do Scholar Class Perk Hookup -->
 	<quest id="classtrainingscholar5">
 	<property name="name_key" value="classtrainingscholar5" />
 	<property name="subtitle_key" value="classtrainingscholar5_subtitle" />
@@ -5642,7 +5639,6 @@
 	</quest>
 	
 	<!-- Marksman Class Training Part 5 Of 5 -->
-	<!-- To Do Marksman Class Perk Hookup -->
 	<quest id="classtrainingmarksman5">
 	<property name="name_key" value="classtrainingmarksman5" />
 	<property name="subtitle_key" value="classtrainingmarksman5_subtitle" />
@@ -5784,7 +5780,6 @@
 	</quest>
 	
 	<!-- Fighter Class Training Part 5 Of 5 -->
-	<!-- To Do Fighter Class Perk Hookup -->
 	<quest id="classtrainingfighter5">
 	<property name="name_key" value="classtrainingfighter5" />
 	<property name="subtitle_key" value="classtrainingfighter5_subtitle" />
@@ -5905,7 +5900,6 @@
 	</quest>
 	
 	<!-- Tradesman Class Training Part 5 Of 5 -->
-	<!-- To Do Tradesman Class Perk Hookup -->
 	<quest id="classtrainingtradesman5">
 	<property name="name_key" value="classtrainingtradesman5" />
 	<property name="subtitle_key" value="classtrainingtradesman5_subtitle" />
@@ -6030,7 +6024,6 @@
 	</quest>
 	
 	<!-- Protection Class Training Part 5 Of 5 -->
-	<!-- To Do Protection Class Perk Hookup -->
 	<quest id="classtrainingprotection5">
 	<property name="name_key" value="classtrainingprotection5" />
 	<property name="subtitle_key" value="classtrainingprotection5_subtitle" />
@@ -6144,7 +6137,6 @@
 	</quest>
 	
 	<!-- Electrician Class Training Part 5 Of 5 -->
-	<!-- To Do Electrician Class Perk Hookup -->
 	<quest id="classtrainingelectrician5">
 	<property name="name_key" value="classtrainingelectrician5" />
 	<property name="subtitle_key" value="classtrainingelectrician5_subtitle" />
@@ -6221,11 +6213,11 @@
 	<property name="difficulty" value="easy" />
 	<property name="shareable" value="false" />
 		
-		<objective type="FetchKeep" id="armorScrapHelmet" value="1" />
-		<objective type="FetchKeep" id="armorScrapChest" value="1" />
-		<objective type="FetchKeep" id="armorScrapGloves" value="1" />
-		<objective type="FetchKeep" id="armorScrapLegs" value="1" />
-		<objective type="FetchKeep" id="armorScrapBoots" value="1" />
+		<objective type="Craft" id="armorScrapHelmet" value="1" />
+		<objective type="Craft" id="armorScrapChest" value="1" />
+		<objective type="Craft" id="armorScrapGloves" value="1" />
+		<objective type="Craft" id="armorScrapLegs" value="1" />
+		<objective type="Craft" id="armorScrapBoots" value="1" />
 		
 		<reward type="Exp" value="10000" />
 		<reward type="Quest" id="classtrainingcovert4" />
@@ -6256,7 +6248,6 @@
 	</quest>
 	
 	<!-- Covert Class Training Part 5 Of 5 -->
-	<!-- To Do Covert Class Perk Hookup -->
 	<quest id="classtrainingcovert5">
 	<property name="name_key" value="classtrainingcovert5" />
 	<property name="subtitle_key" value="classtrainingcovert5_subtitle" />
@@ -6295,10 +6286,12 @@
 	<property name="difficulty" value="easy" />
 	<property name="shareable" value="false" />
 		
-		<objective type="AnimalKill" value="25" phase="1" />
+		<objective type="FetchKeep" id="rawRedMeat" value="10" phase="1" />
+		<objective type="FetchKeep" id="rawWhiteMeat" value="10" phase="1" />
+		<objective type="FetchKeep" id="drinkJarBoiledWater" value="10" phase="1" />
 		
-		<objective type="FetchKeep" id="rawWhiteMeat" value="20" phase="2" />
-		<objective type="FetchKeep" id="rawRedMeat" value="20" phase="2" />
+		<objective type="Craft" id="whiteMeatGrilled" value="10" phase="2" />
+		<objective type="Craft" id="redMeatBoiled" value="10" phase="2" />
 		
 		<reward type="Exp" value="10000" />
 		<reward type="Quest" id="classtrainingcook2" />
@@ -6317,9 +6310,12 @@
 	<property name="difficulty" value="easy" />
 	<property name="shareable" value="false" />
 		
-		<objective type="Craft" id="campfire" value="1" phase="1" />
+		<objective type="FetchKeep" id="rawRedMeat" value="50" phase="1" />
+		<objective type="FetchKeep" id="rawWhiteMeat" value="50" phase="1" />
+		<objective type="FetchKeep" id="foodEgg" value="40" phase="1" />
 		
-		<objective type="BlockPlace" id="campfire" value="1" phase="2" />
+		<objective type="Craft" id="foodBaconAndEggs" value="10" phase="2" />
+		<objective type="Craft" id="sausageAndEggs" value="10" phase="2" />
 		
 		<reward type="Exp" value="10000" />
 		<reward type="Quest" id="classtrainingcook3" />
@@ -6338,10 +6334,12 @@
 	<property name="difficulty" value="easy" />
 	<property name="shareable" value="false" />
 		
-		<objective type="FetchKeep" id="foodEgg" value="30" phase="1" />
-		<objective type="FetchKeep" id="rawWhiteMeat" value="30" phase="1" />
+		<objective type="FetchKeep" id="resourceCropGoldenrodPlant" value="10" phase="1" />
+		<objective type="FetchKeep" id="resourceCropChrysanthemumPlant" value="10" phase="1" />
+		<objective type="FetchKeep" id="drinkJarBoiledWater" value="20" phase="1" />
 		
-		<objective type="Craft" id="foodBaconAndEggs" value="15" phase="2" />
+		<objective type="Craft" id="drinkJarGoldenRodTea" value="10" phase="2" />
+		<objective type="Craft" id="drinkJarRedTea" value="10" phase="2" />
 		
 		<reward type="Exp" value="10000" />
 		<reward type="Quest" id="classtrainingcook4" />
@@ -6360,10 +6358,14 @@
 	<property name="difficulty" value="easy" />
 	<property name="shareable" value="false" />
 		
-		<objective type="FetchKeep" id="resourceCropGoldenrodPlant" value="50" phase="1" />
-		<objective type="FetchKeep" id="drinkJarBoiledWater" value="25" phase="1" />
+		<objective type="FetchKeep" id="rawRedMeat" value="40" phase="1" />
+		<objective type="FetchKeep" id="foodCropPotato" value="90" phase="1" />
+		<objective type="FetchKeep" id="foodCropCorn" value="90" phase="1" />
+		<objective type="FetchKeep" id="foodCropMushrooms" value="70" phase="1" />
+		<objective type="FetchKeep" id="drinkJarBoiledWater" value="30" phase="1" />
 		
-		<objective type="Craft" id="drinkJarGoldenRodTea" value="25" phase="2" />
+		<objective type="Craft" id="redMeatStew" value="10" phase="2" />
+		<objective type="Craft" id="foodVegetableStew" value="10" phase="2" />
 		
 		<reward type="Exp" value="10000" />
 		<reward type="Recipe" id="ClassPaperCook" />
@@ -6371,7 +6373,6 @@
 	</quest>
 	
 	<!-- Cook Class Training Part 5 Of 5 -->
-	<!-- To Do Cook Class Perk Hookup -->
 	<quest id="classtrainingcook5">
 	<property name="name_key" value="classtrainingcook5" />
 	<property name="subtitle_key" value="classtrainingcook5_subtitle" />
@@ -6410,12 +6411,10 @@
 	<property name="difficulty" value="easy" />
 	<property name="shareable" value="false" />
 		
-		<objective type="FetchKeep" id="resourceDuctTape" value="6" />
-		<objective type="FetchKeep" id="resourceLeather" value="7" />
-		<objective type="FetchKeep" id="resourceCropCottonPlant" value="3" />
-		<objective type="FetchKeep" id="resourceMetalPipe" value="6" />
-		<objective type="FetchKeep" id="resourceHeadlight" value="1" />
-		<objective type="FetchKeep" id="resourceElectricParts" value="5" />
+		<objective type="Craft" id="vehicleBicycleChassis" value="1" phase="1" />
+		<objective type="Craft" id="vehicleBicycleHandlebars" value="1" phase="1" />
+		
+		<objective type="Craft" id="vehicleBicyclePlaceable" value="1" phase="2" />
 		
 		<reward type="Exp" value="10000" />
 		<reward type="Quest" id="classtrainingmechanic2" />
@@ -6434,10 +6433,10 @@
 	<property name="difficulty" value="easy" />
 	<property name="shareable" value="false" />
 		
-		<objective type="FetchKeep" id="sparkPlug" value="10" />
-		<objective type="FetchKeep" id="valve" value="10" />
-		<objective type="FetchKeep" id="piston" value="10" />
-		<objective type="FetchKeep" id="crankshaft" value="10" />
+		<objective type="Craft" id="vehicleMinibikeChassis" value="1" phase="1" />
+		<objective type="Craft" id="vehicleMinibikeHandlebars" value="1" phase="1" />
+		
+		<objective type="Craft" id="vehicleMinibikePlaceable" value="1" phase="2" />
 		
 		<reward type="Exp" value="10000" />
 		<reward type="Quest" id="classtrainingmechanic3" />
@@ -6456,9 +6455,10 @@
 	<property name="difficulty" value="easy" />
 	<property name="shareable" value="false" />
 		
-		<objective type="FetchKeep" id="smallEngine" value="1" />
-		<objective type="FetchKeep" id="vehicleWheels" value="1" />
-		<objective type="FetchKeep" id="carBattery" value="1" />
+		<objective type="Craft" id="vehicleMotorcycleChassis" value="1" phase="1" />
+		<objective type="Craft" id="vehicleMotorcycleHandlebars" value="1" phase="1" />
+		
+		<objective type="Craft" id="vehicleMotorcyclePlaceable" value="1" phase="2" />
 		
 		<reward type="Exp" value="10000" />
 		<reward type="Quest" id="classtrainingmechanic4" />
@@ -6477,8 +6477,10 @@
 	<property name="difficulty" value="easy" />
 	<property name="shareable" value="false" />
 		
-		<objective type="Craft" id="vehicleMinibikeChassis" value="1" />
-		<objective type="Craft" id="vehicleMinibikeHandlebars" value="1" />
+		<objective type="Craft" id="vehicle4x4TruckChassis" value="1" phase="1" />
+		<objective type="Craft" id="vehicle4x4TruckAccessories" value="1" phase="1" />
+		
+		<objective type="Craft" id="vehicle4x4TruckPlaceable" value="1" phase="2" />
 		
 		<reward type="Exp" value="10000" />
 		<reward type="Recipe" id="ClassPaperMechanic" />
@@ -6486,7 +6488,6 @@
 	</quest>
 	
 	<!-- Mechanic Class Training Part 5 Of 5 -->
-	<!-- To Do Mechanic Class Perk Hookup -->
 	<quest id="classtrainingmechanic5">
 	<property name="name_key" value="classtrainingmechanic5" />
 	<property name="subtitle_key" value="classtrainingmechanic5_subtitle" />
@@ -6511,5 +6512,196 @@
 		<reward type="Item" id="ClassMechanicVendingMachine" value="1" />
 		<reward type="Skill" id="perkMechanicClassMaster" value="1" />
 	</quest>
+	
+	<!-- Admin Quests -->
+	
+	<quest id="adminQuestXP5000">
+	<property name="name" value="Admin Experience 5000" />
+	<property name="subtitle" value="5000 Experience Granted" />
+	<property name="description" value="Grants 5000 Experience" />
+	<property name="icon" value="ui_game_symbol_favorite" />
+	<property name="repeatable" value="true" />
+	<property name="category_key" value="challenge" />
+	<property name="offer" value="Grants 5000 Experience" />
+	<property name="difficulty" value="easy" />
+	<property name="shareable" value="false" />
+		
+		<!-- <reward type="SkillPoints" value="3" /> -->
+		<reward type="Exp" value="5000" />
+    </quest>
+	
+	<quest id="adminQuestXP10000">
+	<property name="name" value="Admin Experience 10000" />
+	<property name="subtitle" value="10000 Experience Granted" />
+	<property name="description" value="Grants 10000 Experience" />
+	<property name="icon" value="ui_game_symbol_favorite" />
+	<property name="repeatable" value="true" />
+	<property name="category_key" value="challenge" />
+	<property name="offer" value="Grants 10000 Experience" />
+	<property name="difficulty" value="easy" />
+	<property name="shareable" value="false" />
+		
+		<!-- <reward type="SkillPoints" value="3" /> -->
+		<reward type="Exp" value="10000" />
+    </quest>
+	
+	<quest id="adminQuestXP20000">
+	<property name="name" value="Admin Experience 20000" />
+	<property name="subtitle" value="20000 Experience Granted" />
+	<property name="description" value="Grants 20000 Experience" />
+	<property name="icon" value="ui_game_symbol_favorite" />
+	<property name="repeatable" value="true" />
+	<property name="category_key" value="challenge" />
+	<property name="offer" value="Grants 20000 Experience" />
+	<property name="difficulty" value="easy" />
+	<property name="shareable" value="false" />
+		
+		<!-- <reward type="SkillPoints" value="3" /> -->
+		<reward type="Exp" value="20000" />
+    </quest>
+	
+	<quest id="adminQuestPlayer1">
+	<property name="name" value="Admin Level 1" />
+	<property name="subtitle" value="1 Level Granted" />
+	<property name="description" value="Grants 1 Level" />
+	<property name="icon" value="ui_game_symbol_favorite" />
+	<property name="repeatable" value="true" />
+	<property name="category_key" value="challenge" />
+	<property name="offer" value="Grants 1 Level" />
+	<property name="difficulty" value="easy" />
+	<property name="shareable" value="false" />
+		
+		<!-- <reward type="SkillPoints" value="3" />
+		<reward type="Exp" value="5000" />-->
+		<reward type="Level" value="1" />
+    </quest>
+	
+	<quest id="adminQuestPlayer5">
+	<property name="name" value="Admin Level 5" />
+	<property name="subtitle" value="5 Levels Granted" />
+	<property name="description" value="Grants 5 Levels" />
+	<property name="icon" value="ui_game_symbol_favorite" />
+	<property name="repeatable" value="true" />
+	<property name="category_key" value="challenge" />
+	<property name="offer" value="Grants 5 Levels" />
+	<property name="difficulty" value="easy" />
+	<property name="shareable" value="false" />
+		
+		<!-- <reward type="SkillPoints" value="3" />
+		<reward type="Exp" value="5000" />-->
+		<reward type="Level" value="5" />
+    </quest>
+	
+	<quest id="adminQuestPlayer10">
+	<property name="name" value="Admin Level 10" />
+	<property name="subtitle" value="10 Levels Granted" />
+	<property name="description" value="Grants 10 Levels" />
+	<property name="icon" value="ui_game_symbol_favorite" />
+	<property name="repeatable" value="true" />
+	<property name="category_key" value="challenge" />
+	<property name="offer" value="Grants 10 Levels" />
+	<property name="difficulty" value="easy" />
+	<property name="shareable" value="false" />
+		
+		<!-- <reward type="SkillPoints" value="3" />
+		<reward type="Exp" value="5000" />-->
+		<reward type="Level" value="10" />
+    </quest>
+	
+	<quest id="adminQuestPlayer25">
+	<property name="name" value="Admin Level 25" />
+	<property name="subtitle" value="25 Levels Granted" />
+	<property name="description" value="Grants 25 Levels" />
+	<property name="icon" value="ui_game_symbol_favorite" />
+	<property name="repeatable" value="true" />
+	<property name="category_key" value="challenge" />
+	<property name="offer" value="Grants 25 Levels" />
+	<property name="difficulty" value="easy" />
+	<property name="shareable" value="false" />
+		
+		<!-- <reward type="SkillPoints" value="3" />
+		<reward type="Exp" value="5000" />-->
+		<reward type="Level" value="25" />
+    </quest>
+	
+	<quest id="adminQuestSkillPoints1">
+	<property name="name" value="Admin Skill 1" />
+	<property name="subtitle" value="1 Skill Point Granted" />
+	<property name="description" value="Grants 1 Skill Point" />
+	<property name="icon" value="ui_game_symbol_favorite" />
+	<property name="repeatable" value="true" />
+	<property name="category_key" value="challenge" />
+	<property name="offer" value="Grants 1 Skill Point" />
+	<property name="difficulty" value="easy" />
+	<property name="shareable" value="false" />
+		
+		<!-- <reward type="Level" value="25" />
+		<reward type="Exp" value="5000" />-->
+		<reward type="SkillPoints" value="1" />
+    </quest>
+	
+	<quest id="adminQuestSkillPoints2">
+	<property name="name" value="Admin Skill 2" />
+	<property name="subtitle" value="2 Skill Points Granted" />
+	<property name="description" value="Grants 2 Skill Points" />
+	<property name="icon" value="ui_game_symbol_favorite" />
+	<property name="repeatable" value="true" />
+	<property name="category_key" value="challenge" />
+	<property name="offer" value="Grants 2 Skill Points" />
+	<property name="difficulty" value="easy" />
+	<property name="shareable" value="false" />
+		
+		<!-- <reward type="Level" value="25" />
+		<reward type="Exp" value="5000" />-->
+		<reward type="SkillPoints" value="2" />
+    </quest>
+	
+	<quest id="adminQuestSkillPoints5">
+	<property name="name" value="Admin Skill 5" />
+	<property name="subtitle" value="5 Skill Points Granted" />
+	<property name="description" value="Grants 5 Skill Points" />
+	<property name="icon" value="ui_game_symbol_favorite" />
+	<property name="repeatable" value="true" />
+	<property name="category_key" value="challenge" />
+	<property name="offer" value="Grants 5 Skill Points" />
+	<property name="difficulty" value="easy" />
+	<property name="shareable" value="false" />
+		
+		<!-- <reward type="Level" value="25" />
+		<reward type="Exp" value="5000" />-->
+		<reward type="SkillPoints" value="5" />
+    </quest>
+	
+	<quest id="adminQuestSkillPoints10">
+	<property name="name" value="Admin Skill 10" />
+	<property name="subtitle" value="10 Skill Points Granted" />
+	<property name="description" value="Grants 10 Skill Points" />
+	<property name="icon" value="ui_game_symbol_favorite" />
+	<property name="repeatable" value="true" />
+	<property name="category_key" value="challenge" />
+	<property name="offer" value="Grants 10 Skill Points" />
+	<property name="difficulty" value="easy" />
+	<property name="shareable" value="false" />
+		
+		<!-- <reward type="Level" value="25" />
+		<reward type="Exp" value="5000" />-->
+		<reward type="SkillPoints" value="10" />
+    </quest>
+	
+	<quest id="adminQuestSkillPoints20">
+	<property name="name" value="Admin Skill 20" />
+	<property name="subtitle" value="20 Skill Points Granted" />
+	<property name="description" value="Grants 20 Skill Points" />
+	<property name="icon" value="ui_game_symbol_favorite" />
+	<property name="repeatable" value="true" />
+	<property name="category_key" value="challenge" />
+	<property name="offer" value="Grants 20 Skill Points" />
+	<property name="difficulty" value="easy" />
+	<property name="shareable" value="false" />
+		
+		<!-- <reward type="Level" value="25" />
+		<reward type="Exp" value="5000" />-->
+		<reward type="SkillPoints" value="20" />
+    </quest>
 
 </quests>

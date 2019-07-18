@@ -720,7 +720,7 @@ We _want_ players to specialise so we also have to make it feasible.
 	<property name="HoldType" value="47"/>
 	<property name="Meshfile" value="Items/Weapons/Melee/Knives/machetePrefab"/>
 	<property name="Material" value="Mmetal"/>
-	<property name="RepairTools" value="resourceForgedSteel"/>
+	<property name="RepairTools" value="resourceForgedIron"/>
 	<property name="DegradationBreaksAfter" value="false"/>
 	<property name="EconomicValue" value="600"/>
 	<property name="SoundJammed" value="ItemNeedsRepair"/>
@@ -10899,7 +10899,7 @@ So no clothing dyes until that can be resolved. -->
 	<property name="Meshfile" value="Items/Crafting/rock_smallPrefab"/>
 	<!-- <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/> -->
 	<property name="DropScale" value="6"/>
-	<property name="CustomIcon" value="terrSnow"/>
+	<property name="CustomIcon" value="snowBall"/>
 	<property name="Material" value="MresourceSnowBall"/>
 	<property name="Weight" value="5"/>
 	<property name="Stacknumber" value="6000"/> <!-- STK resource -->
@@ -17254,8 +17254,8 @@ So no clothing dyes until that can be resolved. -->
 		<passive_effect name="MaxRange" operation="base_set" value="60"/>
 		<passive_effect name="DamageFalloffRange" operation="base_set" value="18"/>
 
-		<passive_effect name="EntityDamage" operation="perc_add" value="5"/>
-		<passive_effect name="BlockDamage" operation="perc_add" value="2"/>
+		<passive_effect name="EntityDamage" operation="perc_add" value="2"/>
+		<passive_effect name="BlockDamage" operation="perc_add" value="1"/>
 		<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
 		<passive_effect name="DamageModifier" operation="perc_add" value="2" tags="wood"/>
 
@@ -26198,6 +26198,126 @@ So no clothing dyes until that can be resolved. -->
 	<property name="CraftingSkillGroup" value="craftSkillIronTools"/>
 	<property name="RepairExpMultiplier" value="5.5"/>
 	<property name="PickupJournalEntry" value="paintingTip"/>
+</item>
+
+<item name="adminQuestExperience5000">
+	<property name="Extends" value="challengeQuestMaster"/>
+	<property name="CustomIconTint" value="ffa0a0"/>
+	<property name="CreativeMode" value="Dev"/>
+	<property class="Action0">
+		<property name="QuestGiven" value="adminQuestXP5000"/>
+	</property>
+	<property name="DescriptionKey" value="adminQuestExperienceDesc"/>
+</item>
+
+<item name="adminQuestExperience10000">
+	<property name="Extends" value="challengeQuestMaster"/>
+	<property name="CustomIconTint" value="ffa0a0"/>
+	<property name="CreativeMode" value="Dev"/>
+	<property class="Action0">
+		<property name="QuestGiven" value="adminQuestXP10000"/>
+	</property>
+	<property name="DescriptionKey" value="adminQuestExperienceDesc"/>
+</item>
+
+<item name="adminQuestExperience20000">
+	<property name="Extends" value="challengeQuestMaster"/>
+	<property name="CustomIconTint" value="ffa0a0"/>
+	<property name="CreativeMode" value="Dev"/>
+	<property class="Action0">
+		<property name="QuestGiven" value="adminQuestXP20000"/>
+	</property>
+	<property name="DescriptionKey" value="adminQuestExperienceDesc"/>
+</item>
+
+<item name="adminQuestPlayer1">
+	<property name="Extends" value="challengeQuestMaster"/>
+	<property name="CustomIconTint" value="ffa0a0"/>
+	<property name="CreativeMode" value="Dev"/>
+	<property class="Action0">
+		<property name="QuestGiven" value="adminQuestPlayer1"/>
+	</property>
+	<property name="DescriptionKey" value="adminQuestExperienceDesc"/>
+</item>
+
+<item name="adminQuestPlayer5">
+	<property name="Extends" value="challengeQuestMaster"/>
+	<property name="CustomIconTint" value="ffa0a0"/>
+	<property name="CreativeMode" value="Dev"/>
+	<property class="Action0">
+		<property name="QuestGiven" value="adminQuestPlayer5"/>
+	</property>
+	<property name="DescriptionKey" value="adminQuestExperienceDesc"/>
+</item>
+
+<item name="adminQuestPlayer10">
+	<property name="Extends" value="challengeQuestMaster"/>
+	<property name="CustomIconTint" value="ffa0a0"/>
+	<property name="CreativeMode" value="Dev"/>
+	<property class="Action0">
+		<property name="QuestGiven" value="adminQuestPlayer10"/>
+	</property>
+	<property name="DescriptionKey" value="adminQuestExperienceDesc"/>
+</item>
+
+<item name="adminQuestPlayer25">
+	<property name="Extends" value="challengeQuestMaster"/>
+	<property name="CustomIconTint" value="ffa0a0"/>
+	<property name="CreativeMode" value="Dev"/>
+	<property class="Action0">
+		<property name="QuestGiven" value="adminQuestPlayer25"/>
+	</property>
+	<property name="DescriptionKey" value="adminQuestExperienceDesc"/>
+</item>
+
+<item name="adminQuestSkillPoints1">
+	<property name="Extends" value="challengeQuestMaster"/>
+	<property name="CustomIconTint" value="ffa0a0"/>
+	<property name="CreativeMode" value="Dev"/>
+	<property class="Action0">
+		<property name="QuestGiven" value="adminQuestSkillPoints1"/>
+	</property>
+	<property name="DescriptionKey" value="adminQuestExperienceDesc"/>
+</item>
+
+<item name="adminQuestSkillPoints2">
+	<property name="Extends" value="challengeQuestMaster"/>
+	<property name="CustomIconTint" value="ffa0a0"/>
+	<property name="CreativeMode" value="Dev"/>
+	<property class="Action0">
+		<property name="QuestGiven" value="adminQuestSkillPoints2"/>
+	</property>
+	<property name="DescriptionKey" value="adminQuestExperienceDesc"/>
+</item>
+
+<item name="adminQuestSkillPoints5">
+	<property name="Extends" value="challengeQuestMaster"/>
+	<property name="CustomIconTint" value="ffa0a0"/>
+	<property name="CreativeMode" value="Dev"/>
+	<property class="Action0">
+		<property name="QuestGiven" value="adminQuestSkillPoints5"/>
+	</property>
+	<property name="DescriptionKey" value="adminQuestExperienceDesc"/>
+</item>
+
+<item name="adminQuestSkillPoints10">
+	<property name="Extends" value="challengeQuestMaster"/>
+	<property name="CustomIconTint" value="ffa0a0"/>
+	<property name="CreativeMode" value="Dev"/>
+	<property class="Action0">
+		<property name="QuestGiven" value="adminQuestSkillPoints10"/>
+	</property>
+	<property name="DescriptionKey" value="adminQuestExperienceDesc"/>
+</item>
+
+<item name="adminQuestSkillPoints20">
+	<property name="Extends" value="challengeQuestMaster"/>
+	<property name="CustomIconTint" value="ffa0a0"/>
+	<property name="CreativeMode" value="Dev"/>
+	<property class="Action0">
+		<property name="QuestGiven" value="adminQuestSkillPoints20"/>
+	</property>
+	<property name="DescriptionKey" value="adminQuestExperienceDesc"/>
 </item>
 
 

@@ -330,7 +330,6 @@ tbnsew:
 
 <block name="terrSnow">
 	<property name="Material" value="Msnow"/>
-	<property name="CustomIcon" value="snowBall"/>
 	<property name="Shape" value="Terrain"/>
 	<property name="Mesh" value="terrain"/>
 	<property name="Texture" value="6,569,569,569,569,569"/>
@@ -1125,8 +1124,8 @@ group desc for stuff like metal siding
 	<property name="CreativeMode" value="None"/>
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="rWoodMaster"/>
-		<property name="Item" value="resourceWood"/>
-		<property name="ItemCount" value="4"/>
+		<property name="Item" value="woodAndNails"/>
+		<property name="ItemCount" value="1"/>
 		<property name="UpgradeHitCount" value="4"/>
 	</property>
 	<property name="CustomUpgradeSound" value="place_block_wood"/>
@@ -32731,7 +32730,7 @@ ore block visualisation end -->
 	<property name="IsTerrainDecoration" value="true"/>
 	<property name="CanDecorateOnSlopes" value="true"/>
 	<property name="PlantGrowing.Next" value="treeBirdnestLoot"/>
-	<property name="PlantGrowing.GrowthRate" value="2"/>
+	<property name="PlantGrowing.GrowthRate" value="63"/>
 	<property name="PlantGrowing.IsRandom" value="false"/>
 	<!-- <property name="PlantGrowing.GrowOnTop" value="treeBirdnestLoot"/>
 	<property name="PlantGrowing.GrowIfAnythinOnTop" value="true"/>

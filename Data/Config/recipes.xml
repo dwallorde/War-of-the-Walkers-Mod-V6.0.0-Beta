@@ -2031,11 +2031,6 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="resourceRockSmall" count="4"/>
 </recipe>
 
-<recipe name="foodBaconAndEggs" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="learnable">
-	<ingredient name="foodEgg" count="2"/>
-	<ingredient name="rawWhiteMeat" count="5"/>
-</recipe>
-
 <recipe name="foodBakedPotato" count="1" craft_area="campfire" tags="learnable">
 	<ingredient name="foodCropPotato" count="1"/>
 </recipe>
@@ -2229,6 +2224,11 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="rawWhiteMeat" count="1"/>
 </recipe>
 
+<recipe name="foodBaconAndEggs" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="learnable">
+	<ingredient name="foodEgg" count="2"/>
+	<ingredient name="rawWhiteMeat" count="5"/>
+</recipe>
+
 <recipe name="foodBaconAndEggs" count="1" craft_area="playerOven" craft_tool="fryingPan" tags="learnable">
 	<ingredient name="foodEgg" count="1"/>
 	<ingredient name="rawWhiteMeat" count="3"/>
@@ -2286,7 +2286,7 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 </recipe>
 
 <recipe name="whiteMeatPie" count="1" craft_area="playerOven" tags="learnable">
-    <ingredient name="rawRedMeat" count="6"/>
+    <ingredient name="rawWhiteMeat" count="6"/>
     <ingredient name="Dough" count="2"/>
     <ingredient name="foodCropPotato" count="2"/>
     <ingredient name="foodCropCorn" count="2"/>
@@ -3103,9 +3103,9 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 </recipe> -->
 
 <recipe name="meleeToolMachete" count="1" craft_area="workbench" craft_time="60" tags="learnable">
-	<ingredient name="resourceForgedSteel" count="20"/>
-	<ingredient name="resourceWood" count="4"/>
-	<ingredient name="resourceLeather" count="1"/>
+	<ingredient name="resourceForgedIron" count="20"/>
+	<ingredient name="handlemetal" count="1"/>
+	<ingredient name="resourceLeather" count="10"/>
 </recipe>
 
 <recipe name="SteelMachete" count="1" craft_area="ToolWorkbench" tags="learnable">
@@ -3173,12 +3173,6 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 <recipe name="meleeToolHuntingKnife" count="1" tags="learnable">
 	<ingredient name="resourceForgedIron" count="10"/>
 	<ingredient name="handlewood" count="1"/>
-</recipe>
-
-<recipe name="meleeToolMachete" count="1" craft_area="workbench" craft_time="60" tags="learnable">
-	<ingredient name="resourceForgedIron" count="20"/>
-	<ingredient name="handlemetal" count="1"/>
-	<ingredient name="resourceLeather" count="10"/>
 </recipe>
 
 <recipe name="meleeToolPaintTool" count="1">
@@ -6062,8 +6056,8 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 <recipe name="workbench" count="1" tags="learnable">
 	<ingredient name="resourceForgedIron" count="25"/>
 	<ingredient name="resourceMechanicalParts" count="20"/>
-	<ingredient name="meleeToolWrench" count="1"/>
-	<ingredient name="meleeToolClawHammer" count="1"/>
+	<ingredient name="scrapIronWrench" count="1"/>
+	<ingredient name="scrapIronHammer" count="1"/>
 	<ingredient name="resourceWood" count="50"/>
 </recipe>
 

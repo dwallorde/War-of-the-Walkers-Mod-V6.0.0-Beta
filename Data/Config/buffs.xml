@@ -869,7 +869,7 @@ List of hacks to be removed:
 		</effect_group>
 	</buff>
 
-	<buff name="buffPerkCharismaticNature" name_key="perkCharismaticNatureName" description_key="buffPerkCharismaticNatureDesc" icon="ui_game_symbol_talk" icon_color="0,255,0" icon_blink="false" hidden="false">
+	<buff name="buffPerkCharismaticNature" name_key="perkCharismaticNatureName" description_key="buffPerkCharismaticNatureDesc" icon="ui_game_symbol_allies" icon_color="0,255,0" icon_blink="false" hidden="false">
 	<!--
 	<buff name="buffPerkCharismaticNature" tooltip_key="buffPerkCharismaticNatureTooltip" icon="ui_game_symbol_talk">
 	-->
@@ -1910,7 +1910,7 @@ List of hacks to be removed:
 		</effect_group>
 	</buff>
 
-	<buff name="buffNearDeathTrauma" name_key="buffNearDeathTraumaName" description_key="buffNearDeathTraumaDesc" tooltip_key="buffNearDeathTraumaTooltip" icon="ui_game_symbol_near_death_trauma" icon_color="255,128,0" remove_on_death="false">
+	<buff name="buffNearDeathTrauma" name_key="buffNearDeathTraumaName" description_key="buffNearDeathTraumaDesc" tooltip_key="buffNearDeathTraumaTooltip" icon="ui_game_symbol_neardeath" icon_color="255,128,0" remove_on_death="false">
 		<damage_type value="disease"/>
 		<stack_type value="replace"/>
 		<duration value="1800"/>
@@ -1967,7 +1967,7 @@ List of hacks to be removed:
 	</buff>
 
 	<!-- In the early game it was deemed too easy get in a death loop so health/food/water regen to a degree. -->
-	<buff name="buffNearDeathRegen" icon="ui_game_symbol_near_death_trauma" icon_color="0,255,0" hidden="true">
+	<buff name="buffNearDeathRegen" icon="ui_game_symbol_neardeath" icon_color="0,255,0" hidden="true">
 		<stack_type value="ignore"/>
 		<duration value="100"/>
 		<effect_group>
@@ -2021,7 +2021,7 @@ List of hacks to be removed:
 		</effect_group>
 	</buff>
 
-	<buff name="buffNearDeathProtection" icon="ui_game_symbol_near_death_trauma" icon_color="0,255,0" remove_on_death="false" hidden="true">
+	<buff name="buffNearDeathProtection" icon="ui_game_symbol_neardeath" icon_color="0,255,0" remove_on_death="false" hidden="true">
 		<stack_type value="replace"/>
 		<duration value="10"/>
 		<effect_group>
