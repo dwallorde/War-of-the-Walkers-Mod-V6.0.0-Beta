@@ -2344,15 +2344,15 @@
 			<!-- Tier 1 Generic Storage and An Old Bed -->
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="1,4"
 				tags="GenericStorage,bed01"/>
-			<!-- Tier 2 Queen Size Bed -->
+			<!-- Tier 2 Queen Size Bed and Large Generic Storage Container -->
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="2,4"
 				tags="bed02,GenericStorageLarge"/>
 			<!-- Tier 3 Large Generic Storage Container, King Size Bed -->
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="3,4"
 				tags="GenericStorageXLarge,bedKingSize"/>
-			<!-- Tier 4 Vault Door and Hatch -->
+			<!-- Tier 4 Vault Door, Hatch and House Garage Door -->
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="4"
-				tags="doorVault,hatchVault"/>
+				tags="doorVault,hatchVault,garageDoorHouse"/>
 			<effect_description level="1" desc_key="perkBuilderRecipesRank1Desc"/>
 			<effect_description level="2" desc_key="perkBuilderRecipesRank2Desc"/>
 			<effect_description level="3" desc_key="perkBuilderRecipesRank3Desc"/>
@@ -2795,7 +2795,7 @@
 		<effect_group>
 			<!-- Tier 1 Kevlar Armor -->
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="1,5"
-				tags="KevlarHelmet,KevlarGloves,KevlarBoots,KevlarLegArmor,KevlarJacket"/>
+				tags="KevlarHelmet,KevlarGloves,KevlarBoots,KevlarLegArmor,KevlarVest"/>
 			<!-- Tier 2 Iron Armor -->
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="2,5"
 				tags="armorIronHelmet,armorIronGloves,armorIronBoots,armorIronLegs,armorIronChest"/>
@@ -2818,7 +2818,7 @@
 	
 	<!-- Electrician Class Start -->
 	
-	<perk name="perkElectricianLightsRecipe" parent="skillClassElectrician" max_level="2" name_key="perkElectricianLightsRecipeName" desc_key="perkProtectionArmorRecipesDesc" icon="ui_game_symbol_electric_switch">
+	<perk name="perkElectricianLightsRecipe" parent="skillClassElectrician" max_level="2" name_key="perkElectricianLightsRecipeName" desc_key="perkElectricianLightsRecipeDesc" icon="ui_game_symbol_electric_switch">
 		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="perkElectricianClassMaster" operation="GTE" value="1" desc_key="reqElectricianClass"/>
 		<requirement name="PlayerLevel" target="self" operation="GTE" value="50" desc_key="reqPlayer50"/></level_requirements>
 		<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="perkElectricianClassMaster" operation="GTE" value="1" desc_key="reqElectricianClass"/>
@@ -3154,6 +3154,42 @@
 		</effect_group>
 	</perk>
 	
+	<perk name="perkMechanicMotorcycles" parent="skillClassMechanic" max_level="2" name_key="perkMechanicMotorcyclesName" desc_key="perkMechanicMotorcyclesDesc" icon="ui_game_symbol_motorcycle">
+		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="perkMechanicClassMaster" operation="GTE" value="1" desc_key="reqMechanicClass"/>
+		<requirement name="PlayerLevel" target="self" operation="GTE" value="60" desc_key="reqPlayer60"/></level_requirements>
+		<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="perkMechanicClassMaster" operation="GTE" value="1" desc_key="reqMechanicClass"/>
+		<requirement name="PlayerLevel" target="self" operation="GTE" value="80" desc_key="reqPlayer80"/></level_requirements>
+		
+		<effect_group>
+			<!-- Tier 1 ECO Motorcycle -->
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="1,2"
+				tags="steelMotorcycleChassis,steelMotorcycleHandlebars,ECOMotorcyclePlaceable"/>
+			<!-- Tier 2 HD Motorcycle -->
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="2"
+				tags="tungstenMotorcycleChassis,tungstenMotorcycleHandlebars,HDMotorcyclePlaceable"/>
+			<effect_description level="1" desc_key="perkMechanicMotorcyclesRank1Desc"/>
+			<effect_description level="2" desc_key="perkMechanicMotorcyclesRank2Desc"/>
+		</effect_group>
+	</perk>
+	
+	<perk name="perkMechanic4X4Trucks" parent="skillClassMechanic" max_level="2" name_key="perkMechanic4X4TrucksName" desc_key="perkMechanic4X4TrucksDesc" icon="ui_game_symbol_4x4">
+		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="perkMechanicClassMaster" operation="GTE" value="1" desc_key="reqMechanicClass"/>
+		<requirement name="PlayerLevel" target="self" operation="GTE" value="100" desc_key="reqPlayer100"/></level_requirements>
+		<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="perkMechanicClassMaster" operation="GTE" value="1" desc_key="reqMechanicClass"/>
+		<requirement name="PlayerLevel" target="self" operation="GTE" value="140" desc_key="reqPlayer140"/></level_requirements>
+		
+		<effect_group>
+			<!-- Tier 1 ECO 4X4 Truck -->
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="1,2"
+				tags="steel4x4TruckAccessories,steel4x4TruckChassis,ECO4x4TruckPlaceable"/>
+			<!-- Tier 2 HD 4X4 Truck -->
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="2"
+				tags="tungsten4x4TruckAccessories,tungsten4x4TruckChassis,HD4x4TruckPlaceable"/>
+			<effect_description level="1" desc_key="perkMechanic4X4TrucksRank1Desc"/>
+			<effect_description level="2" desc_key="perkMechanic4X4TrucksRank2Desc"/>
+		</effect_group>
+	</perk>
+	
 	<perk name="perkMechanicBatteries" parent="skillClassMechanic" max_level="3" name_key="perkMechanicBatteriesName" desc_key="perkMechanicBatteriesDesc" icon="ui_game_symbol_battery">
 		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="perkMechanicClassMaster" operation="GTE" value="1" desc_key="reqMechanicClass"/>
 		<requirement name="PlayerLevel" target="self" operation="GTE" value="25" desc_key="reqPlayer25"/></level_requirements>
@@ -3277,6 +3313,17 @@
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="1"
 				tags="MortarandPestle"/>
 			<effect_description level="1" desc_key="perkRecipeMortarandPestleRank1Desc"/>
+		</effect_group>
+	</perk>
+	
+	<perk name="perkRecipeOilPump" parent="skillRecipeWorkstations" max_level="1" name_key="perkRecipeOilPumpName" desc_key="perkRecipeOilPumpDesc" icon="ui_game_symbol_motherlode">
+		<level_requirements level="1"><requirement name="PlayerLevel" target="self" operation="GTE" value="100" desc_key="reqPlayer100"/></level_requirements>
+		
+		<effect_group>
+			<!-- Tier 1 Oil Pump Workstation -->
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="1"
+				tags="oilPump"/>
+			<effect_description level="1" desc_key="perkRecipeOilPumpRank1Desc"/>
 		</effect_group>
 	</perk>
 	
@@ -3568,7 +3615,7 @@
 	</perk>
 	
 	<perk name="perkRecipeTungstenSmithing" parent="skillRecipeBuilding" max_level="1" name_key="perkRecipeTungstenSmithingName" desc_key="perkRecipeTungstenSmithingDesc" icon="ui_game_symbol_tungstensmithing">
-		<level_requirements level="1"><requirement name="PlayerLevel" target="self" operation="GTE" value="100" desc_key="reqPlayer100"/></level_requirements>
+		<level_requirements level="1"><requirement name="PlayerLevel" target="self" operation="GTE" value="150" desc_key="reqPlayer150"/></level_requirements>
 		
 		<effect_group>
 			<!-- Tier 1 Forged Tungsten -->
@@ -3822,7 +3869,7 @@
 	</perk>
 	
 	<perk name="perkAmmoTungstenArrowHead" parent="skillRecipeAmmo" max_level="1" name_key="perkAmmoTungstenArrowHeadName" desc_key="perkAmmoTungstenArrowHeadDesc" icon="ui_game_symbol_arrowHead">
-		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="ammoCrafting" operation="GTE" value="3" desc_key="reqAmmo3"/></level_requirements>
+		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="ammoCrafting" operation="GTE" value="5" desc_key="reqAmmo5"/></level_requirements>
 		
 		<effect_group>
 			<!-- Tier 1 Tungsten Arrow Head Recipe -->

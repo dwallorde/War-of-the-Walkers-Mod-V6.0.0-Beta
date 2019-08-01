@@ -4822,14 +4822,74 @@ treasureTemplate
 	<item group="Magazines" />
 </lootcontainer>
 
-<!-- 9,3 -->
+<!-- 9,6 -->
 <!-- vehicleMinibike ECO storage -->
 <lootcontainer id="200" count="0" size="9,6" sound_open="UseActions/open_shopping_basket" open_time="0" sound_close="UseActions/close_shopping_basket" loot_quality_template="baseTemplate">
 </lootcontainer>
 
-<!-- 9,3 -->
+<!-- 9,7 -->
 <!-- vehicleMinibike HD storage -->
 <lootcontainer id="201" count="0" size="9,7" sound_open="UseActions/open_shopping_basket" open_time="0" sound_close="UseActions/close_shopping_basket" loot_quality_template="baseTemplate">
+</lootcontainer>
+
+<!-- 10,8 -->
+<!-- vehicleMotorcycle ECO storage -->
+<lootcontainer id="202" count="0" size="10,8" sound_open="UseActions/open_shopping_basket" open_time="0" sound_close="UseActions/close_shopping_basket" loot_quality_template="baseTemplate">
+</lootcontainer>
+
+<!-- 10,9 -->
+<!-- vehicleMotorcycle HD storage -->
+<lootcontainer id="203" count="0" size="10,9" sound_open="UseActions/open_shopping_basket" open_time="0" sound_close="UseActions/close_shopping_basket" loot_quality_template="baseTemplate">
+</lootcontainer>
+
+<!-- 10,10 -->
+<!-- vehicle4x4Truck ECO storage -->
+<lootcontainer id="204" count="0" size="10,10" sound_open="UseActions/open_shopping_basket" open_time="0" sound_close="UseActions/close_shopping_basket" loot_quality_template="baseTemplate">
+</lootcontainer>
+
+<!-- 10,10 -->
+<!-- vehicle4x4Truck HD storage -->
+<lootcontainer id="205" count="0" size="10,10" sound_open="UseActions/open_shopping_basket" open_time="0" sound_close="UseActions/close_shopping_basket" loot_quality_template="baseTemplate">
+</lootcontainer>
+
+<!-- Zombie Mechanic Joe Boss Loot -->
+<lootcontainer id="206" count="1,2" size="5,10" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="1" loot_quality_template="baseTemplate">
+	<item group="MechanicJoe" count="1"/>
+</lootcontainer>
+
+<!-- Zombie Nurse Anne Boss Loot -->
+<lootcontainer id="207" count="1,2" size="5,10" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="1" loot_quality_template="baseTemplate">
+	<item group="NurseAnne" count="1"/>
+</lootcontainer>
+
+<!-- Zombie Builder Bob Boss Loot -->
+<lootcontainer id="208" count="1,2" size="5,10" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="1" loot_quality_template="baseTemplate">
+	<item group="BuilderBob" count="1"/>
+</lootcontainer>
+
+<!-- Zombie Housewife Marianne Boss Loot -->
+<lootcontainer id="209" count="1,2" size="5,10" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="1" loot_quality_template="baseTemplate">
+	<item group="HousewifeMarianne" count="1"/>
+</lootcontainer>
+
+<!-- Zombie Investigator Henry Boss Loot -->
+<lootcontainer id="210" count="1,2" size="5,10" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="1" loot_quality_template="baseTemplate">
+	<item group="InvestigatorHenry" count="1"/>
+</lootcontainer>
+
+<!-- Zombie Thug Billy Boss Loot -->
+<lootcontainer id="211" count="1,2" size="5,10" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="1" loot_quality_template="baseTemplate">
+	<item group="ThugBilly" count="1"/>
+</lootcontainer>
+
+<!-- Zombie Master Leroy Boss Loot -->
+<lootcontainer id="212" count="1,2" size="5,10" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="1" loot_quality_template="baseTemplate">
+	<item group="MasterLeroy" count="1"/>
+</lootcontainer>
+
+<!-- Zombie Accountant Zoe Boss Loot -->
+<lootcontainer id="213" count="1,2" size="5,10" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="1" loot_quality_template="baseTemplate">
+	<item group="AccountantZoe" count="1"/>
 </lootcontainer>
 
 </lootcontainers>

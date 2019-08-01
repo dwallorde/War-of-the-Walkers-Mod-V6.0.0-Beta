@@ -554,31 +554,31 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="resourceScrapPolymers" count="4"/>
 </recipe>
 
-<recipe name="armorScrapBoots" count="1" tags="learnable">
+<recipe name="armorScrapBoots" count="1" craft_area="workbench" tags="learnable">
 	<ingredient name="resourceScrapIron" count="120"/>
 	<ingredient name="resourceLeather" count="3"/>
 	<ingredient name="resourceDuctTape" count="2"/>
 </recipe>
 
-<recipe name="armorScrapChest" count="1" tags="learnable">
+<recipe name="armorScrapChest" count="1" craft_area="workbench" tags="learnable">
 	<ingredient name="resourceScrapIron" count="120"/>
 	<ingredient name="resourceLeather" count="3"/>
 	<ingredient name="resourceDuctTape" count="2"/>
 </recipe>
 
-<recipe name="armorScrapGloves" count="1" tags="learnable">
+<recipe name="armorScrapGloves" count="1" craft_area="workbench" tags="learnable">
 	<ingredient name="resourceScrapIron" count="120"/>
 	<ingredient name="resourceLeather" count="3"/>
 	<ingredient name="resourceDuctTape" count="2"/>
 </recipe>
 
-<recipe name="armorScrapHelmet" count="1" tags="learnable">
+<recipe name="armorScrapHelmet" count="1" craft_area="workbench" tags="learnable">
 	<ingredient name="resourceScrapIron" count="120"/>
 	<ingredient name="resourceLeather" count="3"/>
 	<ingredient name="resourceDuctTape" count="2"/>
 </recipe>
 
-<recipe name="armorScrapLegs" count="1" tags="learnable">
+<recipe name="armorScrapLegs" count="1" craft_area="workbench" tags="learnable">
 	<ingredient name="resourceScrapIron" count="120"/>
 	<ingredient name="resourceLeather" count="3"/>
 	<ingredient name="resourceDuctTape" count="2"/>
@@ -638,22 +638,27 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 
 <recipe name="KevlarGloves" count="1" craft_area="ArmorSmithingWorkstation" tags="learnable">
 	<ingredient name="Kevlar" count="4"/>
+	<ingredient name="Twine" count="1"/>
 </recipe>
 
 <recipe name="KevlarHelmet" count="1" craft_area="ArmorSmithingWorkstation" tags="learnable">
 	<ingredient name="Kevlar" count="5"/>
+	<ingredient name="Twine" count="2"/>
 </recipe>
 
 <recipe name="KevlarVest" count="1" craft_area="ArmorSmithingWorkstation" tags="learnable">
 	<ingredient name="Kevlar" count="8"/>
+	<ingredient name="Twine" count="2"/>
 </recipe>
 
 <recipe name="KevlarLegArmor" count="1" craft_area="ArmorSmithingWorkstation" tags="learnable">
 	<ingredient name="Kevlar" count="7"/>
+	<ingredient name="Twine" count="2"/>
 </recipe>
 
 <recipe name="KevlarBoots" count="1" craft_area="ArmorSmithingWorkstation" tags="learnable">
 	<ingredient name="Kevlar" count="4"/>
+	<ingredient name="Twine" count="1"/>
 </recipe>
 
 <recipe name="TungstenGloves" count="1" craft_area="ArmorSmithingWorkstation" tags="learnable">
@@ -1592,21 +1597,18 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 <recipe name="mochacoffee" count="1" craft_area="coffeemaker" tags="learnable">
     <ingredient name="resourceCropCoffeeBeans" count="1"/>
     <ingredient name="chocolate" count="1"/>
-    <ingredient name="drinkJarEmpty" count="1"/>
     <ingredient name="drinkJarBoiledWater" count="1"/>
 </recipe>
  
 <recipe name="pumpkinspicecoffee" count="1" craft_area="coffeemaker" tags="learnable">
     <ingredient name="resourceCropCoffeeBeans" count="1"/>
     <ingredient name="pumpkin" count="1"/>
-    <ingredient name="drinkJarEmpty" count="1"/>
     <ingredient name="drinkJarBoiledWater" count="1"/>
 </recipe>
 
 <recipe name="blackberrytea" count="1" craft_area="coffeemaker" tags="learnable">
     <ingredient name="resourceCropCoffeeBeans" count="1"/>
     <ingredient name="blackberries" count="1"/>
-    <ingredient name="drinkJarEmpty" count="1"/>
     <ingredient name="drinkJarBoiledWater" count="1"/>
 </recipe>
 
@@ -1614,7 +1616,6 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
     <ingredient name="resourceCropCoffeeBeans" count="1"/>
     <ingredient name="strawberries" count="1"/>
     <ingredient name="blackberries" count="1"/>
-    <ingredient name="drinkJarEmpty" count="1"/>
     <ingredient name="drinkJarBoiledWater" count="1"/>
 </recipe>
  
@@ -2640,6 +2641,13 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 
 <recipe name="garageDoorMetal_v1" count="1" craft_area="workbench">
 	<ingredient name="resourceScrapIron" count="240"/>
+	<ingredient name="resourceSpring" count="6"/>
+	<ingredient name="resourceMechanicalParts" count="12"/>
+</recipe>
+
+<recipe name="garageDoorHouse" count="1" craft_area="workbench" tags="learnable">
+	<ingredient name="resourceForgedIron" count="50"/>
+	<ingredient name="resourceWood" count="250"/>
 	<ingredient name="resourceSpring" count="6"/>
 	<ingredient name="resourceMechanicalParts" count="12"/>
 </recipe>
@@ -5634,6 +5642,104 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="vehicleMotorcycleHandlebars" count="1"/>
 	<ingredient name="smallEngine" count="1"/>
 	<ingredient name="carBattery" count="1"/>
+</recipe>
+
+<!-- ECO Motorcycle -->
+<recipe name="steelMotorcycleChassis" count="1" craft_area="workbench" tags="learnable">
+	<ingredient name="resourceForgedSteel" count="50"/>
+	<ingredient name="resourceMechanicalParts" count="24"/>
+	<ingredient name="resourceDuctTape" count="15"/>
+	<ingredient name="resourceLeather" count="15"/>
+	<ingredient name="resourceElectricParts" count="6"/>
+</recipe>
+
+<recipe name="steelMotorcycleHandlebars" count="1" craft_area="workbench" tags="learnable">
+	<ingredient name="resourceMechanicalParts" count="24"/>
+	<ingredient name="resourceDuctTape" count="15"/>
+	<ingredient name="resourceHeadlight" count="1"/>
+	<ingredient name="resourceElectricParts" count="12"/>
+	<ingredient name="resourceForgedSteel" count="12"/>
+</recipe>
+
+<recipe name="ECOMotorcyclePlaceable" count="1" craft_time="150" craft_area="workbench" tags="learnable">
+	<ingredient name="vehicleWheels" count="2"/>
+	<ingredient name="steelMotorcycleChassis" count="1"/>
+	<ingredient name="steelMotorcycleHandlebars" count="1"/>
+	<ingredient name="ECOSmallEngine" count="1"/>
+	<ingredient name="ECOBattery" count="1"/>
+</recipe>
+
+<!-- HD Motorcycle -->
+<recipe name="tungstenMotorcycleChassis" count="1" craft_area="workbench" tags="learnable">
+	<ingredient name="ForgedTungsten" count="30"/>
+	<ingredient name="resourceMechanicalParts" count="24"/>
+	<ingredient name="resourceDuctTape" count="15"/>
+	<ingredient name="resourceLeather" count="15"/>
+	<ingredient name="resourceElectricParts" count="3"/>
+</recipe>
+
+<recipe name="tungstenMotorcycleHandlebars" count="1" craft_area="workbench" tags="learnable">
+	<ingredient name="resourceMechanicalParts" count="24"/>
+	<ingredient name="resourceDuctTape" count="15"/>
+	<ingredient name="resourceHeadlight" count="1"/>
+	<ingredient name="resourceElectricParts" count="12"/>
+	<ingredient name="ForgedTungsten" count="6"/>
+</recipe>
+
+<recipe name="HDMotorcyclePlaceable" count="1" craft_time="150" craft_area="workbench" tags="learnable">
+	<ingredient name="vehicleWheels" count="2"/>
+	<ingredient name="tungstenMotorcycleChassis" count="1"/>
+	<ingredient name="tungstenMotorcycleHandlebars" count="1"/>
+	<ingredient name="HDSmallEngine" count="1"/>
+	<ingredient name="HDBattery" count="1"/>
+</recipe>
+
+<!-- ECO 4X4 Truck -->
+<recipe name="steel4x4TruckAccessories" count="1" craft_area="workbench" tags="learnable">
+	<ingredient name="resourceElectricParts" count="80"/>
+	<ingredient name="resourceElectronicParts" count="40"/>
+	<ingredient name="resourceHeadlight" count="8"/>
+	<ingredient name="resourceMetalPipe" count="120"/>
+</recipe>
+
+<recipe name="steel4x4TruckChassis" count="1" craft_area="workbench" tags="learnable">
+	<ingredient name="resourceForgedSteel" count="500"/>
+	<ingredient name="resourceMechanicalParts" count="100"/>
+	<ingredient name="resourceDuctTape" count="35"/>
+	<ingredient name="resourceLeather" count="75"/>
+	<ingredient name="resourceElectricParts" count="40"/>
+</recipe>
+
+<recipe name="ECO4x4TruckPlaceable" count="1" craft_time="210" craft_area="workbench" tags="learnable">
+	<ingredient name="vehicleWheels" count="4"/>
+	<ingredient name="vehicle4x4TruckChassis" count="1"/>
+	<ingredient name="vehicle4x4TruckAccessories" count="1"/>
+	<ingredient name="ECOSmallEngine" count="1"/>
+	<ingredient name="ECOBattery" count="1"/>
+</recipe>
+
+<!-- HD 4X4 Truck -->
+<recipe name="tungsten4x4TruckAccessories" count="1" craft_area="workbench" tags="learnable">
+	<ingredient name="resourceElectricParts" count="80"/>
+	<ingredient name="resourceElectronicParts" count="40"/>
+	<ingredient name="resourceHeadlight" count="8"/>
+	<ingredient name="resourceMetalPipe" count="120"/>
+</recipe>
+
+<recipe name="tungsten4x4TruckChassis" count="1" craft_area="workbench" tags="learnable">
+	<ingredient name="ForgedTungsten" count="300"/>
+	<ingredient name="resourceMechanicalParts" count="100"/>
+	<ingredient name="resourceDuctTape" count="35"/>
+	<ingredient name="resourceLeather" count="75"/>
+	<ingredient name="resourceElectricParts" count="40"/>
+</recipe>
+
+<recipe name="HD4x4TruckPlaceable" count="1" craft_time="210" craft_area="workbench" tags="learnable">
+	<ingredient name="vehicleWheels" count="4"/>
+	<ingredient name="vehicle4x4TruckChassis" count="1"/>
+	<ingredient name="vehicle4x4TruckAccessories" count="1"/>
+	<ingredient name="HDSmallEngine" count="1"/>
+	<ingredient name="HDBattery" count="1"/>
 </recipe>
 
 <recipe name="vehicleWheels" count="1" tags="learnable">

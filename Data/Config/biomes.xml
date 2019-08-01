@@ -208,6 +208,8 @@ If you do not declare them, the decorations of the main biome are used.
 				<decoration type="prefab" name="resource_oilshale_pile" prob="0.0007" rotatemax="7"/>
 				<decoration type="prefab" name="resource_coal_pile" prob="0.0007" rotatemax="7"/>
 				<decoration type="prefab" name="resource_nitrate_pile" prob="0.0007" rotatemax="7"/>
+				<decoration type="prefab" name="resource_oreRandom_pile" prob="0.0007" rotatemax="7"/>
+				<decoration type="prefab" name="resource_lootCrateRandom1" prob="0.00006" rotatemax="7"/>
 				<decoration type="block" blockname="snowRockResource" prob="0.03" checkresource="true" rotatemax="3"/> 
 				<decoration type="block" blockname="snowRockResource02" prob="0.03" checkresource="true" rotatemax="3"/>
 				<decoration type="block" blockname="rock05" prob="0.001"/>
@@ -274,6 +276,8 @@ If you do not declare them, the decorations of the main biome are used.
 				<decoration type="prefab" name="resource_oilshale_pile" prob="0.0007" rotatemax="7"/>
 				<decoration type="prefab" name="resource_coal_pile" prob="0.0007" rotatemax="7"/>
 				<decoration type="prefab" name="resource_nitrate_pile" prob="0.0007" rotatemax="7"/>
+				<decoration type="prefab" name="resource_oreRandom_pile" prob="0.0007" rotatemax="7"/>
+				<decoration type="prefab" name="resource_lootCrateRandom1" prob="0.00006" rotatemax="7"/>
 				<decoration type="block" blockname="rock05" prob="0.001"/>
 				<decoration type="block" blockname="rock06" prob="0.001"/>
 				<decoration type="block" blockname="rock07" prob="0.001"/>
@@ -392,14 +396,8 @@ If you do not declare them, the decorations of the main biome are used.
 			<decoration type="prefab" name="resource_coal_pile" prob="0.00135" rotatemax="7"/>
 			<decoration type="prefab" name="resource_copper_zinc_pile" prob="0.0007" rotatemax="7"/>
 			<decoration type="prefab" name="resource_iron_pile" prob="0.0007" rotatemax="7"/>
-			<decoration type="prefab" name="resource_lootCrate3_Ammo" prob="0.00006" rotatemax="7"/>
-			<decoration type="prefab" name="resource_lootCrate3_Building" prob="0.00006" rotatemax="7"/>
-			<decoration type="prefab" name="resource_lootCrate3_FoodDrink" prob="0.00006" rotatemax="7"/>
-			<decoration type="prefab" name="resource_lootCrate3_General" prob="0.00006" rotatemax="7"/>
-			<decoration type="prefab" name="resource_lootCrate3_HealthArmr" prob="0.00006" rotatemax="7"/>
-			<decoration type="prefab" name="resource_lootCrate3_Weapons3" prob="0.00006" rotatemax="7"/>
-			<decoration type="prefab" name="resource_lootCrate3_Weapons5" prob="0.00006" rotatemax="7"/>
-			<decoration type="prefab" name="resource_lootCrate3_Weapons7" prob="0.00006" rotatemax="7"/>
+			<decoration type="prefab" name="resource_oreRandom_pile" prob="0.00135" rotatemax="7"/>
+			<decoration type="prefab" name="resource_lootCrateRandom3" prob="0.00006" rotatemax="7"/>
 			<decoration type="block" blockname="cntForestRandomLootHelper" prob="0.00025"/>
 			<decoration type="block" blockname="rock05" prob="0.005"/>
 			<decoration type="block" blockname="rock06" prob="0.005"/>
@@ -583,14 +581,8 @@ If you do not declare them, the decorations of the main biome are used.
 			<decoration type="prefab" name="resource_lead_pile" prob="0.0007" rotatemax="7"/>
 			<decoration type="prefab" name="resource_copper_zinc_pile" prob="0.00135" rotatemax="7"/>
 			<decoration type="prefab" name="resource_iron_pile" prob="0.0007" rotatemax="7"/>
-			<decoration type="prefab" name="resource_lootCrate4_Ammo" prob="0.00005" rotatemax="7"/>
-			<decoration type="prefab" name="resource_lootCrate4_Building" prob="0.00005" rotatemax="7"/>
-			<decoration type="prefab" name="resource_lootCrate4_FoodDrink" prob="0.00005" rotatemax="7"/>
-			<decoration type="prefab" name="resource_lootCrate4_General" prob="0.00005" rotatemax="7"/>
-			<decoration type="prefab" name="resource_lootCrate4_HealthArmr" prob="0.00005" rotatemax="7"/>
-			<decoration type="prefab" name="resource_lootCrate4_Weapons3" prob="0.00005" rotatemax="7"/>
-			<decoration type="prefab" name="resource_lootCrate4_Weapons5" prob="0.00005" rotatemax="7"/>
-			<decoration type="prefab" name="resource_lootCrate4_Weapons7" prob="0.00005" rotatemax="7"/>
+			<decoration type="prefab" name="resource_oreRandom_pile" prob="0.0007" rotatemax="7"/>
+			<decoration type="prefab" name="resource_lootCrateRandom4" prob="0.00005" rotatemax="7"/>
 			<decoration type="block" blockname="plantedCotton3Harvest" prob="0.001"/>
 			<decoration type="block" blockname="rock01" prob="0.001"/>
 			<decoration type="block" blockname="rock02" prob="0.001"/>
@@ -688,6 +680,7 @@ If you do not declare them, the decorations of the main biome are used.
 				<decoration type="prefab" name="resource_lead_pile" prob="0.00055" rotatemax="7"/>
 				<decoration type="prefab" name="resource_oilshale_pile" prob="0.00075" rotatemax="7"/>
 				<decoration type="prefab" name="resource_iron_pile" prob="0.00075" rotatemax="7"/>
+				<decoration type="prefab" name="resource_oreRandom_pile" prob="0.00075" rotatemax="7"/>
 				<decoration type="prefab" name="resource_rareOre_pile" prob="0.00025" rotatemax="7"/>
 				<decoration type="block" blockname="treeDesertShrub" prob="0.3" rotatemax="7"/>
 				<decoration type="block" blockname="treeCactus01" prob="0.003" rotatemax="3"/>
@@ -758,6 +751,7 @@ If you do not declare them, the decorations of the main biome are used.
 				<decoration type="prefab" name="resource_lead_pile" prob="0.00055" rotatemax="7"/>
 				<decoration type="prefab" name="resource_oilshale_pile" prob="0.0007" rotatemax="7"/>
 				<decoration type="prefab" name="resource_iron_pile" prob="0.0007" rotatemax="7"/>
+				<decoration type="prefab" name="resource_oreRandom_pile" prob="0.0007" rotatemax="7"/>
 				<decoration type="prefab" name="resource_rareOre_pile" prob="0.00025" rotatemax="7"/>
 				<decoration type="block" blockname="treeDesertShrub" prob="0.25" rotatemax="7"/>
 				<decoration type="block" blockname="plantedYucca3Harvest" prob="0.03" rotatemax="3"/>
@@ -860,14 +854,8 @@ If you do not declare them, the decorations of the main biome are used.
 			<decoration type="prefab" name="desert_arch" prob="0.00009" rotatemax="7"/>
 			<decoration type="prefab" name="resource_copper_zinc_pile" prob="0.00135" rotatemax="7"/>
 			<decoration type="prefab" name="resource_iron_pile" prob="0.00135" rotatemax="7"/>
-			<decoration type="prefab" name="resource_lootCrate3_Ammo" prob="0.00006" rotatemax="7"/>
-			<decoration type="prefab" name="resource_lootCrate3_Building" prob="0.00006" rotatemax="7"/>
-			<decoration type="prefab" name="resource_lootCrate3_FoodDrink" prob="0.00006" rotatemax="7"/>
-			<decoration type="prefab" name="resource_lootCrate3_General" prob="0.00006" rotatemax="7"/>
-			<decoration type="prefab" name="resource_lootCrate3_HealthArmr" prob="0.00006" rotatemax="7"/>
-			<decoration type="prefab" name="resource_lootCrate3_Weapons3" prob="0.00006" rotatemax="7"/>
-			<decoration type="prefab" name="resource_lootCrate3_Weapons5" prob="0.00006" rotatemax="7"/>
-			<decoration type="prefab" name="resource_lootCrate3_Weapons7" prob="0.00006" rotatemax="7"/>
+			<decoration type="prefab" name="resource_oreRandom_pile" prob="0.00135" rotatemax="7"/>
+			<decoration type="prefab" name="resource_lootCrateRandom3" prob="0.00006" rotatemax="7"/>
 			<decoration type="block" blockname="treeCactus01" prob="0.001" rotatemax="3"/>
 			<decoration type="block" blockname="treeCactus02" prob="0.001" rotatemax="3"/>
 			<decoration type="block" blockname="treeCactus03" prob="0.001" rotatemax="3"/>
@@ -1110,14 +1098,8 @@ If you do not declare them, the decorations of the main biome are used.
 				<decoration type="prefab" name="resource_copper_zinc_pile" prob="0.00135" rotatemax="7"/>
 				<decoration type="prefab" name="resource_iron_pile" prob="0.00135" rotatemax="7"/>
 				<decoration type="prefab" name="resource_rareOre_pile" prob="0.00105" rotatemax="7"/>
-				<decoration type="prefab" name="resource_lootCrate2_Ammo" prob="0.00006" rotatemax="7"/>
-				<decoration type="prefab" name="resource_lootCrate2_Building" prob="0.00006" rotatemax="7"/>
-				<decoration type="prefab" name="resource_lootCrate2_FoodDrink" prob="0.00006" rotatemax="7"/>
-				<decoration type="prefab" name="resource_lootCrate2_General" prob="0.00006" rotatemax="7"/>
-				<decoration type="prefab" name="resource_lootCrate2_HealthArmr" prob="0.00006" rotatemax="7"/>
-				<decoration type="prefab" name="resource_lootCrate2_Weapons3" prob="0.00006" rotatemax="7"/>
-				<decoration type="prefab" name="resource_lootCrate2_Weapons5" prob="0.00006" rotatemax="7"/>
-				<decoration type="prefab" name="resource_lootCrate2_Weapons7" prob="0.00006" rotatemax="7"/>
+				<decoration type="prefab" name="resource_oreRandom_pile" prob="0.00135" rotatemax="7"/>
+				<decoration type="prefab" name="resource_lootCrateRandom2" prob="0.00006" rotatemax="7"/>
 				<decoration type="block" blockname="carsRandomHelper" prob="0.3" rotatemax="3"/>
 				<decoration type="block" blockname="rock01" prob="0.01"/>
 				<decoration type="block" blockname="rock02" prob="0.01"/>
@@ -1227,14 +1209,8 @@ If you do not declare them, the decorations of the main biome are used.
 			<decoration type="prefab" name="resource_rareOre_pile" prob="0.00095" rotatemax="7"/>
 			<decoration type="prefab" name="resource_copper_zinc_pile" prob="0.00135" rotatemax="7"/>
 			<decoration type="prefab" name="resource_iron_pile" prob="0.00135" rotatemax="7"/>
-			<decoration type="prefab" name="resource_lootCrate2_Ammo" prob="0.00006" rotatemax="7"/>
-			<decoration type="prefab" name="resource_lootCrate2_Building" prob="0.00006" rotatemax="7"/>
-			<decoration type="prefab" name="resource_lootCrate2_FoodDrink" prob="0.00006" rotatemax="7"/>
-			<decoration type="prefab" name="resource_lootCrate2_General" prob="0.00006" rotatemax="7"/>
-			<decoration type="prefab" name="resource_lootCrate2_HealthArmr" prob="0.00006" rotatemax="7"/>
-			<decoration type="prefab" name="resource_lootCrate2_Weapons3" prob="0.00006" rotatemax="7"/>
-			<decoration type="prefab" name="resource_lootCrate2_Weapons5" prob="0.00006" rotatemax="7"/>
-			<decoration type="prefab" name="resource_lootCrate2_Weapons7" prob="0.00006" rotatemax="7"/>
+			<decoration type="prefab" name="resource_oreRandom_pile" prob="0.00135" rotatemax="7"/>
+			<decoration type="prefab" name="resource_lootCrateRandom2" prob="0.00006" rotatemax="7"/>
 			<decoration type="block" blockname="cntWastelandRandomLootHelper" prob="0.00025"/>
 			<decoration type="block" blockname="treeDeadPineLeaf" prob="0.010" rotatemax="7"/>
 			<decoration type="block" blockname="scrapMetalPile" prob="0.015" rotatemax="3"/>
@@ -1507,14 +1483,8 @@ If you do not declare them, the decorations of the main biome are used.
 			<decoration type="prefab" name="resource_coal_pile" prob="0.0007" rotatemax="7"/>
 			<decoration type="prefab" name="resource_copper_zinc_pile" prob="0.00135" rotatemax="7"/>
 			<decoration type="prefab" name="resource_iron_pile" prob="0.00135" rotatemax="7"/>
-			<decoration type="prefab" name="resource_lootCrate2_Ammo" prob="0.00006" rotatemax="7"/>
-			<decoration type="prefab" name="resource_lootCrate2_Building" prob="0.00006" rotatemax="7"/>
-			<decoration type="prefab" name="resource_lootCrate2_FoodDrink" prob="0.00006" rotatemax="7"/>
-			<decoration type="prefab" name="resource_lootCrate2_General" prob="0.00006" rotatemax="7"/>
-			<decoration type="prefab" name="resource_lootCrate2_HealthArmr" prob="0.00006" rotatemax="7"/>
-			<decoration type="prefab" name="resource_lootCrate2_Weapons3" prob="0.00006" rotatemax="7"/>
-			<decoration type="prefab" name="resource_lootCrate2_Weapons5" prob="0.00006" rotatemax="7"/>
-			<decoration type="prefab" name="resource_lootCrate2_Weapons7" prob="0.00006" rotatemax="7"/>
+			<decoration type="prefab" name="resource_oreRandom_pile" prob="0.00135" rotatemax="7"/>
+			<decoration type="prefab" name="resource_lootCrateRandom2" prob="0.00006" rotatemax="7"/>
 			<decoration type="block" blockname="cntBurntForestRandomLootHelper" prob="0.00025"/>
 			<decoration type="block" blockname="rock01" prob="0.005" rotatemax="3"/>
 			<decoration type="block" blockname="rock02" prob="0.005" rotatemax="3"/>

@@ -319,7 +319,13 @@
 		<block name="terrOreCoal" prob="2.5"/>
 		<block name="terrOrePotassiumNitrate" prob="2.5"/>
 		<block name="terrOreLead" prob="2.5"/>
+		<block name="terrOreOilDeposit" prob="0.8"/>
 		<block name="terrOreSilver" prob="0.5"/>
+		<block name="terrOreGold" prob="0.4"/>
+		<block name="terrOreDiamond" prob="0.3"/>
+		<block name="tungstenOre" prob="0.7"/>
+		<block name="copperOre" prob="0.8"/>
+		<block name="zincOre" prob="0.8"/>
 	</placeholder>
 
 	<placeholder name="cntToolsAndForgeRandomLootHelper">
@@ -665,6 +671,18 @@
 		<block name="treeBurntMaple03" prob="1.0" biome="wasteland" randomrotation="true"/>
 		<block name="treeMountainPineDry21m" prob="1.0" biome="wasteland" randomrotation="true"/>
 		<block name="treeBurntMaple03" prob="1.0" biome="burnt_forest" randomrotation="true"/>
+	</placeholder>
+	
+	<!-- Replace the supplyCrateRandomLootHelper with one of the following -->
+	<placeholder name="supplyCrateRandomLootHelper">
+		<block name="supplyCrateBuilding" prob="0.6"/>
+		<block name="supplyCrateHealthandArmor" prob="0.6"/>
+		<block name="supplyCrateAmmo" prob="0.5"/>
+		<block name="supplyCrateFoodandDrink" prob="0.75"/>
+		<block name="supplyCrateWeaponsDay5" prob="0.4"/>
+		<block name="supplyCrateWeaponsDay7" prob="0.3"/>
+		<block name="supplyCrateWeaponsDay3" prob="0.5"/>
+		<block name="supplyCrateGeneral" prob="0.8"/>
 	</placeholder>
 
 

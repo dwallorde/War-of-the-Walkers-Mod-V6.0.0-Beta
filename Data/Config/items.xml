@@ -2561,7 +2561,7 @@ We _want_ players to specialise so we also have to make it feasible.
 		<property name="Upgrade_hit_offset" value="-5"/>
 		<property name="Repair_action_sound" value="nailgun_fire"/>
 		<property name="Upgrade_action_sound" value="nailgun_fire"/>
-		<property name="Allowed_upgrade_items" value="resourceWood,resourceClayLump,resourceSnowBall,resourceScrapIron,resourceForgedIron,resourceForgedSteel,resourceConcreteMix,resourceCobblestones,resourceYuccaFibers,resourceCloth,resourceScrapPolymers,resourceNail"/>
+		<property name="Allowed_upgrade_items" value="resourceWood,resourceClayLump,resourceSnowBall,resourceScrapIron,resourceForgedIron,resourceForgedSteel,resourceConcreteMix,resourceCobblestones,resourceYuccaFibers,resourceNail,ForgedTungsten,ammoGasCan,foodCropCorn,fireLog,woodAndNails,scrapIronAndRivets,portlandConcreteMix,tungstenPlating"/>
 		<!--<property name="Restricted_upgrade_items" value="concrete"/>-->
 	</property>
 	<property name="Group" value="Tools/Traps"/>
@@ -4107,7 +4107,7 @@ We _want_ players to specialise so we also have to make it feasible.
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="Mmetal"/>
 	<property name="EconomicValue" value="6000"/>
-	<property name="SellableToTrader" value="false"/>
+	<property name="SellableToTrader" value="true"/>
 	<property name="CraftingSkillGroup" value="craftSkillMechanic"/>
 	<property class="Action1">
 		<property name="Class" value="SpawnVehicle"/>
@@ -10868,7 +10868,7 @@ So no clothing dyes until that can be resolved. -->
 	<property name="Meshfile" value="Items/Crafting/rock_smallPrefab"/>
 	<property name="DropScale" value="6"/>
 	<property name="Material" value="MresourceRockSmall"/>
-	<property name="Stacknumber" value="6000"/> <!-- STK resource -->
+	<property name="Stacknumber" value="10000"/> <!-- STK resource -->
 	<property name="RepairAmount" value="300"/>
 	<property name="RepairTime" value="0.5"/>
 	<property name="Weight" value="5"/>
@@ -10902,7 +10902,7 @@ So no clothing dyes until that can be resolved. -->
 	<property name="CustomIcon" value="snowBall"/>
 	<property name="Material" value="MresourceSnowBall"/>
 	<property name="Weight" value="5"/>
-	<property name="Stacknumber" value="6000"/> <!-- STK resource -->
+	<property name="Stacknumber" value="10000"/> <!-- STK resource -->
 	<property name="EconomicValue" value="5"/>
 	<property name="EconomicBundleSize" value="150"/>
 	<property name="SellableToTrader" value="false"/>
@@ -11015,7 +11015,7 @@ So no clothing dyes until that can be resolved. -->
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="MresourceForgedIron"/>
-	<property name="Stacknumber" value="500"/> <!-- STK resource -->
+	<property name="Stacknumber" value="5000"/> <!-- STK resource -->
 	<property name="EconomicValue" value="12"/>
 	<property name="CraftingIngredientExp" value="10"/>
 	<property name="CraftingIngredientTime" value="10"/>
@@ -11029,7 +11029,7 @@ So no clothing dyes until that can be resolved. -->
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="MresourceMetalPipe"/>
-	<property name="Stacknumber" value="500"/> <!-- STK resource -->
+	<property name="Stacknumber" value="5000"/> <!-- STK resource -->
 	<property name="EconomicValue" value="12"/>
 	<property name="Group" value="Resources"/>
 </item>
@@ -11039,7 +11039,7 @@ So no clothing dyes until that can be resolved. -->
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="MresourceForgedSteel"/>
-	<property name="Stacknumber" value="500"/> <!-- STK resource -->
+	<property name="Stacknumber" value="5000"/> <!-- STK resource -->
 	<property name="EconomicValue" value="50"/>
 	<property name="Group" value="Resources"/>
 	<property name="CraftingIngredientExp" value="15"/>
@@ -11308,7 +11308,7 @@ So no clothing dyes until that can be resolved. -->
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="MresourceCobblestones"/>
-	<property name="Stacknumber" value="2000"/> <!-- STK resource -->
+	<property name="Stacknumber" value="10000"/> <!-- STK resource -->
 	<property name="EconomicValue" value="10"/>
 	<property name="EconomicBundleSize" value="100"/>
 	<property name="Group" value="Resources"/>
@@ -11319,7 +11319,7 @@ So no clothing dyes until that can be resolved. -->
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="MresourceCement"/>
-	<property name="Stacknumber" value="2000"/> <!-- STK resource -->
+	<property name="Stacknumber" value="10000"/> <!-- STK resource -->
 	<property name="EconomicValue" value="75"/>
 	<property name="EconomicBundleSize" value="50"/>
 	<property name="Group" value="Building,Resources"/>
@@ -11331,7 +11331,7 @@ So no clothing dyes until that can be resolved. -->
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="MresourceConcreteMix"/>
 	<property name="Weight" value="20"/>
-	<property name="Stacknumber" value="2000"/> <!-- STK resource -->
+	<property name="Stacknumber" value="10000"/> <!-- STK resource -->
 	<property name="EconomicValue" value="125"/>
 	<property name="EconomicBundleSize" value="50"/>
 	<property name="Group" value="Resources"/>
@@ -11458,7 +11458,7 @@ So no clothing dyes until that can be resolved. -->
 	<property name="Meshfile" value="Items/Misc/brokenGlassPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="MresourceBrokenGlass"/>
-	<property name="Stacknumber" value="6000"/> <!-- STK resource -->
+	<property name="Stacknumber" value="10000"/> <!-- STK resource -->
 	<property name="Weight" value="5"/>
 	<property name="EconomicValue" value="5"/>
 	<property name="EconomicBundleSize" value="50"/>
@@ -11519,7 +11519,7 @@ So no clothing dyes until that can be resolved. -->
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="MresourceCoal"/>
-	<property name="Stacknumber" value="6000"/> <!-- STK resource -->
+	<property name="Stacknumber" value="10000"/> <!-- STK resource -->
 	<property name="FuelValue" value="20"/>
 	<property name="EconomicValue" value="10"/>
 	<property name="EconomicBundleSize" value="10"/>
@@ -11532,7 +11532,7 @@ So no clothing dyes until that can be resolved. -->
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="MresourceCoal"/>
-	<property name="Stacknumber" value="6000"/> <!-- STK resource -->
+	<property name="Stacknumber" value="10000"/> <!-- STK resource -->
 	<property name="EconomicValue" value="10"/>
 	<property name="EconomicBundleSize" value="10"/>
 	<property name="Group" value="Resources"/>
@@ -11544,7 +11544,7 @@ So no clothing dyes until that can be resolved. -->
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="Mdirt"/>
-	<property name="Stacknumber" value="1000"/> <!-- STK resource -->
+	<property name="Stacknumber" value="5000"/> <!-- STK resource -->
 	<property name="EconomicValue" value="10"/>
 	<property name="EconomicBundleSize" value="10"/>
 	<property name="Group" value="Resources,Ammo/Weapons,Tools/Traps"/>
@@ -11556,7 +11556,7 @@ So no clothing dyes until that can be resolved. -->
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="Mlead"/>
-	<property name="Stacknumber" value="250"/> <!-- STK resource -->
+	<property name="Stacknumber" value="500"/> <!-- STK resource -->
 	<property name="EconomicValue" value="10"/>
 	<property name="EconomicBundleSize" value="10"/>
 	<property name="Group" value="Resources,Ammo/Weapons"/>
@@ -11641,7 +11641,7 @@ So no clothing dyes until that can be resolved. -->
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="Mmetal"/>
-	<property name="Stacknumber" value="50"/> <!-- STK resource -->
+	<property name="Stacknumber" value="500"/> <!-- STK resource -->
 	<property name="EconomicValue" value="77"/>
 	<property name="Group" value="Resources,Ammo/Weapons"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
@@ -11764,7 +11764,7 @@ So no clothing dyes until that can be resolved. -->
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="MresourceScrapBrassLarge"/>
-	<property name="Stacknumber" value="5"/> <!-- STK loot -->
+	<property name="Stacknumber" value="25"/> <!-- STK loot -->
 	<property name="Weight" value="100"/>
 	<property name="EconomicValue" value="200"/>
 	<property name="Group" value="Resources"/>
@@ -11916,7 +11916,7 @@ So no clothing dyes until that can be resolved. -->
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="VehicleSlotType" value="resourceHeadlight"/>
 	<property name="Material" value="MresourceForgedSteel"/>
-	<property name="Stacknumber" value="50"/> <!-- STK loot -->
+	<property name="Stacknumber" value="500"/> <!-- STK loot -->
 	<property name="Weight" value="10"/>
 	<property name="EconomicValue" value="240"/>
 	<property name="Group" value="Resources"/>
@@ -12004,7 +12004,7 @@ So no clothing dyes until that can be resolved. -->
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="Miron"/>
-	<property name="Stacknumber" value="250"/> <!-- STK loot -->
+	<property name="Stacknumber" value="500"/> <!-- STK loot -->
 	<property name="EconomicValue" value="26"/>
 	<property name="Group" value="Food/Cooking"/>
 </item>
@@ -12014,7 +12014,7 @@ So no clothing dyes until that can be resolved. -->
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="MtoolBeaker"/>
-	<property name="Stacknumber" value="10"/> <!-- STK loot -->
+	<property name="Stacknumber" value="500"/> <!-- STK loot -->
 	<property name="Weight" value="15"/>
 	<property name="EconomicValue" value="250"/>
 	<property name="Group" value="Chemicals"/>
@@ -12089,9 +12089,9 @@ So no clothing dyes until that can be resolved. -->
 	<property name="Weight" value="1"/>
 	<property name="Group" value="Resources"/>
 	<property name="ResourceUnit" value="true"/>
-	<property name="MeltTimePerUnit" value="0.25"/>
+	<property name="MeltTimePerUnit" value="0.1"/>
 	<property name="UserHidden" value="true"/>
-	<property name="CraftingIngredientTime" value="0.5"/>
+	<property name="CraftingIngredientTime" value="0.25"/>
 	<property name="CreativeMode" value="None"/>
 </item>
 
@@ -13546,7 +13546,7 @@ So no clothing dyes until that can be resolved. -->
 		<property name="Delay" value="1.0"/>
 		<property name="Use_time" value="..."/>
 		<property name="Sound_start" value="player_eating"/>
-		<property name="Create_item" value="emptyJar"/>
+		<property name="Create_item" value="drinkJarEmpty"/>
 	</property>
 	<effect_group tiered="false">
 		<requirement name="NotHasBuff" buff="buffIsOnFire"/>
@@ -13579,7 +13579,7 @@ So no clothing dyes until that can be resolved. -->
 		<property name="Delay" value="1.0"/>
 		<property name="Use_time" value="..."/>
 		<property name="Sound_start" value="player_eating"/>
-		<property name="Create_item" value="emptyJar"/>
+		<property name="Create_item" value="drinkJarEmpty"/>
 	</property>
 	<effect_group tiered="false">
 		<requirement name="NotHasBuff" buff="buffIsOnFire"/>
@@ -13607,7 +13607,7 @@ So no clothing dyes until that can be resolved. -->
 		<property name="Delay" value="1.0"/>
 		<property name="Use_time" value="..."/>
 		<property name="Sound_start" value="player_eating"/>
-		<property name="Create_item" value="emptyJar"/>
+		<property name="Create_item" value="drinkJarEmpty"/>
 	</property>
 	<effect_group tiered="false">
 		<requirement name="NotHasBuff" buff="buffIsOnFire"/>
@@ -13641,7 +13641,7 @@ So no clothing dyes until that can be resolved. -->
 		<property name="Delay" value="1.0"/>
 		<property name="Use_time" value="..."/>
 		<property name="Sound_start" value="player_eating"/>
-		<property name="Create_item" value="emptyJar"/>
+		<property name="Create_item" value="drinkJarEmpty"/>
 	</property>
 	<effect_group tiered="false">
 		<requirement name="NotHasBuff" buff="buffIsOnFire"/>
@@ -13672,7 +13672,7 @@ So no clothing dyes until that can be resolved. -->
 		<property name="Delay" value="1.0"/>
 		<property name="Use_time" value="..."/>
 		<property name="Sound_start" value="player_eating"/>
-		<property name="Create_item" value="emptyJar"/>
+		<property name="Create_item" value="drinkJarEmpty"/>
 	</property>
 	<effect_group tiered="false">
 		<requirement name="NotHasBuff" buff="buffIsOnFire"/>
@@ -13710,7 +13710,7 @@ So no clothing dyes until that can be resolved. -->
 		<property name="Delay" value="1.0"/>
 		<property name="Use_time" value="..."/>
 		<property name="Sound_start" value="player_eating"/>
-		<property name="Create_item" value="emptyJar"/>
+		<property name="Create_item" value="drinkJarEmpty"/>
 	</property>
 	<effect_group tiered="false">
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="5"/>
@@ -13737,7 +13737,7 @@ So no clothing dyes until that can be resolved. -->
 		<property name="Delay" value="1.0"/>
 		<property name="Use_time" value="..."/>
 		<property name="Sound_start" value="player_eating"/>
-		<property name="Create_item" value="emptyJar"/>
+		<property name="Create_item" value="drinkJarEmpty"/>
 	</property>
 	<effect_group tiered="false">
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="5"/>
@@ -14909,7 +14909,7 @@ So no clothing dyes until that can be resolved. -->
 		<property name="Delay" value="1.0"/>
 		<property name="Use_time" value="..."/>
 		<property name="Sound_start" value="player_eating"/>
-		<property name="Create_item" value="emptyJar"/>
+		<property name="Create_item" value="drinkJarEmpty"/>
 	</property>
 	<effect_group tiered="false">
 		<requirement name="NotHasBuff" buff="buffIsOnFire"/>
@@ -14938,7 +14938,7 @@ So no clothing dyes until that can be resolved. -->
 		<property name="Delay" value="1.0"/>
 		<property name="Use_time" value="..."/>
 		<property name="Sound_start" value="player_eating"/>
-		<property name="Create_item" value="emptyJar"/>
+		<property name="Create_item" value="drinkJarEmpty"/>
 	</property>
 	<effect_group tiered="false">
 		<requirement name="NotHasBuff" buff="buffIsOnFire"/>
@@ -14967,7 +14967,7 @@ So no clothing dyes until that can be resolved. -->
 		<property name="Delay" value="1.0"/>
 		<property name="Use_time" value="..."/>
 		<property name="Sound_start" value="player_eating"/>
-		<property name="Create_item" value="emptyJar"/>
+		<property name="Create_item" value="drinkJarEmpty"/>
 	</property>
 	<effect_group tiered="false">
 		<requirement name="NotHasBuff" buff="buffIsOnFire"/>
@@ -14996,7 +14996,7 @@ So no clothing dyes until that can be resolved. -->
 		<property name="Delay" value="1.0"/>
 		<property name="Use_time" value="..."/>
 		<property name="Sound_start" value="player_eating"/>
-		<property name="Create_item" value="emptyJar"/>
+		<property name="Create_item" value="drinkJarEmpty"/>
 	</property>
 	<effect_group tiered="false">
 		<requirement name="NotHasBuff" buff="buffIsOnFire"/>
@@ -15025,7 +15025,7 @@ So no clothing dyes until that can be resolved. -->
 		<property name="Delay" value="1.0"/>
 		<property name="Use_time" value="..."/>
 		<property name="Sound_start" value="player_eating"/>
-		<property name="Create_item" value="emptyJar"/>
+		<property name="Create_item" value="drinkJarEmpty"/>
 	</property>
 	<effect_group tiered="false">
 		<requirement name="NotHasBuff" buff="buffIsOnFire"/>
@@ -15054,7 +15054,7 @@ So no clothing dyes until that can be resolved. -->
 		<property name="Delay" value="1.0"/>
 		<property name="Use_time" value="..."/>
 		<property name="Sound_start" value="player_eating"/>
-		<property name="Create_item" value="emptyJar"/>
+		<property name="Create_item" value="drinkJarEmpty"/>
 	</property>
 	<effect_group tiered="false">
 		<requirement name="NotHasBuff" buff="buffIsOnFire"/>
@@ -15083,7 +15083,7 @@ So no clothing dyes until that can be resolved. -->
 		<property name="Delay" value="1.0"/>
 		<property name="Use_time" value="..."/>
 		<property name="Sound_start" value="player_eating"/>
-		<property name="Create_item" value="emptyJar"/>
+		<property name="Create_item" value="drinkJarEmpty"/>
 	</property>
 	<effect_group tiered="false">
 		<requirement name="NotHasBuff" buff="buffIsOnFire"/>
@@ -15112,7 +15112,7 @@ So no clothing dyes until that can be resolved. -->
 		<property name="Delay" value="1.0"/>
 		<property name="Use_time" value="..."/>
 		<property name="Sound_start" value="player_eating"/>
-		<property name="Create_item" value="emptyJar"/>
+		<property name="Create_item" value="drinkJarEmpty"/>
 	</property>
 	<effect_group tiered="false">
 		<requirement name="NotHasBuff" buff="buffIsOnFire"/>
@@ -15141,7 +15141,7 @@ So no clothing dyes until that can be resolved. -->
 		<property name="Delay" value="1.0"/>
 		<property name="Use_time" value="..."/>
 		<property name="Sound_start" value="player_eating"/>
-		<property name="Create_item" value="emptyJar"/>
+		<property name="Create_item" value="drinkJarEmpty"/>
 	</property>
 	<effect_group tiered="false">
 		<requirement name="NotHasBuff" buff="buffIsOnFire"/>
@@ -15170,7 +15170,7 @@ So no clothing dyes until that can be resolved. -->
 		<property name="Delay" value="1.0"/>
 		<property name="Use_time" value="..."/>
 		<property name="Sound_start" value="player_eating"/>
-		<property name="Create_item" value="emptyJar"/>
+		<property name="Create_item" value="drinkJarEmpty"/>
 	</property>
 	<effect_group tiered="false">
 		<requirement name="NotHasBuff" buff="buffIsOnFire"/>
@@ -15199,7 +15199,7 @@ So no clothing dyes until that can be resolved. -->
 		<property name="Delay" value="1.0"/>
 		<property name="Use_time" value="..."/>
 		<property name="Sound_start" value="player_eating"/>
-		<property name="Create_item" value="emptyJar"/>
+		<property name="Create_item" value="drinkJarEmpty"/>
 	</property>
 	<effect_group tiered="false">
 		<requirement name="NotHasBuff" buff="buffIsOnFire"/>
@@ -16092,7 +16092,7 @@ So no clothing dyes until that can be resolved. -->
 	<property name="Meshfile" value="Items/Food/bottled_waterPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="Morganic" />
-	<property name="Stacknumber" value="50" />
+	<property name="Stacknumber" value="100" />
 	<property name="Weight" value="10" />
 	<property name="Group" value="Resources,Chemicals" />
 	<property name="EconomicValue" value="150" />
@@ -16122,7 +16122,7 @@ So no clothing dyes until that can be resolved. -->
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="Miron"/>
-	<property name="Stacknumber" value="5000"/> <!-- STK resource -->
+	<property name="Stacknumber" value="6000"/> <!-- STK resource -->
 	<property name="EconomicValue" value="20"/>
 	<property name="EconomicBundleSize" value="20"/>
 	<property name="Group" value="Resources"/>
@@ -16169,7 +16169,7 @@ So no clothing dyes until that can be resolved. -->
 	<property name="Meshfile" value="Items/Tools/nailProjectilePrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="Mmetal"/>
-	<property name="Stacknumber" value="5000"/> <!-- STK resource -->
+	<property name="Stacknumber" value="6000"/> <!-- STK resource -->
 	<property name="EconomicValue" value="15"/>
 	<property name="EconomicBundleSize" value="10"/>
 	<property name="Group" value="Building,Resources"/>
@@ -16181,7 +16181,7 @@ So no clothing dyes until that can be resolved. -->
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="Mstone"/>
-	<property name="Stacknumber" value="5000"/> <!-- STK resource -->
+	<property name="Stacknumber" value="6000"/> <!-- STK resource -->
 	<property name="EconomicValue" value="20"/>
 	<property name="EconomicBundleSize" value="70"/>
 	<property name="Group" value="Building,Resources"/>
@@ -16195,7 +16195,7 @@ So no clothing dyes until that can be resolved. -->
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="Mconcrete"/>
 	<property name="Weight" value="20"/>
-	<property name="Stacknumber" value="5000"/> <!-- STK resource -->
+	<property name="Stacknumber" value="6000"/> <!-- STK resource -->
 	<property name="EconomicValue" value="25"/>
 	<property name="EconomicBundleSize" value="20"/>
 	<property name="Group" value="Building,Resources"/>
@@ -16208,7 +16208,7 @@ So no clothing dyes until that can be resolved. -->
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="tungsten" />
-	<property name="Stacknumber" value="1000" /> <!-- STK resource -->
+	<property name="Stacknumber" value="6000" /> <!-- STK resource -->
 	<property name="EconomicValue" value="50" />
 	<property name="Group" value="Resources" />
 	<property name="Weight" value="40" />
@@ -17254,7 +17254,7 @@ So no clothing dyes until that can be resolved. -->
 		<passive_effect name="MaxRange" operation="base_set" value="60"/>
 		<passive_effect name="DamageFalloffRange" operation="base_set" value="18"/>
 
-		<passive_effect name="EntityDamage" operation="perc_add" value="2"/>
+		<passive_effect name="EntityDamage" operation="perc_add" value="1.1"/>
 		<passive_effect name="BlockDamage" operation="perc_add" value="1"/>
 		<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
 		<passive_effect name="DamageModifier" operation="perc_add" value="2" tags="wood"/>
@@ -24166,8 +24166,8 @@ So no clothing dyes until that can be resolved. -->
 	<property name="Meshfile" value="Entities/Vehicles/minibike_Prefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="Mmetal"/>
-	<property name="EconomicValue" value="6000"/>
-	<property name="SellableToTrader" value="false"/>
+	<property name="EconomicValue" value="8000"/>
+	<property name="SellableToTrader" value="true"/>
 	<property class="Action1">
 		<property name="Class" value="SpawnVehicle"/>
 		<property name="Vehicle" value="ECOMinibike"/>
@@ -24186,8 +24186,8 @@ So no clothing dyes until that can be resolved. -->
 	<property name="Meshfile" value="Entities/Vehicles/minibike_Prefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="Mmetal"/>
-	<property name="EconomicValue" value="6000"/>
-	<property name="SellableToTrader" value="false"/>
+	<property name="EconomicValue" value="10000"/>
+	<property name="SellableToTrader" value="true"/>
 	<property class="Action1">
 		<property name="Class" value="SpawnVehicle"/>
 		<property name="Vehicle" value="HDMinibike"/>
@@ -26318,6 +26318,110 @@ So no clothing dyes until that can be resolved. -->
 		<property name="QuestGiven" value="adminQuestSkillPoints20"/>
 	</property>
 	<property name="DescriptionKey" value="adminQuestExperienceDesc"/>
+</item>
+
+<!-- ECO Motorcycle -->
+<item name="steelMotorcycleChassis">
+	<property name="Extends" value="vehicleWheels"/>
+	<property name="CustomIcon" value="steelMotorcycleChassis"/>
+</item>
+
+<item name="steelMotorcycleHandlebars">
+	<property name="Extends" value="vehicleWheels"/>
+	<property name="CustomIcon" value="steelMotorcycleHandlebars"/>
+</item>
+
+<item name="ECOMotorcyclePlaceable">
+	<property name="Extends" value="vehicleMinibikePlaceable"/>
+	<property name="CustomIcon" value="ECOMotorcyclePlaceable"/>
+
+	<property name="Meshfile" value="Entities/Vehicles/motorcycle_Prefab"/>
+	<property name="EconomicValue" value="10000"/>
+	<property class="Action1">
+		<property name="Vehicle" value="ECOMotorcycle"/>
+		<property name="VehicleSize" value="1.3, 1.9, 3"/>
+	</property>
+	<effect_group name="Base Effects">
+		<passive_effect name="DegradationMax" operation="base_set" value="5000,8000" tier="1,6"/>
+	</effect_group>
+</item>
+
+<!-- HD Motorcycle -->
+<item name="tungstenMotorcycleChassis">
+	<property name="Extends" value="vehicleWheels"/>
+	<property name="CustomIcon" value="tungstenMotorcycleChassis"/>
+</item>
+
+<item name="tungstenMotorcycleHandlebars">
+	<property name="Extends" value="vehicleWheels"/>
+	<property name="CustomIcon" value="tungstenMotorcycleHandlebars"/>
+</item>
+
+<item name="HDMotorcyclePlaceable">
+	<property name="Extends" value="vehicleMinibikePlaceable"/>
+	<property name="CustomIcon" value="HDMotorcyclePlaceable"/>
+
+	<property name="Meshfile" value="Entities/Vehicles/motorcycle_Prefab"/>
+	<property name="EconomicValue" value="14000"/>
+	<property class="Action1">
+		<property name="Vehicle" value="HDMotorcycle"/>
+		<property name="VehicleSize" value="1.3, 1.9, 3"/>
+	</property>
+	<effect_group name="Base Effects">
+		<passive_effect name="DegradationMax" operation="base_set" value="9000,14000" tier="1,6"/>
+	</effect_group>
+</item>
+
+<!-- ECO 4X4 Truck -->
+<item name="steel4x4TruckChassis">
+	<property name="Extends" value="vehicleWheels"/>
+	<property name="CustomIcon" value="steel4x4TruckChassis"/>
+</item>
+
+<item name="steel4x4TruckAccessories">
+	<property name="Extends" value="vehicleBicycleHandlebars"/>
+	<property name="CustomIcon" value="steel4x4TruckAccessories"/>
+</item>
+
+<item name="ECO4x4TruckPlaceable">
+	<property name="Extends" value="vehicleMinibikePlaceable"/>
+	<property name="CustomIcon" value="ECO4x4TruckPlaceable"/>
+
+	<property name="Meshfile" value="Entities/Vehicles/jeep_Prefab"/>
+	<property name="EconomicValue" value="35000"/>
+	<property class="Action1">
+		<property name="Vehicle" value="ECO4x4Truck"/>
+		<property name="VehicleSize" value="2.5, 2.1, 5"/>
+	</property>
+	<effect_group name="Base Effects">
+		<passive_effect name="DegradationMax" operation="base_set" value="5000,10000" tier="1,6"/>
+	</effect_group>
+</item>
+
+<!-- HD 4X4 Truck -->
+<item name="tungsten4x4TruckChassis">
+	<property name="Extends" value="vehicleWheels"/>
+	<property name="CustomIcon" value="tungsten4x4TruckChassis"/>
+</item>
+
+<item name="tungsten4x4TruckAccessories">
+	<property name="Extends" value="vehicleBicycleHandlebars"/>
+	<property name="CustomIcon" value="tungsten4x4TruckAccessories"/>
+</item>
+
+<item name="HD4x4TruckPlaceable">
+	<property name="Extends" value="vehicleMinibikePlaceable"/>
+	<property name="CustomIcon" value="HD4x4TruckPlaceable"/>
+
+	<property name="Meshfile" value="Entities/Vehicles/jeep_Prefab"/>
+	<property name="EconomicValue" value="42000"/>
+	<property class="Action1">
+		<property name="Vehicle" value="HD4x4Truck"/>
+		<property name="VehicleSize" value="2.5, 2.1, 5"/>
+	</property>
+	<effect_group name="Base Effects">
+		<passive_effect name="DegradationMax" operation="base_set" value="7000,16000" tier="1,6"/>
+	</effect_group>
 </item>
 
 
