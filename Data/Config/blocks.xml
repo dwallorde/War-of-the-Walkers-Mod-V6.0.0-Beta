@@ -27202,7 +27202,7 @@ ore block visualisation end -->
 	<property name="CreativeMode" value="Player"/>
 	<property name="Weight" value="50"/>
 	<property class="RepairItems"> <property name="ForgedTungsten" value="10"/> </property>
-	<property name="DowngradeBlock" value="rConcreteBlock"/>
+	<property name="DowngradeBlock" value="steelBlock"/>
 	<property name="CustomUpgradeSound" value="place_block_metal"/>
 	<drop event="Harvest" name="scrapTungsten" count="15" prob="1"/>
 	<drop event="Destroy" count="0"/>
@@ -27230,7 +27230,7 @@ ore block visualisation end -->
 	<property name="CustomIcon" value="TungstenFrameRamp"/>
 	<property name="Shape" value="New"/>
 	<property name="Model" value="ramp"/> <property name="Place" value="TowardsPlacerInverted"/>
-	<property name="DowngradeBlock" value="rConcreteRamp"/>
+	<property name="DowngradeBlock" value="steelRamp"/>
 </block>
 
 <block name="tungstenFrameCNRInside">
@@ -27248,7 +27248,7 @@ ore block visualisation end -->
 	<property name="CustomIcon" value="TungstenFrameCNRInside"/>
 	<property name="Shape" value="New"/>
 	<property name="Model" value="ramp_inside_corner"/>
-	<property name="DowngradeBlock" value="rConcreteCNRInside"/>
+	<property name="DowngradeBlock" value="steelCNRInside"/>
 </block>
 
 <block name="tungstenFrameArch">
@@ -27266,7 +27266,7 @@ ore block visualisation end -->
 	<property name="CustomIcon" value="tungstenFrameArch"/>
 	<property name="Shape" value="New"/>
 	<property name="Model" value="Arch"/> <property name="Place" value="TowardsPlacerInverted"/>
-	<property name="DowngradeBlock" value="rConcreteArch"/>
+	<property name="DowngradeBlock" value="steelArch"/>
 </block>
 
 <block name="tungstenFrameCNRFull">
@@ -27284,7 +27284,7 @@ ore block visualisation end -->
 	<property name="CustomIcon" value="TungstenFrameCNRFull"/>
 	<property name="Shape" value="New"/>
 	<property name="Model" value="ramp_outside_corner"/>
-	<property name="DowngradeBlock" value="rConcreteCNRFull"/>
+	<property name="DowngradeBlock" value="steelCNRFull"/>
 </block>
 
 <block name="tungstenFrameCTRPlate">
@@ -27302,7 +27302,7 @@ ore block visualisation end -->
 	<property name="CustomIcon" value="tungstenFrameCTRPlate"/>
 	<property name="Shape" value="New"/>
 	<property name="Model" value="plate_centered"/> <property name="Place" value="TowardsPlacerInverted"/>
-	<property name="DowngradeBlock" value="rConcreteCTRPlate"/>
+	<property name="DowngradeBlock" value="steelCTRPlate"/>
 </block>
 
 <block name="tungstenFrameCTRPole">
@@ -27320,7 +27320,7 @@ ore block visualisation end -->
 	<property name="CustomIcon" value="tungstenFrameCTRPole"/>
 	<property name="Shape" value="New"/>
 	<property name="Model" value="pole_square_centered"/>
-	<property name="DowngradeBlock" value="rConcreteCTRpole"/>
+	<property name="DowngradeBlock" value="steelCTRpole"/>
 </block>
 
 <block name="tungstenFrameHalf">
@@ -27338,7 +27338,7 @@ ore block visualisation end -->
 	<property name="CustomIcon" value="tungstenFrameHalf"/>
 	<property name="Shape" value="New" />
 	<property name="Model" value="cube_half" />
-	<property name="DowngradeBlock" value="rConcreteHalf"/>
+	<property name="DowngradeBlock" value="steelHalf"/>
 </block>
 
 <block name="tungstenFramePillar50">
@@ -27356,7 +27356,7 @@ ore block visualisation end -->
 	<property name="CustomIcon" value="tungstenFramePillar50"/>
 	<property name="Shape" value="New"/>
 	<property name="Model" value="Pole0.5m"/>
-	<property name="DowngradeBlock" value="rConcretePillar50"/>
+	<property name="DowngradeBlock" value="steelPillar50"/>
 </block>
 
 <block name="tungstenFramePillar100">
@@ -27374,7 +27374,7 @@ ore block visualisation end -->
 	<property name="CustomIcon" value="tungstenFramePillar100"/>
 	<property name="Shape" value="New"/>
 	<property name="Model" value="Pole1m"/>
-	<property name="DowngradeBlock" value="rConcretePillar100"/>
+	<property name="DowngradeBlock" value="steelPillar100"/>
 </block>
 
 <block name="tungstenFramePlate">
@@ -27392,7 +27392,7 @@ ore block visualisation end -->
 	<property name="CustomIcon" value="tungstenFramePlate"/>
 	<property name="Shape" value="New"/>
 	<property name="Model" value="Plate"/>
-	<property name="DowngradeBlock" value="rConcretePlate"/>
+	<property name="DowngradeBlock" value="steelPlate"/>
 </block>
 
 <block name="tungstenFramePole">
@@ -27410,7 +27410,7 @@ ore block visualisation end -->
 	<property name="CustomIcon" value="tungstenFramePole"/>
 	<property name="Shape" value="New"/>
 	<property name="Model" value="pole_square"/>
-	<property name="DowngradeBlock" value="rConcretePole"/>
+	<property name="DowngradeBlock" value="steelPole"/>
 </block>
 
 <block name="tungstenFrameEighth">
@@ -27428,7 +27428,7 @@ ore block visualisation end -->
 	<property name="CustomIcon" value="tungstenFrameEighth"/>
 	<property name="Shape" value="New"/>
 	<property name="Model" value="cube_eighth"/>
-	<property name="DowngradeBlock" value="rConcreteEighth"/>
+	<property name="DowngradeBlock" value="steelEighth"/>
 </block>
 
 <block name="tungstenFrameQuarter">
@@ -27446,7 +27446,7 @@ ore block visualisation end -->
 	<property name="CustomIcon" value="tungstenFrameQuarter"/>
 	<property name="Shape" value="New"/>
 	<property name="Model" value="cube_quarter"/>
-	<property name="DowngradeBlock" value="rConcreteQuarter"/>
+	<property name="DowngradeBlock" value="steelQuarter"/>
 </block>
 
 <block name="tungstenFrameCTREighth">
@@ -27464,7 +27464,7 @@ ore block visualisation end -->
 	<property name="CustomIcon" value="tungstenFrameCTREighth"/>
 	<property name="Shape" value="New"/>
 	<property name="Model" value="cube_eighth_centered"/>
-	<property name="DowngradeBlock" value="rConcreteCTREighth"/>
+	<property name="DowngradeBlock" value="stainlessSteelCTREighth"/>
 </block>
 
 <block name="tungstenBarsCentered">

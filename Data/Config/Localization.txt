@@ -8087,7 +8087,7 @@ waterEmptyBarrelDesc,items,Item,KgNone,"A empty water barrel that can be filled 
 waterFullBarrel,items,Item,KgNone,Water Barrel (Full),,,,,
 waterFullBarrelDesc,items,Item,KgNone,"A full water barrel that can be placed on the ground and can be used to fill your jars with.  Once placed will dry out over time.",,,,,
 FishingPole,items,Item,KgNone,Fishing Pole,,,,,
-FishingPoleDesc,items,Item,KgNone,"A fishing pole will need to be bated first with worms.  Worms can be found by digging dirt/clay.  <A17 Note:  Not currently working>",,,,,
+FishingPoleDesc,items,Item,KgNone,"A fishing pole will need to be bated first with worms.  Worms can be found by digging dirt/clay.",,,,,
 FishingPoleBated,items,Item,KgNone,Fishing Pole (Baited),,,,,
 FishingPoleBatedDesc,items,Item,KgNone,"A baited fishing pole can be used on water sources to attempt to catch fish.  Go near water and right click.  A loot frame should appear where fish can be found.  <A17 Note:  Not currently working>",,,,,
 Worms,items,Item,KgNone,Worms,,,,,
