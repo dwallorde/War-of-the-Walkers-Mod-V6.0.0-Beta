@@ -53,8 +53,8 @@
 			<prefab rule="downtownGroup"/>
 			<prefab rule="industrialGroup"/>
 			<prefab rule="ruralGroup"/>
-			<prefab rule="detailFillerGroup" prob="0.05"/>
-			<prefab rule="traderGroup" min_count="0" max_count="1" prob="0.4" />
+			<prefab rule="detailFillerGroup" prob="0.01"/>
+			<prefab rule="traderGroup" min_count="1" max_count="1" prob="0.4" />
 		</prefab_rule>
 
 		<prefab_rule name="residentialOldGroup">
@@ -192,10 +192,10 @@
 
 		<prefab_rule name="industrialGroup">
 			<prefab rule="skyscrapers" min_count="1" max_count="2"/>
-			<prefab rule="industrial_Bldgs"/>
-			<prefab rule="industrial_JunkyardsLots" />
-			<prefab rule="industrial_MpWasteBldgs" max_count="4"/>
-			<prefab rule="industrial_RubbleBldgs" max_count="4"/>
+			<prefab rule="industrial_Bldgs" max_count="2"/>
+			<prefab rule="industrial_JunkyardsLots" max_count="2"/>
+			<prefab rule="industrial_MpWasteBldgs" max_count="2"/>
+			<prefab rule="industrial_RubbleBldgs" max_count="2"/>
 			
 			<prefab name="dwalls_Store_Auto_RepairLTD" max_count="1" />
 			<prefab name="dwalls_Store_Auto_Wreck_Yard" max_count="1" />
@@ -449,10 +449,10 @@
 		</prefab_rule>
 		
 		<prefab_rule name="crop_Feilds">
-			<prefab name="cornfield_sm" />
-			<prefab name="cornfield_med" />
-			<prefab name="blueberryfield_sm" />
-			<prefab name="potatofield_sm" />
+			<prefab name="cornfield_sm" max_count="1" />
+			<prefab name="cornfield_med" max_count="1" />
+			<prefab name="blueberryfield_sm" max_count="1" />
+			<prefab name="potatofield_sm" max_count="1" />
 			<prefab name="dwalls_Farm_Apple" max_count="1" />
 			<prefab name="dwalls_Farm_Blackberry" max_count="1" />
 			<prefab name="dwalls_Farm_Carrot" max_count="1" />
@@ -551,10 +551,10 @@
 		
 		
 		<prefab_rule name="skyscrapers"> <!-- Downtown Zone Groups -->
-			<prefab name="skyscraper_01" prob="0.2"/>
-			<prefab name="skyscraper_02" prob="0.2"/>
-			<prefab name="skyscraper_03" prob="0.2"/>
-			<prefab name="skyscraper_04" />
+			<prefab name="skyscraper_01" max_count="1"/>
+			<prefab name="skyscraper_02" max_count="1"/>
+			<prefab name="skyscraper_03" max_count="1"/>
+			<prefab name="skyscraper_04" max_count="1"/>
 			<prefab name="ozzy_businessbuilding" max_count="1" />
 			<prefab name="Ozzy_businesstower" max_count="1" />
 		</prefab_rule>
@@ -616,24 +616,24 @@
 		</prefab_rule>
 		
 		<prefab_rule name="industrial_JunkyardsLots">
-			<prefab name="vacant_lot_01" prob="0.18"/>
-			<prefab name="vacant_lot_02" prob="0.18"/>
-			<prefab name="vacant_lot_03" prob="0.18"/>
-			<prefab name="vacant_lot_04" prob="0.18"/>
-			<prefab name="mp_waste_sewer_hole_1" prob="0.18"/>
+			<prefab name="vacant_lot_01" prob="0.1"/>
+			<prefab name="vacant_lot_02" prob="0.1"/>
+			<prefab name="vacant_lot_03" prob="0.1"/>
+			<prefab name="vacant_lot_04" prob="0.1"/>
+			<prefab name="mp_waste_sewer_hole_1" prob="0.1"/>
 			<prefab name="utility_celltower_02" prob="0.19"/>
 			<prefab name="utility_celltower_01" prob="0.2"/>
 			<prefab name="army_barracks_01" prob="0.25"/>
 			<prefab name="junkyard_lg_01" prob="0.3"/>
-			<prefab name="junkyard_med_01" count="1"/>
+			<prefab name="junkyard_med_01" />
 		</prefab_rule>
 		
 		
 		<prefab_rule name="traderGroup"> <!-- Wilderness Zone groups -->
-			<prefab name="settlement_trader_01" prob="0.25"/>
-			<prefab name="settlement_trader_02" prob="0.25"/>
-			<prefab name="settlement_trader_03" prob="0.25"/>
-			<prefab name="settlement_trader_04" prob="0.25"/>
+			<prefab name="settlement_trader_01" />
+			<prefab name="settlement_trader_02" />
+			<prefab name="settlement_trader_03" />
+			<prefab name="settlement_trader_04" />
 			<prefab name="settlement_trader_05" />
 			<prefab name="dwalls_Store_Class" />
 			<prefab name="Dwalls_TraderSnow1" />
