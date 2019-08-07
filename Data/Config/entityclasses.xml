@@ -260,17 +260,17 @@
 	<property name="PainResistPerHit" value=".45"/>
 
 	<!-- Stealth -->
-	<property name="MaxViewAngle" value="180"/>
-	<property name="SightRange" value="30"/> <!-- distance in m -->
-	<property name="SightLightThreshold" value="-2,150"/> <!-- how well lit you have to be for the zombie to see you at min,max range -->
+	<property name="MaxViewAngle" value="160"/>
+	<property name="SightRange" value="20"/> <!-- distance in m -->
+	<property name="SightLightThreshold" value="-2,130"/> <!-- how well lit you have to be for the zombie to see you at min,max range -->
 
 	<property name="SleeperWakeupSightDetectionMin" value="-40,5"/> <!-- Indiv.Random. sight capability - "I see you" light value at point blank -->
-	<property name="SleeperWakeupSightDetectionMax" value="340,480"/> <!-- Indiv.Random. "I see you" light value at "SightRange" -->
+	<property name="SleeperWakeupSightDetectionMax" value="340,460"/> <!-- Indiv.Random. "I see you" light value at "SightRange" -->
 	<property name="SleeperSenseSightDetectionMin" value="-10,0"/> <!-- same for groaning, not waking -->
 	<property name="SleeperSenseSightDetectionMax" value="200,300"/>
 
-	<property name="SleeperNoiseSenseThreshold" value="3,8"/> <!-- Indiv.Random. hearing capability - "I hear something" noise value -->
-	<property name="SleeperNoiseWakeThreshold" value="9,12"/>
+	<property name="SleeperNoiseSenseThreshold" value="4,10"/> <!-- Indiv.Random. hearing capability - "I hear something" noise value -->
+	<property name="SleeperNoiseWakeThreshold" value="12,16"/>
 
 	<property name="SleeperSmellSenseThreshold" value="20,50"/> <!-- Indiv.Random. smell capability - "I smell something" player smell value -->
 	<property name="SoundSleeperSenseChance" value=".5"/> <!-- the chance to play "SoundSleeperSense" when "SleeperSmellSenseThreshold" is triggered -->

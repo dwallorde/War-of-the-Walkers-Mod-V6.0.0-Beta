@@ -2805,7 +2805,7 @@
 			<sprite depth="2" name="backgroundMain" sprite="menu_empty3px" color="[black]" type="sliced" fillcenter="false" />
 			<sprite color="[darkGrey]" type="sliced" />
 			<rect visible="{showquest}">
-				<grid name="objectiveList" rows="5" cols="2" pos="12,-10" width="300" height="184" cell_width="300" cell_height="30" repeat_content="true" arrangement="horizontal" controller="QuestObjectiveList">
+				<grid name="objectiveList" rows="9" cols="2" pos="12,-10" width="300" height="184" cell_width="300" cell_height="30" repeat_content="true" arrangement="horizontal" controller="QuestObjectiveList">
 					<quest_objective_entry name="0" />
 				</grid>
 				<!-- <sprite depth="8" name="backgroundMain2" sprite="menu_empty3px" pos="0,-220" width="653" height="40" color="[black]" type="sliced" fillcenter="false" visible="{showqequirements}" />	 -->

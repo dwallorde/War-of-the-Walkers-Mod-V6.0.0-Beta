@@ -52,9 +52,9 @@
 	</biome>
 
 	<biome name="wasteland">
-		<spawn maxcount="4" respawndelay="1" time="Day"	entitygroup="ZombiesWasteland" />
+		<spawn maxcount="4" respawndelay="1" time="Day"	entitygroup="ZombiesWastelandNight" />
 		<!-- <spawn maxcount="1" respawndelay="5" time="Day"   entitygroup="BanditGroup" /> -->
-		<spawn maxcount="4" respawndelay="1" time="Night" entitygroup="ZombiesWastelandNight" />
+		<spawn maxcount="4" respawndelay="1" time="Night" entitygroup="ZombiesWasteland" />
 		<!-- <spawn maxcount="1" respawndelay="1" time="Night" entitygroup="BanditGroup" /> -->
 		<spawn maxcount="2" respawndelay="1" time="Any" entitygroup="EnemyAnimalsWasteland" spawnDeadChance="0" />
 	</biome>

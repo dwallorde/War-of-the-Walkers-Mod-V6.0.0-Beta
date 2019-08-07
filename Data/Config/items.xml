@@ -20846,7 +20846,7 @@ So no clothing dyes until that can be resolved. -->
 		<passive_effect name="ModPowerBonus" operation="perc_add" value=".15" tags="EntityDamage,BlockDamage"/>
 		<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
 	</effect_group>
-	<property name="Group" value="Tools/Traps"/>
+	<property name="Group" value="Tools/Traps,Basics"/>
 	<property name="DescriptionKey" value="stoneHoeDesc"/>
 	<property name="PickupJournalEntry" value="farmingTip"/>
 	<property name="ActionSkillGroup" value="Mining Tools"/>

@@ -788,7 +788,7 @@
 			<sprite depth="2" name="iconTrack" style="icon22px" pos="4,0" color="{objectivecompletecolor}" sprite="{objectivecompletesprite}" />
 			
 			<!-- <sprite depth="0" name="Icon" sprite="ui_game_symbol_pen" style="icon32px" pos="8,-3" foregroundlayer="true" visible="false"/> -->
-			<label depth="4" name="Description" pos="30,2" width="250" height="28" text="{objectiveoptional}{objectivedescription} [DECEA3]{objectivestate}[-]" color="{objectivephasecolor}" upper_case="true"  font_size="26" />
+			<label depth="4" name="Description" pos="30,2" width="250" height="28" text="{objectiveoptional}{objectivedescription} [DECEA3]{objectivestate}[-]" color="{objectivephasecolor}" upper_case="true"  font_size="22" />
 		</rect>
 	</quest_objective_entry>
 	
