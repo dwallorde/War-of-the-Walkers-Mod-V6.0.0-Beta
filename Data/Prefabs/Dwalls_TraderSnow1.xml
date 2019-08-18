@@ -13,6 +13,8 @@
     <property name="TraderAreaTeleportCenter" value="1, 1, 1" />
     <property name="ExcludeDistantPOIMesh" value="False" />
     <property name="DistantPOIYOffset" value="0" />
+	<property name="EditorGroups" value="settlements" />
+    <property name="QuestTags" value="trader" />
     <property name="ExcludePOICulling" value="False" />
     <property name="DifficultyTier" value="1" />
 </prefab>

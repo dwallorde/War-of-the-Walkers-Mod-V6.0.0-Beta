@@ -3172,7 +3172,7 @@
 		</effect_group>
 	</perk>
 	
-	<perk name="perkMechanic4X4Trucks" parent="skillClassMechanic" max_level="2" name_key="perkMechanic4X4TrucksName" desc_key="perkMechanic4X4TrucksDesc" icon="ui_game_symbol_4x4">
+	<perk name="perkMechanic4X4Trucks" parent="skillClassMechanic" max_level="2" name_key="perkMechanic4X4TrucksName" desc_key="perkMechanic4X4TrucksDesc" icon="ui_game_symbol_4x4Truck">
 		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="perkMechanicClassMaster" operation="GTE" value="1" desc_key="reqMechanicClass"/>
 		<requirement name="PlayerLevel" target="self" operation="GTE" value="100" desc_key="reqPlayer100"/></level_requirements>
 		<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="perkMechanicClassMaster" operation="GTE" value="1" desc_key="reqMechanicClass"/>

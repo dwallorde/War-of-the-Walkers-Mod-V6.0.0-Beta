@@ -2709,7 +2709,7 @@ We _want_ players to specialise so we also have to make it feasible.
 		<passive_effect name="EntityDamage" operation="base_set" value="10" tags="primary"/>
 		<passive_effect name="BlockDamage" operation="base_set" value="16" tags="primary"/>
 		<!--<passive_effect name="AttacksPerMinute" operation="base_set" value="75"/>  A16 .8 -->
-		<passive_effect name="BuffProcChance" operation="base_set" value="0.15" tags="buffInjuryBleeding"/>
+		<passive_effect name="BuffProcChance" operation="base_set" value="0.10" tags="buffInjuryBleeding"/>
 		<passive_effect name="BuffProcChance" operation="base_set" value="0.10" tags="buffIllInfection0"/>
 		<passive_effect name="BuffProcChance" operation="base_set" value="0.15" tags="buffInjuryStunned1"/>
 	</effect_group>
@@ -2725,7 +2725,7 @@ We _want_ players to specialise so we also have to make it feasible.
 	<effect_group name="Base Effects">
 		<passive_effect name="ModSlots" operation="base_set" value="0"/>
 		<!--<passive_effect name="AttacksPerMinute" operation="base_set" value="75"/>  A16 .8 -->
-		<passive_effect name="BuffProcChance" operation="base_set" value="0.30" tags="buffInjuryBleeding"/>
+		<passive_effect name="BuffProcChance" operation="base_set" value="0.25" tags="buffInjuryBleeding"/>
 		<passive_effect name="BuffProcChance" operation="base_set" value="0.20" tags="buffIllInfection0"/>
 		<passive_effect name="BuffProcChance" operation="base_set" value="0.25" tags="buffInjuryStunned1"/>
 	</effect_group>
@@ -3603,7 +3603,7 @@ We _want_ players to specialise so we also have to make it feasible.
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="MFuelBarrel"/>
-	<property name="Stacknumber" value="1000"/> <!-- STK resource -->
+	<property name="Stacknumber" value="5000"/> <!-- STK resource -->
 	<property name="FuelValue" value="2"/>
 	<property name="EconomicValue" value="83"/> <!-- oil barrel 500 -->
 	<property name="EconomicBundleSize" value="100"/>
@@ -6996,7 +6996,7 @@ So no clothing dyes until that can be resolved. -->
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="Morganic"/>
 	<property name="EconomicValue" value="10"/>
-	<property name="Stacknumber" value="20"/> <!-- STK medical -->
+	<property name="Stacknumber" value="25"/> <!-- STK medical -->
 	<property name="Group" value="Science"/>
 	<property name="ActionSkillGroup" value="Medicine"/>
 	<property name="CraftingSkillGroup" value="craftSkillScience"/>
@@ -7054,7 +7054,7 @@ So no clothing dyes until that can be resolved. -->
 	<property name="Meshfile" value="Items/Health/gauze"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="Mcloth"/>
-	<property name="Stacknumber" value="10"/> <!-- STK medical -->
+	<property name="Stacknumber" value="25"/> <!-- STK medical -->
 	<property name="FuelValue" value="1"/>
 	<property name="Weight" value="5"/>
 	<property name="EconomicValue" value="5"/>
@@ -7102,7 +7102,7 @@ So no clothing dyes until that can be resolved. -->
 	<property name="Group" value="Science"/>
 	<property name="EconomicValue" value="15"/>
 	<property name="DescriptionKey" value="medicalFirstAidBandageDesc"/>
-	<property name="Stacknumber" value="10"/>
+	<property name="Stacknumber" value="25"/>
 	<property name="CraftingSkillGroup" value="craftSkillScience"/>
 	<property name="CraftingIngredientExp" value="2"/>
 
@@ -7146,7 +7146,7 @@ So no clothing dyes until that can be resolved. -->
 	<property name="Group" value="Science"/>
 	<property name="EconomicValue" value="200"/>
 	<property name="CraftingSkillGroup" value="craftSkillScience"/>
-	<property name="Stacknumber" value="5"/>
+	<property name="Stacknumber" value="25"/>
 	<property class="Action0">
 		<!-- <requirement name="StatCompare" stat="health" operation="lte" value="50"/> -->
 		<property name="Sound_start" value="player_firstAidKit"/>
@@ -7192,7 +7192,7 @@ So no clothing dyes until that can be resolved. -->
 	<property name="Meshfile" value="Items/Health/gauze"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="Mwood"/>
-	<property name="Stacknumber" value="10"/> <!-- STK loot -->
+	<property name="Stacknumber" value="25"/> <!-- STK loot -->
 	<property name="FuelValue" value="40"/>
 	<property name="EconomicValue" value="10"/>
 	<property name="Group" value="Science,Basics"/>
@@ -21743,6 +21743,8 @@ So no clothing dyes until that can be resolved. -->
 	<property name="FuelValue" value="300"/>
 	<property name="Weight" value="75" />
 	<property name="EconomicValue" value="100"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="SellableToTrader" value="true"/>
 	<property name="Group" value="Tools/Traps"/>
 	<property name="DescriptionKey" value="scrapIronHammerDesc"/>
 	<property name="ActionSkillGroup" value="Construction Tools"/>

@@ -4,12 +4,14 @@
     <property name="AllowTopSoilDecorations" value="False" />
     <property name="ExcludeDistantPOIMesh" value="False" />
     <property name="DistantPOIYOffset" value="0" />
-    <property name="Zoning" value="Commercial,Downtown,Industrial" />
+    <property name="Zoning" value="any" />
     <property name="AllowedTownships" value="city,town,rural,wilderness" />
     <property name="TraderArea" value="True" />
     <property name="TraderAreaProtect" value="20,0,20" />
     <property name="TraderAreaTeleportSize" value="32, 20, 27" />
     <property name="TraderAreaTeleportCenter" value="1, 1, 1" />
+	<property name="QuestTags" value="trader" />
     <property name="ExcludePOICulling" value="False" />
+	<property name="EditorGroups" value="settlements" />
     <property name="DifficultyTier" value="1" />
 </prefab>

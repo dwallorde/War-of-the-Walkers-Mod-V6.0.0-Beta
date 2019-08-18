@@ -1024,6 +1024,12 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item name="loafPan" prob="0.4"/>
 			<item name="cuttingBoard" prob="0.5"/>
 		</trader_item_group>
+		
+		<trader_item_group name="bicycleParts">
+			<item name="vehicleBicycleChassis"/>
+			<item name="vehicleBicycleHandlebars"/>
+			<item name="vehicleWheels"/>
+		</trader_item_group>
 
 		<trader_item_group name="minibikeParts" count="1">
 			<item name="vehicleWheels"/>
@@ -1035,6 +1041,46 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item name="carBattery"/>
 			<item name="ECOBattery" prob="0.3"/>
 			<item name="HDBattery" prob="0.2"/>
+		</trader_item_group>
+		
+		<trader_item_group name="motorcycleParts">
+			<item name="vehicleMotorcycleChassis"/>
+			<item name="vehicleMotorcycleHandlebars"/>
+			<item name="vehicleWheels"/>
+			<item name="smallEngine"/>
+			<item name="ECOSmallEngine" prob="0.3"/>
+			<item name="HDSmallEngine" prob="0.2"/>
+			<item name="carBattery"/>
+			<item name="ECOBattery" prob="0.3"/>
+			<item name="HDBattery" prob="0.2"/>
+		</trader_item_group>
+
+		<trader_item_group name="4x4Parts">
+			<item name="vehicle4x4TruckChassis"/>
+			<item name="vehicle4x4TruckAccessories"/>
+			<item name="vehicleWheels"/>
+			<item name="smallEngine"/>
+			<item name="ECOSmallEngine" prob="0.3"/>
+			<item name="HDSmallEngine" prob="0.2"/>
+			<item name="carBattery"/>
+			<item name="ECOBattery" prob="0.3"/>
+			<item name="HDBattery" prob="0.2"/>
+		</trader_item_group>
+
+		<trader_item_group name="gyroCopterParts">
+			<item name="vehicleGyroCopterChassis"/>
+			<item name="vehicleGyroCopterAccessories"/>
+			<item name="vehicleWheels"/>
+			<item name="smallEngine"/>
+			<item name="carBattery"/>
+		</trader_item_group>
+
+		<trader_item_group name="vehicleParts">
+			<item group="bicycleParts" prob="1"/>
+			<item group="minibikeParts" prob="0.8"/>
+			<item group="motorcycleParts" prob="0.6"/>
+			<item group="4x4Parts" prob="0.4"/>
+			<item group="gyroCopterParts" prob="0.2"/>
 		</trader_item_group>
 
 		<trader_item_group name="workstations" count="1">
@@ -2034,11 +2080,14 @@ workstations
 			<item name="foodCropCorn" count="2,4" />
 			<item name="foodCropBlueberries" count="2,4" />
 			<item name="foodCropMushrooms" count="2,4" />
+			<item name="resourceCropGoldenrodPlant" count="2,4" />
+			<item name="resourceCropChrysanthemumPlant" count="2,4" />
+			<item name="resourceCropCoffeeBeans" count="2,4" />
 			<item name="strawberries" count="2,4" />
 			<item name="blackberries" count="2,4" />
 			<item name="rawWhiteMeat" count="2,4" />
 			<item name="rawRedMeat" count="2,4" />
-			<!-- <item name="tomato" count="2,4" /> -->
+			<item name="tomato" count="2,4" />
 			<item name="leek" count="2,4" />
 			<item name="lettuce" count="2,4" />
 			<item name="melon" count="2,4" />
@@ -2076,11 +2125,14 @@ workstations
 			<item name="foodCropCorn" count="2,4" />
 			<item name="foodCropBlueberries" count="2,4" />
 			<item name="foodCropMushrooms" count="2,4" />
+			<item name="resourceCropGoldenrodPlant" count="2,4" />
+			<item name="resourceCropChrysanthemumPlant" count="2,4" />
+			<item name="resourceCropCoffeeBeans" count="2,4" />
 			<item name="strawberries" count="2,4" />
 			<item name="blackberries" count="2,4" />
 			<item name="rawWhiteMeat" count="2,4" />
 			<item name="rawRedMeat" count="2,4" />
-			<!-- <item name="tomato" count="2,4" /> -->
+			<item name="tomato" count="2,4" />
 			<item name="leek" count="2,4" />
 			<item name="lettuce" count="2,4" />
 			<item name="melon" count="2,4" />
@@ -2128,7 +2180,7 @@ workstations
 			<item name="enginePartsHD" count="1,2" prob="0.2"/>
 			<item name="resourceAcid" count="2,6" prob="0.6"/>
 			<!-- <item name="MagazineMechanic" count="1" prob="0.2"/> -->
-			<item group="minibikeParts" count="1,2" prob="0.2"/>
+			<item group="vehicleParts" count="1,3" prob="0.4"/>
 			<!-- <item name="hdWrenchSchematic" count="1" prob="0.1"/>
 			<item name="tungstenWrenchSchematic" count="1" prob="0.05"/> -->
 			<item name="classChallenge_minibikeparts" count="1" prob="0.25"/>
@@ -2156,7 +2208,7 @@ workstations
 			<item name="enginePartsHD" count="1,2" prob="0.2"/>
 			<item name="resourceAcid" count="2,6" prob="0.6"/>
 			<!-- <item name="MagazineMechanic" count="1" prob="0.2"/> -->
-			<item group="minibikeParts" count="1,2" prob="0.2"/>
+			<item group="vehicleParts" count="1,2" prob="0.4"/>
 			<!-- <item name="hdWrenchSchematic" count="1" prob="0.1"/>
 			<item name="tungstenWrenchSchematic" count="1" prob="0.05"/> -->
 		</trader_items>

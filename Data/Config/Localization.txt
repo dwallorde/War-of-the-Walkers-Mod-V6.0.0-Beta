@@ -1942,7 +1942,7 @@ plantedBlueberry1Desc,blocks,Farming,KgNone,Plant blueberry seeds in fertile dir
 plantedBlueberry2,blocks,Farming,New,Blueberry (Growing),,Heidelbeere (Wächst),,,
 plantedBlueberry3Harvest,blocks,Farming,New,Blueberry Plant 3 (POI),,Heidelbeere (Ernte),,,
 plantedBlueberry3HarvestDesc,blocks,Farming,EnChanged,Blueberry (Harvest),Myrtilles,Heidelbeere,,Sembrado Mora Cosecha,
-plantedBlueberry3HarvestPlayerDesc,blocks,Farming,EnChanged,Blueberry Plant,Myrtilles,Heidelbeere,,Sembrado Mora Cosecha,
+plantedBlueberry3HarvestPlayerDesc,blocks,Farming,EnChanged,Blueberry (Harvest),Myrtilles,Heidelbeere,,Sembrado Mora Cosecha,
 plantedChrysanthemum1,blocks,Farming,New,Chrysanthemum (Seed),Chrysanthème,Chrysantheme,,Crisantemo,
 plantedChrysanthemum1Desc,blocks,Farming,New,Plant chrysanthemum seeds in fertile dirt to grow chrysanthemum plants.,,,,,
 plantedChrysanthemum2,blocks,Farming,New,Chrysanthemum (Growing),Chrysanthème,Chrysantheme,,Crisantemo,

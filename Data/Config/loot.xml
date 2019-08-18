@@ -2054,6 +2054,7 @@ A single player on default diff can have a GS of up to 480 without perks.
 	<item name="ECOChainsaw" prob="0.2"/>
 	<item name="HDChainsaw" prob="0.1"/>
 	<item name="ForgedTungsten" count="1,2" prob="0.15"/>
+	<item name="tungstenWrench" prob="0.1"/>
 	<item name="ShovelTungsten" prob="0.1"/>
 	<item name="FireaxeTungsten" prob="0.1"/>
 	<item name="PickaxeTungsten" prob="0.1"/>
@@ -4598,8 +4599,8 @@ treasureTemplate
 
 <!-- Lootcontainer 170 Birds Nest Tree -->
 <lootcontainer id="170" count="1,2" size="4,3" destroy_on_close="true" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="baseTemplate">
-	<item name="foodEgg" count="1,4" prob="0.3" />
-	<item name="resourceFeather" count="5,40" prob="0.75" />
+	<item name="foodEgg" count="2,6" prob="0.45" />
+	<item name="resourceFeather" count="5,30" prob="0.75" />
 </lootcontainer>
 
 <!-- Lootcontainer 171 Coin Purse -->

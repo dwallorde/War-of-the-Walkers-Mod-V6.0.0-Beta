@@ -156,6 +156,12 @@
 		<style_entry name="foregroundlayer" value="true" />
 	</style>
 	
+	<style type="button" name="icon25px">
+		<style_entry name="width" value="25"/>
+		<style_entry name="height" value="25"/>
+		<style_entry name="foregroundlayer" value="true" />
+	</style>
+	
 	<style type="button" name="icon22px">
 		<style_entry name="width" value="22"/>
 		<style_entry name="height" value="22"/>
@@ -653,7 +659,7 @@
 	<style name="WOTW.edition.info" type="label">
 		<style_entry name="pos" value="60,-470" />
 		<style_entry name="size" value="250,33" />
-		<style_entry name="text" value="Current BETA Version" />
+		<style_entry name="text" value="Current Version" />
 		<style_entry name="font_size" value="16" />
 		<style_entry name="color" value="[white]" />
 		<style_entry name="effect" value="outline" />
@@ -665,7 +671,7 @@
 	<style name="WOTW.version.info" type="label">
 		<style_entry name="pos" value="60,-490" />
 		<style_entry name="size" value="250,33" />
-		<style_entry name="text" value="WOTW V6.0.6" />
+		<style_entry name="text" value="WOTW V6.0.7" />
 		<style_entry name="font_size" value="16" />
 		<style_entry name="color" value="[white]" />
 		<style_entry name="effect" value="outline" />

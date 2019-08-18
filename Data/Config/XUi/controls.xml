@@ -153,9 +153,9 @@
 	</skill_search>
 	
 	<count_control_input>
-		<panel controller="TextInput" pos="12,-6" width="30" height="28" value="1"
+		<panel controller="TextInput" pos="12,-6" width="40" height="28" value="1"
 			active_text_color="[white]" caret_color="[white]" selection_color="[mediumGrey_half_alpha]" 
-			character_limit="3" validation="integer" backgroundcolor="[black]" on_press="true" style="select" snapCursor="true" virtual_keyboard_prompt="vkPromptCount">
+			character_limit="4" validation="integer" backgroundcolor="[black]" on_press="true" style="select" snapCursor="true" virtual_keyboard_prompt="vkPromptCount">
 			<sprite depth="1" name="background" color="[black]" type="sliced"/>
 			<label depth="2" name="text" pos="0,-2" font_size="26" justify="center" pivot="topleft"/>
 		</panel>

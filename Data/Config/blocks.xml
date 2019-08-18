@@ -31530,7 +31530,7 @@ ore block visualisation end -->
 <block name="ClassBuilderVendingMachinePOI">
 	<property name="CustomIcon" value="ClassBuilderVendingMachine" />
 	<property name="Group" value="Science"/>
-	<property name="CreativeMode" value="Player"/>
+	<property name="CreativeMode" value="Dev"/>
 	<property name="DisplayType" value="blockHardenedMulti" />
 	<property name="Material" value="Mmetal_medium"/>
 	<property name="MaxDamage" value="5000"/>
@@ -31585,7 +31585,7 @@ ore block visualisation end -->
 <block name="ClassSurvivalistVendingMachinePOI">
 	<property name="CustomIcon" value="ClassSurvivalistVendingMachine" />
 	<property name="Group" value="Science"/>
-	<property name="CreativeMode" value="Player"/>
+	<property name="CreativeMode" value="Dev"/>
 	<property name="DisplayType" value="blockHardenedMulti" />
 	<property name="Material" value="Mmetal_medium"/>
 	<property name="MaxDamage" value="5000"/>
@@ -31639,7 +31639,7 @@ ore block visualisation end -->
 <block name="ClassScholarVendingMachinePOI">
 	<property name="CustomIcon" value="ClassScholarVendingMachine" />
 	<property name="Group" value="Science"/>
-	<property name="CreativeMode" value="Player"/>
+	<property name="CreativeMode" value="Dev"/>
 	<property name="DisplayType" value="blockHardenedMulti" />
 	<property name="Material" value="Mmetal_medium"/>
 	<property name="MaxDamage" value="5000"/>
@@ -31693,7 +31693,7 @@ ore block visualisation end -->
 <block name="ClassMarksmanVendingMachinePOI">
 	<property name="CustomIcon" value="ClassMarksmanVendingMachine" />
 	<property name="Group" value="Science"/>
-	<property name="CreativeMode" value="Player"/>
+	<property name="CreativeMode" value="Dev"/>
 	<property name="DisplayType" value="blockHardenedMulti" />
 	<property name="Material" value="Mmetal_medium"/>
 	<property name="MaxDamage" value="5000"/>
@@ -31747,7 +31747,7 @@ ore block visualisation end -->
 <block name="ClassTradesmanVendingMachinePOI">
 	<property name="CustomIcon" value="ClassTradesmanVendingMachine" />
 	<property name="Group" value="Science"/>
-	<property name="CreativeMode" value="Player"/>
+	<property name="CreativeMode" value="Dev"/>
 	<property name="DisplayType" value="blockHardenedMulti" />
 	<property name="Material" value="Mmetal_medium"/>
 	<property name="MaxDamage" value="5000"/>
@@ -31801,7 +31801,7 @@ ore block visualisation end -->
 <block name="ClassProtectionVendingMachinePOI">
 	<property name="CustomIcon" value="ClassProtectionVendingMachine" />
 	<property name="Group" value="Science"/>
-	<property name="CreativeMode" value="Player"/>
+	<property name="CreativeMode" value="Dev"/>
 	<property name="DisplayType" value="blockHardenedMulti" />
 	<property name="Material" value="Mmetal_medium"/>
 	<property name="MaxDamage" value="5000"/>
@@ -31855,7 +31855,7 @@ ore block visualisation end -->
 <block name="ClassFighterVendingMachinePOI">
 	<property name="CustomIcon" value="ClassFighterVendingMachine" />
 	<property name="Group" value="Science"/>
-	<property name="CreativeMode" value="Player"/>
+	<property name="CreativeMode" value="Dev"/>
 	<property name="DisplayType" value="blockHardenedMulti" />
 	<property name="Material" value="Mmetal_medium"/>
 	<property name="MaxDamage" value="5000"/>
@@ -31909,7 +31909,7 @@ ore block visualisation end -->
 <block name="ClassElectricianVendingMachinePOI">
 	<property name="CustomIcon" value="ClassElectricianVendingMachine" />
 	<property name="Group" value="Science"/>
-	<property name="CreativeMode" value="Player"/>
+	<property name="CreativeMode" value="Dev"/>
 	<property name="DisplayType" value="blockHardenedMulti" />
 	<property name="Material" value="Mmetal_medium"/>
 	<property name="MaxDamage" value="5000"/>
@@ -31963,7 +31963,7 @@ ore block visualisation end -->
 <block name="ClassCovertVendingMachinePOI">
 	<property name="CustomIcon" value="ClassCovertVendingMachine" />
 	<property name="Group" value="Science"/>
-	<property name="CreativeMode" value="Player"/>
+	<property name="CreativeMode" value="Dev"/>
 	<property name="DisplayType" value="blockHardenedMulti" />
 	<property name="Material" value="Mmetal_medium"/>
 	<property name="MaxDamage" value="5000"/>
@@ -32017,7 +32017,7 @@ ore block visualisation end -->
 <block name="ClassCookVendingMachinePOI">
 	<property name="CustomIcon" value="ClassCookVendingMachine" />
 	<property name="Group" value="Science"/>
-	<property name="CreativeMode" value="Player"/>
+	<property name="CreativeMode" value="Dev"/>
 	<property name="DisplayType" value="blockHardenedMulti" />
 	<property name="Material" value="Mmetal_medium"/>
 	<property name="MaxDamage" value="5000"/>
@@ -32071,7 +32071,7 @@ ore block visualisation end -->
 <block name="ClassMechanicVendingMachinePOI">
 	<property name="CustomIcon" value="ClassMechanicVendingMachine" />
 	<property name="Group" value="Science"/>
-	<property name="CreativeMode" value="Player"/>
+	<property name="CreativeMode" value="Dev"/>
 	<property name="DisplayType" value="blockHardenedMulti" />
 	<property name="Material" value="Mmetal_medium"/>
 	<property name="MaxDamage" value="5000"/>
@@ -32359,7 +32359,7 @@ ore block visualisation end -->
 	<property name="Shape" value="ModelEntity"/>
 	<property name="Model" value="#Tomato.unity3d?TomatoPrefab3"/>
 	<property name="Collide" value="melee"/>
-	<drop event="Harvest" name="tomato" count="2" tag="wildCropsHarvest"/>
+	<drop event="Harvest" name="tomato" count="1" tag="wildCropsHarvest"/>
 </block>
 
 <block name="plantedTomato3HarvestPlayer">
@@ -32369,7 +32369,7 @@ ore block visualisation end -->
 	<property name="Shape" value="ModelEntity"/>
 	<property name="Model" value="#Tomato.unity3d?TomatoPrefab3"/>
 	<property name="Collide" value="melee"/>
-	<drop event="Harvest" name="tomato" count="2" tag="cropHarvest"/>
+	<drop event="Harvest" name="tomato" count="1" tag="cropHarvest"/>
 	<property name="DowngradeBlock" value="plantedTomato1"/>
 </block>
 
@@ -32702,6 +32702,7 @@ ore block visualisation end -->
 <block name="plantedAppleTree3Harvest">
 	<property name="Extends" value="treeMaster" />
 	<property name="CustomIcon" value="SeedApplePacket" />
+	<property name="DisplayInfo" value="Name"/>
     <property name="Material" value="plantedWood" />
 	<property name="MaxDamage" value="10" />
     <property name="Shape" value="ModelEntity" />

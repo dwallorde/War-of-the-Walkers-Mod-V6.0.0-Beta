@@ -429,10 +429,10 @@
 				<rect depth="1" name="actions" width="147" height="225">
 					<sprite color="[mediumGrey]" type="sliced" height="43" />
 					<rect name="recipeCraftCountControl" width="120" height="210" pos="27,0" controller="RecipeCraftCount">
-						<button depth="2" name="countDown" style="icon30px, press" pos="-5,-20" sprite="ui_game_symbol_arrow_left" pivot="center" sound="[paging_click]"/>
+						<button depth="2" name="countDown" style="icon25px, press" pos="-5,-20" sprite="ui_game_symbol_arrow_left" pivot="center" sound="[paging_click]"/>
 						<count_control_input name="count_input" depth="2" pos="10,-5" />
-						<button depth="2" name="countUp" style="icon30px, press" pos="59,-20" sprite="ui_game_symbol_arrow_right" pivot="center" sound="[paging_click]"/>
-						<button depth="2" name="countMax" style="icon30px, press" pos="91,-20" sprite="ui_game_symbol_arrow_max" pivot="center" sound="[paging_click]"/>
+						<button depth="2" name="countUp" style="icon25px, press" pos="69,-20" sprite="ui_game_symbol_arrow_right" pivot="center" sound="[paging_click]"/>
+						<button depth="2" name="countMax" style="icon25px, press" pos="101,-20" sprite="ui_game_symbol_arrow_max" pivot="center" sound="[paging_click]"/>
 					</rect>
 				</rect>
 				<item_action_entry />
@@ -2291,7 +2291,7 @@
 	<window name="windowSkillList" panel="Center" width="647" height="730" controller="SkillListWindow" cursor_area="true" >
 	<!--#$-IGS END.-$#-->
 		<panel name="header" height="43" depth="1" backgroundspritename="ui_game_panel_header">
-			<sprite pos="4,-5" depth="2" name="windowIcon" style="icon32px" sprite="ui_game_symbol_skills"/>
+			<sprite pos="4,-5" depth="2" name="windowIcon" style="icon32px" atlas="ItemIconAtlas" sprite="ui_game_symbol_skills"/>
 			<label style="header.name" text_key="xuiSkillList" />
 
 			<label pos="635, -9" depth="2" width="300" height="28" text="{skillpointsavailable}" font_size="26" color="[lightGrey]" justify="right" pivot="topright"/>
@@ -2537,7 +2537,7 @@
 
 			<sprite depth="6" name="backgroundMain" sprite="menu_empty3px" width="151" height="163" color="[black]" type="sliced" fillcenter="false" />
 			<sprite depth="1" pos="2,-2" name="preview" width="148" height="162" color="[darkGrey]" type="sliced" />
-			<sprite depth="3" pos="77,-77" width="100" height="100" sprite="{groupicon}" pivot="center" foregroundlayer="true"/>
+			<sprite depth="3" pos="77,-77" width="100" height="100" sprite="{groupicon}" atlas="ItemIconAtlas" pivot="center" foregroundlayer="true"/>
 
 			<rect name="descriptionBox" depth="1" pos="148,0" width="498" height="162" >
 				<sprite depth="1" name="background" color="[mediumGrey]" type="sliced"/>
@@ -2603,7 +2603,7 @@
 
 			<sprite depth="6" name="backgroundMain" sprite="menu_empty3px" width="151" height="149" color="[black]" type="sliced" fillcenter="false" />
 			<sprite depth="1" pos="2,-2" name="preview" width="148" height="148" color="[darkGrey]" type="sliced" />
-			<sprite depth="3" pos="77,-77" width="100" height="100" sprite="{groupicon}" pivot="center" foregroundlayer="true"/>
+			<sprite depth="3" pos="77,-77" width="100" height="100" sprite="{groupicon}" atlas="ItemIconAtlas" pivot="center" foregroundlayer="true"/>
 
 			<panel name="actionsBox" depth="2" pos="3,-153" width="146" height="78" disableautobackground="true">
 				<sprite depth="1" pos="-3,8" width="151" height="91" name="background" color="[mediumGrey]" type="sliced"/>

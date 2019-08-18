@@ -54,7 +54,7 @@
 			<prefab rule="industrialGroup"/>
 			<prefab rule="ruralGroup"/>
 			<prefab rule="detailFillerGroup" prob="0.01"/>
-			<prefab rule="traderGroup" min_count="1" max_count="1" prob="0.4" />
+			<prefab rule="traderGroup" min_count="1" max_count="1" />
 		</prefab_rule>
 
 		<prefab_rule name="residentialOldGroup">
