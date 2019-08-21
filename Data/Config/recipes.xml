@@ -421,13 +421,13 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
     <ingredient name="resourceFeather" count="1"/>
 </recipe>
 
-<recipe name="TungstenCrossbowBolt" count="1" tags="learnable">
+<recipe name="TungstenCrossbowBolt" count="1" craft_area="ammoWorkstation" tags="learnable">
     <ingredient name="TungstenArrowHead" count="1"/>
     <ingredient name="resourceWood" count="1"/>
     <ingredient name="resourceFeather" count="1"/>
 </recipe>
 
-<recipe name="FlamingTungstenCrossbowBolt" count="1" tags="learnable">
+<recipe name="FlamingTungstenCrossbowBolt" count="1" craft_area="ammoWorkstation" tags="learnable">
     <ingredient name="TungstenCrossbowBolt" count="1"/>
     <ingredient name="resourceGunPowder" count="2"/>
 	<ingredient name="resourceCloth" count="1"/>
@@ -1274,12 +1274,6 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 <recipe name="hatchVault" count="1" craft_area="workbench" tags="learnable">
 	<ingredient name="resourceForgedSteel" count="12"/>
 	<ingredient name="resourceSpring" count="2"/>
-</recipe>
-
-<recipe name="garageDoorHouse" count="1" craft_area="workbench">
-	<ingredient name="resourceWood" count="500"/>
-	<ingredient name="resourceSpring" count="6"/>
-	<ingredient name="resourceMechanicalParts" count="12"/>
 </recipe>
 
 <recipe name="tungstenBars" count="1" craft_area="tungstenForge" craft_tool="toolAnvil" material_based="true" tags="learnable">
@@ -3349,7 +3343,7 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="resourceMechanicalParts" count="15"/>
 </recipe>
 
-<recipe name="crowbarSteel" count="1" craft_area="workbench" tags="learnable">
+<recipe name="crowbarSteel" count="1" craft_area="ToolWorkbench" craft_tool="hammerRounding" tags="learnable">
 	<ingredient name="resourceForgedSteel" count="25"/>
 </recipe>
 
@@ -3367,7 +3361,7 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="handlemetal" count="1"/>
 </recipe>
 
-<recipe name="HDNailgun" count="1" craft_area="workbench" tags="learnable">
+<recipe name="HDNailgun" count="1" craft_area="ToolWorkbench" tags="learnable">
 	<ingredient name="resourceForgedSteel" count="40"/>
 	<ingredient name="resourceMechanicalParts" count="40"/>
 	<ingredient name="resourceDuctTape" count="4"/>
@@ -3375,28 +3369,28 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="resourceSpring" count="10"/>
 </recipe>
 
-<recipe name="ECOAuger" count="1" craft_area="workbench" tags="learnable">
+<recipe name="ECOAuger" count="1" craft_area="ToolWorkbench" tags="learnable">
 	<ingredient name="SteelMinibikeHandlebars" count="1"/>
 	<ingredient name="ECOSmallEngine" count="1"/>
 	<ingredient name="resourceForgedSteel" count="40"/>
 	<ingredient name="resourceMechanicalParts" count="20"/>
 </recipe>
 
-<recipe name="HDAuger" count="1" craft_area="workbench" tags="learnable">
+<recipe name="HDAuger" count="1" craft_area="ToolWorkbench" tags="learnable">
 	<ingredient name="TungstenMinibikeHandlebars" count="1"/>
 	<ingredient name="HDSmallEngine" count="1"/>
 	<ingredient name="ForgedTungsten" count="40"/>
 	<ingredient name="resourceMechanicalParts" count="40"/>
 </recipe>
 
-<recipe name="ECOChainsaw" count="1" craft_area="workbench" tags="learnable">
+<recipe name="ECOChainsaw" count="1" craft_area="ToolWorkbench" tags="learnable">
 	<ingredient name="SteelMinibikeHandlebars" count="1"/>
 	<ingredient name="ECOSmallEngine" count="1"/>
 	<ingredient name="resourceForgedSteel" count="20"/>
 	<ingredient name="resourceMechanicalParts" count="20"/>
 </recipe>
 
-<recipe name="HDChainsaw" count="1" craft_area="workbench" tags="learnable">
+<recipe name="HDChainsaw" count="1" craft_area="ToolWorkbench" tags="learnable">
 	<ingredient name="TungstenMinibikeHandlebars" count="1"/>
 	<ingredient name="HDSmallEngine" count="1"/>
 	<ingredient name="ForgedTungsten" count="40"/>
@@ -4608,10 +4602,6 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="unit_clay" count="1"/>
 </recipe>
 
-<recipe name="resourceCandyTin" count="1" craft_area="workbench">
-	<ingredient name="resourceScrapIron" count="5"/>
-</recipe>
-
 <recipe name="resourceCement" count="1" craft_area="forge" material_based="true">
 	<ingredient name="unit_stone" count="5"/>
 </recipe>
@@ -5041,7 +5031,7 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="resourceScrapIron" count="40"/>
 </recipe>
 
-<recipe name="scrapIronStairsFilledRailingRight" count="1">
+<recipe name="scrapIronStairsFilledRailingRight" count="1" craft_area="tablesaw">
 	<ingredient name="resourceScrapIron" count="40"/>
 </recipe>
 
@@ -5537,7 +5527,7 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="resourceMetalPipe" count="60"/>
 </recipe>
 
-<recipe name="vehicle4x4TruckChassis" count="1" craft_area="workbench" tags="learnable">
+<recipe name="vehicle4x4TruckChassis" count="1" craft_time="300" craft_area="workbench" tags="learnable">
 	<ingredient name="resourceForgedSteel" count="300"/>
 	<ingredient name="resourceMechanicalParts" count="50"/>
 	<ingredient name="resourceDuctTape" count="25"/>
@@ -5545,7 +5535,7 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="resourceElectricParts" count="20"/>
 </recipe>
 
-<recipe name="vehicle4x4TruckPlaceable" count="1" craft_time="210" craft_area="workbench" tags="learnable">
+<recipe name="vehicle4x4TruckPlaceable" count="1" craft_time="240" craft_area="workbench" tags="learnable">
 	<ingredient name="vehicleWheels" count="4"/>
 	<ingredient name="vehicle4x4TruckChassis" count="1"/>
 	<ingredient name="vehicle4x4TruckAccessories" count="1"/>
@@ -5581,7 +5571,7 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="resourceMetalPipe" count="60"/>
 </recipe>
 
-<recipe name="vehicleGyroCopterChassis" count="1" craft_time="90" craft_area="workbench" tags="learnable">
+<recipe name="vehicleGyroCopterChassis" count="1" craft_time="300" craft_area="workbench" tags="learnable">
 	<ingredient name="resourceForgedSteel" count="150"/>
 	<ingredient name="resourceMechanicalParts" count="50"/>
 	<ingredient name="resourceDuctTape" count="25"/>
@@ -5589,7 +5579,7 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="resourceElectricParts" count="20"/>
 </recipe>
 
-<recipe name="vehicleGyrocopterPlaceable" count="1" craft_time="270" craft_area="workbench" tags="learnable">
+<recipe name="vehicleGyrocopterPlaceable" count="1" craft_time="240" craft_area="workbench" tags="learnable">
 	<ingredient name="vehicleWheels" count="3"/>
 	<ingredient name="vehicleGyroCopterChassis" count="1"/>
 	<ingredient name="vehicleGyroCopterAccessories" count="1"/>
@@ -5663,7 +5653,7 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 </recipe>
 
 <recipe name="ECOMotorcyclePlaceable" count="1" craft_time="150" craft_area="mechanicBench" tags="learnable">
-	<ingredient name="vehicleWheels" count="2"/>
+	<ingredient name="vehicleHDWheels" count="2"/>
 	<ingredient name="steelMotorcycleChassis" count="1"/>
 	<ingredient name="steelMotorcycleHandlebars" count="1"/>
 	<ingredient name="ECOSmallEngine" count="1"/>
@@ -5688,7 +5678,7 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 </recipe>
 
 <recipe name="HDMotorcyclePlaceable" count="1" craft_time="150" craft_area="mechanicBench" tags="learnable">
-	<ingredient name="vehicleWheels" count="2"/>
+	<ingredient name="vehicleHDWheels" count="2"/>
 	<ingredient name="tungstenMotorcycleChassis" count="1"/>
 	<ingredient name="tungstenMotorcycleHandlebars" count="1"/>
 	<ingredient name="HDSmallEngine" count="1"/>
@@ -5703,7 +5693,7 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="resourceMetalPipe" count="120"/>
 </recipe>
 
-<recipe name="steel4x4TruckChassis" count="1" craft_area="mechanicBench" tags="learnable">
+<recipe name="steel4x4TruckChassis" count="1" craft_time="300" craft_area="mechanicBench" tags="learnable">
 	<ingredient name="resourceForgedSteel" count="500"/>
 	<ingredient name="resourceMechanicalParts" count="100"/>
 	<ingredient name="resourceDuctTape" count="35"/>
@@ -5712,7 +5702,7 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 </recipe>
 
 <recipe name="ECO4x4TruckPlaceable" count="1" craft_time="210" craft_area="mechanicBench" tags="learnable">
-	<ingredient name="vehicleWheels" count="4"/>
+	<ingredient name="vehicleHDWheels" count="4"/>
 	<ingredient name="vehicle4x4TruckChassis" count="1"/>
 	<ingredient name="vehicle4x4TruckAccessories" count="1"/>
 	<ingredient name="ECOSmallEngine" count="1"/>
@@ -5727,7 +5717,7 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="resourceMetalPipe" count="120"/>
 </recipe>
 
-<recipe name="tungsten4x4TruckChassis" count="1" craft_area="mechanicBench" tags="learnable">
+<recipe name="tungsten4x4TruckChassis" count="1" craft_time="300" craft_area="mechanicBench" tags="learnable">
 	<ingredient name="ForgedTungsten" count="300"/>
 	<ingredient name="resourceMechanicalParts" count="100"/>
 	<ingredient name="resourceDuctTape" count="35"/>
@@ -5736,9 +5726,9 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 </recipe>
 
 <recipe name="HD4x4TruckPlaceable" count="1" craft_time="210" craft_area="mechanicBench" tags="learnable">
-	<ingredient name="vehicleWheels" count="4"/>
-	<ingredient name="vehicle4x4TruckChassis" count="1"/>
-	<ingredient name="vehicle4x4TruckAccessories" count="1"/>
+	<ingredient name="vehicleHDWheels" count="4"/>
+	<ingredient name="tungsten4x4TruckChassis" count="1"/>
+	<ingredient name="tungsten4x4TruckAccessories" count="1"/>
 	<ingredient name="HDSmallEngine" count="1"/>
 	<ingredient name="HDBattery" count="1"/>
 </recipe>
@@ -5786,7 +5776,7 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="ForgedTungsten" count="24"/>
 </recipe>
 
-<recipe name="ECOMinibikePlaceable" count="1" craft_area="mechanicBench" tags="learnable">
+<recipe name="ECOMinibikePlaceable" count="1" craft_time="90" craft_area="mechanicBench" tags="learnable">
 	<ingredient name="vehicleHDWheels" count="2"/>
 	<ingredient name="SteelMinibikeChassis" count="1"/>
 	<ingredient name="SteelMinibikeHandlebars" count="1"/>
@@ -5794,7 +5784,7 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="ECOBattery" count="1"/>
 </recipe>
 
-<recipe name="HDMinibikePlaceable" count="1" craft_area="mechanicBench" tags="learnable">
+<recipe name="HDMinibikePlaceable" count="1" craft_time="90" craft_area="mechanicBench" tags="learnable">
 	<ingredient name="vehicleHDWheels" count="2"/>
 	<ingredient name="TungstenMinibikeChassis" count="1"/>
 	<ingredient name="TungstenMinibikeHandlebars" count="1"/>
@@ -6079,7 +6069,7 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="resourceWood" count="2"/>
 </recipe>
 
-<recipe name="woodLogPillar100" count="1">
+<recipe name="woodLogPillar100" count="1" craft_area="tablesaw">
 	<ingredient name="resourceWood" count="10"/>
 </recipe>
 

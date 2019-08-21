@@ -15800,11 +15800,11 @@ So no clothing dyes until that can be resolved. -->
 	</property>
 	
 	<effect_group name="Primary Action" tiered="false"> <!-- splint -->
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveBuff" target="self" buff="buffArmBroken,buffLegBroken,buffArmSplinted,buffLegSplinted,buffAdvancedLegSplint,buffAdvancedArmSplint"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveBuff" target="self" buff="buffArmBroken,buffLegBroken,buffArmSplinted,buffLegSplinted,buffAdvancedLegSplint,buffAdvancedArmSplint,buffLegSprained"/>
 	</effect_group>
 
 	<effect_group name="Secondary Action" tiered="false">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveBuff" target="other" buff="buffArmBroken,buffLegBroken,buffArmSplinted,buffLegSplinted,buffAdvancedLegSplint,buffAdvancedArmSplint"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveBuff" target="other" buff="buffArmBroken,buffLegBroken,buffArmSplinted,buffLegSplinted,buffAdvancedLegSplint,buffAdvancedArmSplint,buffLegSprained"/>
 	</effect_group>
 </item>
 
@@ -15839,6 +15839,9 @@ So no clothing dyes until that can be resolved. -->
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffAdvancedLegSplint">
 			<requirement name="HasBuff" target="self" buff="buffLegBroken"/>
 		</triggered_effect>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffAdvancedLegSplint">
+			<requirement name="HasBuff" target="self" buff="buffLegSprained"/>
+		</triggered_effect>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffAdvancedArmSplint">
 			<requirement name="HasBuff" target="self" buff="buffArmBroken"/>
 		</triggered_effect>
@@ -15847,6 +15850,9 @@ So no clothing dyes until that can be resolved. -->
 	<effect_group name="Secondary Action" tiered="false">
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="other" buff="buffAdvancedLegSplint">
 			<requirement name="HasBuff" target="other" buff="buffLegBroken"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="other" buff="buffAdvancedLegSplint">
+			<requirement name="HasBuff" target="other" buff="buffLegSprained"/>
 		</triggered_effect>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="other" buff="buffAdvancedArmSplint">
 			<requirement name="HasBuff" target="other" buff="buffArmBroken"/>

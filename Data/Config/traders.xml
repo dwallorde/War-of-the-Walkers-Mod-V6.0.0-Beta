@@ -742,11 +742,11 @@ quality_mod: adjusts the price range of all items with a quality level.
 		</trader_item_group>
 
 		<trader_item_group name="ammoSupplies">
-			<item name="resourceBulletCasing" count="8,200"/> <!-- 5 -->
-			<item name="resourceBulletTip" count="20,200"/> <!-- 5 -->
-			<item name="resourceBuckshot" count="20,200"/> <!-- 5 -->
-			<item name="resourceGunPowder" count="5,150"/> <!-- 10 -->
-			<item name="resourcePaper" count="10,60"/> <!-- 10 -->
+			<item name="resourceBulletCasing" count="50,200"/> <!-- 5 -->
+			<item name="resourceBulletTip" count="50,200"/> <!-- 5 -->
+			<item name="resourceBuckshot" count="50,200"/> <!-- 5 -->
+			<item name="resourceGunPowder" count="50,250"/> <!-- 10 -->
+			<item name="resourcePaper" count="20,100"/> <!-- 10 -->
 			<item name="resourceArrowHeadIron" count="5,25" prob="0.05"/> <!-- 5 -->
 			<item name="resourceArrowHeadSteelAP" count="5,25" prob="0.05"/> <!-- 5 -->
 			<item name="resourceFeather" count="10,45"/> <!-- 5 -->
@@ -927,7 +927,7 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item name="resourceWood" count="50,1000"/> <!-- 50 -->
 			<item name="resourceYuccaFibers" count="50,500"/> <!-- 50 -->
 			<item name="resourceCrushedSand" count="50,500"/> <!-- 50 -->
-			<item name="resourceScrapIron" count="25,250"/> <!-- 10 -->
+			<item name="resourceScrapIron" count="50,500"/> <!-- 10 -->
 			<item name="resourceScrapPolymers" count="30,150"/>
 			<item name="resourceForgedIron" count="10,75"/>
 			<item name="resourceForgedSteel" count="10,75"/>
@@ -936,14 +936,14 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item name="resourceOilShale" count="20,60"/> <!-- 50 -->
 			<item name="resourceLeather" count="5,25"/>
 			<item name="resourceLeather" count="5,30"/>
-			<item name="resourceScrapBrass" count="5,40"/> <!-- 10 -->
+			<item name="resourceScrapBrass" count="20,200"/> <!-- 10 -->
 			<item name="resourceClayLump" count="5,25"/> <!-- 150 -->
-			<item name="resourceScrapLead" count="5,90"/> <!-- 5 -->
+			<item name="resourceScrapLead" count="20,200"/> <!-- 5 -->
 			<item name="resourceCloth" count="5,100"/>
 			<item name="resourceMilitaryFiber" count="5,20" prob="0.6"/>
-			<item name="resourceCoal" count="20,60"/> <!-- 10 -->
-			<item name="resourcePotassiumNitratePowder" count="20,60"/> <!-- 10 -->
-			<item name="resourceGunPowder" count="3,30"/> <!-- 10 -->
+			<item name="resourceCoal" count="50,200"/> <!-- 10 -->
+			<item name="resourcePotassiumNitratePowder" count="50,200"/> <!-- 10 -->
+			<item name="resourceGunPowder" count="25,100"/> <!-- 10 -->
 			<item name="resourceOil" count="3,10"/>
 			<item name="resourceAnimalFat" count="5,40"/>
 			<item name="bucketEmpty" prob="0.6"/>
@@ -1189,10 +1189,10 @@ quality_mod: adjusts the price range of all items with a quality level.
 		</trader_item_group>
 
 		<trader_item_group name="traderAlways" count="all">
-			<item name="resourceGunPowder" count="5,25"/> <!-- 10 -->
+			<item name="resourceGunPowder" count="10,50"/> <!-- 10 -->
 			<item group="ammo" count="3"/>
 			<item group="ammoSupplies" count="2"/>
-			<item name="resourcePotassiumNitratePowder" count="2,5"/> <!-- 10 -->
+			<item name="resourcePotassiumNitratePowder" count="20,200"/> <!-- 10 -->
 			<item group="foodAll" count="2,5"/>
 
 		</trader_item_group>
