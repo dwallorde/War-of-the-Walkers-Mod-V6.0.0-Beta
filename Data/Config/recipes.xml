@@ -5703,8 +5703,8 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 
 <recipe name="ECO4x4TruckPlaceable" count="1" craft_time="210" craft_area="mechanicBench" tags="learnable">
 	<ingredient name="vehicleHDWheels" count="4"/>
-	<ingredient name="vehicle4x4TruckChassis" count="1"/>
-	<ingredient name="vehicle4x4TruckAccessories" count="1"/>
+	<ingredient name="steel4x4TruckChassis" count="1"/>
+	<ingredient name="steel4x4TruckAccessories" count="1"/>
 	<ingredient name="ECOSmallEngine" count="1"/>
 	<ingredient name="ECOBattery" count="1"/>
 </recipe>
