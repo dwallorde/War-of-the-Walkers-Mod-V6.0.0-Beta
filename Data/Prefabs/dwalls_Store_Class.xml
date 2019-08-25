@@ -4,7 +4,7 @@
     <property name="AllowTopSoilDecorations" value="False" />
     <property name="ExcludeDistantPOIMesh" value="False" />
     <property name="DistantPOIYOffset" value="0" />
-    <property name="Zoning" value="any" />
+    <property name="Zoning" value="Commercial,downtown,industrial" />
     <property name="AllowedTownships" value="city,town,rural,wilderness" />
     <property name="TraderArea" value="True" />
     <property name="TraderAreaProtect" value="20,0,20" />

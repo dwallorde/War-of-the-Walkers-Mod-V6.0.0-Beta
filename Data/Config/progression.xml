@@ -2106,7 +2106,7 @@
 		
 		<effect_group>
 			<passive_effect name="CraftingTier" operation="base_add" level="1,5" value="1,5"
-			tags="meleeToolWrench,meleeToolChainsaw,meleeToolAuger,vehicleMinibikePlaceable,smallEngine,carBattery,scrapIronWrench,HDWrench,tungstenWrench,vehicleBicyclePlaceable,vehicleMotorcyclePlaceable,vehicle4x4TruckPlaceable,vehicleGyrocopterPlaceable,ECOSmallEngine,HDSmallEngine,ECOBattery,HDBattery,ECOMinibikePlaceable,HDMinibikePlaceable,ECOAuger,HDAuger,ECOChainsaw,HDChainsaw"/>
+			tags="meleeToolWrench,meleeToolChainsaw,meleeToolAuger,vehicleMinibikePlaceable,smallEngine,carBattery,scrapIronWrench,HDWrench,tungstenWrench,vehicleBicyclePlaceable,vehicleMotorcyclePlaceable,vehicle4x4TruckPlaceable,vehicleGyrocopterPlaceable,ECOSmallEngine,HDSmallEngine,ECOBattery,HDBattery,ECOMinibikePlaceable,HDMinibikePlaceable,ECOAuger,HDAuger,ECOChainsaw,HDChainsaw,ECO4x4TruckPlaceable,ECOMotorcyclePlaceable,HD4x4TruckPlaceable,HDMotorcyclePlaceable"/>
 		</effect_group>
 	</perk>
 	

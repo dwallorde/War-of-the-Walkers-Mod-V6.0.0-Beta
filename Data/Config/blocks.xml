@@ -5236,7 +5236,7 @@ group desc for stuff like metal siding
 </block>
 
 <block name="steelStairsFilledRailingLeft">
-	<property name="Extends" value="steelMaster"/>
+	<property name="Extends" value="steelMaster" param1="UpgradeBlock"/>
 	<property name="DisplayType" value="blockMulti" />
 	<property name="Shape" value="New"/>
 	<property name="Model" value="Stairs_filled_railing_left"/> <property name="Place" value="TowardsPlacerInverted"/>
@@ -5403,7 +5403,7 @@ group desc for stuff like metal siding
 </block>
 
 <block name="steelStairsFilledRailingRight">
-	<property name="Extends" value="steelMaster"/>
+	<property name="Extends" value="steelMaster" param1="UpgradeBlock"/>
 	<property name="DisplayType" value="blockMulti" />
 	<property name="Shape" value="New"/>
 	<property name="Model" value="Stairs_filled_railing_right"/> <property name="Place" value="TowardsPlacerInverted"/>
@@ -6085,7 +6085,7 @@ group desc for stuff like metal siding
 
 <!-- To Do Tungsten Version -->
 <block name="steelStairs25CornerCNR">
-	<property name="Extends" value="steelMaster"/>
+	<property name="Extends" value="steelMaster" param1="UpgradeBlock"/>
 	<property name="Shape" value="New"/>
 	<property name="Model" value="stairs_filled_corner"/> <property name="Place" value="TowardsPlacerInverted"/>
 	<property name="SortOrder2" value="0560"/> <!-- SortShape -->
@@ -7120,7 +7120,7 @@ group desc for stuff like metal siding
 
 <!-- To Do Tungsten Version -->
 <block name="steelStairs25">
-	<property name="Extends" value="steelMaster"/>
+	<property name="Extends" value="steelMaster" param1="UpgradeBlock"/>
 	<property name="Shape" value="New"/>
 	<property name="Model" value="StairsFilledVerticalUV"/> <property name="Place" value="TowardsPlacerInverted"/>
 	<property name="SortOrder2" value="0530"/> <!-- SortShape -->
@@ -14908,6 +14908,7 @@ NOT the TextureNumber.
 	<property name="Class" value="SecureLoot"/>
 	<property name="DisplayType" value="blockHardened" />
 	<property name="Material" value="Mmetal_hard"/>
+	<property name="MaxDamage" value="1500"/>
 	<property name="StabilitySupport" value="false"/> <!-- build restriction -->
 	<property name="Shape" value="Ext3dModel"/> <property name="Texture" value="293"/>
 	<property name="Mesh" value="models"/>
@@ -14937,6 +14938,7 @@ NOT the TextureNumber.
 	<property name="CustomIcon" value="cntDeskSafe"/>
 	<property name="DisplayType" value="blockHardened" />
 	<property name="Material" value="Mmetal_hard"/>
+	<property name="MaxDamage" value="1500"/>
 	<property name="StabilitySupport" value="false"/> <!-- build restriction -->
 	<property name="Shape" value="Ext3dModel"/> <property name="Texture" value="293"/>
 	<property name="Mesh" value="models"/>
@@ -14962,6 +14964,7 @@ NOT the TextureNumber.
 	<property name="Class" value="SecureLoot"/>
 	<property name="DisplayType" value="blockHardened" />
 	<property name="Material" value="Mmetal_hard"/>
+	<property name="MaxDamage" value="1500"/>
 	<property name="StabilitySupport" value="false"/> <!-- build restriction -->
 	<property name="Shape" value="Ext3dModel"/> <property name="Texture" value="293"/>
 	<property name="Mesh" value="models"/>
@@ -14989,6 +14992,7 @@ NOT the TextureNumber.
 	<property name="CustomIcon" value="cntWallSafe"/>
 	<property name="DisplayType" value="blockHardened" />
 	<property name="Material" value="Mmetal_hard"/>
+	<property name="MaxDamage" value="1500"/>
 	<property name="StabilitySupport" value="false"/> <!-- build restriction -->
 	<property name="Shape" value="Ext3dModel"/> <property name="Texture" value="293"/>
 	<property name="Mesh" value="models"/>
@@ -29686,6 +29690,7 @@ ore block visualisation end -->
 	<property name="Material" value="Mwood"/>
 	<property name="MaxDamage" value="150"/>
 	<property name="Shape" value="ModelEntity"/>
+	<property name="DisplayInfo" value="Name"/>
 	<property name="Model" value="#Furniture.unity3d?CrateShippingContainerPrefab"/>
 	<property name="Place" value="TowardsPlacerInverted"/>
 	<property name="DowngradeBlock" value="clothingStoreContainer"/>
@@ -29709,6 +29714,7 @@ ore block visualisation end -->
 	<property name="Material" value="Mwood"/>
 	<property name="MaxDamage" value="150"/>
 	<property name="Shape" value="ModelEntity"/>
+	<property name="DisplayInfo" value="Name"/>
 	<property name="Model" value="#Furniture.unity3d?WoodenShippingContainerPrefab"/>
 	<property name="Place" value="TowardsPlacerInverted"/>
 	<property name="DowngradeBlock" value="resourceContainer"/>
@@ -29732,6 +29738,7 @@ ore block visualisation end -->
 	<property name="Material" value="Mwood"/>
 	<property name="MaxDamage" value="150"/>
 	<property name="Shape" value="ModelEntity"/>
+	<property name="DisplayInfo" value="Name"/>
 	<property name="Model" value="#Furniture.unity3d?WoodenShippingContainerPrefab"/>
 	<property name="Place" value="TowardsPlacerInverted"/>
 	<property name="DowngradeBlock" value="farmLootCrate"/>
@@ -29789,6 +29796,7 @@ ore block visualisation end -->
 <block name="PlayerStarterCrate">
 	<property name="CustomIcon" value="PlayerStarterCrate" />
 	<property name="Material" value="Mwood" />
+	<property name="DisplayInfo" value="Name"/>
 	<property name="MaxDamage" value="5" />
 	<property name="Texture" value="572" />
 	<property name="CanPickup" value="true"/>

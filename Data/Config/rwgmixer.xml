@@ -223,19 +223,19 @@
 		</prefab_rule>
 
 		<prefab_rule name="wildernessGroup">
-			<prefab name="settlement_trader_01" min_count="1" max_count="2" prob="2" min_repeat_distance="800"/>
+			<prefab name="settlement_trader_01" min_count="1" max_count="2" prob="2" min_repeat_distance="600"/>
 			<prefab name="cabin_01" />
-			<prefab name="settlement_trader_02" min_count="1" max_count="2" prob="2" min_repeat_distance="800"/>
+			<prefab name="settlement_trader_02" min_count="1" max_count="2" prob="2" min_repeat_distance="600"/>
 			<prefab name="cabin_02" />
-			<prefab name="settlement_trader_03" min_count="1" max_count="2" prob="2" min_repeat_distance="800"/>
+			<prefab name="settlement_trader_03" min_count="1" max_count="2" prob="2" min_repeat_distance="600"/>
 			<prefab name="cabin_03" />
-			<prefab name="settlement_trader_04" min_count="1" max_count="2" prob="2" min_repeat_distance="800"/>
+			<prefab name="settlement_trader_04" min_count="1" max_count="2" prob="2" min_repeat_distance="600"/>
 			<prefab name="cabin_04" />
-			<prefab name="settlement_trader_05" min_count="1" max_count="2" prob="2" min_repeat_distance="800"/>
+			<prefab name="settlement_trader_05" min_count="1" max_count="2" prob="2" min_repeat_distance="600"/>
 			<prefab name="cabin_05" />
-			<prefab name="dwalls_Store_Class" min_count="1" max_count="2" prob="2" min_repeat_distance="800"/>
+			<prefab name="dwalls_Store_Class" min_count="1" max_count="2" prob="2" min_repeat_distance="600"/>
 			<prefab name="cabin_06" />
-			<prefab name="Dwalls_TraderSnow1" min_count="1" max_count="2" prob="2" min_repeat_distance="800"/>
+			<prefab name="Dwalls_TraderSnow1" min_count="1" max_count="2" prob="2" min_repeat_distance="600"/>
 			<prefab name="cabin_07"/>
 			<prefab name="cabin_08"/>
 			<prefab name="cabin_09"/>

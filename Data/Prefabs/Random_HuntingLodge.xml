@@ -13,5 +13,6 @@
     <property name="SleeperIsLootVolume" value="True,False" />
     <property name="ExcludePOICulling" value="False" />
     <property name="DifficultyTier" value="1" />
+	<property name="QuestTags" value="clear,fetch,hidden_cache" />
     <property name="SleeperIsBossVolume" value="True,False" />
 </prefab>

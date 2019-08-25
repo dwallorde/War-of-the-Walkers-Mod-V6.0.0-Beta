@@ -15,5 +15,6 @@
     <property name="DistantPOIYOffset" value="0" />
     <property name="ExcludePOICulling" value="False" />
     <property name="DifficultyTier" value="1" />
+	<property name="QuestTags" value="clear" />
     <property name="SleeperIsBossVolume" value="False" />
 </prefab>

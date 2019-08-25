@@ -4893,4 +4893,36 @@ treasureTemplate
 	<item group="AccountantZoe" count="1"/>
 </lootcontainer>
 
+<!-- Zombie Construction Worker Loot -->
+<lootcontainer id="214" count="1,2" size="5,10" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="1" loot_quality_template="baseTemplate">
+	<item group="ZombieUtilityWorker" count="1"/>
+</lootcontainer>
+
+<!-- Zombie Football Player Loot -->
+<lootcontainer id="215" count="1,2" size="5,10" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="1" loot_quality_template="baseTemplate">
+	<item group="ZombieFootballPlayer" count="1"/>
+</lootcontainer>
+
+<!-- Zombie Soldier Zombie Loot -->
+<lootcontainer id="216" count="1,2" size="5,10" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="1" loot_quality_template="baseTemplate">
+	<item group="militaryAmmo"/>
+	<item group="weaponsMilitaryGuns+ammo" count="1"/>
+	<item group="militaryArmor"/>
+</lootcontainer>
+
+<!-- Zombie Nurse Zombie Loot -->
+<lootcontainer id="217" count="1,2" size="5,10" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="1" loot_quality_template="baseTemplate">
+	<item group="medicine"/>
+</lootcontainer>
+
+<!-- Zombie Hazmat Zombie Loot -->
+<lootcontainer id="218" count="1" size="5,10" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="1" loot_quality_template="baseTemplate">
+	<item group="hazmatGear"/>
+</lootcontainer>
+
+<!-- Zombie LumberJack Zombie Loot -->
+<lootcontainer id="219" count="1,2" size="5,10" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="1" loot_quality_template="baseTemplate">
+	<item group="lumberjacks"/>
+</lootcontainer>
+
 </lootcontainers>

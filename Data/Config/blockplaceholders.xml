@@ -340,6 +340,11 @@
 		<block name="cntShippingCrateShamway" prob="30"/>
 		<block name="cntShippingCrateShotgunMessiah" prob="30"/>
 		<block name="cntShippingCrateWorkingStiffs" prob="30"/>
+		<block name="cntShippingCrateBrewery" prob="30"/>
+		<block name="cntAutomotiveStoreLoot" prob="30"/>
+		<block name="clothingStoreShippingContainer" prob="30"/>
+		<block name="resourceShippingContainer" prob="30"/>
+		<block name="farmShippingCrate" prob="30"/>
 	</placeholder>
 
 	<placeholder name="cntWorkstationsRandomLootHelper">
@@ -384,6 +389,11 @@
 		<block name="cntCollapsedGeneratorbank" prob="0.25"/>
 		<block name="cntCollapsedBatterybank" prob="0.1"/>
 		<block name="cntLootCrateWorkingStiffs"/>
+		<block name="cntLootCrateBrewery"/>
+		<block name="cntLootCrateAutomotiveStore"/>
+		<block name="clothingStoreContainer"/>
+		<block name="resourceContainer"/>
+		<block name="farmLootCrate"/>
 		<block name="airConditioner"/>
 		<block name="oilBarrel"/>
 		<block name="cntToilet01"/>
@@ -498,6 +508,7 @@
 		<block name="cntSportsBag02" prob="7.1"/>
 		<block name="cntPurse01" prob="7.1"/>
 		<block name="cntSuitcase" prob="7.1"/>
+		<block name="cntCoinPurse" prob="7.1"/>
 	</placeholder>
 
 	<placeholder name="cntBookcaseGoodRandomLootHelper">

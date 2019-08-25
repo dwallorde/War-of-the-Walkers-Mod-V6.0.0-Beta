@@ -9184,6 +9184,7 @@ EntityLootContainerBossInvestigatorHenry,entityclasses,Entity,KgNone,Dropped Loo
 EntityLootContainerBossThugBilly,entityclasses,Entity,KgNone,Dropped Loot,,,,,
 EntityLootContainerBossMasterLeroy,entityclasses,Entity,KgNone,Dropped Loot,,,,,
 EntityLootContainerBossAccountantZoe,entityclasses,Entity,KgNone,Dropped Loot,,,,,
+EntityLootContainerUtilityWorker,entityclasses,Entity,KgNone,Dropped Loot,,,,,
 ECOMinibike,vehicles,vehicle,KgNone,ECO Minibike,,,,,
 HDMinibike,vehicles,vehicle,KgNone,HD Minibike,,,,,
 ECOMotorcycle,vehicles,vehicle,KgNone,ECO Motorcycle,,,,,

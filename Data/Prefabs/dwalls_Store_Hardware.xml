@@ -15,6 +15,7 @@
     <property name="SleeperVolumeGameStageAdjust" value="medium,,medium," />
     <property name="SleeperIsLootVolume" value="True,False,True,False" />
     <property name="ExcludePOICulling" value="False" />
-    <property name="DifficultyTier" value="1" />
+    <property name="DifficultyTier" value="3" />
+	<property name="QuestTags" value="clear,fetch,hidden_cache" />
     <property name="SleeperIsBossVolume" value="True,False,True,False" />
 </prefab>

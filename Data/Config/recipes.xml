@@ -5691,6 +5691,7 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="resourceElectronicParts" count="40"/>
 	<ingredient name="resourceHeadlight" count="8"/>
 	<ingredient name="resourceMetalPipe" count="120"/>
+	<ingredient name="resourceForgedSteel" count="50"/>
 </recipe>
 
 <recipe name="steel4x4TruckChassis" count="1" craft_time="300" craft_area="mechanicBench" tags="learnable">
@@ -5715,6 +5716,7 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="resourceElectronicParts" count="40"/>
 	<ingredient name="resourceHeadlight" count="8"/>
 	<ingredient name="resourceMetalPipe" count="120"/>
+	<ingredient name="ForgedTungsten" count="50"/>
 </recipe>
 
 <recipe name="tungsten4x4TruckChassis" count="1" craft_time="300" craft_area="mechanicBench" tags="learnable">

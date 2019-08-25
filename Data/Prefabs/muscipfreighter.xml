@@ -5,7 +5,8 @@
     <property name="TraderArea" value="False" />
     <property name="ExcludeDistantPOIMesh" value="False" />
     <property name="ExcludePOICulling" value="False" />
-    <property name="DifficultyTier" value="5" />
+    <property name="DifficultyTier" value="3" />
+	<property name="QuestTags" value="clear,fetch,hidden_cache" />
     <property name="Zoning" value="Downtown,Industrial,ResidentialNew,ResidentialOld" />
     <property name="YOffset" value="-4" />
     <property name="DistantPOIYOffset" value="0" />
