@@ -28,7 +28,7 @@
 			<!-- <hold_type id="22" newmodel="false" ray_cast="0.5" holster="0" unholster="0.2" />                         22 sham -->
 			<hold_type id="23" newmodel="false" ray_cast="2.0" holster="0" unholster="0.2" />                         <!-- 23 stews, bowl -->
 			<hold_type id="24" newmodel="false" ray_cast="0.3" holster="0" unholster="0.2" />                         <!-- 24 hand zombie 02 crawler -->
-			<hold_type id="25" newmodel="false" ray_cast="0.4" holster="0" unholster="0.2" />                         <!-- 25 pipe bomb -->
+			<hold_type id="25" newmodel="false" ray_cast="0.3" holster="0" unholster="0.2" />                         <!-- 25 pipe bomb -->
 			<!-- "Sway Off" is hardcoded for hold types 26, 27, 53 -->
 			<hold_type id="26" newmodel="false" ray_cast="0.3" holster="0" unholster="0.2" two_handed="true" />       <!-- 26 crossbow -->
 			<hold_type id="27" newmodel="false" ray_cast="0.8" holster="0" unholster="0.2" two_handed="true" />       <!-- 27 wooden bow -->
@@ -38,15 +38,15 @@
 			<hold_type id="32" newmodel="false" ray_cast="0.2" holster="0" unholster="0.2" two_handed="true" />       <!-- stone axe -->
 			<hold_type id="33" newmodel="false" ray_cast="0.75" holster="0" unholster="0.2" two_handed="true" />      <!-- sledgehammer -->
 			<hold_type id="34" newmodel="false" ray_cast="0.75" holster="0" unholster="0.2" two_handed="true"  />     <!-- bucket -->
-			<hold_type id="35" newmodel="false" ray_cast="0.3" holster="0" unholster="0.2" />                         <!-- dog, vulture, wolf -->
+			<hold_type id="35" newmodel="false" ray_cast="0.18" holster="0" unholster="0.2" />                        <!-- dog, vulture, wolf -->
 			<hold_type id="36" newmodel="false" ray_cast="0.43" holster="0" unholster="0.2" two_handed="true" />      <!-- knife -->
 			<hold_type id="37" newmodel="false" ray_cast="0" holster="0" unholster="0.2" two_handed="true" />         <!-- nailgun -->
 			<hold_type id="38" newmodel="false" ray_cast="0" holster="0" unholster="0.2" />                           <!-- cobblestones -->
 			<hold_type id="39" newmodel="false" ray_cast="0" holster="0" unholster="0.2" two_handed="true" />         <!-- blunderbuss -->
-			<hold_type id="40" newmodel="false" ray_cast="0.4" holster="0" unholster="0.2" />                         <!-- rock small -->
+			<hold_type id="40" newmodel="false" ray_cast="0.3" holster="0" unholster="0.2" />                         <!-- rock small -->
 			<hold_type id="44" newmodel="false" ray_cast="0" holster="0" unholster="0.2" two_handed="true" />         <!-- magnum -->
 			<hold_type id="45" newmodel="false" ray_cast="0" holster="0" unholster="0.2" />                           <!-- sack -->
-			<hold_type id="46" newmodel="false" ray_cast="0.5" holster="0" unholster="0.2" />                         <!-- bear hand -->
+			<hold_type id="46" newmodel="false" ray_cast="0.22" holster="0" unholster="0.2" />                        <!-- bear hand -->
 			<hold_type id="47" newmodel="false" ray_cast="0.1" holster="0" unholster="0.2" two_handed="true" />       <!-- machete -->
 			<hold_type id="48" newmodel="false" ray_cast="0" holster="0" unholster="0.2" two_handed="true" />         <!-- ak47 -->
 			<hold_type id="49" newmodel="false" ray_cast="1.00" holster="0" unholster="0.2" />                        <!-- candle -->
@@ -54,8 +54,24 @@
 			<hold_type id="51" newmodel="false" ray_cast="0.31" holster="0" unholster="0.2" two_handed="true" />      <!-- 51 paint brush -->
 			<hold_type id="52" newmodel="false" ray_cast="0.31" holster="0" unholster="0.2" two_handed="true" />      <!-- 52 wire tool -->
 			<hold_type id="53" newmodel="false" ray_cast="0.8" holster="0" unholster="0.2" two_handed="true" />       <!-- 53 compound bow -->
-			<hold_type id="54" newmodel="false" ray_cast="0.4" holster="0" unholster="0.2" two_handed="true" />       <!-- 54 molotov cocktail -->
+			<hold_type id="54" newmodel="false" ray_cast="0.35" holster="0" unholster="0.2" two_handed="true" />       <!-- 54 molotov cocktail -->
 			<hold_type id="55" newmodel="false" ray_cast="0.5" holster="0" unholster="0.2" />                         <!-- 55 snake -->
+			<hold_type id="56" newmodel="false" ray_cast="0" holster="0" unholster="0.2" two_handed="true" />         <!-- 56 DoubleBarrelShotgun -->
+			<hold_type id="57" newmodel="false" ray_cast="0.35" holster="0" unholster="0.2" two_handed="true" />       <!-- 57 grenade -->
+			<hold_type id="58" newmodel="false" ray_cast="0.1" holster="0" unholster="0.2" two_handed="true" />       <!-- 58 stun baton -->
+			<hold_type id="59" newmodel="false" ray_cast="0.1" holster="1.0" unholster="1.0" two_handed="true" />       <!-- 59 spear -->
+			<hold_type id="60" newmodel="false" ray_cast="0" holster="0" unholster="0.2" two_handed="true" />         <!-- 60 m60 -->
+			<hold_type id="61" newmodel="false" ray_cast="0" holster="0" unholster="0.2" two_handed="true" />         <!-- 61 knuckles -->
+			<hold_type id="62" newmodel="false" ray_cast="0.65" holster="0" unholster="0.2" two_handed="true" />       <!-- 62 timed charge -->
+			<hold_type id="63" newmodel="false" ray_cast="0" holster="0" unholster="0.2" two_handed="true" />         <!-- 63 pickaxe iron -->
+			<hold_type id="64" newmodel="false" ray_cast="1.98" holster="0" unholster="0.2" two_handed="true" />      <!-- 64 bandage -->
+			<hold_type id="65" newmodel="false" ray_cast="0" holster="0" unholster="0.2" two_handed="true" />         <!-- 65 bat -->
+			<hold_type id="66" newmodel="false" ray_cast="0.3" holster="0" unholster="0.2" two_handed="true" />         <!-- 66 dynamite -->
+			<hold_type id="67" newmodel="false" ray_cast="0" holster="0" unholster="0.2" two_handed="true" />         <!-- 67 junk turret -->
+			<hold_type id="68" newmodel="false" ray_cast="0" holster="0" unholster="0.2" two_handed="true" />         <!-- 68 advanced wooden bow -->
+			<hold_type id="69" newmodel="false" ray_cast="0" holster="0" unholster="0.2" two_handed="true" />         <!-- 69 advanced compound crossbow -->
+			<hold_type id="70" newmodel="false" ray_cast="0" holster="0" unholster="0.2" two_handed="true" />         <!-- 70 knuckle wraps -->
+			<hold_type id="71" newmodel="false" ray_cast="0" holster="0" unholster="0.2" two_handed="true" />         <!-- 71 tactical assault rifle -->
 		</animation>
     <!--
          Add noisy sounds here
@@ -72,9 +88,6 @@
 
      -->
 
-
-
-    <smell>
         <!-- range is max travel distance of smell in meters
 		     strength is a relative indicator of how strong a smell is compared to other smells
 			 speed is how fast the smell travels in meters per second
@@ -83,7 +96,7 @@
 
 			 Joel's smell design: Raw meats smell the most, then charred, then grilled and boiled smell the least. Carbs generally do not attract zombies much so foods
 			 like corn bread, blueberry pie even though to humans can smell a lot, they do not attract zombies like meat does.
-	    -->
+    <smell>
         <smell name="testSmell" range="15" strength="10" speed="45" duration="5" belt_range="45" belt_strength="15" />
         <smell name="smallSmell" range="1" strength="6" speed="2" duration="5" belt_range="5" belt_strength="10" />
         <smell name="mediumSmell" range="5" strength="18" speed="5" duration="10" belt_range="15" belt_strength="30" heat_map_strength="0.01" heat_map_time="120" />
@@ -91,5 +104,5 @@
         <smell name="exLargeSmell" range="15" strength="42" speed="15" duration="15" belt_range="50" belt_strength="70" heat_map_strength="0.4" heat_map_time="120" />
         <smell name="fart" range="15" strength="30" speed="15" duration="10" belt_range="10" belt_strength="30" />
     </smell>
-
+	    -->
 </iteminfo>
