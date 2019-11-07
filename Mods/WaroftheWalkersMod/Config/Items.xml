@@ -5318,7 +5318,6 @@
 				<property name="CustomIcon" value="SteelCrossbowSchematic" />
 				<property name="EconomicValue" value="500"/> </item>
 
-
 		<!-- Explosive Items -->
 			<!-- teddyBearGrenade, ***teddyBearGrenadeSchematic -->
 
@@ -5367,8 +5366,6 @@
 				<property class="Action0">
 					<property name="Skills_to_gain" value="teddyBearGrenadeSchematicPerk"/>
 				</property> </item> -->
-
-
 
 		<!-- Melee Weapons -->
 			<!-- Steel Machete, TungstenMachete, ClubTungsten, GoldTippedMachete, steelHuntingKnfie, tungstenHuntingKnife, ***tungstenHuntingKnifeSchematic, steelHuntingKnifeSchematic***, GoldTippedKnife, ^^^^^spearWooden, spearSteel^^^^^, spearTungsten, ^^^^^sledgehammerSteel, sledgehammerSteelSchematic^^^^^, sledgehammerTungsten, sledgehammerTungstenSchematic, batBaseBallWooden, batBaseBallSteel, cleaver, knifeKitchen, knifeCombat, sword, axeBattle, hammerBattle, maceBattle, skullAxeBattle, swordBattle, pipeIron, crowbarSteel, crowbarTungsten, shivPrisoner, ***GoldTippedKnifeBook, GoldTippedMacheteSchematic, ClubTungstenSchematic, SteelMacheteSchematic, TungstenMacheteSchematic***  -->
@@ -9033,11 +9030,1113 @@
 				</property>
 				<property name="SellableToTrader" value="true" /> </item> -->
 
+		<!-- Clothing/Armor -->
+			<!-- LightCoat, FaceMask, OrangeHDMiningHelmet, FlannelPants, BlackBoots, PrisonerShirt, PrisonerPants, snuggie, ballCapBGG, ***TailoringPoncho, TailoringLetherDuster, TailoringPufferCoat, TailoringLightCoat***, armorKevlarMaster, KevlarBoots, KevlarGloves, KevlarLegArmor, KevlarVest, KevlarHelmet, armourTungstenMaster, TungstenBoots, TungstenLegArmor, TungstenChestArmor, TungstenHelment, TungstenGloves, armorSilverMaster, silverBoots, silverPants, silverJacket, silverHat, silverGloves -->
 
+			<item name="LightCoat">
+				<property name="CustomIcon" value="pufferCoat" />
+				<property name="Tags" value="csFabricArmor,upperbody,chest,clothing"/>
+				<property name="DisplayType" value="clothing"/>
+				<property name="Stacknumber" value="1"/>
+				<property name="Waterproof" value="0.4" />
+				<property name="Material" value="Mcloth" />
+				<property name="Weight" value="20" />
+				<property name="FuelValue" value="3" />
+				<property name="EconomicValue" value="350" />
+				<property name="DegradationBreaksAfter" value="false" />
+				<property name="HoldType" value="45" />
+				<property name="Meshfile" value="Items/Misc/sackPrefab" />
+				<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+				<property name="EquipSlot" value="Chest" />
+				<property class="UMA">
+					<property name="Mesh" value="coats_puffer_coat"/>
+					<property name="Overlay0" value="coat_puffer_coat"/>
+					<property name="Layer" value="3"/>
+					<property name="UISlot" value="Jacket" />
+					<property name="Mask0" value="hands" param1="outer"/>
+					<property name="Mask1" value="chest" param1="middle"/>
+				</property>
+				<property name="DescriptionKey" value="LightCoatDesc" />
+				<property name="Group" value="Clothing" />
+				<property name="ActionSkillGroup" value="Clothing/Armor"/>
+				<property name="CraftingSkillGroup" value="craftSkillFabricArmor"/>
+				<effect_group tiered="false">
+					<passive_effect name="ModSlots" operation="base_set" value="1"/>
+					<passive_effect name="HypothermalResist" operation="base_add" value="13"/>
+					<passive_effect name="HyperthermalResist" operation="base_add" value="1"/>
+				</effect_group> </item>
+			<item name="FaceMask">
+				<property name="CustomIcon" value="bandana" />
+				<property name="CustomIconTint" value="FFA500" />
+				<property name="Tags" value="csFabricArmor,head,clothing"/>
+				<property name="DisplayType" value="clothing"/>
+				<property name="Stacknumber" value="1"/>
+				<property name="Material" value="Mcloth" />
+				<property name="Weight" value="20" />
+				<property name="FuelValue" value="6" />
+				<property name="EconomicValue" value="125" />
+				<property name="DegradationBreaksAfter" value="false" />
+				<property name="Encumbrance" value="0" />
+				<property name="HoldType" value="45" />
+				<property name="Meshfile" value="Items/Misc/sackPrefab" />
+				<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+				<property name="EquipSlot" value="Face" />
+				<property class="UMA">
+					<property name="Mesh" value="gear_bandana" />
+					<property name="Overlay0" value="gear_bandana" />
+					<property name="Layer" value="1" />
+					<property name="UISlot" value="Face" />
+					<property name="Mask0" value="Face" param1="base"/>
+				</property>
+				<property name="DescriptionKey" value="FaceMaskDesc" />
+				<property name="Group" value="Clothing" />
+				<property name="ActionSkillGroup" value="Clothing/Armor" />
+			    <property name="CraftingSkillGroup" value="craftSkillFabricArmor" />
+				<effect_group tiered="false">
+					<passive_effect name="ModSlots" operation="base_set" value="1"/>
+					<passive_effect name="HypothermalResist" operation="base_add" value="5"/>
+					<passive_effect name="HyperthermalResist" operation="base_add" value="3"/>
+				</effect_group> </item>
+			<item name="OrangeHDMiningHelmet">
+			    <property name="Extends" value="armorMiningHelmet" />
+			    <property name="CustomIcon" value="armorMiningHelmet" />
+			    <property name="CustomIconTint" value="FFA500" />
+				<effect_group>
+					<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
+					<passive_effect name="PhysicalDamageResist" operation="base_add" value="10"/>
+					<passive_effect name="BuffResistance" operation="base_add" value="0.05" tags="buffIllInfection0,buffInjuryBleeding,buffInjuryStunned1"/>
+					<passive_effect name="DegradationMax" operation="base_set" value="480,1200" tier="1,6"/>
+					<passive_effect name="NoiseMultiplier" operation="perc_add" value="0.10" />
+					<passive_effect name="Mobility" operation="perc_subtract" value="0.04"/>
+					<passive_effect name="StaminaChangeOT" operation="perc_subtract" value="0.0281" tags="walking"/>
+					<passive_effect name="StaminaChangeOT" operation="perc_subtract" value="0.0562" tags="running"/>
+					<display_value name="dStaminaChangeOT" value="-.562"/>
 
+						<triggered_effect trigger="onSelfEquipStop" action="RemovePrefabFromEntity" parent_transform="CameraNode" prefab="Entities/Lighting/miningHelmetLightSource"/>
+						<triggered_effect trigger="onSelfEquipStart" action="AttachPrefabToEntity" prefab="Entities/Lighting/miningHelmetLightSource" parent_transform="CameraNode" local_rotation="-90,0,0" local_position="0,0,0"/>
 
+						<triggered_effect trigger="onSelfItemActivate" action="SetTransformActive" active="true" parent_transform="CameraNode" transform_path="tempPrefab_miningHelmetLightSource">
+							<requirement name="IsFPV"/>
+						</triggered_effect>
+						<triggered_effect trigger="onSelfItemActivate" action="SetTransformActive" active="false" parent_transform="Spotlight" transform_path="tempPrefab_miningHelmetLightSource">
+							<requirement name="IsFPV"/>
+						</triggered_effect>
 
+						<triggered_effect trigger="onSelfItemDeactivate" action="SetTransformActive" active="false" parent_transform="CameraNode" transform_path="tempPrefab_miningHelmetLightSource">
+							<requirement name="IsFPV"/>
+						</triggered_effect>
 
+						<triggered_effect trigger="onSelfEquipStop" action="RemovePrefabFromEntity" parent_transform="Spotlight" prefab="Entities/Lighting/miningHelmetLightSource"/>
+						<triggered_effect trigger="onSelfEquipStart" action="AttachPrefabToEntity" prefab="Entities/Lighting/miningHelmetLightSource" parent_transform="Spotlight" local_rotation="90,0,0" local_position="0,0,0"/>
+
+						<triggered_effect trigger="onSelfItemActivate" action="SetTransformActive" active="true" parent_transform="Spotlight" transform_path="tempPrefab_miningHelmetLightSource">
+							<requirement name="IsFPV" invert="true"/>
+						</triggered_effect>
+						<triggered_effect trigger="onSelfItemDeactivate" action="SetTransformActive" active="false" parent_transform="Spotlight" transform_path="tempPrefab_miningHelmetLightSource">
+							<requirement name="IsFPV" invert="true"/>
+						</triggered_effect>
+						<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="false" parent_transform="Spotlight" transform_path="tempPrefab_miningHelmetLightSource"/>
+				</effect_group>
+			    <property class="UMA">
+			      <property name="Overlay0Tint" value="FFA500" />
+			    </property> </item>
+			<item name="FlannelPants">
+				<property name="CustomIcon" value="denimPants" />
+				<property name="CustomIconTint" value="0000FF" />
+				<property name="Tags" value="csFabricArmor,lowerbody,legs,clothing"/>
+				<property name="DisplayType" value="clothing"/>
+				<property name="Stacknumber" value="1"/>
+				<!-- <property name="Encumbrance" value="0.001" /> -->
+				<property name="Material" value="Mcloth" />
+				<property name="DegradationBreaksAfter" value="false" />
+				<property name="Weight" value="40" />
+				<property name="FuelValue" value="8" />
+				<property name="EconomicValue" value="150" />
+				<property name="HoldType" value="45" />
+				<property name="Meshfile" value="Items/Misc/sackPrefab" />
+				<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+				<property name="EquipSlot" value="Legs" />
+				<property class="UMA">
+					<property name="Mesh" value="clothes_denim_pants" />
+					<property name="Overlay0Tint" value="0000FF" />
+					<property name="Overlay0" value="pants_01" />
+					<property name="Layer" value="0" />
+					<property name="Mask0" value="legs" param1="inner"/>
+					<property name="UISlot" value="Pants" />
+				</property>
+				<property name="DescriptionKey" value="FlannelPantsDesc" />
+				<property name="Group" value="Clothing" />
+				<property name="ActionSkillGroup" value="Clothing/Armor"/>
+				<property name="CraftingSkillGroup" value="craftSkillFabricArmor"/>
+				<effect_group tiered="false">
+					<passive_effect name="ModSlots" operation="base_set" value="1"/>
+					<passive_effect name="HypothermalResist" operation="base_add" value="9"/>
+					<passive_effect name="HyperthermalResist" operation="base_add" value="6"/>
+				</effect_group> </item>
+			<item name="BlackBoots">
+			    <property name="Extends" value="wornBoots" />
+			    <property name="CustomIcon" value="wornBoots" />
+			    <property name="CustomIconTint" value="000000" />
+			    <property class="UMA">
+			      <property name="Overlay0Tint" value="000000" />
+			    </property> </item>
+			<item name="PrisonerShirt">
+				<property name="Extends" value="tshirt" />
+				<property name="CustomIcon" value="tshirtWhite" />
+				<property name="CustomIconTint" value="210,75,7,255" />
+				<property class="UMA">
+					<property name="Overlay1Tint" value="210,75,7,255" />
+				</property>
+				<property name="DescriptionKey" value="PrisonerClothingDesc" /> </item>
+			<item name="PrisonerPants">
+				<property name="Extends" value="denimPants" />
+				<property name="CustomIcon" value="denimPants" />
+				<property name="CustomIconTint" value="210,75,7,255" />
+				<property class="UMA">
+					<property name="Overlay0Tint" value="210,75,7,255" />
+				</property>
+				<property name="DescriptionKey" value="PrisonerClothingDesc" /> </item>
+			<item name="snuggie">
+				<property name="CustomIcon" value="snuggie" />
+				<property name="Tags" value="csFabricArmor,upperbody,chest,clothing"/>
+				<property name="DisplayType" value="clothing"/>
+				<property name="Stacknumber" value="1"/>
+				<property name="Waterproof" value="0.3"/>
+				<property name="Material" value="Mleather"/>
+				<property name="DescriptionKey" value="snuggieDesc"/>
+				<property name="DegradationBreaksAfter" value="false"/>
+				<property name="RepairTools" value="resourceLeather"/>
+				<property name="FuelValue" value="50"/>
+				<property name="EconomicValue" value="360"/>
+				<property name="HoldType" value="45"/>
+				<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+				<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+				<property name="EquipSlot" value="Chest"/>
+				<property class="UMA">
+					<property name="Mesh" value="clothes_hide_poncho"/>
+					<property name="Overlay0" value="clothes_hide_poncho"/>
+					<property name="Overlay0Tint" value="0000FF" />
+					<property name="Layer" value="3"/>
+					<property name="UISlot" value="Jacket"/>
+				    <property name="Mask1" value="chest" param1="middle"/>
+				</property>
+				<property name="Group" value="Clothing"/>
+				<property name="ActionSkillGroup" value="Clothing/Armor"/>
+				<property name="CraftingSkillGroup" value="craftSkillFabricArmor"/>
+				<effect_group tiered="false">
+					<passive_effect name="ModSlots" operation="base_set" value="1"/>
+					<passive_effect name="HypothermalResist" operation="base_add" value="15"/>
+					<passive_effect name="HyperthermalResist" operation="base_add" value="6"/>
+				</effect_group> </item>
+			<item name="ballCapBGG">
+				<property name="Extends" value="ballCap"/>
+				<property name="CustomIcon" value="ballCapBGG"/>
+				<property class="UMA">
+					<property name="Overlay0Tint" value="0,0,0"/>
+				</property>
+				<property name="DescriptionKey" value="ballCapBGGDesc"/> </item>
+
+			<!-- To Do Add/Remove? 
+			<item name="TailoringPoncho">
+				<property name="CustomIcon" value="TailoringPoncho" />
+				<property name="Extends" value="schematicMaster" />
+			    <property class="Action0">
+					<property name="Skills_to_gain" value="TailoringPonchoPerk" />
+			    </property>
+			    <property name="Group" value="Books" />
+				<property name="EconomicValue" value="250" /> </item>
+			<item name="TailoringLeatherDuster">
+				<property name="CustomIcon" value="TailoringLeatherDuster" />
+				<property name="Extends" value="schematicMaster" />
+			    <property class="Action0">
+					<property name="Skills_to_gain" value="TailoringLeatherDusterPerk" />
+			    </property>
+			    <property name="Group" value="Books" />
+				<property name="EconomicValue" value="250" /> </item>
+			<item name="TailoringPufferCoat">
+				<property name="CustomIcon" value="TailoringPufferCoat" />
+				<property name="Extends" value="schematicMaster" />
+			    <property class="Action0">
+					<property name="Skills_to_gain" value="TailoringPufferCoatPerk" />
+			    </property>
+			    <property name="Group" value="Books" />
+				<property name="EconomicValue" value="250" /> </item>
+			<item name="TailoringLightCoat">
+				<property name="CustomIcon" value="TailoringLightCoat" />
+				<property name="Extends" value="schematicMaster" />
+			    <property class="Action0">
+					<property name="Skills_to_gain" value="TailoringLightCoatPerk" />
+			    </property>
+			    <property name="Group" value="Books" />
+				<property name="EconomicValue" value="250" /> </item> -->
+			<item name="armorKevlarMaster">
+				<property name="CreativeMode" value="None"/>
+				<property name="CustomIcon" value="KevlarBoots"/>
+				<property name="DisplayType" value="armor"/>
+				<property name="Material" value="kevlar"/>
+				<property name="RepairTools" value="Kevlar"/>
+				<property name="DegradationBreaksAfter" value="false"/>
+				<property name="HoldType" value="45"/>
+				<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+				<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+				<property name="DescriptionKey" value="KevlarArmorDesc"/>
+				<property name="Group" value="Clothing"/>
+				<property name="ActionSkillGroup" value="Clothing/Armor"/>
+				<property name="CraftingSkillGroup" value="craftSkillFabricArmor"/>
+				<property name="RepairExpMultiplier" value="12.8"/>
+				<property name="EconomicValue" value="700"/> </item>
+			<item name="KevlarBoots">
+				<property name="Extends" value="armorKevlarMaster" param1="CustomIcon"/>
+				<property name="CustomIcon" value="armorMilitaryBoots" />
+			    <property name="CustomIconTint" value="B96D2D" />
+				<property name="Tags" value="csFabricArmor,lowerbody,feet,armor,armorFeet,lightarmor"/>
+				<property name="EquipSlot" value="Feet" />
+				<effect_group>
+					<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
+					<passive_effect name="PhysicalDamageResist" operation="base_add" value="7"/>
+					<passive_effect name="DegradationMax" operation="base_set" value="800,1400" tier="1,6"/>
+
+					<passive_effect name="Mobility" operation="perc_subtract" value="0.05"/>
+					<passive_effect name="StaminaChangeOT" operation="perc_subtract" value="0.0281" tags="walking"/>
+					<passive_effect name="StaminaChangeOT" operation="perc_subtract" value="0.0562" tags="running"/>
+					<display_value name="dStaminaChangeOT" value="-.562"/>
+					<passive_effect name="NoiseMultiplier" operation="perc_add" value="0.10" />
+					<passive_effect name="BuffResistance" operation="base_add" value="0.06" tags="buffIllInfection0,buffInjuryBleeding,buffInjuryStunned1"/>
+				</effect_group>
+				 <property class="UMA">
+					<property name="Mesh" value="armor_kevlar_boots" />
+					<property name="Overlay0" value="armor_kevlar_boots" />
+					<property name="Layer" value="0" />
+					<property name="UISlot" value="Footwear" />
+					<!-- <property name="OverlayTint" value="B96D2D" /> -->
+					<property name="Overlay0Tint" value="B96D2D" />
+			    </property> </item>
+			<item name="KevlarGloves">
+				<property name="Extends" value="armorKevlarMaster" param1="CustomIcon"/>
+			    <property name="CustomIcon" value="armorMilitaryGloves" />
+				<property name="CustomIconTint" value="B96D2D" />
+				<property name="Tags" value="csFabricArmor,upperbody,hands,armor,armorHands,lightarmor"/>
+			    <property name="EquipSlot" value="Hands" />
+				<effect_group>
+					<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
+					<passive_effect name="PhysicalDamageResist" operation="base_add" value="7"/>
+					<passive_effect name="DegradationMax" operation="base_set" value="800,1400" tier="1,6"/>
+
+					<passive_effect name="Mobility" operation="perc_subtract" value="0.05"/>
+					<passive_effect name="StaminaChangeOT" operation="perc_subtract" value="0.0281" tags="walking"/>
+					<passive_effect name="StaminaChangeOT" operation="perc_subtract" value="0.0562" tags="running"/>
+					<display_value name="dStaminaChangeOT" value="-.562"/>
+					<passive_effect name="NoiseMultiplier" operation="perc_add" value="0.10" />
+					<passive_effect name="BuffResistance" operation="base_add" value="0.06" tags="buffIllInfection0,buffInjuryBleeding,buffInjuryStunned1"/>
+				</effect_group>
+			    <property class="UMA">
+					<property name="Mesh" value="armor_kevlar_gloves" />
+					<property name="Overlay0" value="armor_kevlar_gloves" />
+					<property name="Layer" value="0" />
+					<property name="UISlot" value="Gloves" />
+					<property name="Overlay0Tint" value="B96D2D" />
+			    </property> </item>
+			<item name="KevlarLegArmor">
+				<property name="Extends" value="armorKevlarMaster" param1="CustomIcon"/>
+			    <property name="CustomIcon" value="armorMilitaryLegs" />
+			    <property name="CustomIconTint" value="B96D2D" />
+				<property name="Tags" value="csFabricArmor,lowerbody,legs,armor,armorLegs,lightarmor"/>
+			    <property name="EquipSlot" value="Legs" />
+				<effect_group>
+					<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
+					<passive_effect name="PhysicalDamageResist" operation="base_add" value="7"/>
+					<passive_effect name="DegradationMax" operation="base_set" value="800,1400" tier="1,6"/>
+
+					<passive_effect name="Mobility" operation="perc_subtract" value="0.05"/>
+					<passive_effect name="StaminaChangeOT" operation="perc_subtract" value="0.0281" tags="walking"/>
+					<passive_effect name="StaminaChangeOT" operation="perc_subtract" value="0.0562" tags="running"/>
+					<display_value name="dStaminaChangeOT" value="-.562"/>
+					<passive_effect name="NoiseMultiplier" operation="perc_add" value="0.10" />
+					<passive_effect name="BuffResistance" operation="base_add" value="0.06" tags="buffIllInfection0,buffInjuryBleeding,buffInjuryStunned1"/>
+				</effect_group>
+			    <property class="UMA">
+					<property name="Mesh" value="armor_kevlar_legarmor" />
+					<property name="Overlay0" value="armor_kevlar_legarmor" />
+					<property name="Layer" value="3" />
+					<property name="UISlot" value="LegArmor" />
+					<property name="Overlay0Tint" value="B96D2D" />
+			    </property> </item>
+			<item name="KevlarVest">
+				<property name="Extends" value="armorKevlarMaster" param1="CustomIcon"/>
+			    <property name="CustomIcon" value="armorMilitaryVest" />
+			    <property name="CustomIconTint" value="B96D2D" />
+				<property name="Tags" value="csFabricArmor,upperbody,chest,armor,armorChest,lightarmor"/>
+			    <property name="EquipSlot" value="Chest" />
+				<effect_group>
+					<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
+					<passive_effect name="PhysicalDamageResist" operation="base_add" value="7"/>
+					<passive_effect name="DegradationMax" operation="base_set" value="800,1400" tier="1,6"/>
+
+					<passive_effect name="Mobility" operation="perc_subtract" value="0.05"/>
+					<passive_effect name="StaminaChangeOT" operation="perc_subtract" value="0.0281" tags="walking"/>
+					<passive_effect name="StaminaChangeOT" operation="perc_subtract" value="0.0562" tags="running"/>
+					<display_value name="dStaminaChangeOT" value="-.562"/>
+					<passive_effect name="NoiseMultiplier" operation="perc_add" value="0.10" />
+					<passive_effect name="BuffResistance" operation="base_add" value="0.06" tags="buffIllInfection0,buffInjuryBleeding,buffInjuryStunned1"/>
+				</effect_group>
+			    <property class="UMA">
+					<property name="Mesh" value="armor_kevlar_vest" />
+					<property name="Overlay0" value="armor_kevlar_vest" />
+					<property name="Layer" value="2" />
+					<property name="UISlot" value="ChestArmor" />
+					<property name="Overlay0Tint" value="B96D2D" />
+			    </property> </item>
+			<item name="KevlarHelmet">
+				<property name="Extends" value="armorKevlarMaster" param1="CustomIcon"/>
+				<property name="CustomIcon" value="armorMilitaryHelmet" />
+			    <property name="CustomIconTint" value="B96D2D" />
+				<property name="Tags" value="csFabricArmor,head,armor,armorHead,lightarmor"/>
+			    <property name="EquipSlot" value="Head" />
+				<effect_group>
+					<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
+					<passive_effect name="PhysicalDamageResist" operation="base_add" value="7"/>
+					<passive_effect name="DegradationMax" operation="base_set" value="800,1400" tier="1,6"/>
+
+					<passive_effect name="Mobility" operation="perc_subtract" value="0.05"/>
+					<passive_effect name="StaminaChangeOT" operation="perc_subtract" value="0.0281" tags="walking"/>
+					<passive_effect name="StaminaChangeOT" operation="perc_subtract" value="0.0562" tags="running"/>
+					<display_value name="dStaminaChangeOT" value="-.562"/>
+					<passive_effect name="NoiseMultiplier" operation="perc_add" value="0.10" />
+					<passive_effect name="BuffResistance" operation="base_add" value="0.06" tags="buffIllInfection0,buffInjuryBleeding,buffInjuryStunned1"/>
+				</effect_group>
+			    <property class="UMA">
+					<property name="Mesh" value="gear_kevlar_helmet" />
+					<property name="Overlay0" value="gear_kevlar_helmet" />
+					<property name="Layer" value="2" />
+					<property name="UISlot" value="Headgear" />
+					<property name="ShowAltHair" value="true" />
+					<property name="Overlay0Tint" value="B96D2D" />
+			    </property> </item>
+			<item name="armorTungstenMaster">
+				<property name="CreativeMode" value="None"/>
+				<property name="CustomIcon" value="TungstenBoots"/>
+				<property name="DisplayType" value="armor"/>
+				<property name="Material" value="tungsten"/>
+				<property name="RepairTools" value="ForgedTungsten"/>
+				<property name="DegradationBreaksAfter" value="false"/>
+				<property name="HoldType" value="45"/>
+				<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+				<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+				<property name="DescriptionKey" value="TungstenArmorDesc"/>
+				<property name="Group" value="Clothing"/>
+				<property name="ActionSkillGroup" value="Clothing/Armor"/>
+				<property name="CraftingSkillGroup" value="craftSkillMetalArmor"/>
+				<property name="RepairExpMultiplier" value="10.8"/>
+				<property name="EconomicValue" value="1200"/> </item>
+			<item name="TungstenBoots">
+				<property name="Extends" value="armorTungstenMaster" param1="CustomIcon"/>
+				<property name="CustomIcon" value="armorSteelBoots" />
+				<property name="CustomIconTint" value="469A84" />
+				<property name="Tags" value="csMetalArmor,lowerbody,feet,armor,armorFeet,heavyarmor"/>
+				<property name="EquipSlot" value="Feet" />
+				<effect_group>
+					<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
+					<passive_effect name="PhysicalDamageResist" operation="base_add" value="11"/>
+					<passive_effect name="ElementalDamageResist" operation="base_subtract" value="1" tags="lowerbody,heat,electrical"/>
+					<passive_effect name="HyperthermalResist" operation="base_subtract" value="1"/>
+					<passive_effect name="DegradationMax" operation="base_set" value="1000,2000" tier="1,6"/>
+
+					<passive_effect name="Mobility" operation="perc_subtract" value="0.075"/>
+					<passive_effect name="StaminaChangeOT" operation="perc_subtract" value="0.045" tags="walking"/>
+					<passive_effect name="StaminaChangeOT" operation="perc_subtract" value="0.09" tags="running"/>
+					<display_value name="dStaminaChangeOT" value="-.9"/>
+					<passive_effect name="NoiseMultiplier" operation="perc_add" value="0.20" />
+					<passive_effect name="BuffResistance" operation="base_add" value="0.09" tags="buffIllInfection0,buffInjuryBleeding,buffInjuryStunned1"/>
+				</effect_group>
+			    <property class="UMA">
+					<property name="Mesh" value="armor_iron_boots" />
+					<property name="Overlay0" value="armor_iron_boots" />
+					<property name="Layer" value="3" />
+					<property name="UISlot" value="Footwear" />
+					<property name="Overlay0Tint" value="469A84" />
+			    </property> </item>
+			<item name="TungstenLegArmor">
+				<property name="Extends" value="armorTungstenMaster" param1="CustomIcon"/>
+				<property name="CustomIcon" value="armorSteelLegs" />
+				<property name="CustomIconTint" value="469A84" />
+				<property name="Tags" value="csMetalArmor,lowerbody,legs,armor,armorLegs,heavyarmor"/>
+			    <property name="EquipSlot" value="Legs" />
+				<effect_group>
+					<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
+					<passive_effect name="PhysicalDamageResist" operation="base_add" value="11"/>
+					<passive_effect name="ElementalDamageResist" operation="base_subtract" value="1" tags="lowerbody,heat,electrical"/>
+					<passive_effect name="HyperthermalResist" operation="base_subtract" value="1"/>
+					<passive_effect name="DegradationMax" operation="base_set" value="1000,2000" tier="1,6"/>
+					<passive_effect name="NoiseMultiplier" operation="perc_add" value="0.20" />
+					<passive_effect name="Mobility" operation="perc_subtract" value="0.075"/>
+					<passive_effect name="StaminaChangeOT" operation="perc_subtract" value="0.045" tags="walking"/>
+					<passive_effect name="StaminaChangeOT" operation="perc_subtract" value="0.09" tags="running"/>
+					<display_value name="dStaminaChangeOT" value="-.9"/>
+
+					<passive_effect name="BuffResistance" operation="base_add" value="0.09" tags="buffIllInfection0,buffInjuryBleeding,buffInjuryStunned1"/>
+				</effect_group>
+			    <property class="UMA">
+					<property name="Mesh" value="armor_iron_pants" />
+					<property name="Overlay0" value="armor_iron_pants" />
+					<property name="Layer" value="3" />
+					<property name="UISlot" value="LegArmor" />
+					<property name="Overlay0Tint" value="469A84" />
+			    </property> </item>
+			<item name="TungstenChestArmor">
+				<property name="Extends" value="armorTungstenMaster" param1="CustomIcon"/>
+				<property name="CustomIcon" value="armorSteelChest" />
+				<property name="CustomIconTint" value="469A84" />
+				<property name="Tags" value="csMetalArmor,upperbody,chest,armor,armorChest,heavyarmor"/>
+			    <property name="EquipSlot" value="Chest" />
+				<effect_group>
+					<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
+					<passive_effect name="PhysicalDamageResist" operation="base_add" value="11"/>
+					<passive_effect name="ElementalDamageResist" operation="base_subtract" value="1" tags="upperbody,heat,electrical"/>
+					<passive_effect name="HyperthermalResist" operation="base_subtract" value="1"/>
+					<passive_effect name="DegradationMax" operation="base_set" value="1000,2000" tier="1,6"/>
+
+					<passive_effect name="Mobility" operation="perc_subtract" value="0.075"/>
+					<passive_effect name="StaminaChangeOT" operation="perc_subtract" value="0.045" tags="walking"/>
+					<passive_effect name="StaminaChangeOT" operation="perc_subtract" value="0.09" tags="running"/>
+					<display_value name="dStaminaChangeOT" value="-.9"/>
+					<passive_effect name="NoiseMultiplier" operation="perc_add" value="0.20" />
+					<passive_effect name="BuffResistance" operation="base_add" value="0.09" tags="buffIllInfection0,buffInjuryBleeding,buffInjuryStunned1"/>
+				</effect_group>
+			    <property class="UMA">
+					<property name="Mesh" value="armor_iron_chest" />
+					<property name="Overlay0" value="armor_iron_chest" />
+					<property name="Layer" value="2" />
+					<property name="UISlot" value="ChestArmor" />
+					<property name="Overlay0Tint" value="469A84" />
+			    </property> </item>
+			<item name="TungstenHelmet">
+				<property name="Extends" value="armorTungstenMaster" param1="CustomIcon"/>
+				<property name="CustomIcon" value="armorSteelHelmet" />
+				<property name="CustomIconTint" value="469A84" />
+				<property name="Tags" value="csMetalArmor,head,armor,armorHead,heavyarmor"/>
+			    <property name="EquipSlot" value="Head" />
+				<effect_group>
+					<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
+					<passive_effect name="PhysicalDamageResist" operation="base_add" value="11"/>
+					<passive_effect name="ElementalDamageResist" operation="base_subtract" value="1" tags="head,heat,electrical"/>
+					<passive_effect name="HyperthermalResist" operation="base_subtract" value="1"/>
+					<passive_effect name="DegradationMax" operation="base_set" value="1000,2000" tier="1,6"/>
+
+					<passive_effect name="Mobility" operation="perc_subtract" value="0.075"/>
+					<passive_effect name="StaminaChangeOT" operation="perc_subtract" value="0.045" tags="walking"/>
+					<passive_effect name="StaminaChangeOT" operation="perc_subtract" value="0.09" tags="running"/>
+					<display_value name="dStaminaChangeOT" value="-.9"/>
+					<passive_effect name="NoiseMultiplier" operation="perc_add" value="0.20" />
+					<passive_effect name="BuffResistance" operation="base_add" value="0.09" tags="buffIllInfection0,buffInjuryBleeding,buffInjuryStunned1"/>
+				</effect_group>
+			    <property class="UMA">
+					<property name="Mesh" value="armor_iron_helmet" />
+					<property name="Overlay0" value="armor_iron_helmet" />
+					<property name="Overlay0Tint" value="469A84" />
+					<property name="Layer" value="middle"/>
+					<property name="UISlot" value="Headgear"/>
+					<property name="Mask1" value="Head" param1="inner"/>
+					<property name="Mask3" value="Face" param1="inner"/>
+					<property name="Mask4" value="Face" param1="middle"/>
+					<property name="Mask5" value="Face" param1="outer"/>
+					<property name="Mask7" value="Eyes" param1="inner"/>
+					<property name="Mask8" value="Eyes" param1="middle"/>
+					<property name="Mask9" value="Eyes" param1="outer"/>
+			    </property> </item>
+			<item name="TungstenGloves">
+				<property name="Extends" value="armorTungstenMaster" param1="CustomIcon"/>
+				<property name="CustomIcon" value="armorSteelGloves" />
+				<property name="CustomIconTint" value="469A84" />
+				<property name="Tags" value="csMetalArmor,upperbody,hands,armor,armorHands,heavyarmor"/>
+			    <property name="EquipSlot" value="Hands" />
+				<effect_group>
+					<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
+					<passive_effect name="PhysicalDamageResist" operation="base_add" value="11"/>
+					<passive_effect name="ElementalDamageResist" operation="base_subtract" value="1" tags="upperbody,heat,electrical"/>
+					<passive_effect name="HyperthermalResist" operation="base_subtract" value="1"/>
+					<passive_effect name="DegradationMax" operation="base_set" value="1000,2000" tier="1,6"/>
+
+					<passive_effect name="Mobility" operation="perc_subtract" value="0.075"/>
+					<passive_effect name="StaminaChangeOT" operation="perc_subtract" value="0.045" tags="walking"/>
+					<passive_effect name="StaminaChangeOT" operation="perc_subtract" value="0.09" tags="running"/>
+					<display_value name="dStaminaChangeOT" value="-.9"/>
+					<passive_effect name="NoiseMultiplier" operation="perc_add" value="0.20" />
+					<passive_effect name="BuffResistance" operation="base_add" value="0.09" tags="buffIllInfection0,buffInjuryBleeding,buffInjuryStunned1"/>
+				</effect_group>
+			    <property class="UMA">
+					<property name="Mesh" value="armor_iron_gloves" />
+					<property name="Overlay0" value="armor_iron_gloves" />
+					<property name="Layer" value="0" />
+					<property name="UISlot" value="Gloves" />
+					<property name="Overlay0Tint" value="469A84" />
+			    </property> </item>
+			<!-- To Do Material Change -->
+			<item name="armorSilverMaster">
+				<property name="CreativeMode" value="None"/>
+				<property name="CustomIcon" value="silverBoots"/>
+				<property name="DisplayType" value="armor"/>
+				<property name="Material" value="Mcloth"/>
+				<property name="RepairTools" value="resourceCloth"/>
+				<property name="DegradationBreaksAfter" value="false"/>
+				<property name="HoldType" value="45"/>
+				<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+				<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+				<property name="DescriptionKey" value="silverArmorDesc"/>
+				<property name="Group" value="Clothing"/>
+				<property name="ActionSkillGroup" value="Clothing/Armor"/>
+				<property name="CraftingSkillGroup" value="craftSkillMetalArmor"/>
+				<property name="RepairExpMultiplier" value="10.8"/>
+				<property name="EconomicValue" value="1750"/> </item>
+			<item name="silverBoots">
+				<property name="Extends" value="armorSilverMaster" param1="CustomIcon"/>
+				<property name="CustomIcon" value="armorClothBoots"/>
+				<property name="CustomIconTint" value="192,192,192"/>
+				<property name="Tags" value="csMetalArmor,lowerbody,feet,armor,armorFeet,lightarmor,heavyarmor"/>
+				<property name="EquipSlot" value="Feet"/>
+				<effect_group>
+					<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
+					<passive_effect name="PhysicalDamageResist" operation="base_add" value="10"/>
+					<passive_effect name="ElementalDamageResist" operation="base_subtract" value="1" tags="upperbody,heat,electrical"/>
+					<passive_effect name="HyperthermalResist" operation="base_subtract" value="1"/>
+					<passive_effect name="DegradationMax" operation="base_set" value="1000,2000" tier="1,6"/>
+
+					<passive_effect name="Mobility" operation="perc_subtract" value="0.025"/>
+					<passive_effect name="StaminaChangeOT" operation="perc_subtract" value="0.025" tags="walking"/>
+					<passive_effect name="StaminaChangeOT" operation="perc_subtract" value="0.09" tags="running"/>
+					<display_value name="dStaminaChangeOT" value="-.9"/>
+					<passive_effect name="NoiseMultiplier" operation="perc_add" value="0.05" />
+					<passive_effect name="BuffResistance" operation="base_add" value="0.12" tags="buffIllInfection0,buffInjuryBleeding,buffInjuryStunned1"/>
+				</effect_group>
+				<property class="UMA">
+					<property name="Mesh" value="armor_cloth_feet"/>
+					<property name="Overlay0" value="armor_cloth_feet"/>
+					<property name="Overlay0Tint" value="192,192,192"/>
+					<property name="Layer" value="0"/>
+					<property name="UISlot" value="Footwear"/>
+				</property> </item>
+			<item name="silverPants">
+				<property name="Extends" value="armorSilverMaster" param1="CustomIcon"/>
+				<property name="CustomIcon" value="armorClothPants"/>
+				<property name="CustomIconTint" value="192,192,192"/>
+				<property name="Tags" value="csMetalArmor,lowerbody,legs,armor,armorLegs,lightarmor,heavyarmor"/>
+				<property name="EquipSlot" value="Legs"/>
+				<effect_group>
+					<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
+					<passive_effect name="PhysicalDamageResist" operation="base_add" value="10"/>
+					<passive_effect name="ElementalDamageResist" operation="base_subtract" value="1" tags="upperbody,heat,electrical"/>
+					<passive_effect name="HyperthermalResist" operation="base_subtract" value="1"/>
+					<passive_effect name="DegradationMax" operation="base_set" value="1000,2000" tier="1,6"/>
+
+					<passive_effect name="Mobility" operation="perc_subtract" value="0.025"/>
+					<passive_effect name="StaminaChangeOT" operation="perc_subtract" value="0.025" tags="walking"/>
+					<passive_effect name="StaminaChangeOT" operation="perc_subtract" value="0.09" tags="running"/>
+					<display_value name="dStaminaChangeOT" value="-.9"/>
+					<passive_effect name="NoiseMultiplier" operation="perc_add" value="0.05" />
+					<passive_effect name="BuffResistance" operation="base_add" value="0.12" tags="buffIllInfection0,buffInjuryBleeding,buffInjuryStunned1"/>
+				</effect_group>
+				<property class="UMA">
+					<property name="Mesh" value="armor_cloth_legs"/>
+					<property name="Overlay0" value="armor_cloth_legs"/>
+					<property name="Overlay0Tint" value="192,192,192"/>
+					<property name="Layer" value="3"/>
+					<property name="UISlot" value="LegArmor"/>
+				</property> </item>
+			<item name="silverJacket">
+				<property name="Extends" value="armorSilverMaster" param1="CustomIcon"/>
+				<property name="CustomIcon" value="armorClothJacket"/>
+				<property name="CustomIconTint" value="192,192,192"/>
+				<property name="Tags" value="csMetalArmor,upperbody,chest,armor,armorChest,lightarmor,heavyarmor"/>
+				<property name="EquipSlot" value="Chest"/>
+				<effect_group>
+					<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
+					<passive_effect name="PhysicalDamageResist" operation="base_add" value="10"/>
+					<passive_effect name="ElementalDamageResist" operation="base_subtract" value="1" tags="upperbody,heat,electrical"/>
+					<passive_effect name="HyperthermalResist" operation="base_subtract" value="1"/>
+					<passive_effect name="DegradationMax" operation="base_set" value="1000,2000" tier="1,6"/>
+
+					<passive_effect name="Mobility" operation="perc_subtract" value="0.025"/>
+					<passive_effect name="StaminaChangeOT" operation="perc_subtract" value="0.025" tags="walking"/>
+					<passive_effect name="StaminaChangeOT" operation="perc_subtract" value="0.09" tags="running"/>
+					<display_value name="dStaminaChangeOT" value="-.9"/>
+					<passive_effect name="NoiseMultiplier" operation="perc_add" value="0.05" />
+					<passive_effect name="BuffResistance" operation="base_add" value="0.12" tags="buffIllInfection0,buffInjuryBleeding,buffInjuryStunned1"/>
+				</effect_group>
+				<property class="UMA">
+					<property name="Mesh" value="armor_cloth_chest"/>
+					<property name="Overlay0" value="armor_cloth_chest"/>
+					<property name="Overlay0Tint" value="192,192,192"/>
+					<property name="Layer" value="2"/>
+					<property name="UISlot" value="ChestArmor"/>
+				</property> </item>
+			<item name="silverHat">
+				<property name="Extends" value="armorSilverMaster" param1="CustomIcon"/>
+				<property name="CustomIcon" value="armorClothHat"/>
+				<property name="CustomIconTint" value="192,192,192"/>
+				<property name="Tags" value="csMetalArmor,head,armor,armorHead,lightarmor,heavyarmor"/>
+				<property name="EquipSlot" value="Head"/>
+				<effect_group>
+					<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
+					<passive_effect name="PhysicalDamageResist" operation="base_add" value="10"/>
+					<passive_effect name="ElementalDamageResist" operation="base_subtract" value="1" tags="upperbody,heat,electrical"/>
+					<passive_effect name="HyperthermalResist" operation="base_subtract" value="1"/>
+					<passive_effect name="DegradationMax" operation="base_set" value="1000,2000" tier="1,6"/>
+
+					<passive_effect name="Mobility" operation="perc_subtract" value="0.025"/>
+					<passive_effect name="StaminaChangeOT" operation="perc_subtract" value="0.025" tags="walking"/>
+					<passive_effect name="StaminaChangeOT" operation="perc_subtract" value="0.09" tags="running"/>
+					<display_value name="dStaminaChangeOT" value="-.9"/>
+					<passive_effect name="NoiseMultiplier" operation="perc_add" value="0.05" />
+					<passive_effect name="BuffResistance" operation="base_add" value="0.12" tags="buffIllInfection0,buffInjuryBleeding,buffInjuryStunned1"/>
+				</effect_group>
+				<property class="UMA">
+					<property name="Mesh" value="armor_cloth_hood"/>
+					<property name="Overlay0" value="armor_cloth_hood"/>
+					<property name="Overlay0Tint" value="192,192,192"/>
+					<property name="Layer" value="2"/>
+					<property name="UISlot" value="Headgear"/>
+					<property name="Mask0" value="Head" param1="inner"/>
+					<property name="Mask1" value="Head" param1="outer"/>
+				</property> </item>
+			<item name="silverGloves">
+				<property name="Extends" value="armorSilverMaster" param1="CustomIcon"/>
+				<property name="CustomIcon" value="armorClothGloves"/>
+				<property name="CustomIconTint" value="192,192,192"/>
+				<property name="Tags" value="csMetalArmor,upperbody,hands,armor,armorHands,lightarmor,heavyarmor"/>
+				<property name="EquipSlot" value="Hands"/>
+				<effect_group>
+					<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
+					<passive_effect name="PhysicalDamageResist" operation="base_add" value="10"/>
+					<passive_effect name="ElementalDamageResist" operation="base_subtract" value="1" tags="upperbody,heat,electrical"/>
+					<passive_effect name="HyperthermalResist" operation="base_subtract" value="1"/>
+					<passive_effect name="DegradationMax" operation="base_set" value="1000,2000" tier="1,6"/>
+
+					<passive_effect name="Mobility" operation="perc_subtract" value="0.025"/>
+					<passive_effect name="StaminaChangeOT" operation="perc_subtract" value="0.025" tags="walking"/>
+					<passive_effect name="StaminaChangeOT" operation="perc_subtract" value="0.09" tags="running"/>
+					<display_value name="dStaminaChangeOT" value="-.9"/>
+					<passive_effect name="NoiseMultiplier" operation="perc_add" value="0.05" />
+					<passive_effect name="BuffResistance" operation="base_add" value="0.12" tags="buffIllInfection0,buffInjuryBleeding,buffInjuryStunned1"/>
+				</effect_group>
+				<property class="UMA">
+					<property name="Mesh" value="armor_cloth_hands"/>
+					<property name="Overlay0" value="armor_cloth_hands"/>
+					<property name="Overlay0Tint" value="192,192,192"/>
+					<property name="Layer" value="3"/>
+					<property name="UISlot" value="Gloves"/>
+				</property> </item>
+
+		<!-- Magazine -->
+			<!-- MagazineMaster -->
+
+			<item name="MagazineMaster"> <!-- To Do Remove? -->
+			<property name="DescriptionKey" value="MagazineDesc" />
+		    <property name="CreativeMode" value="None"/>
+			<property name="CustomIcon" value="MagazineMaster" />
+			<property name="HoldType" value="21"/>
+			<property name="Meshfile" value="Items/Misc/bookPrefab"/>
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+			<property name="Material" value="Mpaper" />
+			<property name="Weight" value="5" />
+			<property name="FuelValue" value="5" />
+			<property name="Stacknumber" value="25" />
+			<property name="EconomicValue" value="250" />
+			<property name="Group" value="Books" />
+		    <!-- <property class="Action0">
+				<property name="Class" value="LearnRecipe" />
+				<property name="Delay" value="0.3" />
+				<property name="ActionExp" value="2"/>
+				<property name="ActionExpBonusMultiplier" value="4"/>
+				<property name="Sound_start" value="Misc/recipe_unlocked" />
+			</property> -->
+			<!-- <property class="Action0">
+				<property name="Class" value="Eat"/>
+				<property name="Consume" value="true"/>
+				<property name="Delay" value="1.0"/>
+				<property name="Use_time" value="..."/>
+				<property name="ActionExpBonusMultiplier" value="0"/>
+				<property name="Sound_start" value="recipe_unlocked"/>
+			</property> --> </item>
+
+		<!-- Quest Papers -->
+			<!-- Quest_DwallsTask, Quest_DwallsQuest1, Challenge_MushroomStew, Challenge_MeatStew, Challenge_ApplePieandJuice, Challenge_BaconAndEggs, Challenge_MossyBrew, Challenge_VegetableStew, Challenge_Coffee, Challenge_BlueBerryPie, Challenge_Bandage, Challenge_FirstAidBandage, Challenge_FirstAidKit, Challenge_Antibiotics, Challenge_Splint, Challenge_HerbalAntibiotics, Challenge_Vitamins, Challenge_WoodFrames, Challenge_ScrapFrames, Challenge_RebarFrames, Challenge_Window, Challenge_Crates, Challenges_WoodSpikes, Challenge_RedWoodenBowKills, Challenge_SteelCrossbowKills, Challenge_IronTools, Challenge_SteelTools, Challenge_TungstenTools, Quest_DwallsQuest2, Challenge_GreenTea, Challenge_IronClub, Challenge_TungstenClub, Challenge_SteelMachete, Challenge_TungstenMachete, Challenge_ScreamerZombie, Challenge_CopZombie, Challenge_FeralZombie, Challenge_DogKill, Challenge_NurseZombie, Challenge_CrawlerZombie, Challenge_Melee_CrawlerZombies, Challenge_boarmetodeath, Challenge_wolfhunter, Challenge_direwolfhunter, Challenge_constructionworker, Challenge_HungryZombie, Challenge_PunkZombies, Challenge_StripperandBiker, Challenge_Farmer, Challenge_Businessman, Challenge_Cowboy, Challenge_LocateTrader, Quest_TraderLocation, Treasure_DwallsLostGoods, Treasure_HealthSupplies, Treasure_BuildingSupplies, Treasure_AmmoSupplies, Treasure_FoodandDrinkSupplies, Treasure_MidTierWeaponsSupplies, Treasure_HighTierWeaponsSupplies. Treasure_LowTierWeaponsSupplies -->
+
+			<item name="Quest_DwallsTask">
+				<property name="Extends" value="questMaster" />
+				<property class="Action0">
+					<property name="QuestGiven" value="quest_ZedKiller" />
+				</property>
+				<property name="DescriptionKey" value="QuestNoteDesc" /> </item>
+			<item name="Quest_DwallsQuest1">
+				<property name="Extends" value="questMaster" />
+				<property class="Action0">
+					<property name="QuestGiven" value="quest_pistolandammo" />
+				</property>
+				<property name="DescriptionKey" value="QuestNoteDesc" /> </ 
+			<item name="Challenge_MushroomStew"
+				<property name="Extends" value="challengeQuestMaster" />
+				<property class="Action0">
+					<property name="QuestGiven" value="challenge_mushroomstew" />
+				</property>
+				<property name="DescriptionKey" value="QuestNoteDesc" /> </item>
+			<item name="Challenge_MeatStew">
+				<property name="Extends" value="challengeQuestMaster" />
+				<property class="Action0">
+					<property name="QuestGiven" value="challenge_meatstew" />
+				</property>
+				<property name="DescriptionKey" value="QuestNoteDesc" /> </item>
+			<item name="Challenge_ApplePieandJuice">
+				<property name="Extends" value="challengeQuestMaster" />
+				<property class="Action0">
+					<property name="QuestGiven" value="challenge_applepiejuice" />
+				</property>
+				<property name="DescriptionKey" value="QuestNoteDesc" /> </item>
+			<item name="Challenge_BaconAndEggs">
+				<property name="Extends" value="challengeQuestMaster" />
+				<property class="Action0">
+					<property name="QuestGiven" value="challenge_baconandeggs" />
+				</property>
+				<property name="DescriptionKey" value="QuestNoteDesc" /> </item>
+			<item name="Challenge_MossyBrew">
+				<property name="Extends" value="challengeQuestMaster" />
+				<property class="Action0">
+					<property name="QuestGiven" value="challenge_mossybrew" />
+				</property>
+				<property name="DescriptionKey" value="QuestNoteDesc" /> </item>
+			<item name="Challenge_VegetableStew">
+				<property name="Extends" value="challengeQuestMaster" />
+				<property class="Action0">
+					<property name="QuestGiven" value="challenge_vegetablestew" />
+				</property>
+				<property name="DescriptionKey" value="QuestNoteDesc" /> </item>
+			<item name="Challenge_Coffee">
+				<property name="Extends" value="challengeQuestMaster" />
+				<property class="Action0">
+					<property name="QuestGiven" value="challenge_coffee" />
+				</property>
+				<property name="DescriptionKey" value="QuestNoteDesc" /> </item>
+			<item name="Challenge_BlueberryPie">
+				<property name="Extends" value="challengeQuestMaster" />
+				<property class="Action0">
+					<property name="QuestGiven" value="challenge_blueberrypie" />
+				</property>
+				<property name="DescriptionKey" value="QuestNoteDesc" /> </item>
+			<item name="Challenge_Bandage">
+				<property name="Extends" value="challengeQuestMaster" />
+				<property class="Action0">
+					<property name="QuestGiven" value="challenge_bandage" />
+				</property>
+				<property name="DescriptionKey" value="QuestNoteDesc" /> </item>
+			<item name="Challenge_FirstAidBandage">
+				<property name="Extends" value="challengeQuestMaster" />
+				<property class="Action0">
+					<property name="QuestGiven" value="challenge_firstaidbandage" />
+				</property>
+				<property name="DescriptionKey" value="QuestNoteDesc" /> </item>
+			<item name="Challenge_FirstAidKit">
+				<property name="Extends" value="challengeQuestMaster" />
+				<property class="Action0">
+					<property name="QuestGiven" value="challenge_firstaidkit" />
+				</property>
+				<property name="DescriptionKey" value="QuestNoteDesc" /> </item>
+			<item name="Challenge_Antibiotics">
+				<property name="Extends" value="challengeQuestMaster" />
+				<property class="Action0">
+					<property name="QuestGiven" value="challenge_antibiotics" />
+				</property>
+				<property name="DescriptionKey" value="QuestNoteDesc" /> </item>
+			<item name="Challenge_Splint">
+				<property name="Extends" value="challengeQuestMaster" />
+				<property class="Action0">
+					<property name="QuestGiven" value="challenge_splint" />
+				</property>
+				<property name="DescriptionKey" value="QuestNoteDesc" /> </item>
+			<item name="Challenge_HerbalAntibiotics">
+				<property name="Extends" value="challengeQuestMaster" />
+				<property class="Action0">
+					<property name="QuestGiven" value="challenge_herbalantibiotics" />
+				</property>
+				<property name="DescriptionKey" value="QuestNoteDesc" /> </item>
+			<item name="Challenge_Vitamins">
+				<property name="Extends" value="challengeQuestMaster" />
+				<property class="Action0">
+					<property name="QuestGiven" value="challenge_vitamins" />
+				</property>
+				<property name="DescriptionKey" value="QuestNoteDesc" /> </item>
+			<item name="Challenge_WoodFrames">
+				<property name="Extends" value="challengeQuestMaster" />
+				<property class="Action0">
+					<property name="QuestGiven" value="challenge_woodframes" />
+				</property>
+				<property name="DescriptionKey" value="QuestNoteDesc" /> </item>
+			<item name="Challenge_ScrapFrames">
+				<property name="Extends" value="challengeQuestMaster" />
+				<property class="Action0">
+					<property name="QuestGiven" value="challenge_scrapframes" />
+				</property>
+				<property name="DescriptionKey" value="QuestNoteDesc" /> </item>
+			<item name="Challenge_RebarFrames">
+				<property name="Extends" value="challengeQuestMaster" />
+				<property class="Action0">
+					<property name="QuestGiven" value="challenge_rebarframes" />
+				</property>
+				<property name="DescriptionKey" value="QuestNoteDesc" /> </item>
+			<item name="Challenge_Windows">
+				<property name="Extends" value="challengeQuestMaster" />
+				<property class="Action0">
+					<property name="QuestGiven" value="challenge_windows" />
+				</property>
+				<property name="DescriptionKey" value="QuestNoteDesc" /> </item>
+			<item name="Challenge_Crates">
+				<property name="Extends" value="challengeQuestMaster" />
+				<property class="Action0">
+					<property name="QuestGiven" value="challenge_crates" />
+				</property>
+				<property name="DescriptionKey" value="QuestNoteDesc" /> </item>
+			<item name="Challenge_WoodSpikes">
+				<property name="Extends" value="challengeQuestMaster" />
+				<property class="Action0">
+					<property name="QuestGiven" value="challenge_woodspikes" />
+				</property>
+				<property name="DescriptionKey" value="QuestNoteDesc" /> </item>
+			<item name="Challenge_RedWoodenBowKills">
+				<property name="Extends" value="challengeQuestMaster" />
+				<property class="Action0">
+					<property name="QuestGiven" value="challenge_redwoodenbowkills" />
+				</property>
+				<property name="DescriptionKey" value="QuestNoteDesc" /> </item>
+			<item name="Challenge_SteelCrossbowKills">
+				<property name="Extends" value="challengeQuestMaster" />
+				<property class="Action0">
+					<property name="QuestGiven" value="challenge_steelcrossbowkills" />
+				</property>
+				<property name="DescriptionKey" value="QuestNoteDesc" /> </item>
+			<item name="Challenge_IronTools">
+				<property name="Extends" value="challengeQuestMaster" />
+				<property class="Action0">
+					<property name="QuestGiven" value="challenge_irontools" />
+				</property>
+				<property name="DescriptionKey" value="QuestNoteDesc" /> </item>
+			<item name="Challenge_SteelTools">
+				<property name="Extends" value="challengeQuestMaster" />
+				<property class="Action0">
+					<property name="QuestGiven" value="challenge_steeltools" />
+				</property>
+				<property name="DescriptionKey" value="QuestNoteDesc" /> </item>
+			<item name="Challenge_TungstenTools">
+				<property name="Extends" value="challengeQuestMaster" />
+				<property class="Action0">
+					<property name="QuestGiven" value="challenge_tungstentools" />
+				</property>
+				<property name="DescriptionKey" value="QuestNoteDesc" /> </item>
+			<item name="Quest_DwallsQuest2">
+				<property name="Extends" value="questMaster" />
+				<property class="Action0">
+					<property name="QuestGiven" value="quest_huntingriflecrafting" />
+				</property>
+				<property name="DescriptionKey" value="QuestNoteDesc" /> </item>
+			<item name="Challenge_GreenTea">
+				<property name="Extends" value="challengeQuestMaster" />
+				<property class="Action0">
+					<property name="QuestGiven" value="challenge_greentea" />
+				</property>
+				<property name="DescriptionKey" value="QuestNoteDesc" /> </item>
+			<item name="Challenge_WoodenClub">
+				<property name="Extends" value="challengeQuestMaster" />
+				<property class="Action0">
+					<property name="QuestGiven" value="challenge_woodenclub" />
+				</property>
+				<property name="DescriptionKey" value="QuestNoteDesc" /> </item>
+			<item name="Challenge_IronClub">
+				<property name="Extends" value="challengeQuestMaster" />
+				<property class="Action0">
+					<property name="QuestGiven" value="challenge_ironclub" />
+				</property>
+				<property name="DescriptionKey" value="QuestNoteDesc" /> </item>
+			<item name="Challenge_TungstenClub">
+				<property name="Extends" value="challengeQuestMaster" />
+				<property class="Action0">
+					<property name="QuestGiven" value="challenge_tungstenclub" />
+				</property>
+				<property name="DescriptionKey" value="QuestNoteDesc" /> </item>
+			<item name="Challenge_SteelMachete">
+				<property name="Extends" value="challengeQuestMaster" />
+				<property class="Action0">
+					<property name="QuestGiven" value="challenge_steelmachete" />
+				</property>
+				<property name="DescriptionKey" value="QuestNoteDesc" /> </item>
+			<item name="Challenge_TungstenMachete">
+				<property name="Extends" value="challengeQuestMaster" />
+				<property class="Action0">
+					<property name="QuestGiven" value="challenge_tungstenmachete" />
+				</property>
+				<property name="DescriptionKey" value="QuestNoteDesc" /> </item>
+			<item name="Challenge_ScreamerZombie">
+				<property name="Extends" value="challengeQuestMaster" />
+				<property class="Action0">
+					<property name="QuestGiven" value="challenge_screamerzombie" />
+				</property>
+				<property name="DescriptionKey" value="QuestNoteDesc" /> </item>
+			<item name="Challenge_CopZombie">
+				<property name="Extends" value="challengeQuestMaster" />
+				<property class="Action0">
+					<property name="QuestGiven" value="challenge_copzombie" />
+				</property>
+				<property name="DescriptionKey" value="QuestNoteDesc" /> </item>
+			<item name="Challenge_FeralZombie">
+				<property name="Extends" value="challengeQuestMaster" />
+				<property class="Action0">
+					<property name="QuestGiven" value="challenge_feralzombie" />
+				</property>
+				<property name="DescriptionKey" value="QuestNoteDesc" /> </item>
+			<item name="Challenge_DogKill">
+				<property name="Extends" value="challengeQuestMaster" />
+				<property class="Action0">
+					<property name="QuestGiven" value="challenge_dogkill" />
+				</property>
+				<property name="DescriptionKey" value="QuestNoteDesc" /> </item>
+			<item name="Challenge_NurseZombie">
+				<property name="Extends" value="challengeQuestMaster" />
+				<property class="Action0">
+					<property name="QuestGiven" value="challenge_nursezombie" />
+				</property>
+				<property name="DescriptionKey" value="QuestNoteDesc" /> </item>
+			<item name="Challenge_CrawlerZombies">
+				<property name="Extends" value="challengeQuestMaster" />
+				<property class="Action0">
+					<property name="QuestGiven" value="challenge_crawlerzombies" />
+				</property>
+				<property name="DescriptionKey" value="QuestNoteDesc" /> </item>
+			<item name="Challenge_MeleeCrawlerZombies">
+				<property name="Extends" value="challengeQuestMaster" />
+				<property class="Action0">
+					<property name="QuestGiven" value="challenge_meleecrawlerzombies" />
+				</property>
+				<property name="DescriptionKey" value="QuestNoteDesc" /> </item>
+			<item name="Challenge_boarmetodeath">
+				<property name="Extends" value="challengeQuestMaster" />
+				<property class="Action0">
+					<property name="QuestGiven" value="challenge_boarmetodeath" />
+				</property>
+				<property name="DescriptionKey" value="qc_ZombieGroupDesc" /> </item>
+			<item name="Challenge_wolfhunter">
+				<property name="Extends" value="challengeQuestMaster" />
+				<property class="Action0">
+					<property name="QuestGiven" value="challenge_wolfhunter" />
+				</property>
+				<property name="DescriptionKey" value="qc_ZombieGroupDesc" /> </item>
+			<item name="Challenge_direwolfhunter">
+				<property name="Extends" value="challengeQuestMaster" />
+				<property class="Action0">
+					<property name="QuestGiven" value="challenge_direwolfhunter" />
+				</property>
+				<property name="DescriptionKey" value="qc_ZombieGroupDesc" /> </item>
+			<item name="Challenge_constructionworker">
+				<property name="Extends" value="challengeQuestMaster" />
+				<property class="Action0">
+					<property name="QuestGiven" value="challenge_constructionworker" />
+				</property>
+				<property name="DescriptionKey" value="qc_ZombieGroupDesc" /> </item>
+			<item name="Challenge_HungryZombie">
+				<property name="Extends" value="challengeQuestMaster" />
+				<property class="Action0">
+					<property name="QuestGiven" value="challenge_HungryZombie" />
+				</property>
+				<property name="DescriptionKey" value="qc_ZombieGroupDesc" /> </item>
+			<item name="Challenge_PunkZombies">
+				<property name="Extends" value="challengeQuestMaster" />
+				<property class="Action0">
+					<property name="QuestGiven" value="challenge_PunkZombies" />
+				</property>
+				<property name="DescriptionKey" value="qc_ZombieGroupDesc" /> </item>
+			<item name="Challenge_StripperandBiker">
+				<property name="Extends" value="challengeQuestMaster" />
+				<property class="Action0">
+					<property name="QuestGiven" value="challenge_StripperandBiker" />
+				</property>
+				<property name="DescriptionKey" value="qc_ZombieGroupDesc" /> </item>
+			<item name="Challenge_Farmer">
+				<property name="Extends" value="challengeQuestMaster" />
+				<property class="Action0">
+					<property name="QuestGiven" value="challenge_Farmer" />
+				</property>
+				<property name="DescriptionKey" value="qc_ZombieGroupDesc" /> </item>
+			<item name="Challenge_BusinessMan">
+				<property name="Extends" value="challengeQuestMaster" />
+				<property class="Action0">
+					<property name="QuestGiven" value="challenge_BusinessMan" />
+				</property>
+				<property name="DescriptionKey" value="qc_ZombieGroupDesc" /> </item>
+			<item name="Challenge_Cowboy">
+				<property name="Extends" value="challengeQuestMaster" />
+				<property class="Action0">
+					<property name="QuestGiven" value="challenge_Cowboy" />
+				</property>
+				<property name="DescriptionKey" value="qc_ZombieGroupDesc" /> </item>
+			<item name="Challenge_LocateTrader">
+				<property name="Extends" value="questMaster" />
+				<property name="CustomIcon" value="questMaster" />
+				<property class="Action0">
+					<property name="QuestGiven" value="quest_LocateTrader" />
+				</property>
+				<property name="DescriptionKey" value="Challenge_LocateTraderDesc" /> </item>
+			<item name="Quest_TraderLocation">
+				<property name="Extends" value="questMaster" />
+				<property name="CustomIcon" value="questMaster" />
+				<property class="Action0">
+					<property name="QuestGiven" value="quest_whiteRiverCitizen1" />
+				</property>
+				<property name="DescriptionKey" value="Quest_TraderLocationDesc" /> </item>
+			<item name="Treasure_DwallsLostGoods">
+				<property name="Extends" value="treasureQuestMaster" />
+				<property class="Action0">
+					<property name="QuestGiven" value="treasure_dwallslostgoods" />
+				</property>
+				<property name="DescriptionKey" value="TreasureQuestNoteDesc" /> </item>
+			<item name="Treasure_HealthSupplies">
+				<property name="Extends" value="treasureQuestMaster" />
+				<property class="Action0">
+					<property name="QuestGiven" value="treasure_healthsupplies" />
+				</property>
+				<property name="DescriptionKey" value="TreasureQuestNoteDesc" /> </item>
+			<item name="Treasure_BuildingSupplies">
+				<property name="Extends" value="treasureQuestMaster" />
+				<property class="Action0">
+					<property name="QuestGiven" value="treasure_buildingsupplies" />
+				</property>
+				<property name="DescriptionKey" value="TreasureQuestNoteDesc" /> </item>
+			<item name="Treasure_AmmoSupplies">
+				<property name="Extends" value="treasureQuestMaster" />
+				<property class="Action0">
+					<property name="QuestGiven" value="treasure_ammosupplies" />
+				</property>
+				<property name="DescriptionKey" value="TreasureQuestNoteDesc" /> </item>
+			<item name="Treasure_FoodandDrinkSupplies">
+				<property name="Extends" value="treasureQuestMaster" />
+				<property class="Action0">
+					<property name="QuestGiven" value="treasure_foodanddrinksupplies" />
+				</property>
+				<property name="DescriptionKey" value="TreasureQuestNoteDesc" /> </item>
+			<item name="Treasure_MidTierWeaponsSupplies">
+				<property name="Extends" value="treasureQuestMaster" />
+				<property class="Action0">
+					<property name="QuestGiven" value="treasure_midtierweaponssupplies" />
+				</property>
+				<property name="DescriptionKey" value="TreasureQuestNoteDesc" /> </item>
+			<item name="Treasure_HighTierWeaponsSupplies">
+				<property name="Extends" value="treasureQuestMaster" />
+				<property class="Action0">
+					<property name="QuestGiven" value="treasure_hightierweaponssupplies" />
+				</property>
+				<property name="DescriptionKey" value="TreasureQuestNoteDesc" /> </item>
+			<item name="Treasure_LowTierWeaponsSupplies">
+				<property name="Extends" value="treasureQuestMaster" />
+				<property class="Action0">
+					<property name="QuestGiven" value="treasure_lowtierweaponssupplies" />
+				</property>
+				<property name="DescriptionKey" value="TreasureQuestNoteDesc" /> </item>
+
+		<!-- Vechicles -->
+			<!--  -->
 
 	</append>	
 
