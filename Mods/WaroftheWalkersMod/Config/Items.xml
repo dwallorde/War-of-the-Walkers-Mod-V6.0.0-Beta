@@ -10136,7 +10136,290 @@
 				<property name="DescriptionKey" value="TreasureQuestNoteDesc" /> </item>
 
 		<!-- Vechicles -->
-			<!--  -->
+			<!-- SteelMinibikeChassis, TungstenminibikeChassis, ECOSmallEngine, HDSmallEngine, ECOBattery, HDBattery, ***KevlarMinibikeSeat, TungstenMinibikeSeat***, vehicleHDWheels, ***TungstenPadlock***, SteelMinibikeHandlebars, TungstenMinibikeHandlebars, ECOMinibikePlaceable, HDMinibikePlaceable, ***SteelHandleBars, TungstenHandleBars, SteelHandleBarsSchematic, TungstenHandleBarsSchematic, MinibikesForSmartShits, MinibikesForToughshits*** -->
+
+
+			<item name="SteelMinibikeChassis">
+				<property name="Extends" value="vehicleWheels"/>
+				<property name="CustomIcon" value="SteelMinibikeChassis" />
+				<property name="HoldType" value="45"/>
+				<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+				<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+				<property name="Material" value="tungsten" />
+				<property name="RepairTools" value="resourceRepairKit"/>
+				<property name="Stacknumber" value="1"/>
+				<property name="DegradationBreaksAfter" value="false"/>
+				<property name="DescriptionKey" value="SteelMinibikeChassisDesc"/>
+				<property name="EconomicValue" value="550" />
+				<property name="Weight" value="150"/>
+				<property name="CraftingSkillGroup" value="Mechanic"/>
+				<property name="PickupJournalEntry" value="gunAssemblyTip"/>
+				<property name="Group" value="Resources"/>
+				<!-- <property class="Attributes">
+					<property name="VehicleDamagePassedToPlayer" value="0.5, 0.3" />
+					<property name="DegradationRate" value="10,10" />
+					<property name="DegradationMax" value="3400,9000" />
+				</property> --> </item>
+			<item name="TungstenMinibikeChassis">
+				<property name="Extends" value="vehicleWheels"/>
+				<property name="CustomIcon" value="TungstenMinibikeChassis" />
+				<property name="HoldType" value="45"/>
+				<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+				<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+				<property name="Material" value="tungsten" />
+				<property name="RepairTools" value="resourceRepairKit"/>
+				<property name="Stacknumber" value="1"/>
+				<property name="DegradationBreaksAfter" value="false"/>
+				<property name="DescriptionKey" value="TungstenMinibikeChassisDesc"/>
+				<property name="EconomicValue" value="1100" />
+				<property name="Weight" value="150"/>
+				<property name="CraftingSkillGroup" value="Mechanic"/>
+				<property name="PickupJournalEntry" value="gunAssemblyTip"/>
+				<property name="Group" value="Resources"/>
+				<!-- <property class="Attributes">
+					<property name="VehicleDamagePassedToPlayer" value="0.3, 0.1" />
+					<property name="DegradationRate" value="10,10" />
+					<property name="DegradationMax" value="6600,12000" />
+				</property> -->	 </item>
+			<item name="ECOSmallEngine">
+				<property name="CustomIcon" value="ECOSmallEngine" />
+				<property name="Tags" value="csMechanic"/>
+				<property name="HoldType" value="45"/>
+				<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+				<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+				<property name="VehicleSlotType" value="engine"/>
+				<property name="PartType" value="Receiver"/>
+				<property name="Material" value="ecoEngineParts" />
+				<property name="RepairTools" value="resourceRepairKit"/>
+				<property name="Stacknumber" value="1"/>
+				<property name="Weight" value="400" />
+				<property name="EconomicValue" value="2000" />
+				<property name="Group" value="Resources"/>
+				<property name="DegradationBreaksAfter" value="false"/>
+				<property name="CraftingSkillGroup" value="Mechanic"/>
+				<property class="Attributes">
+					<property name="DegradationMax" value="4000,9000"/> <!-- needed for electrical calculations -->
+					<property name="VehicleNoise" value="0.3,0.1"/>
+					<property name="VehicleMaxSpeed" value="8,18"/>
+					<property name="VehicleAcceleration" value="8,16"/>
+					<property name="VehicleMetersPerLiter" value="20,25"/>
+					<property name="VehicleIdleSecondsPerLiter" value="22,27"/>
+					<property name="VehicleStartDelayInSeconds" value="1,0.25"/>
+					<property name="VehicleStartChance" value="0.7,0.99"/>
+					<property name="VehicleTankSize" value="1500, 2500"/>
+					<property name="VehicleFuelItem" value="ammoGasCan"/>
+				</property> </item>
+			<item name="HDSmallEngine">
+				<property name="CustomIcon" value="HDSmallEngine" />
+				<property name="Tags" value="csMechanic"/>
+				<property name="HoldType" value="45"/>
+				<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+				<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+				<property name="VehicleSlotType" value="engine"/>
+				<property name="PartType" value="Receiver"/>
+				<property name="Material" value="hdEngineParts" />
+				<property name="RepairTools" value="resourceRepairKit"/>
+				<property name="Stacknumber" value="1"/>
+				<property name="Weight" value="600" />
+				<property name="EconomicValue" value="3000" />
+				<property name="Group" value="Resources"/>
+				<property name="DegradationBreaksAfter" value="false"/>
+				<property name="CraftingSkillGroup" value="Mechanic"/>
+				<property class="Attributes">
+					<property name="DegradationMax" value="7000,12000"/> <!-- needed for electrical calculations -->
+					<property name="VehicleNoise" value="1.2,0.8"/>
+					<property name="VehicleMaxSpeed" value="12,24"/>
+					<property name="VehicleAcceleration" value="11,16"/>
+					<property name="VehicleMetersPerLiter" value="6,10"/>
+					<property name="VehicleIdleSecondsPerLiter" value="5,11"/>
+					<property name="VehicleStartDelayInSeconds" value="1,0.1"/>
+					<property name="VehicleStartChance" value="0.65,0.99"/>
+					<property name="VehicleTankSize" value="2000, 3500"/>
+					<property name="VehicleFuelItem" value="ammoGasCan"/>
+				</property> </item>
+			<item name="ECOBattery">
+				<property name="Extends" value="carBattery" />
+				<property name="Tags" value="csMechanic"/>
+				<property name="CustomIcon" value="ECOBattery" />
+				<property name="Weight" value="250" />
+				<property name="CraftingSkillGroup" value="Mechanic"/>
+				<property name="EconomicValue" value="800" />
+				<property class="Attributes">
+					<property name="DegradationMax" value="3000,8000"/> <!-- needed for electrical calculations -->
+					<property name="BatteryMaxLoadInVolts" value="30, 42"/>
+					<property name="BatteryDischargeTimeInMinutes" value="60,180"/>
+				</property>
+				<effect_group>
+					<passive_effect name="ModSlots" operation="base_set" value="0"/>
+					<passive_effect name="DegradationMax" operation="base_set" value="10000,15000" tier="1,6"/>
+				</effect_group> </item>
+			<item name="HDBattery">
+				<property name="Extends" value="carBattery" />
+				<property name="Tags" value="csMechanic"/>
+				<property name="CustomIcon" value="HDBattery" />
+				<property name="Weight" value="400" />
+				<property name="CraftingSkillGroup" value="Mechanic"/>
+				<property name="EconomicValue" value="1600" />
+				<property class="Attributes">
+					<property name="DegradationMax" value="6000,16000"/> <!-- needed for electrical calculations -->
+					<property name="BatteryMaxLoadInVolts" value="60, 84"/>
+					<property name="BatteryDischargeTimeInMinutes" value="40,160"/>
+				</property>
+				<effect_group>
+					<passive_effect name="ModSlots" operation="base_set" value="0"/>
+					<passive_effect name="DegradationMax" operation="base_set" value="20000,30000" tier="1,6"/>
+				</effect_group> </item>
+
+			<!-- To Do Remove -->
+			<!-- <item name="KevlarMinibikeSeat">
+				<property name="Extends" value="minibikeSeat" />
+				<property name="CustomIcon" value="KevlarMinibikeSeat" />
+				<property name="DescriptionKey" value="KevlarMinibikeSeatDesc"/>
+				<property name="Material" value="kevlar" />
+				<property class="Attributes">
+					<property name="VehiclePlayerStaminaDrainRate" value="1,0" />
+					<property name="DegradationMax" value="4400,9000" />
+				</property>
+				<property name="CraftingSkillGroup" value="Mechanic"/>
+				<property name="EconomicValue" value="800" /> </item>
+			<item name="TungstenMinibikeSeat">
+				<property name="Extends" value="minibikeSeat" />
+				<property name="CustomIcon" value="TungstenMinibikeSeat" />
+				<property name="DescriptionKey" value="TungstenMinibikeSeatDesc"/>
+				<property name="Material" value="kevlar" />
+				<property class="Attributes">
+					<property name="VehiclePlayerStaminaDrainRate" value="1,0" />
+					<property name="DegradationMax" value="7600,12000" />
+				</property>
+				<property name="CraftingSkillGroup" value="Mechanic"/>
+				<property name="EconomicValue" value="1100" /> </item> -->
+
+			<item name="vehicleHDWheels">
+				<property name="Extends" value="vehicleWheels" />
+				<property name="CustomIcon" value="vehicleHDWheels" />
+				<property name="DescriptionKey" value="HDMinibikeWheelsDesc"/>
+				<property name="Material" value="tungsten" />
+				<property name="EconomicValue" value="1100" />
+			 	<property name="Weight" value="100" />
+				<property name="CraftingSkillGroup" value="Mechanic"/> </item>
+
+			<!-- To Do Remove 
+			<item id="1840" name="TungstenPadlock">
+				<property name="Extends" value="padlock" />
+				<property name="CustomIcon" value="TungstenPadlock" />
+				<property name="Material" value="tungsten" />
+			 	<property name="Weight" value="10" />
+				<property class="Attributes">
+					<property name="DegradationMax" value="7600,12000" />
+				</property>
+				<property name="CraftingSkillGroup" value="Mechanic"/>
+				<property name="EconomicValue" value="400" /> </item> -->
+
+			<item name="SteelMinibikeHandlebars">
+				<property name="Extends" value="vehicleMinibikeHandlebars" />
+				<property name="CustomIcon" value="SteelMinibikeHandlebars" />
+				<property name="DescriptionKey" value="SteelMinibikeHandlebarsDesc"/>
+				<property name="CraftingSkillGroup" value="Mechanic"/>
+				<property name="EconomicValue" value="750" />
+				<property name="Weight" value="100"/> </item>
+			<item name="TungstenMinibikeHandlebars">
+				<property name="Extends" value="vehicleMinibikeHandlebars" />
+				<property name="CustomIcon" value="TungstenMinibikeHandlebars" />
+				<property name="DescriptionKey" value="TungstenMinibikeHandlebarsDesc"/>
+				<property name="Material" value="tungsten" />
+				<property name="CraftingSkillGroup" value="Mechanic"/>
+				<property name="EconomicValue" value="1250" />
+				<property name="Weight" value="150"/> </item>
+			<item name="ECOMinibikePlaceable">
+				<property name="CustomIcon" value="ECOMinibikePlaceable"/>
+				<property name="Tags" value="vehicle"/>
+				<property name="DescriptionKey" value="vehiclePlaceableGroupDesc"/>
+				<property name="HoldType" value="7"/>
+				<property name="HoldingItemHidden" value="true"/>
+				<property name="Meshfile" value="Entities/Vehicles/minibike_Prefab"/>
+				<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+				<property name="Material" value="Mmetal"/>
+				<property name="EconomicValue" value="8000"/>
+				<property name="SellableToTrader" value="true"/>
+				<property class="Action1">
+					<property name="Class" value="SpawnVehicle"/>
+					<property name="Vehicle" value="ECOMinibike"/>
+				</property>
+				<effect_group name="Base Effects">
+					<passive_effect name="DegradationMax" operation="base_set" value="3000,6000" tier="1,6"/>
+				</effect_group>	</item>
+			<item name="HDMinibikePlaceable">
+				<property name="CustomIcon" value="HDMinibikePlaceable"/>
+				<property name="Tags" value="vehicle"/>
+				<property name="DescriptionKey" value="vehiclePlaceableGroupDesc"/>
+				<property name="HoldType" value="7"/>
+				<property name="HoldingItemHidden" value="true"/>
+				<property name="Meshfile" value="Entities/Vehicles/minibike_Prefab"/>
+				<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+				<property name="Material" value="Mmetal"/>
+				<property name="EconomicValue" value="10000"/>
+				<property name="SellableToTrader" value="true"/>
+				<property class="Action1">
+					<property name="Class" value="SpawnVehicle"/>
+					<property name="Vehicle" value="HDMinibike"/>
+				</property>
+				<effect_group name="Base Effects">
+					<passive_effect name="DegradationMax" operation="base_set" value="6000,12000" tier="1,6"/>
+				</effect_group> </item>
+			<!-- To Do Remove? -->
+			<!-- <item name="SteelHandlebars">
+				<property name="CustomIcon" value="SteelHandlebars" />
+				<property name="Extends" value="partsMaster" />
+				<property name="PartType" value="Pump" />
+				<property class="Attributes">
+					<property name="DegradationRate" value="3,3" />
+					<property name="DegradationMax" value="6000,9000" />
+				</property>
+				<property name="Group" value="Resources" />
+				<property name="CraftingSkillGroup" value="Mechanic"/>
+				<property name="CraftingIngredientExp" value="10" />
+				<property name="CraftingIngredientTime" value="5" />
+				<property name="EconomicValue" value="500" /> </item>
+			<item name="TungstenHandlebars">
+				<property name="CustomIcon" value="TungstenHandlebars" />
+				<property name="Extends" value="partsMaster" />
+				<property name="Material" value="tungsten" />
+				<property name="PartType" value="Pump" />
+				<property class="Attributes">
+					<property name="DegradationRate" value="3,3" />
+					<property name="DegradationMax" value="9000,12000" />
+				</property>
+				<property name="Group" value="Resources" />
+				<property name="CraftingSkillGroup" value="Mechanic"/>
+				<property name="CraftingIngredientExp" value="15" />
+				<property name="CraftingIngredientTime" value="5" />
+				<property name="EconomicValue" value="750" /> </item> 
+			<item name="steelHandleBarsSchematic">
+				<property name="Extends" value="schematicMaster"/>
+				<property name="CustomIcon" value="steelHandleBarsSchematic"/>
+				<property class="Action1">
+					<property name="Skills_to_gain" value="steelHandleBarsSchematicPerk"/>
+				</property> </item>
+			<item name="tungstenHandleBarsSchematic">
+				<property name="Extends" value="schematicMaster"/>
+				<property name="CustomIcon" value="tungstenHandleBarsSchematic"/>
+				<property class="Action1">
+					<property name="Skills_to_gain" value="tungstenHandleBarsSchematicPerk"/>
+				</property> </item> -->
+
+			<!-- To Do Remove 
+			<item name="MinibikesForSmartshits">
+				<property name="CustomIcon" value="MinibikesForSmartshits" />
+				<property name="Extends" value="schematicMaster" />
+				<property class="Action0">
+				</property>
+				<property name="EconomicValue" value="1250" /> </item>
+			<item name="MinibikesForToughshits">
+				<property name="CustomIcon" value="MinibikesForToughshits" />
+				<property name="Extends" value="schematicMaster" />
+				<property class="Action0">
+				</property>
+				<property name="EconomicValue" value="1750" /> </item> -->
 
 	</append>	
 
